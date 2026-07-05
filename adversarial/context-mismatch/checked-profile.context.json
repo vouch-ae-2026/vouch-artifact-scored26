@@ -1,0 +1,21 @@
+{
+  "bridge_context_manifest": "vouch.bridge-context-manifest/v0",
+  "profile": {
+    "kind": "conversion-evidence",
+    "version": "v0"
+  },
+  "subject": {
+    "kind": "source-to-target-conversion",
+    "case_id": "checkout-discount-ts-to-python",
+    "route": {
+      "id": "checked-expression-route",
+      "checked_profile": "wrong-profile",
+      "capability_ids": [
+        "function",
+        "conditional",
+        "comparison",
+        "integer-arithmetic"
+      ]
+    }
+  }
+}

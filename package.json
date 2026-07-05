@@ -1,0 +1,12 @@
+{
+  "name": "anonymous-vouch-artifact",
+  "version": "1.3.11",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "check": "node scripts/check-artifact-bundle.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

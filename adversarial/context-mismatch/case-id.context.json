@@ -1,0 +1,21 @@
+{
+  "bridge_context_manifest": "vouch.bridge-context-manifest/v0",
+  "profile": {
+    "kind": "conversion-evidence",
+    "version": "v0"
+  },
+  "subject": {
+    "kind": "source-to-target-conversion",
+    "case_id": "wrong-case-id",
+    "route": {
+      "id": "checked-expression-route",
+      "checked_profile": "vouch.conversion-evidence-profile/v0",
+      "capability_ids": [
+        "function",
+        "conditional",
+        "comparison",
+        "integer-arithmetic"
+      ]
+    }
+  }
+}

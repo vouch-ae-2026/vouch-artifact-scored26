@@ -1,0 +1,125 @@
+{
+  "boundary": {
+    "attests": [
+      "external-engine-evidence-shape",
+      "source-target-byte-binding",
+      "declared-gate-results",
+      "linked-artifact-hash-binding",
+      "boundary-disclosure"
+    ],
+    "excludes": [
+      "target-code-correctness",
+      "semantic-equivalence",
+      "external-engine-execution",
+      "private-engine-disclosure",
+      "production-enforcement",
+      "receipt-authenticity",
+      "generation-honesty",
+      "issuer-binding",
+      "timestamping",
+      "non-repudiation",
+      "external-independent-verification",
+      "full-cskernel-coverage"
+    ]
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "name": "external-engine",
+    "version": "1.3.11",
+    "commit": {
+      "vcs": "git",
+      "hex": "1111111111111111111111111111111111111111",
+      "dirty": false
+    }
+  },
+  "profile": {
+    "kind": "conversion-evidence",
+    "version": "v0"
+  },
+  "subject": {
+    "kind": "source-to-target-conversion",
+    "case_id": "checkout-discount-ts-to-python",
+    "source": {
+      "language": "TypeScript",
+      "path": "examples/vouch-bridge/source/checkout-discount.ts",
+      "byte_len": 266,
+      "hash": {
+        "algo": "sha-256",
+        "domain": "vouch/external-source-hash/v0",
+        "hex": "687ce68922d2b4b242babbfba2070f2fbf6f690bc1fe2da7a771b6f189cb78ed"
+      }
+    },
+    "target": {
+      "language": "Python",
+      "path": "examples/vouch-bridge/target/checkout_discount.py",
+      "byte_len": 242,
+      "hash": {
+        "algo": "sha-256",
+        "domain": "vouch/external-target-hash/v0",
+        "hex": "606bfee17a5a57142ce1a508c9369c549b5b07bcf4b38ec9f0c1bab14bdfa824"
+      }
+    },
+    "route": {
+      "id": "checked-expression-route",
+      "checked_profile": "vouch.conversion-evidence-profile/v0",
+      "capability_ids": [
+        "function",
+        "conditional",
+        "comparison",
+        "integer-arithmetic"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "id": "source-boundary",
+      "stage": "source",
+      "status": "pass",
+      "artifact_hash": {
+        "algo": "sha-256",
+        "domain": "vouch/linked-artifact-hash/v0",
+        "hex": "66ad44b315a20796aa5b8d290697a7a4001d884ef7582aacd86994e78788d733"
+      }
+    },
+    {
+      "id": "conversion-route",
+      "stage": "engine",
+      "status": "pass",
+      "artifact_hash": {
+        "algo": "sha-256",
+        "domain": "vouch/linked-artifact-hash/v0",
+        "hex": "66ad44b315a20796aa5b8d290697a7a4001d884ef7582aacd86994e78788d733"
+      }
+    },
+    {
+      "id": "target-adapter",
+      "stage": "target",
+      "status": "pass",
+      "artifact_hash": {
+        "algo": "sha-256",
+        "domain": "vouch/linked-artifact-hash/v0",
+        "hex": "66ad44b315a20796aa5b8d290697a7a4001d884ef7582aacd86994e78788d733"
+      }
+    }
+  ],
+  "linked_artifacts": [
+    {
+      "id": "external-gate-proof",
+      "kind": "external-gate-proof",
+      "path": "examples/vouch-bridge/linked/external-gate-proof.json",
+      "disclosure": "public-bytes",
+      "hash": {
+        "algo": "sha-256",
+        "domain": "vouch/linked-artifact-hash/v0",
+        "hex": "66ad44b315a20796aa5b8d290697a7a4001d884ef7582aacd86994e78788d733"
+      }
+    }
+  ],
+  "summary": {
+    "status": "pass",
+    "check_count": 3,
+    "failed_checks": 0,
+    "not_run_checks": 0
+  }
+}

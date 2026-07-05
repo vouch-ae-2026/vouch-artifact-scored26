@@ -1,0 +1,152 @@
+{
+  "boundary": {
+    "attests": [
+      "source-bytes",
+      "profile-input-hash-binding",
+      "canonical-core-v0-bytes",
+      "meaning-graph-v0-hash-binding",
+      "reference-transcript-bytes",
+      "meaning-env-transcript-bytes",
+      "lowered-subset-transcript-agreement"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "independent-witness",
+      "substrate-independence",
+      "error-agreement",
+      "input-provenance",
+      "topaz-reporting",
+      "full-cskernel-coverage",
+      "target-code-generation",
+      "private-implementation-detail",
+      "receipt-authenticity",
+      "generation-honesty",
+      "issuer-binding",
+      "timestamping",
+      "non-repudiation"
+    ]
+  },
+  "canonical": {
+    "byte_len": 3181,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/core-hash/v0",
+      "hex": "d399b7ecef3ccbe89407c0dd9786e9308dbb9647c2a8b2aa160620776b89b670"
+    },
+    "status": "ok"
+  },
+  "comparison": {
+    "blockers": [],
+    "fault_class": null,
+    "first_divergence": null,
+    "reason": "transcript-bytes-equal",
+    "status": "agree",
+    "substrate": "shared-rust-reference"
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "canonical_format": "lispex.core.canonical/v0",
+    "commit": {
+      "dirty": false,
+      "hex": "74558ca98ec636f270447bde6e348234a2370d30",
+      "vcs": "git"
+    },
+    "name": "lispex-rust-reference",
+    "version": "1.3.11"
+  },
+  "graph": {
+    "byte_len": 64126,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-graph-hash/v0",
+      "hex": "db942977700cfede6d73b8148921d779b23af8bb597f7e212a96ad25963c3472"
+    },
+    "status": "ok"
+  },
+  "input": {
+    "byte_len": 56,
+    "datum": "((income 1000000) (household (((kind adult) (age 35)))))",
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/profile-input-hash/v0",
+      "hex": "283784ac5f3e8c4c579aff41d4cd222842f6f7340f066a1127988d8d83c9ee6d"
+    },
+    "name": "input",
+    "path": "profile-gallery/welfare-replay/inputs/welfare-low-single.datum",
+    "status": "bound"
+  },
+  "meaning_env": {
+    "fault": null,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-env-transcript-hash/v0",
+      "hex": "2f97365413949e642ae92ac393e450d6180533995e0996e65598185a2229bd10"
+    },
+    "status": "ok",
+    "steps": {
+      "limit": 65536,
+      "used": 1109
+    },
+    "transcript": [
+      "(decision amount 220000 welfare-benefit)"
+    ],
+    "transcript_byte_len": 41
+  },
+  "reference": {
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/runtime-hash/v0",
+      "hex": "913043b3e493d0bc306e555033d0bda75eef6e46b540ffbd978303a6e64ce2bb"
+    },
+    "status": "ok",
+    "transcript": [
+      "(decision amount 220000 welfare-benefit)"
+    ],
+    "transcript_byte_len": 41
+  },
+  "source": {
+    "byte_len": 3480,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/source-hash/v0",
+      "hex": "53f0022b051759105c9740a98c9b01fb01b6a3eaede80d7dc2d92d485c164409"
+    },
+    "path": "profile-gallery/welfare-replay/cases/welfare-low-single.lspx"
+  },
+  "bridge_report": "vouch.bridge-report/v0",
+  "subject": {
+    "kind": "source-to-target-conversion",
+    "case_id": "checkout-discount-ts-to-python",
+    "source": {
+      "language": "TypeScript",
+      "path": "examples/vouch-bridge/source/checkout-discount.ts",
+      "byte_len": 266,
+      "hash": {
+        "algo": "sha-256",
+        "domain": "vouch/external-source-hash/v0",
+        "hex": "687ce68922d2b4b242babbfba2070f2fbf6f690bc1fe2da7a771b6f189cb78ed"
+      }
+    },
+    "target": {
+      "language": "Python",
+      "path": "examples/vouch-bridge/target/checkout_discount.py",
+      "byte_len": 242,
+      "hash": {
+        "algo": "sha-256",
+        "domain": "vouch/external-target-hash/v0",
+        "hex": "606bfee17a5a57142ce1a508c9369c549b5b07bcf4b38ec9f0c1bab14bdfa824"
+      }
+    },
+    "route": {
+      "id": "checked-expression-route",
+      "checked_profile": "vouch.conversion-evidence-profile/v0",
+      "capability_ids": [
+        "function",
+        "conditional",
+        "comparison",
+        "integer-arithmetic"
+      ]
+    }
+  }
+}

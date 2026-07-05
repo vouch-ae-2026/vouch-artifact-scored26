@@ -1,0 +1,126 @@
+(begin
+  (define policy
+    '((tax
+        (brackets ((b0 0 1200000 0) (b1 1200000 3000000 10) (b2 3000000 999999999 20))))
+      (benefit
+        (base 220000)
+        (cap 400000)
+        (dependent-bonus ((adult 0) (child 80000) (senior 60000))))))
+
+  (define (has-second? xs)
+    (and (pair? xs) (pair? (cdr xs))))
+
+  (define (has-third? xs)
+    (and (has-second? xs) (pair? (cdr (cdr xs)))))
+
+  (define (has-fourth? xs)
+    (and (has-third? xs) (pair? (cdr (cdr (cdr xs))))))
+
+  (define (second xs)
+    (car (cdr xs)))
+
+  (define (third xs)
+    (car (cdr (cdr xs))))
+
+  (define (fourth xs)
+    (car (cdr (cdr (cdr xs)))))
+
+  (define (entry-value entry)
+    (if (has-second? entry)
+        (second entry)
+        #f))
+
+  (define (lookup table key)
+    (if (pair? table)
+        (let ((entry (assoc key table)))
+          (if entry
+              (entry-value entry)
+              #f))
+        #f))
+
+(define (lookup-path table keys fallback)
+  (if (null? keys)
+      table
+      (if (pair? table)
+          (let ((entry (assoc (car keys) table)))
+            (if entry
+                (if (null? (cdr keys))
+                    (entry-value entry)
+                    (lookup-path (cdr entry) (cdr keys) fallback))
+                fallback))
+          fallback)))
+
+  (define brackets
+    (lookup-path policy '(tax brackets) #f))
+
+  (define base-benefit
+    (lookup-path policy '(benefit base) #f))
+
+  (define benefit-cap
+    (lookup-path policy '(benefit cap) #f))
+
+  (define dependent-bonus-table
+    (lookup-path policy '(benefit dependent-bonus) #f))
+
+  (define (valid-bracket? bracket)
+    (and (has-fourth? bracket)
+         (number? (second bracket))
+         (number? (third bracket))
+         (number? (fourth bracket))))
+
+  (define (valid-brackets? xs)
+    (if (null? xs)
+        #t
+        (and (pair? xs)
+             (valid-bracket? (car xs))
+             (valid-brackets? (cdr xs)))))
+
+  (define (taxable-slice income lower upper)
+    (let ((hi (min income upper)))
+      (if (> hi lower)
+          (- hi lower)
+          0)))
+
+  (define (tax-one income bracket)
+    (quotient (* (taxable-slice income (second bracket) (third bracket))
+                 (fourth bracket))
+              100))
+
+  (define (bracket-tax income remaining)
+    (if (null? remaining)
+        0
+        (+ (tax-one income (car remaining))
+           (bracket-tax income (cdr remaining)))))
+
+  (define (person-bonus person)
+    (let ((kind (lookup person 'kind)))
+      (let ((bonus (lookup dependent-bonus-table kind)))
+        (if (number? bonus)
+            bonus
+            0))))
+
+  (define (dependent-bonus people)
+    (if (null? people)
+        0
+        (+ (person-bonus (car people))
+           (dependent-bonus (cdr people)))))
+
+  (define income
+    (lookup input 'income))
+
+  (define household
+    (lookup input 'household))
+
+  (if (not (valid-brackets? brackets))
+      '(decision invalid-input bad-table)
+      (if (not (list? household))
+          '(decision invalid-input bad-household)
+          (if (not (number? income))
+              '(decision invalid-input bad-income)
+              (let ((gross (+ base-benefit
+                              (dependent-bonus household)
+                              (- 0 (bracket-tax income brackets)))))
+                (let ((amount (min benefit-cap (max 0 gross))))
+                  (if (> amount 0)
+                      (list 'decision 'amount amount 'welfare-benefit)
+                      '(decision deny income-too-high))))))))

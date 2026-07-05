@@ -1,0 +1,171 @@
+{
+  "expected_hashes": "vouch.anonymous-artifact-hashes/v0",
+  "head": "4b0b676ccfe43366c6d486d721f3e62d40b846bf",
+  "entries": [
+    {
+      "path": "adversarial/vouch-evidence-laundering/results.json",
+      "domain": "vouch/adversarial-evidence-hash/v0",
+      "sha256": "e2d4bfbfa09d9abd6ce9dcb69e852d33aebd63c637904ea4a1b166ab124c9bd7"
+    },
+    {
+      "path": "contracts/VOUCH-BRIDGE.md",
+      "domain": "sha256/raw-bytes",
+      "sha256": "1540fdb62ddf19a701d8d8c4d5373b3ccbdcbf1be8d369836fbe0731d3f059a7"
+    },
+    {
+      "path": "examples/vouch-bridge/linked/external-gate-proof.json",
+      "domain": "vouch/linked-artifact-hash/v0",
+      "sha256": "66ad44b315a20796aa5b8d290697a7a4001d884ef7582aacd86994e78788d733"
+    },
+    {
+      "path": "examples/vouch-bridge/reports/checkout-discount.bridge.json",
+      "domain": "vouch/bridge-report-hash/v0",
+      "sha256": "b2c21ceda1302f2505d6e7545d731c626547230a59995ce207d4417821a80778"
+    },
+    {
+      "path": "examples/vouch-bridge/source/checkout-discount.ts",
+      "domain": "vouch/external-source-hash/v0",
+      "sha256": "687ce68922d2b4b242babbfba2070f2fbf6f690bc1fe2da7a771b6f189cb78ed"
+    },
+    {
+      "path": "examples/vouch-bridge/target/checkout_discount.py",
+      "domain": "vouch/external-target-hash/v0",
+      "sha256": "606bfee17a5a57142ce1a508c9369c549b5b07bcf4b38ec9f0c1bab14bdfa824"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-child-mid.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "64e50ff22203f7bdf3482af772fb9b2345b1103c136056e60810c68ec19538ff"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-family-cap.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "66ca10ef9f7c9d7b9c4a08d084b0242e86aea35d335fc9fd74c65da88e43ee5c"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-flip-to-deny.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "2d4e8d0cdd4dd1952d2b14338fc22a6d52513120693925096c1ff7e0ffaa869a"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-high-family.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "eecae4cbe90b5e30caad8173dc34582f8fd6aff7ff7710b3e94f314a458ac7ce"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-invalid-bad-household.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "f245ca00fc5aa32dbb9c652da0bbff5656b8a7ea1bbc7077306ad22fe23bb421"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-invalid-bad-table.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "ca7e39d721089ea7b1d05bf02efa51c423c7b0c29a058a02a897db26d3d499e0"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-low-single.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "0c260eb77985655bce229bfd6c5807ac2fc7df9965438d802e787bfcec73747e"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-no-dependents-high.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "cb084992251f7d21cdc64c5feacd416732dfa69251eba46a31c99153da350966"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-second-bracket.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "6196c18bd649a3e12618933c37f7382af238912ac59ea01c5c24303ff76b52bf"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-senior-mid.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "62bc83348486cc97b6690963780ce0968226bb939d55ed30b79b416fae4eab91"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-threshold-edge.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "adf74e1a9328db44d8e77b197e9f70b3e65c5bcbbb27ad1da066b4e8c84839b9"
+    },
+    {
+      "path": "examples/welfare/changed-expected/welfare-top-deny.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "32c3071dbc7d5cfeee48f8534de8e7ce90dbe9520ed1aecbb0c9c94e7995c2c8"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-child-mid.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "c961f58b1caf80445231c5e86c4a23710d029222ca0d1c89e00ee40468982352"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-family-cap.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "30c21cc6f8ea4c8a0342e29209413b382340c730ce38ce03c36c26b6afccce09"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-flip-to-deny.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "635bf137aace71e631aed780be090b7d634136149f1ce56c5f7545d8ff702aae"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-high-family.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "0068bb740a3cfdebad4cc377277b1a1ceabbc81ea749414bb4a3f72488904afe"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-invalid-bad-household.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "856b87fdb0a402d462cb386bfcd8f90b26c8ab879e1faa7c62f46f53364391cc"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-invalid-bad-table.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "b2b28463583c1221bf5d616b26c91a123788c2c498ed7c57e31cf5a8f2758c28"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-low-single.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "626bfd89282088d168bc2d2353f256851a5fac799cac71fd7d43f0d94e6c71b9"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-no-dependents-high.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "0304af602826121ddfd894a1469ed005259fb3af764b9a90e1b11ef9ff28ea51"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-second-bracket.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "c71e8845fc28516f3df5e1936933849a1283290d09bccc113f71524f024d5777"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-senior-mid.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "58fa68471d294de2506e7a5c9b65618797d5d10b7b15a38eaa7f96ca42d0af02"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-threshold-edge.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "55596ca152a92d80eee85e799d8a890e1242babbb560421905596ec30e008d52"
+    },
+    {
+      "path": "examples/welfare/expected/welfare-top-deny.json",
+      "domain": "csk/differential-receipt-hash/v0",
+      "sha256": "1589044619dd49dc99d9ab2afcdd2b33f1c1a0d0906c9bcfdb2fb4caf88de283"
+    },
+    {
+      "path": "examples/welfare/welfare-replay-report.changed.json",
+      "domain": "csk/replay-report-hash/v0",
+      "sha256": "31062d338fbfc4de75f31cf34c2a8aa0063cf3c7cb7553fc00175042bd22c4db"
+    },
+    {
+      "path": "schemas/vouch.bridge-context-manifest.schema.v0.json",
+      "domain": "sha256/raw-bytes",
+      "sha256": "c6a7dfb89eac6a4188b29103f93e16df4070d8de87f72ee5d1e83276ead60fad"
+    },
+    {
+      "path": "schemas/vouch.bridge-report.schema.v0.json",
+      "domain": "sha256/raw-bytes",
+      "sha256": "6f71f2b979113e7f146f0fb0097390cbace86941749edfdb6dc7d5a69cae1f9f"
+    }
+  ]
+}

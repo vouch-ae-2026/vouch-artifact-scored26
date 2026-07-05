@@ -1,0 +1,10 @@
+{
+  "anonymization_hash_delta": "vouch.anonymization-hash-delta/v0",
+  "head": "4b0b676ccfe43366c6d486d721f3e62d40b846bf",
+  "bridge_example": {
+    "originalBridgeReportHash": "4184d8fdb30a2504c38def6e6a20b81a8e92c3a671bb1188d5e5b419bfe620cb",
+    "anonymizedBridgeReportHash": "b2c21ceda1302f2505d6e7545d731c626547230a59995ce207d4417821a80778",
+    "originalLinkedHash": "5f713fd848bf853a0d81c2013e9b20ca6d837a93f2cb9c9f83faaa1da0934dc8",
+    "anonymizedLinkedHash": "66ad44b315a20796aa5b8d290697a7a4001d884ef7582aacd86994e78788d733"
+  }
+}

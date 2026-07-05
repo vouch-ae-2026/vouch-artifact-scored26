@@ -1,0 +1,61 @@
+{
+  "$id": "vouch.bridge-context-manifest.schema.v0",
+  "title": "Vouch Bridge Context Manifest v0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["bridge_context_manifest", "profile", "subject"],
+  "properties": {
+    "bridge_context_manifest": {
+      "const": "vouch.bridge-context-manifest/v0"
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "version"],
+      "properties": {
+        "kind": {
+          "const": "conversion-evidence"
+        },
+        "version": {
+          "const": "v0"
+        }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "case_id", "route"],
+      "properties": {
+        "kind": {
+          "const": "source-to-target-conversion"
+        },
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "route": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "checked_profile", "capability_ids"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "checked_profile": {
+              "type": "string",
+              "minLength": 1
+            },
+            "capability_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

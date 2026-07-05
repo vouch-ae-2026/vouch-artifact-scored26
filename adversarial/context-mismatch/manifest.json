@@ -1,0 +1,36 @@
+{
+  "context_mismatch_fixtures": "vouch.context-mismatch-fixtures/v0",
+  "target_report": "examples/vouch-bridge/reports/checkout-discount.bridge.json",
+  "rows": [
+    {
+      "id": "profile-kind",
+      "expected_failure": "context-profile-mismatch",
+      "path": "adversarial/context-mismatch/profile-kind.context.json"
+    },
+    {
+      "id": "subject-kind",
+      "expected_failure": "context-subject-kind-mismatch",
+      "path": "adversarial/context-mismatch/subject-kind.context.json"
+    },
+    {
+      "id": "case-id",
+      "expected_failure": "context-case-id-mismatch",
+      "path": "adversarial/context-mismatch/case-id.context.json"
+    },
+    {
+      "id": "route-id",
+      "expected_failure": "context-route-id-mismatch",
+      "path": "adversarial/context-mismatch/route-id.context.json"
+    },
+    {
+      "id": "checked-profile",
+      "expected_failure": "context-checked-profile-mismatch",
+      "path": "adversarial/context-mismatch/checked-profile.context.json"
+    },
+    {
+      "id": "capability-ids",
+      "expected_failure": "context-capability-ids-mismatch",
+      "path": "adversarial/context-mismatch/capability-ids.context.json"
+    }
+  ]
+}

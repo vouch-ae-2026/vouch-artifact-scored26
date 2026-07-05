@@ -1,0 +1,351 @@
+{
+  "vouch_adversarial_evaluation": "vouch.adversarial-evidence/v0",
+  "version": "1.3.11",
+  "groups": {
+    "artifact_class_spoofing": [
+      {
+        "id": "A.1",
+        "attack": "tag-only relabel from bridge to native",
+        "gate": "native-verify",
+        "failure_class": "unknown-top-level-field:profile",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "missing-canonical",
+          "missing-comparison",
+          "missing-graph"
+        ]
+      },
+      {
+        "id": "A.2",
+        "attack": "field grafting native comparison into bridge",
+        "gate": "bridge-verify",
+        "failure_class": "unknown-top-level-field:comparison",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "tag-mismatch",
+          "missing-canonical"
+        ]
+      },
+      {
+        "id": "A.3",
+        "attack": "bridge report supplied to native verifier",
+        "gate": "native-verify",
+        "failure_class": "missing-source",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "tag-mismatch",
+          "missing-canonical"
+        ]
+      },
+      {
+        "id": "A.4",
+        "attack": "native receipt with bridge-only fields",
+        "gate": "native-verify",
+        "failure_class": "unknown-top-level-field:bridge_report",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:subject"
+        ]
+      },
+      {
+        "id": "A.5",
+        "attack": "missing bridge boundary",
+        "gate": "bridge-verify",
+        "failure_class": "missing-boundary",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "tag-mismatch",
+          "missing-boundary"
+        ]
+      },
+      {
+        "id": "A.6",
+        "attack": "boundary omission removes required exclude",
+        "gate": "bridge-verify",
+        "failure_class": "boundary-excludes-mismatch",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "tag-mismatch",
+          "missing-canonical"
+        ]
+      },
+      {
+        "id": "A.7",
+        "attack": "hash domain substitution",
+        "gate": "bridge-verify",
+        "failure_class": "source-hash-domain",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "tag-mismatch",
+          "missing-canonical"
+        ]
+      },
+      {
+        "id": "A.8",
+        "attack": "unknown trust-field smuggling",
+        "gate": "bridge-verify",
+        "failure_class": "unknown-top-level-field:semantic_proof",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "unknown-top-level-field:semantic_proof",
+          "unknown-top-level-field:verified_by"
+        ]
+      },
+      {
+        "id": "A.9",
+        "attack": "path and timestamp pollution",
+        "gate": "bridge-verify",
+        "failure_class": "unknown-top-level-field:generated_at",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "unknown-top-level-field:generated_at",
+          "tag-mismatch"
+        ]
+      },
+      {
+        "id": "A.10",
+        "attack": "optional null smuggling",
+        "gate": "bridge-verify",
+        "failure_class": "linked-artifacts-not-array",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "tag-mismatch",
+          "missing-canonical"
+        ]
+      },
+      {
+        "id": "A.11",
+        "attack": "contradictory boundary attests semantic equivalence",
+        "gate": "bridge-verify",
+        "failure_class": "boundary-attests-mismatch",
+        "status": "rejected",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "tag-mismatch",
+          "missing-canonical"
+        ]
+      },
+      {
+        "id": "A.12",
+        "attack": "positive valid bridge report accepted only as external evidence",
+        "gate": "bridge-verify",
+        "failure_class": "none",
+        "status": "accepted-as-external",
+        "promoted_to_native": "no",
+        "native_gate_diagnostics": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks",
+          "unknown-top-level-field:linked_artifacts",
+          "unknown-top-level-field:summary",
+          "tag-mismatch",
+          "missing-canonical"
+        ]
+      }
+    ],
+    "authenticity_boundary": {
+      "id": "B",
+      "status": "documented-non-goal",
+      "forged_native_shape": {
+        "verifier_status": "pass",
+        "checked_with_source": "examples/vouch-loop/cases/refund-window.lspx",
+        "changed_field": "engine.commit.hex",
+        "claim": "self-consistency can pass without receipt authenticity"
+      },
+      "required_excludes_present": [
+        "receipt-authenticity",
+        "generation-honesty",
+        "issuer-binding",
+        "timestamping",
+        "non-repudiation"
+      ],
+      "public_claims_negative": {
+        "status": "rejected-promotional-overclaims",
+        "checked_patterns": 9
+      },
+      "boundary": {
+        "attests": [
+          "artifact-self-consistency-boundary",
+          "authenticity-non-goals-present",
+          "promotional-authenticity-overclaims-rejected"
+        ],
+        "excludes": [
+          "receipt-authenticity",
+          "generation-honesty",
+          "issuer-binding",
+          "timestamping",
+          "non-repudiation"
+        ]
+      }
+    },
+    "disjointness": [
+      {
+        "id": "D.1-valid-bridge",
+        "native_accepts": false,
+        "bridge_accepts": true,
+        "native_failure_head": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject"
+        ],
+        "bridge_failure_head": []
+      },
+      {
+        "id": "D.2-valid-native",
+        "native_accepts": true,
+        "bridge_accepts": false,
+        "native_failure_head": [],
+        "bridge_failure_head": [
+          "unknown-top-level-field:canonical",
+          "unknown-top-level-field:comparison",
+          "unknown-top-level-field:differential_receipt"
+        ]
+      },
+      {
+        "id": "D.3-tag-only-relabel",
+        "native_accepts": false,
+        "bridge_accepts": false,
+        "native_failure_head": [
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject",
+          "unknown-top-level-field:checks"
+        ],
+        "bridge_failure_head": [
+          "unknown-top-level-field:differential_receipt",
+          "missing-bridge_report",
+          "tag-mismatch"
+        ]
+      },
+      {
+        "id": "D.4-field-grafting",
+        "native_accepts": false,
+        "bridge_accepts": false,
+        "native_failure_head": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject"
+        ],
+        "bridge_failure_head": [
+          "unknown-top-level-field:comparison"
+        ]
+      },
+      {
+        "id": "D.5-native-with-bridge-field",
+        "native_accepts": false,
+        "bridge_accepts": false,
+        "native_failure_head": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:subject"
+        ],
+        "bridge_failure_head": [
+          "non-canonical-artifact-json"
+        ]
+      },
+      {
+        "id": "D.6-unknown-trust-field",
+        "native_accepts": false,
+        "bridge_accepts": false,
+        "native_failure_head": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject"
+        ],
+        "bridge_failure_head": [
+          "unknown-top-level-field:semantic_proof",
+          "unknown-top-level-field:verified_by",
+          "unknown-top-level-field:native_agree"
+        ]
+      },
+      {
+        "id": "D.7-optional-null-smuggling",
+        "native_accepts": false,
+        "bridge_accepts": false,
+        "native_failure_head": [
+          "unknown-top-level-field:bridge_report",
+          "unknown-top-level-field:profile",
+          "unknown-top-level-field:subject"
+        ],
+        "bridge_failure_head": [
+          "linked-artifacts-not-array"
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "group_a_total": 12,
+    "group_a_promoted_to_native": 0,
+    "group_b_status": "documented-non-goal",
+    "disjointness_both_accepted": 0
+  }
+}
