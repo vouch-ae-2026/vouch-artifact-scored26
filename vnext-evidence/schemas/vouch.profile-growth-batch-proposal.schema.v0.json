@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vouch.profile-growth-batch-proposal.schema.v0",
+  "type": "object",
+  "required": [
+    "profile_growth_batch_proposal",
+    "scope",
+    "version",
+    "generator",
+    "source_manifests",
+    "evidence_summary",
+    "proposal",
+    "negative_checks",
+    "boundary"
+  ],
+  "properties": {
+    "profile_growth_batch_proposal": {
+      "const": "vouch.profile-growth-batch-proposal/v0"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "generator": {
+      "type": "object"
+    },
+    "source_manifests": {
+      "type": "array"
+    },
+    "evidence_summary": {
+      "type": "object"
+    },
+    "proposal": {
+      "type": "object"
+    },
+    "negative_checks": {
+      "type": "array"
+    },
+    "boundary": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,34 @@
+{
+  "vnext_evidence_addendum": "vouch.vnext-evidence-addendum/v0",
+  "base_bundle_commit": "8408e45d",
+  "mode": "additive-evidence-only",
+  "preserves_original_surface": true,
+  "added_roots": [
+    "vnext-evidence"
+  ],
+  "evidence": [
+    "transcription-fidelity-ledger",
+    "transcription-complexity-metrics",
+    "profile-growth-zero-admission",
+    "generated-disjointness",
+    "artifact-grammar-fuzzer",
+    "mutation-generator",
+    "seeded-divergence"
+  ],
+  "boundary": {
+    "attests": [
+      "additive-vnext-evidence-directory",
+      "original-artifact-surface-preserved-by-external-file-hash-check",
+      "local-vnext-evidence-check-script-present"
+    ],
+    "excludes": [
+      "submitted-paper-update",
+      "original-receipt-replacement",
+      "original-contract-replacement",
+      "semantic-equivalence",
+      "independent-verification",
+      "receipt-authenticity",
+      "policy-correctness"
+    ]
+  }
+}

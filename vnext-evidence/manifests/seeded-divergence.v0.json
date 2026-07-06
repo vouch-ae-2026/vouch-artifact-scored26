@@ -1,0 +1,63 @@
+{
+  "seeded_divergence": "vouch.seeded-divergence/v0",
+  "version": "1.3.11",
+  "seed": "W1.1-seeded-divergence-0001",
+  "source": {
+    "path": "detection/seeded-divergence/cases/seeded-branch.lspx",
+    "bytes": 12,
+    "hash": {
+      "algorithm": "sha256",
+      "domain": "lispex/source-hash/v0",
+      "hex": "bb8b5421705220791c61223533cabeade9e635982f6bf91c1ba388f24ea4170c"
+    }
+  },
+  "artifact": {
+    "path": "detection/seeded-divergence/expected/seeded-branch.disagree.json",
+    "bytes": 2739,
+    "sha256": "534faca5c07da299d1663f78f3df114c762d61d9e39e9881e2085882469dc068"
+  },
+  "injection": {
+    "method": "deterministic-meaning-env-transcript-substitution",
+    "baseline_reference_transcript": [
+      "1"
+    ],
+    "baseline_meaning_env_transcript": [
+      "1"
+    ],
+    "injected_meaning_env_transcript": [
+      "2"
+    ]
+  },
+  "expected": {
+    "comparison_status": "disagree",
+    "reason": "transcript-bytes-differ",
+    "first_divergence": {
+      "index": 0,
+      "reference": "1",
+      "meaning_env": "2"
+    },
+    "verify_command": [
+      "node",
+      "cli/bin/lispex.js",
+      "verify",
+      "--source",
+      "detection/seeded-divergence/cases/seeded-branch.lspx",
+      "detection/seeded-divergence/expected/seeded-branch.disagree.json"
+    ],
+    "verify_exit": 0
+  },
+  "boundary": {
+    "attests": [
+      "seeded-fault-injection-produces-valid-disagree-receipt",
+      "first-divergence-recomputed-by-public-verifier",
+      "negative-fixtures-close-on-divergence-metadata-mutation"
+    ],
+    "excludes": [
+      "natural-engine-divergence",
+      "source-corpus-observation",
+      "semantic-equivalence",
+      "independent-witness",
+      "production-decision"
+    ]
+  }
+}

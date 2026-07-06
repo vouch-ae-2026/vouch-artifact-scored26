@@ -1,0 +1,2209 @@
+{
+  "cedar_shallow_oracle": "vouch.cedar-shallow-oracle/v0",
+  "version": "1.3.11",
+  "generator": {
+    "script": "scripts/check-cedar-shallow-oracle.mjs",
+    "seed": "W2.1-cedar-shallow-oracle-0001",
+    "mode": "transcription-fidelity-oracle-harness"
+  },
+  "source_snapshot": [
+    {
+      "path": "docs/LISPEX-VOUCH-BLUEPRINT-v1.0.md",
+      "sha256": "6ba44b4605f8bbf93f9c2071ccaed697fdcbd7a29b21649a1572893b680fbb9e"
+    },
+    {
+      "path": "transcription/cedar-shallow/policies/specific-photo.cedar",
+      "sha256": "500a4d652df19c803bf42731113d6a73151a440def8d3b511ea6e8288a35f980"
+    },
+    {
+      "path": "transcription/cedar-shallow/lispex/specific-photo.lspx",
+      "sha256": "e5f99e7cdc633ec6c526c27aacd55016de00a94a09bca67939e8dacd2ec565f9"
+    },
+    {
+      "path": "transcription/cedar-shallow/policies/owner-or-public-photo.cedar",
+      "sha256": "98b0ed427dfe53f5e77167de53df45df2050bf9daee26c624846d0d78af3d764"
+    },
+    {
+      "path": "transcription/cedar-shallow/lispex/owner-or-public-photo.lspx",
+      "sha256": "247bd8e123c18498e00737f1ce54c51ad0b208a460670638de2fe35edd3bde30"
+    },
+    {
+      "path": "scripts/cedar-shallow-oracle-lib.mjs",
+      "sha256": "85036f12b6e2f6f663173c153ec9b4b1349cd47081239efdabf5e3dd9447878a"
+    },
+    {
+      "path": "scripts/check-cedar-shallow-oracle.mjs",
+      "sha256": "116a2133ed07d54ea7a947c46c46d46d5c1bd9e71761f5c485a14e27e3d72f75"
+    },
+    {
+      "path": "scripts/gen-cedar-shallow-oracle.mjs",
+      "sha256": "558cd9bb61258df9f25edffd28e662e06a087b530b123986e01a0c3e0505cbce"
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "cedar-specific-photo",
+      "source_system": "Cedar",
+      "upstream_version": "cedar-policy-language-reference-v4.5-shallow-examples",
+      "upstream_commit_or_container": "not-used-local-policy-text",
+      "parameter_data_hashes": [],
+      "comparability": "after-declared-map",
+      "input_map": "lispex-list-to-cedar-request/v0",
+      "output_map": "cedar-decision-to-lispex-decision/v0",
+      "oracle_strength": "documented-example-compatible-local-evaluator",
+      "upstream_policy_path": "transcription/cedar-shallow/policies/specific-photo.cedar",
+      "lispex_source_path": "transcription/cedar-shallow/lispex/specific-photo.lspx"
+    },
+    {
+      "rule_id": "cedar-owner-or-public-photo",
+      "source_system": "Cedar",
+      "upstream_version": "cedar-policy-language-reference-v4.5-shallow-examples",
+      "upstream_commit_or_container": "not-used-local-policy-text",
+      "parameter_data_hashes": [],
+      "comparability": "after-declared-map",
+      "input_map": "lispex-list-to-cedar-request/v0",
+      "output_map": "cedar-decision-to-lispex-decision/v0",
+      "oracle_strength": "documented-example-compatible-local-evaluator",
+      "upstream_policy_path": "transcription/cedar-shallow/policies/owner-or-public-photo.cedar",
+      "lispex_source_path": "transcription/cedar-shallow/lispex/owner-or-public-photo.lspx"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 0
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "56f27747d94d0d5cf0b7775b7ce7432d4459918b93dac6fdda56d046c225721c"
+      },
+      "input_datum": "(\"alice\" \"view\" \"VacationPhoto94.jpg\")",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto94.jpg"
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 1
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "9867826defe114d88a9a87ca10f73e594191a67fea34f0cda76121696a90fe0e"
+      },
+      "input_datum": "(\"alice\" \"view\" \"VacationPhoto95.jpg\")",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto95.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 2
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "e858f30dcf7fb1f92ea2a8349e2fec7cbc8b35c3b4083c2424ca378a16fb1e5c"
+      },
+      "input_datum": "(\"alice\" \"view\" \"Report.pdf\")",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "view",
+        "resource": {
+          "type": "Document",
+          "id": "Report.pdf"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 3
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "fce271ddab2630921f7bafbe5eb4c8d2b87889776e328ac56facc8e5dfeb0428"
+      },
+      "input_datum": "(\"alice\" \"view\" \"\")",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": ""
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 4
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "88c159b8a134528e4ada2461d9b57c0bc417f39566e3ca3b5d1f9341db38ab9d"
+      },
+      "input_datum": "(\"alice\" \"edit\" \"VacationPhoto94.jpg\")",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto94.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 5
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "01aebda81ab9797dd4dfb77b7a5494eae9804e5f09b6df73a73b8b54d1ec0f0d"
+      },
+      "input_datum": "(\"alice\" \"edit\" \"VacationPhoto95.jpg\")",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto95.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 6
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "5bd282a40051e32af2ab91e9b4a495531b40aca2fa821ad30d9c38b12577d9d7"
+      },
+      "input_datum": "(\"alice\" \"edit\" \"Report.pdf\")",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "edit",
+        "resource": {
+          "type": "Document",
+          "id": "Report.pdf"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 7
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "3d5d14df013162f59c1f225e6cfacf8ba3369d4173f21d149c5b3027ec9c6e8b"
+      },
+      "input_datum": "(\"alice\" \"edit\" \"\")",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": ""
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 8
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "fbf952f1fee961079471128f3667aeb396bd4bace917027b3638cbf737bd7c67"
+      },
+      "input_datum": "(\"bob\" \"view\" \"VacationPhoto94.jpg\")",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto94.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 9
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "a70f115d3039f97505c8ae504ef2c5ec84eb6c7dc4dd6c57a2ff7eb8577434c1"
+      },
+      "input_datum": "(\"bob\" \"view\" \"VacationPhoto95.jpg\")",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto95.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 10
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "7470dc8672b6920afe9b93027202d6fd922f5f2d88a88a4817373038eb2f2805"
+      },
+      "input_datum": "(\"bob\" \"view\" \"Report.pdf\")",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "view",
+        "resource": {
+          "type": "Document",
+          "id": "Report.pdf"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 11
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "52d93b3c0ad93beca96d9256f96b0396d0ab78011e61d5b0824ceafce95c3b9a"
+      },
+      "input_datum": "(\"bob\" \"view\" \"\")",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": ""
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 12
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "88de9c5c154054095ef051af02532408908ccc4e10edad9968947bba36cbf528"
+      },
+      "input_datum": "(\"bob\" \"edit\" \"VacationPhoto94.jpg\")",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto94.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 13
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "a1b3f7268d0c839430fd80e60db1c96f50179ad790cd7d18e803586680f3cc9a"
+      },
+      "input_datum": "(\"bob\" \"edit\" \"VacationPhoto95.jpg\")",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto95.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 14
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "000fb2fcb6c60a6aa00787f782ae6707af8e2f9dd58a91d6e5c39e2ac1bad35d"
+      },
+      "input_datum": "(\"bob\" \"edit\" \"Report.pdf\")",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "edit",
+        "resource": {
+          "type": "Document",
+          "id": "Report.pdf"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 15
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "8a220182282a55fcf0a09cb725875e505ce0b60530f27b01059b7af6abc245da"
+      },
+      "input_datum": "(\"bob\" \"edit\" \"\")",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": ""
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 16
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "d8cd1b4eb13482d462669a10964c1bd8968c5f378539cdea3df5622d5f1c0b9e"
+      },
+      "input_datum": "(\"carol\" \"view\" \"VacationPhoto94.jpg\")",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto94.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 17
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "77c97a47f1bf1b14d7037817f78584825be3f3e61acfc7e6840b3447b874a624"
+      },
+      "input_datum": "(\"carol\" \"view\" \"VacationPhoto95.jpg\")",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto95.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 18
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "bea3b3dc567f6a2c44a58bcc3f2a62a1e7bdc586772297746494366e1b98a13e"
+      },
+      "input_datum": "(\"carol\" \"view\" \"Report.pdf\")",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "view",
+        "resource": {
+          "type": "Document",
+          "id": "Report.pdf"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 19
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "7779a71bb12ee6f26010f476ff719b7a2c5723297040861456565c34eefc9851"
+      },
+      "input_datum": "(\"carol\" \"view\" \"\")",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": ""
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 20
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "c8007995c30640eabbc2f81baa04b873590f6a201282a7060cc1a45e4dc59a4c"
+      },
+      "input_datum": "(\"carol\" \"edit\" \"VacationPhoto94.jpg\")",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto94.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 21
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "40c84172bc65be0694cc4661047fba0ca559f159491c8f195ecf3ff6174767a3"
+      },
+      "input_datum": "(\"carol\" \"edit\" \"VacationPhoto95.jpg\")",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto95.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 22
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "6a65156655a0269bbe37090df2858c5a8d25a16c975e34121778a7166c0f74ed"
+      },
+      "input_datum": "(\"carol\" \"edit\" \"Report.pdf\")",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "edit",
+        "resource": {
+          "type": "Document",
+          "id": "Report.pdf"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 23
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "7235003f74509ffa8aa437a3f514f8684ea9f7959b00e40654fb937dc74ff5ee"
+      },
+      "input_datum": "(\"carol\" \"edit\" \"\")",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": ""
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 24
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "684f1919d906db8e6298483a1babef2ca022e59ed48919223fe2786282c62f73"
+      },
+      "input_datum": "(\"admin\" \"view\" \"VacationPhoto94.jpg\")",
+      "upstream_input": {
+        "principal": "admin",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto94.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 25
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "791b1100e1e0065669d3cebd5cfcda2eeee27e460418c2feadc193750e706c37"
+      },
+      "input_datum": "(\"admin\" \"view\" \"VacationPhoto95.jpg\")",
+      "upstream_input": {
+        "principal": "admin",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto95.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 26
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "3ff6509fcd7bfdcd54cfd083fc5a052b57991c21c020a47d2bdbe310a80535e7"
+      },
+      "input_datum": "(\"admin\" \"view\" \"Report.pdf\")",
+      "upstream_input": {
+        "principal": "admin",
+        "action": "view",
+        "resource": {
+          "type": "Document",
+          "id": "Report.pdf"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 27
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "a2589d1ce7a8b92fc4230f9d73e991ee62576872c7a9db3dc86db7d4aee734ef"
+      },
+      "input_datum": "(\"admin\" \"view\" \"\")",
+      "upstream_input": {
+        "principal": "admin",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "id": ""
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 28
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "992db85ab7bc936fbf1b4c2891ead7dd2ff471c7825ce0c4aa8150d7704b4b62"
+      },
+      "input_datum": "(\"admin\" \"edit\" \"VacationPhoto94.jpg\")",
+      "upstream_input": {
+        "principal": "admin",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto94.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 29
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "4efe3b5d879d289e29309392c5eb05ab013f6e8c363dfeea20ccc87dd1f5f021"
+      },
+      "input_datum": "(\"admin\" \"edit\" \"VacationPhoto95.jpg\")",
+      "upstream_input": {
+        "principal": "admin",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": "VacationPhoto95.jpg"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 30
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "7f6974538934fcdda789874432114269030fddb6f9cd463aff9bf5443f0e0da6"
+      },
+      "input_datum": "(\"admin\" \"edit\" \"Report.pdf\")",
+      "upstream_input": {
+        "principal": "admin",
+        "action": "edit",
+        "resource": {
+          "type": "Document",
+          "id": "Report.pdf"
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 31
+      },
+      "rule_id": "cedar-specific-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "ad1afb5ab585895cdbbe6303cbf0cdecb5b8feb4f091a76af0d05581bd0f7aba"
+      },
+      "input_datum": "(\"admin\" \"edit\" \"\")",
+      "upstream_input": {
+        "principal": "admin",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "id": ""
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 0
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "0532de0528206ed1aa8c66c204805176ec125b0695be74ac15ee22706dac4464"
+      },
+      "input_datum": "(\"alice\" \"view\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 1
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "0532de0528206ed1aa8c66c204805176ec125b0695be74ac15ee22706dac4464"
+      },
+      "input_datum": "(\"alice\" \"view\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 2
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "ed16411205d709f252510ba65dcc2440cf06f0529929064fb86f0f5a6f177d0e"
+      },
+      "input_datum": "(\"alice\" \"view\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 3
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "ed16411205d709f252510ba65dcc2440cf06f0529929064fb86f0f5a6f177d0e"
+      },
+      "input_datum": "(\"alice\" \"view\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 4
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "3c737853c711bde5b94a8af525ef6c62507137bf26b05f1724c0642e77aa755b"
+      },
+      "input_datum": "(\"alice\" \"edit\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 5
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "3c737853c711bde5b94a8af525ef6c62507137bf26b05f1724c0642e77aa755b"
+      },
+      "input_datum": "(\"alice\" \"edit\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 6
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "e3aa797e39b60805986da1a3a938c40dad717e1d0cbc79b35eb64732be159147"
+      },
+      "input_datum": "(\"alice\" \"edit\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 7
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "e3aa797e39b60805986da1a3a938c40dad717e1d0cbc79b35eb64732be159147"
+      },
+      "input_datum": "(\"alice\" \"edit\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "alice",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 8
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "061e91ab275fed5c4c8de62a2f0819978ce7bfe8b2aa79166eb6dffa75535557"
+      },
+      "input_datum": "(\"bob\" \"view\" \"Photo\" \"bob\" #t)",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "bob",
+          "private": true
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 9
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "da0f61c2b5a9f18b788902a7e58691c42815a1ce667fc271219c79fa1d435cbc"
+      },
+      "input_datum": "(\"bob\" \"view\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 10
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "4bddba1c187c206a5bd6a6992e0ec359dc9295585c385a2a323af9d0848c9e43"
+      },
+      "input_datum": "(\"bob\" \"view\" \"Photo\" \"bob\" #f)",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "bob",
+          "private": false
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 11
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "182861e70ca6d5dd2e0366a9d8bb0bc07f2943228c349e282588b86af40054d1"
+      },
+      "input_datum": "(\"bob\" \"view\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 12
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "dfe01e18ba19751c1f88d30b0598bf414cd2b5d132a6a95ce6e076e98be22aa7"
+      },
+      "input_datum": "(\"bob\" \"edit\" \"Photo\" \"bob\" #t)",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "bob",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 13
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "8bee5d8a2a7ff7af98a4cd47855c9c84580d1374db825e4604880925b2f452f8"
+      },
+      "input_datum": "(\"bob\" \"edit\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 14
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "7fe1abc58ad8c006a4138bdd80d155ebc66acc1aad1508ac4d2addf67bc06ea6"
+      },
+      "input_datum": "(\"bob\" \"edit\" \"Photo\" \"bob\" #f)",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "bob",
+          "private": false
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 15
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "f94fcc1d928e7fe962cda58e7d18bfdb856e9318ca67c8c3e7a16c11b6c3d958"
+      },
+      "input_datum": "(\"bob\" \"edit\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "bob",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 16
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "fbfb9e1846d26620aefadc7fd66a116d16db172f59415370904f468c0195459d"
+      },
+      "input_datum": "(\"carol\" \"view\" \"Photo\" \"carol\" #t)",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "carol",
+          "private": true
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 17
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "6989c2d03c7d3991910af49adf8d3125af12b3c5b8fac88e7ed33011a995381f"
+      },
+      "input_datum": "(\"carol\" \"view\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 18
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "fbf04d5f65d1e130e5a692678e9f453b161f497c9621e9258f3cfe9b2f221dd7"
+      },
+      "input_datum": "(\"carol\" \"view\" \"Photo\" \"carol\" #f)",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "carol",
+          "private": false
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 19
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "55fd471fa893639940e3b266945a74f977a4972598ea431ff65683b5d185d8dd"
+      },
+      "input_datum": "(\"carol\" \"view\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 20
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "82e6667c306d8e1687eaef86a51c33120cb422aa6f3e4bbdeb97da6727ac5b11"
+      },
+      "input_datum": "(\"carol\" \"edit\" \"Photo\" \"carol\" #t)",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "carol",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 21
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "753417be1134f8b7c3aed7ab5b0c5caf473adb4bf107dba9438089825cfda6cd"
+      },
+      "input_datum": "(\"carol\" \"edit\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 22
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "24bdbe7f94f4b6bcff82c220eb5ed7107641dd4b3b876501d7928ccc4bd13302"
+      },
+      "input_datum": "(\"carol\" \"edit\" \"Photo\" \"carol\" #f)",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "carol",
+          "private": false
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 23
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "43681b18915b6afcca887fa4ec88ac0d8b29091190725a2c577f4381dd6c000a"
+      },
+      "input_datum": "(\"carol\" \"edit\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "carol",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 24
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "6626b1f399495f15cc5974e3feb75c4f208f672fa9f89c1e86747791eb73ccb7"
+      },
+      "input_datum": "(\"dana\" \"view\" \"Photo\" \"dana\" #t)",
+      "upstream_input": {
+        "principal": "dana",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "dana",
+          "private": true
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 25
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "5e44f77f063d42a8fbaa2f264b226fb619df849ae069294e64f12af0cf507b0c"
+      },
+      "input_datum": "(\"dana\" \"view\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "dana",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 26
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "0f71bbcdae50241ef64d0c326d4bd90e1b12c3c67812e00063b1ff494ba500e2"
+      },
+      "input_datum": "(\"dana\" \"view\" \"Photo\" \"dana\" #f)",
+      "upstream_input": {
+        "principal": "dana",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "dana",
+          "private": false
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 27
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "d4fbc4da2670ce6c3d6f8a06c5ca94efd50f5aa6a6b8553971839b39fec6d46d"
+      },
+      "input_datum": "(\"dana\" \"view\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "dana",
+        "action": "view",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "permit",
+      "mapped_upstream_decision": "(decision allow)",
+      "lispex_transcript": [
+        "(decision allow)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 28
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "93ea58c460e24ffa9be7aaab25fbe0e1932c720931a4b8f6d44b17200ed2e601"
+      },
+      "input_datum": "(\"dana\" \"edit\" \"Photo\" \"dana\" #t)",
+      "upstream_input": {
+        "principal": "dana",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "dana",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 29
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "c9add8766bed4fed6631aab06fef07ebfbec223987ac1696f190b4cd33a7044e"
+      },
+      "input_datum": "(\"dana\" \"edit\" \"Photo\" \"alice\" #t)",
+      "upstream_input": {
+        "principal": "dana",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": true
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 30
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "19ea5054022082024080246ddf00f155888a35fb877db0400236e697b9334915"
+      },
+      "input_datum": "(\"dana\" \"edit\" \"Photo\" \"dana\" #f)",
+      "upstream_input": {
+        "principal": "dana",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "dana",
+          "private": false
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    },
+    {
+      "case_id": {
+        "generator_commit": "b490bbc021557b9d1f7cb49183127de12b6baa62",
+        "seed": "W2.1-cedar-shallow-oracle-0001",
+        "index": 31
+      },
+      "rule_id": "cedar-owner-or-public-photo",
+      "input_hash": {
+        "domain": "csk/profile-input-hash/v0",
+        "hex": "a04944b9b9ae68e20bff8c5f196983c62a739b21fbb7d0cae4ada9682ba38407"
+      },
+      "input_datum": "(\"dana\" \"edit\" \"Photo\" \"alice\" #f)",
+      "upstream_input": {
+        "principal": "dana",
+        "action": "edit",
+        "resource": {
+          "type": "Photo",
+          "owner": "alice",
+          "private": false
+        }
+      },
+      "upstream_output": "deny",
+      "mapped_upstream_decision": "(decision deny)",
+      "lispex_transcript": [
+        "(decision deny)"
+      ],
+      "receipt_comparison_status": "agree",
+      "fault_class": null,
+      "outcome": "agree",
+      "first_divergence": null,
+      "cause": null,
+      "resolution": null
+    }
+  ],
+  "partiality_audit": [
+    {
+      "rule_id": "cedar-specific-photo",
+      "partial_intrinsics": [
+        "car",
+        "cdr",
+        "string=?",
+        "and"
+      ],
+      "disposition": "schema-in-domain",
+      "invariant": "generated requests are fixed-arity and typed so list access and string predicates remain in-domain"
+    },
+    {
+      "rule_id": "cedar-owner-or-public-photo",
+      "partial_intrinsics": [
+        "car",
+        "cdr",
+        "string=?",
+        "and",
+        "or",
+        "not"
+      ],
+      "disposition": "schema-in-domain",
+      "invariant": "generated requests are fixed-arity and typed so list access and string predicates remain in-domain"
+    }
+  ],
+  "summary": {
+    "rule_count": 2,
+    "case_count": 64,
+    "by_outcome": {
+      "agree": 64,
+      "disagree": 0,
+      "not-run": 0
+    },
+    "direct_or_after_map_comparable_count": 64,
+    "fault_derived_not_comparable_count": 0,
+    "agree_rate": "64/64"
+  },
+  "boundary": {
+    "attests": [
+      "cedar-shallow-transcription-fidelity-oracle",
+      "declared-input-output-map-comparison",
+      "case-input-hash-pinning",
+      "partiality-audit-recorded",
+      "fault-derived-not-comparable-zero"
+    ],
+    "excludes": [
+      "external-independent-verification",
+      "full-cedar-language-coverage",
+      "cedar-analysis-symbolic-guarantee",
+      "policy-correctness",
+      "upstream-engine-completeness",
+      "semantic-equivalence",
+      "receipt-authenticity"
+    ]
+  }
+}

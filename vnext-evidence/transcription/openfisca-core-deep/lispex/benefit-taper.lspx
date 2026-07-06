@@ -1,0 +1,25 @@
+(begin
+  (define income (car input))
+  (define size (car (cdr input)))
+  (define disabled? (car (cdr (cdr input))))
+  (define senior? (car (cdr (cdr (cdr input)))))
+  (define (bool-bonus flag amount)
+    (if flag amount 0))
+  (define invalid?
+    (or (< income 0) (< size 1)))
+  (define base
+    (+ 5000
+       (+ (* size 1200)
+          (+ (bool-bonus disabled? 1500)
+             (bool-bonus senior? 900)))))
+  (define band1
+    (quotient (min (max (- income 8000) 0) 12000) 4))
+  (define band2
+    (quotient (max (- income 20000) 0) 2))
+  (define amount
+    (max 0 (- base (+ band1 band2))))
+  (if invalid?
+      '(decision invalid-input bad-input)
+      (if (> amount 0)
+          (list 'decision 'amount amount 'benefit-taper)
+          '(decision deny income-too-high))))

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vouch.cedar-shallow-oracle.schema.v0",
+  "type": "object",
+  "required": [
+    "cedar_shallow_oracle",
+    "version",
+    "generator",
+    "source_snapshot",
+    "rules",
+    "cases",
+    "partiality_audit",
+    "summary",
+    "boundary"
+  ],
+  "properties": {
+    "cedar_shallow_oracle": {
+      "const": "vouch.cedar-shallow-oracle/v0"
+    },
+    "version": {
+      "type": "string"
+    },
+    "generator": {
+      "type": "object"
+    },
+    "source_snapshot": {
+      "type": "array"
+    },
+    "rules": {
+      "type": "array"
+    },
+    "cases": {
+      "type": "array"
+    },
+    "partiality_audit": {
+      "type": "array"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "boundary": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,7 @@
+(define days-since-delivery (car input))
+(define opened? (car (cdr input)))
+
+(if (and (<= days-since-delivery 14)
+         (not opened?))
+    '(decision allow)
+    '(decision deny outside-refund-window))

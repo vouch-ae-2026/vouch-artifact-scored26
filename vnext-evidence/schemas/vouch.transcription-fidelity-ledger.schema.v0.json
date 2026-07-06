@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vouch.transcription-fidelity-ledger.schema.v0",
+  "type": "object",
+  "required": [
+    "transcription_fidelity_ledger",
+    "version",
+    "generator",
+    "source_manifests",
+    "rules",
+    "cases",
+    "summary",
+    "boundary"
+  ],
+  "properties": {
+    "transcription_fidelity_ledger": {
+      "const": "vouch.transcription-fidelity-ledger/v0"
+    },
+    "version": {
+      "type": "string"
+    },
+    "generator": {
+      "type": "object"
+    },
+    "source_manifests": {
+      "type": "array"
+    },
+    "rules": {
+      "type": "array"
+    },
+    "cases": {
+      "type": "array"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "boundary": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

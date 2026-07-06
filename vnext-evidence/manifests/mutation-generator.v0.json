@@ -1,0 +1,306 @@
+{
+  "mutation_generator": "vouch.mutation-generator/v0",
+  "version": "1.3.11",
+  "generator": {
+    "script": "scripts/check-mutation-generator.mjs",
+    "seed": "W1.4-mutation-generator-0001",
+    "mode": "deterministic-property-mapped-mutations",
+    "base_artifacts": {
+      "native_receipt": "examples/vouch-loop/expected/refund-window.json",
+      "bridge_report": "examples/vouch-bridge/reports/checkout-discount.bridge.json",
+      "bridge_context_manifest": "examples/vouch-bridge/context/checkout-discount.context.json"
+    }
+  },
+  "properties": {
+    "P4_bridge_canonical_idempotence": true,
+    "P4_native_canonical_idempotence": true,
+    "P5_binding_soundness": true,
+    "P6_boundary_exactness": true,
+    "P7_diagnostic_precision": true
+  },
+  "summary": {
+    "case_count": 15,
+    "active_case_count": 15,
+    "active_caught_count": 15,
+    "wrong_failure_class_count": 0,
+    "active_not_caught_count": 0,
+    "expected_fail_documented_count": 0,
+    "expected_fail_current_accept_count": 0
+  },
+  "cases": [
+    {
+      "id": "mg-bridge-compact-json",
+      "mode": "active",
+      "property": "P4-canonical-idempotence",
+      "artifact_class": "bridge-report",
+      "mutation_class": "canonical-byte-mutation",
+      "gate": "bridge-verify",
+      "expected_failure": "non-canonical-artifact-json",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "non-canonical-artifact-json"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-bridge-crlf-json",
+      "mode": "active",
+      "property": "P4-canonical-idempotence",
+      "artifact_class": "bridge-report",
+      "mutation_class": "canonical-byte-mutation",
+      "gate": "bridge-verify",
+      "expected_failure": "non-canonical-artifact-json",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "non-canonical-artifact-json"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-bridge-duplicate-key",
+      "mode": "active",
+      "property": "P4-canonical-idempotence",
+      "artifact_class": "bridge-report",
+      "mutation_class": "canonical-byte-mutation",
+      "gate": "bridge-verify",
+      "expected_failure": "non-canonical-artifact-json",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "non-canonical-artifact-json"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-native-compact-json",
+      "mode": "active",
+      "property": "P4-native-canonical-idempotence",
+      "artifact_class": "native-receipt",
+      "mutation_class": "canonical-byte-mutation",
+      "gate": "native-verify",
+      "expected_failure": "non-canonical-artifact-json",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "non-canonical-artifact-json"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-native-crlf-json",
+      "mode": "active",
+      "property": "P4-native-canonical-idempotence",
+      "artifact_class": "native-receipt",
+      "mutation_class": "canonical-byte-mutation",
+      "gate": "native-verify",
+      "expected_failure": "non-canonical-artifact-json",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "non-canonical-artifact-json"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-native-duplicate-key",
+      "mode": "active",
+      "property": "P4-native-canonical-idempotence",
+      "artifact_class": "native-receipt",
+      "mutation_class": "canonical-byte-mutation",
+      "gate": "native-verify",
+      "expected_failure": "non-canonical-artifact-json",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "non-canonical-artifact-json"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-wrong-source-bytes",
+      "mode": "active",
+      "property": "P5-binding-soundness",
+      "artifact_class": "bridge-report",
+      "mutation_class": "wrong-supplied-bytes",
+      "gate": "bridge-verify",
+      "expected_failure": "source-hash-mismatch",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "source-byte-len-mismatch",
+        "source-hash-mismatch"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-wrong-target-bytes",
+      "mode": "active",
+      "property": "P5-binding-soundness",
+      "artifact_class": "bridge-report",
+      "mutation_class": "wrong-supplied-bytes",
+      "gate": "bridge-verify",
+      "expected_failure": "target-hash-mismatch",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "target-byte-len-mismatch",
+        "target-hash-mismatch"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-wrong-linked-artifact-bytes",
+      "mode": "active",
+      "property": "P5-binding-soundness",
+      "artifact_class": "bridge-report",
+      "mutation_class": "wrong-supplied-bytes",
+      "gate": "bridge-verify",
+      "expected_failure": "linked-artifact-hash-mismatch",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "linked-artifact-hash-mismatch"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-wrong-context-capability",
+      "mode": "active",
+      "property": "P5-binding-soundness",
+      "artifact_class": "context-manifest",
+      "mutation_class": "context-mismatch",
+      "gate": "bridge-verify",
+      "expected_failure": "context-capability-ids-mismatch",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "context-capability-ids-mismatch"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-bridge-boundary-weakening",
+      "mode": "active",
+      "property": "P6-boundary-exactness",
+      "artifact_class": "bridge-report",
+      "mutation_class": "boundary-weakening",
+      "gate": "bridge-verify",
+      "expected_failure": "boundary-excludes-mismatch",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "boundary-excludes-mismatch"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-native-boundary-weakening",
+      "mode": "active",
+      "property": "P6-boundary-exactness",
+      "artifact_class": "native-receipt",
+      "mutation_class": "boundary-weakening",
+      "gate": "native-verify",
+      "expected_failure": "boundary-excludes-mismatch",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "boundary-excludes-mismatch"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-bridge-trust-field-smuggling",
+      "mode": "active",
+      "property": "P7-diagnostic-precision",
+      "artifact_class": "bridge-report",
+      "mutation_class": "trust-field-smuggling",
+      "gate": "bridge-verify",
+      "expected_failure": "unknown-field:subject.route.verified_by",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "unknown-field:subject.route.verified_by"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-bridge-target-hash-domain-substitution",
+      "mode": "active",
+      "property": "P7-diagnostic-precision",
+      "artifact_class": "bridge-report",
+      "mutation_class": "hash-domain-substitution",
+      "gate": "bridge-verify",
+      "expected_failure": "target-hash-domain",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "target-hash-domain"
+      ],
+      "status": "caught"
+    },
+    {
+      "id": "mg-native-self-hash-smuggling",
+      "mode": "active",
+      "property": "P7-diagnostic-precision",
+      "artifact_class": "native-receipt",
+      "mutation_class": "trust-field-smuggling",
+      "gate": "native-verify",
+      "expected_failure": "unknown-top-level-field:self_hash",
+      "future_expected_failure": null,
+      "future_work_id": null,
+      "actual_accept": false,
+      "exit_code": 1,
+      "failure_head": [
+        "unknown-top-level-field:self_hash"
+      ],
+      "status": "caught"
+    }
+  ],
+  "boundary": {
+    "attests": [
+      "deterministic-property-mapped-mutation-set",
+      "P4-bridge-canonical-idempotence-active",
+      "P5-binding-soundness-active",
+      "P6-boundary-exactness-active",
+      "P7-diagnostic-precision-active",
+      "P4-native-canonical-idempotence-active"
+    ],
+    "excludes": [
+      "exhaustive-mutation-generation",
+      "randomized-fuzzing",
+      "duplicate-key-diagnostic-claim",
+      "semantic-equivalence",
+      "receipt-authenticity"
+    ]
+  }
+}

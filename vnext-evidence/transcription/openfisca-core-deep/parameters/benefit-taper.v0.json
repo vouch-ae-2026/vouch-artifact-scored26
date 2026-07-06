@@ -1,0 +1,13 @@
+{
+  "benefit_parameters": "vouch.openfisca-core-benefit-taper-parameters/v0",
+  "period": "2026",
+  "base": 5000,
+  "per_person": 1200,
+  "disability_bonus": 1500,
+  "senior_bonus": 900,
+  "threshold_1": 8000,
+  "width_1": 12000,
+  "divisor_1": 4,
+  "threshold_2": 20000,
+  "divisor_2": 2
+}

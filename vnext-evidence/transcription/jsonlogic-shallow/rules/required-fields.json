@@ -1,0 +1,21 @@
+{
+  "rule": {
+    "and": [
+      {
+        "var": "field_a"
+      },
+      {
+        "var": "field_b"
+      }
+    ]
+  },
+  "input_map": {
+    "type": "lispex-list-to-json-object/v0",
+    "fields": ["field_a", "field_b"]
+  },
+  "output_map": {
+    "type": "jsonlogic-boolean-to-decision/v0",
+    "true": "(decision allow)",
+    "false": "(decision invalid-input missing-required-field)"
+  }
+}

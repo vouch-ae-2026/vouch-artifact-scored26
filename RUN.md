@@ -4,6 +4,12 @@
 npm run check
 ```
 
+Additional vNext evidence check:
+
+```sh
+node vnext-evidence/scripts/check-vnext-evidence.mjs
+```
+
 The check command runs:
 
 - Vouch Bridge positive verification with source, target, linked-artifact bytes, and expected-context manifest.

@@ -1,0 +1,4 @@
+(if (and (< (car input) 110)
+         (string=? (car (cdr input)) "apple"))
+    '(decision allow)
+    '(decision deny wait))
