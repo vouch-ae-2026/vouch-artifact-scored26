@@ -4,7 +4,7 @@ This double-blind bundle contains the public artifact-checking surface used by t
 
 It does not contain the private Rust reference-interpreter implementation, private adapters, commercial infrastructure, git history, or receipt-generation path. Native receipt generation uses the Rust reference interpreter and is outside this public checking surface. This bundle checks committed artifacts, report boundaries, and expected hashes.
 
-Anonymization policy:
+The bundle follows an anonymization policy.
 
 - Author, organization, email, commercial-product, and private-engine strings were scrubbed from bundle text.
 - The bundle is delivered as a no-history tarball.
@@ -18,7 +18,7 @@ Run `npm run check` from this directory to reproduce the bundle checks.
 The `vnext-evidence/` directory adds post-baseline evidence records without
 replacing the original contracts, receipts, or expected hashes.
 
-It contains:
+It contains these items.
 
 - transcription-fidelity records for five mapped rules across JSON Logic, Cedar,
   and OpenFisca Core
