@@ -1,0 +1,130 @@
+{
+  "boundary": {
+    "statement_sha256": "3808de6659be06e869b89b24cc760320f93a807ab27ee810c0e481ec41d7c948"
+  },
+  "canonical": {
+    "normalized_bytes_b64": "bGlzcGV4LmNvcmUuY2Fub25pY2FsL3YwCihpZiAocXVvdGUgI3QpIChxdW90ZSAxKSAocXVvdGUgMikpCg==",
+    "normalized_sha256": "6370669567806f2bec39f3a2cb197d3b02d730fefcf252b3b48f98adf15d9ebc"
+  },
+  "comparison": {
+    "comparison_unavailable_at": null,
+    "first_divergence_index": 0,
+    "status": "disagree"
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "executable_sha256": "sha256:fa7f59c07f642379f0ba2188860527fce07ea77097a3496e4ffe935f929f2cf0",
+    "target_triple": "x86_64-unknown-linux-gnu"
+  },
+  "execution": {
+    "build_commit": "44cd740d8615cfeb82b047520bcdfb5111d49d19",
+    "build_variant": "mutant",
+    "context_digest": "cb8c9b25f7b5ac4a91a710c839cfe60a7499003b39aa58c53f9edd96d8705e7e",
+    "executable_sha256": "sha256:fa7f59c07f642379f0ba2188860527fce07ea77097a3496e4ffe935f929f2cf0",
+    "invocation": "native-checked",
+    "lispex_version": "1.4.0",
+    "mutant_id": "M05",
+    "profile": "csk.checked-profile/v0",
+    "target_triple": "x86_64-unknown-linux-gnu"
+  },
+  "graph": {
+    "graph_sha256": "9d1f1f49e1431e001961b5b94aece698562a5c83312acb1aad50e733e13463c0",
+    "node_count": 4,
+    "value": {
+      "graph": "csk.graph/v0",
+      "nodes": [
+        {
+          "alternate": 3,
+          "consequent": 2,
+          "id": 0,
+          "op": "if",
+          "test": 1
+        },
+        {
+          "id": 1,
+          "op": "lit",
+          "value": {
+            "t": "bool",
+            "v": true
+          }
+        },
+        {
+          "id": 2,
+          "op": "lit",
+          "value": {
+            "t": "int",
+            "v": "1"
+          }
+        },
+        {
+          "id": 3,
+          "op": "lit",
+          "value": {
+            "t": "int",
+            "v": "2"
+          }
+        }
+      ],
+      "roots": [
+        0
+      ]
+    }
+  },
+  "input": {
+    "byte_length": 62,
+    "canonical_value_sha256": "957c408c80fa1edd6b1dd0687b5e04c1bb1ca7892bbb04dac9d45d5859410663",
+    "sha256": "7f3f377e1e589581c2dbb3fde075e431dccc9b06e2d04d16c431d3ae65194cad"
+  },
+  "meaning_env": {
+    "graph_sha256": "9d1f1f49e1431e001961b5b94aece698562a5c83312acb1aad50e733e13463c0",
+    "meaning_env": "csk.meaning-env-report/v0",
+    "node_count": 4,
+    "terminal": {
+      "kind": "completed"
+    },
+    "transcript": {
+      "events": [
+        {
+          "form_index": 0,
+          "kind": "value",
+          "value": {
+            "t": "int",
+            "v": "1"
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "completed"
+      },
+      "transcript": "csk.transcript/v0"
+    },
+    "transcript_sha256": "0f0454520290bc70116e8cee9694677106dacaa644045b475813ee8ade550b96"
+  },
+  "reference": {
+    "terminal": {
+      "kind": "completed"
+    },
+    "transcript": {
+      "events": [
+        {
+          "form_index": 0,
+          "kind": "value",
+          "value": {
+            "t": "int",
+            "v": "2"
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "completed"
+      },
+      "transcript": "csk.transcript/v0"
+    },
+    "transcript_sha256": "e9db74746e3fdd16ea493455f0fc2ae177a9121fbcf9f58c6e2f1a3609ee1f07"
+  },
+  "source": {
+    "byte_length": 12,
+    "sha256": "dadd4c507b3792397b6150d9d727b4ca1e4831ccdccecf7e9ef00bc70ab648b2"
+  }
+}

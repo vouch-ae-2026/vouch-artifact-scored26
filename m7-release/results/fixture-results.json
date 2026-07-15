@@ -1,0 +1,1160 @@
+{
+  "fixture_report": "vouch.scored26-fixture/v0",
+  "fixture_results": {
+    "built": {
+      "expected": 163,
+      "matched": 163,
+      "mismatched": 0,
+      "skipped": 0
+    },
+    "design_target": {
+      "implemented": 0,
+      "listed": 0,
+      "matched": 0,
+      "not_implemented": 0
+    }
+  },
+  "results": [
+    {
+      "fixture_id": "N01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N02",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N03",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N04",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N05",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N06",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N07",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N08",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N09",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N10",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N11",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N12",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N13",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N14",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N15",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N16",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N17",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N18",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N19",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "N20",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J02",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J03",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J04",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J05",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J06",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J07",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J08",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J09",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J10",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J11",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J12",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J13",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J14",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "J15",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P02",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P03",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P04",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P05",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P06",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P07",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P08",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P09",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P10",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "P11",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B02",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B03",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B04",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B05",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B06",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B07",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B08",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B09",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B10",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B11",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "B12",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "R01",
+      "implemented": true,
+      "matched": true,
+      "operation": "replay-manifest-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "R02",
+      "implemented": true,
+      "matched": true,
+      "operation": "replay-manifest-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "R03",
+      "implemented": true,
+      "matched": true,
+      "operation": "replay-manifest-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "R04",
+      "implemented": true,
+      "matched": true,
+      "operation": "replay-manifest-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "R05",
+      "implemented": true,
+      "matched": true,
+      "operation": "replay-manifest-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U01",
+      "implemented": true,
+      "matched": true,
+      "operation": "strict-union-baseline",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U02",
+      "implemented": true,
+      "matched": true,
+      "operation": "strict-union-baseline",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U03",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U04",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U05",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U06",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U07",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U08",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U09",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U10",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U11",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U12",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "U13",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "T01",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "T02",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I02",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I03",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I04",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I05",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I06",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I07",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I08",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I09",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I10",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I11",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I12",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "I13",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "G01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "G02",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "G03",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "C-VN-11",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "C-ISSUE-13",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "C-CAP-11",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "C-CAP-12",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "C-VN-12",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "C-REP-09",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-clean-room",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "A-19",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "C-ISSUE-09",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "C-REP-06",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-clean-room",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "A-4",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-publication",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L02",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-publication",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L03",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-publication",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L04",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-clean-room",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L05",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-workload-freeze",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L06",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L07",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L08",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L09",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-publication",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L10",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L11A",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L11B",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L12",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-publication",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L13",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L14",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-clean-room",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L15",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-clean-room",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L16",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L17",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-publication",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L18",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-clean-room",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L19",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-clean-room",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L20",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "L21",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S1-CROSS-WRITER-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "cross-writer-goldens",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S25-METER-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S2-VALUE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S2-INPUT-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S2-PROFILE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S2-GRAPH-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S2-TRANSCRIPT-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S2-DETERMINISM-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S2-RESOURCE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S3-STRUCTURE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S3-CLI-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S4-EVALUATORS-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S4-TOKENS-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S4-MUTATION-CFG-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S5-NATIVE-VERIFY-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S5-CLI-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S5-CAPABILITY-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S5-BRIDGE-BYTE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S5-VULNERABLE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S6-ISSUE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S6-KEY-AUDIT-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S6-ATOMIC-PUBLISH-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S6-CLI-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S6-PKCS8-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S7-BRIDGE-API-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "vouch-consumer-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S7-BRIDGE-CLI-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "rust-public-contract-lane",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S7-FIXTURE-GATE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "fixture-manifest-negative",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S8-WORKLOAD-FREEZE-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-workload-freeze",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S8-REPLAY-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "replay-manifest-public-api",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S8-WORKLOAD-RESULT-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-workload-results",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S9-MUTATION-MECHANISM-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-mutation-mechanism",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S9-MUTATION-RESULT-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-mutation-results",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S10-RELEASE-SCHEMA-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-schema",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S10-FINALIZER-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-finalizer",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S10-PUBLICATION-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-publication",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S10-SUPPLY-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-release-supply",
+      "scope": "built"
+    },
+    {
+      "fixture_id": "S10-CLEANROOM-01",
+      "implemented": true,
+      "matched": true,
+      "operation": "scored26-clean-room",
+      "scope": "built"
+    }
+  ]
+}

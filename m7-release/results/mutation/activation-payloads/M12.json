@@ -1,0 +1,107 @@
+{
+  "boundary": {
+    "statement_sha256": "3808de6659be06e869b89b24cc760320f93a807ab27ee810c0e481ec41d7c948"
+  },
+  "canonical": {
+    "normalized_bytes_b64": "bGlzcGV4LmNvcmUuY2Fub25pY2FsL3YwCihxdW90ZSAjdCkK",
+    "normalized_sha256": "ac7ec63918fd3bf1930921c1aa1754bcf58c3425e29ad19fbe8424e6551e2bbd"
+  },
+  "comparison": {
+    "comparison_unavailable_at": null,
+    "first_divergence_index": null,
+    "status": "agree"
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "executable_sha256": "sha256:8ae5878f501f5c27ff28368a8c46621ae2e8fa705a8b7db13910fdb9cce52ba2",
+    "target_triple": "x86_64-unknown-linux-gnu"
+  },
+  "execution": {
+    "build_commit": "44cd740d8615cfeb82b047520bcdfb5111d49d19",
+    "build_variant": "mutant",
+    "context_digest": "5903216dea10c62825850d4c8402b1c971bc06a3e88603f355fd210dd77b751e",
+    "executable_sha256": "sha256:8ae5878f501f5c27ff28368a8c46621ae2e8fa705a8b7db13910fdb9cce52ba2",
+    "invocation": "native-checked",
+    "lispex_version": "1.4.0",
+    "mutant_id": "M12",
+    "profile": "csk.checked-profile/v0",
+    "target_triple": "x86_64-unknown-linux-gnu"
+  },
+  "graph": {
+    "graph_sha256": "3c8a37ac3c4e9e0bbbc587275a5b855018702d2d829e278725080f07dd87d8f3",
+    "node_count": 1,
+    "value": {
+      "graph": "csk.graph/v0",
+      "nodes": [
+        {
+          "id": 0,
+          "op": "lit",
+          "value": {
+            "t": "bool",
+            "v": true
+          }
+        }
+      ],
+      "roots": [
+        0
+      ]
+    }
+  },
+  "input": {
+    "byte_length": 62,
+    "canonical_value_sha256": "957c408c80fa1edd6b1dd0687b5e04c1bb1ca7892bbb04dac9d45d5859410663",
+    "sha256": "7f3f377e1e589581c2dbb3fde075e431dccc9b06e2d04d16c431d3ae65194cad"
+  },
+  "meaning_env": {
+    "graph_sha256": "3c8a37ac3c4e9e0bbbc587275a5b855018702d2d829e278725080f07dd87d8f3",
+    "meaning_env": "csk.meaning-env-report/v0",
+    "node_count": 1,
+    "terminal": {
+      "kind": "completed"
+    },
+    "transcript": {
+      "events": [
+        {
+          "form_index": 0,
+          "kind": "value",
+          "value": {
+            "t": "bool",
+            "v": true
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "completed"
+      },
+      "transcript": "csk.transcript/v0"
+    },
+    "transcript_sha256": "3e5de2838b66d7ec7652629fcf3543aa5fd5e322864fe0c5fceea1e9124b9ef0"
+  },
+  "reference": {
+    "terminal": {
+      "kind": "completed"
+    },
+    "transcript": {
+      "events": [
+        {
+          "form_index": 0,
+          "kind": "value",
+          "value": {
+            "t": "bool",
+            "v": true
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "completed"
+      },
+      "transcript": "csk.transcript/v0"
+    },
+    "transcript_sha256": "933a22f708db3958f7cf4460847d038e0db006034806bcbc0820a2978f503fbb"
+  },
+  "source": {
+    "byte_length": 3,
+    "sha256": "86c16f20a6a21dc05e30a1d6340cdf7ce7425afed575a6aba8dfa87d9ed1c8af"
+  }
+}

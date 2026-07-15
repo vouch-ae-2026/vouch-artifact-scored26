@@ -1,0 +1,14 @@
+{
+  "chain_verified": "pass",
+  "claim_language_scan": "pass",
+  "clean_run_report_sha256": "sha256:ef5cb39477aa4419df06b0f6ff2211388710c2d6579ec7508d4a7991dcf4a984",
+  "failed_check": null,
+  "input_artifact": null,
+  "paper_claims_matched": true,
+  "primary_error": null,
+  "publication_report": "vouch.scored26-publication/v0",
+  "release_descriptor_sha256": "sha256:d7a3dccbd78d1ecbfe89093a949cee3f1567ae0c288535c2178b6b3ff14fbbb3",
+  "reproduction_observation_sha256": "sha256:b62a0b3e4f6e2baf4e8153ee56d3c1a9d8bd256bb44c6e85c0c0738b82c6b5f3",
+  "status": "pass",
+  "underlying_error": null
+}

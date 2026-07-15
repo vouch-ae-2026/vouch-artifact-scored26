@@ -1,0 +1,109 @@
+{
+  "cases": [
+    {
+      "baseline": "invalid-input",
+      "candidate_class": "invalid",
+      "case_id": "D001",
+      "changed": "invalid-input",
+      "decision_flip": false,
+      "stratum_id": "S18"
+    },
+    {
+      "baseline": "review",
+      "candidate_class": "boundary",
+      "case_id": "D002",
+      "changed": "review",
+      "decision_flip": false,
+      "stratum_id": "S01"
+    },
+    {
+      "baseline": "invalid-input",
+      "candidate_class": "invalid",
+      "case_id": "D003",
+      "changed": "invalid-input",
+      "decision_flip": false,
+      "stratum_id": "S42"
+    },
+    {
+      "baseline": "invalid-input",
+      "candidate_class": "invalid",
+      "case_id": "D004",
+      "changed": "invalid-input",
+      "decision_flip": false,
+      "stratum_id": "S31"
+    },
+    {
+      "baseline": "review",
+      "candidate_class": "boundary",
+      "case_id": "D005",
+      "changed": "approve",
+      "decision_flip": true,
+      "stratum_id": "S42"
+    },
+    {
+      "baseline": "invalid-input",
+      "candidate_class": "invalid",
+      "case_id": "D006",
+      "changed": "invalid-input",
+      "decision_flip": false,
+      "stratum_id": "S46"
+    },
+    {
+      "baseline": "approve",
+      "candidate_class": "boundary",
+      "case_id": "D008",
+      "changed": "approve",
+      "decision_flip": false,
+      "stratum_id": "S23"
+    },
+    {
+      "baseline": "deny",
+      "candidate_class": "interior",
+      "case_id": "D009",
+      "changed": "deny",
+      "decision_flip": false,
+      "stratum_id": "S45"
+    },
+    {
+      "baseline": "review",
+      "candidate_class": "boundary",
+      "case_id": "D010",
+      "changed": "approve",
+      "decision_flip": true,
+      "stratum_id": "S46"
+    },
+    {
+      "baseline": "deny",
+      "candidate_class": "interior",
+      "case_id": "D020",
+      "changed": "deny",
+      "decision_flip": false,
+      "stratum_id": "S18"
+    },
+    {
+      "baseline": "review",
+      "candidate_class": "interior",
+      "case_id": "D029",
+      "changed": "review",
+      "decision_flip": false,
+      "stratum_id": "S05"
+    },
+    {
+      "baseline": "deny",
+      "candidate_class": "interior",
+      "case_id": "D034",
+      "changed": "review",
+      "decision_flip": true,
+      "stratum_id": "S01"
+    }
+  ],
+  "role": "Retained smoke suite; not the principal workload result.",
+  "selection_protocol": "Four lowest split hashes per candidate class in the development partition.",
+  "smoke_suite": "vouch.scored26-smoke-suite/v0",
+  "summary": {
+    "cases": 12,
+    "decision_flips": 3,
+    "failed": 0,
+    "passed": 12
+  }
+}

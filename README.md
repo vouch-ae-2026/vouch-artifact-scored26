@@ -13,6 +13,21 @@ The bundle follows an anonymization policy.
 
 Run `npm run check` from this directory to reproduce the bundle checks.
 
+## Authenticated-Native M7 Release Addendum
+
+The m7-release directory adds the completed authenticated-native release chain
+and its pinned owner reports. It includes the signed descriptor D, clean-run
+report Q, signed observation R, publication record P, terminal report S, the
+fixture/workload/mutation/performance reports, the condition ledger, and the
+machine-rendered release record.
+
+The original baseline and vNext evidence remain in place. The M7 source archive
+is intentionally not copied into this double-blind bundle because it contains
+the private repository history. Its exact SHA-256 remains authenticated by D.
+
+The root check now runs the baseline, vNext, M7 chain, and whole-tree anonymity
+checks in one command.
+
 ## vNext Evidence Addendum
 
 The `vnext-evidence/` directory adds post-baseline evidence records without

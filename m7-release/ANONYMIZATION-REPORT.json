@@ -1,0 +1,26 @@
+{
+  "anonymization_report": "vouch.m7-anonymization-report/v0",
+  "scope": [
+    "m7-release",
+    "whole-anonymous-source-tree",
+    "reachable-anonymous-git-history"
+  ],
+  "policy": {
+    "signed_json_handling": "copied-byte-for-byte-without-text-replacement",
+    "private_source_archive_distributed": false,
+    "release_private_key_distributed": false,
+    "paper_status": "machine-rendered-release-record-not-submitted-manuscript"
+  },
+  "required_checks": [
+    "npm run check:m7",
+    "npm run check:anonymity",
+    "actual-release-key byte-pattern scan before push",
+    "PDF metadata and extracted-text identity scan before push"
+  ],
+  "negative_controls": [
+    "tampered DSSE payload is rejected",
+    "tampered owner-report bytes are rejected",
+    "identity-bearing text is rejected",
+    "private-key marker is rejected"
+  ]
+}

@@ -1,0 +1,2027 @@
+{
+  "condition_map": "vouch.scored26-condition-map/v0",
+  "contract_sha256": "edc53611c35f813f5e396d19b47524c13b8d064ac6cc79d288e3af2b718cbf76",
+  "conditions": [
+    {
+      "condition_id": "A-1",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked-profile execution lane",
+      "test_or_fixture_ids": ["S4-EVALUATORS-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-2",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked-profile execution lane",
+      "test_or_fixture_ids": ["S25-METER-01", "S4-EVALUATORS-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-01",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-02",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-03",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-04",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-05",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-06",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-07",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": ["S1-CROSS-WRITER-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-08",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-JSON-09",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": ["S10-RELEASE-SCHEMA-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-4",
+      "owner_module": "lispex::vouch_native::canonical_value",
+      "public_interface": "canonical contract value encoder",
+      "test_or_fixture_ids": ["S2-VALUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-1",
+      "owner_module": "lispex::vouch_native::checked_input",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S2-INPUT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-2",
+      "owner_module": "lispex::vouch_native::checked_input",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S2-INPUT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-3",
+      "owner_module": "lispex::vouch_native::checked_input",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S2-INPUT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-4",
+      "owner_module": "lispex::vouch_native::checked_input",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "not-started"
+    },
+    {
+      "condition_id": "P-5",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S2-PROFILE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-6",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S2-PROFILE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-7",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S2-PROFILE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-8",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S2-PROFILE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-9",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S4-EVALUATORS-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-10",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": ["S2-PROFILE-01", "S4-EVALUATORS-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "P-11",
+      "owner_module": "lispex::vouch_native::checked_input",
+      "public_interface": "checked input/profile contract lane",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "not-started"
+    },
+    {
+      "condition_id": "A-3",
+      "owner_module": "lispex::vouch_native::transcript",
+      "public_interface": "contract transcript types",
+      "test_or_fixture_ids": ["S3-STRUCTURE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-19",
+      "owner_module": "lispex::vouch_native::receipt",
+      "public_interface": "contract receipt model and consistency checks",
+      "test_or_fixture_ids": ["S2-TRANSCRIPT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-5",
+      "owner_module": "lispex::vouch_native::graph",
+      "public_interface": "contract graph type and validator",
+      "test_or_fixture_ids": ["S2-GRAPH-01", "S2-DETERMINISM-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-6",
+      "owner_module": "lispex::vouch_native::receipt",
+      "public_interface": "contract receipt model and consistency checks",
+      "test_or_fixture_ids": ["S3-STRUCTURE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-7",
+      "owner_module": "lispex::vouch_native::receipt",
+      "public_interface": "contract receipt model and consistency checks",
+      "test_or_fixture_ids": ["S3-STRUCTURE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-01",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-02",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-03",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-04",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-05",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-06",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": ["N01", "N03"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-07",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": ["R01", "S8-REPLAY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-08",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": ["S10-RELEASE-SCHEMA-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DSSE-09",
+      "owner_module": "vouch::dsse",
+      "public_interface": "DSSE encode and verify primitives",
+      "test_or_fixture_ids": ["L01", "L02", "S10-PUBLICATION-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-KEY-01",
+      "owner_module": "vouch::io_boundary",
+      "public_interface": "key and file provider boundaries",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-KEY-02",
+      "owner_module": "vouch::io_boundary",
+      "public_interface": "key and file provider boundaries",
+      "test_or_fixture_ids": ["S6-PKCS8-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-KEY-03",
+      "owner_module": "vouch::io_boundary",
+      "public_interface": "key and file provider boundaries",
+      "test_or_fixture_ids": ["S6-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-KEY-04",
+      "owner_module": "vouch::io_boundary",
+      "public_interface": "key and file provider boundaries",
+      "test_or_fixture_ids": ["S10-SUPPLY-01", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-KEY-05",
+      "owner_module": "vouch::io_boundary",
+      "public_interface": "key and file provider boundaries",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-KEY-06",
+      "owner_module": "vouch::io_boundary",
+      "public_interface": "key and file provider boundaries",
+      "test_or_fixture_ids": ["S5-NATIVE-VERIFY-01", "S6-ISSUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-KEY-07",
+      "owner_module": "vouch::io_boundary",
+      "public_interface": "key and file provider boundaries",
+      "test_or_fixture_ids": ["S6-KEY-AUDIT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-KEY-08",
+      "owner_module": "vouch::io_boundary",
+      "public_interface": "key and file provider boundaries",
+      "test_or_fixture_ids": ["S6-KEY-AUDIT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-POLICY-01",
+      "owner_module": "vouch::policy",
+      "public_interface": "native trust-policy parser and verifier",
+      "test_or_fixture_ids": ["S5-NATIVE-VERIFY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-POLICY-02",
+      "owner_module": "vouch::policy",
+      "public_interface": "native trust-policy parser and verifier",
+      "test_or_fixture_ids": ["S5-NATIVE-VERIFY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-POLICY-03",
+      "owner_module": "vouch::policy",
+      "public_interface": "native trust-policy parser and verifier",
+      "test_or_fixture_ids": ["S5-NATIVE-VERIFY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-POLICY-04",
+      "owner_module": "vouch::policy",
+      "public_interface": "native trust-policy parser and verifier",
+      "test_or_fixture_ids": ["P02"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-POLICY-05",
+      "owner_module": "vouch::policy",
+      "public_interface": "native trust-policy parser and verifier",
+      "test_or_fixture_ids": ["N10"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-POLICY-06",
+      "owner_module": "vouch::policy",
+      "public_interface": "native trust-policy parser and verifier",
+      "test_or_fixture_ids": ["N20"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-01",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-RELEASE-SCHEMA-01", "S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-02",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-03",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-04",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-05",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-06",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-RELEASE-SCHEMA-01", "S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-07",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-RELEASE-SCHEMA-01", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-08",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-09",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["L03", "S10-PUBLICATION-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ID-10",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": [
+        "L06",
+        "L07",
+        "L08",
+        "L10",
+        "L11A",
+        "L11B",
+        "L13",
+        "L16",
+        "L20",
+        "L21",
+        "S10-FINALIZER-01"
+      ],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-10",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["L18", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-8",
+      "owner_module": "lispex::vouch_native::test_support",
+      "public_interface": "compile-time mutation configuration",
+      "test_or_fixture_ids": ["S9-MUTATION-MECHANISM-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-9",
+      "owner_module": "lispex::vouch_native::test_support",
+      "public_interface": "compile-time mutation configuration",
+      "test_or_fixture_ids": ["S4-MUTATION-CFG-01", "S6-ISSUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-18",
+      "owner_module": "lispex::vouch_native::test_support",
+      "public_interface": "compile-time mutation configuration",
+      "test_or_fixture_ids": ["S4-MUTATION-CFG-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-01",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-02",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-03",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-ISSUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-04",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-ISSUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-05",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S4-TOKENS-01", "S6-ISSUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-06",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-ISSUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-07",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["C-ISSUE-13", "S6-ISSUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-08",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-KEY-AUDIT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-09",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["C-ISSUE-09", "S6-ATOMIC-PUBLISH-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-10",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-CLI-01", "S6-ATOMIC-PUBLISH-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-11",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-CLI-01", "S6-ISSUE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-12",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-KEY-AUDIT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-13",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["C-ISSUE-13", "S6-KEY-AUDIT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-ISSUE-14",
+      "owner_module": "lispex::vouch_native::issue",
+      "public_interface": "issue-native contract lane",
+      "test_or_fixture_ids": ["S6-CLI-01", "S6-KEY-AUDIT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VS-01",
+      "owner_module": "lispex::vouch_native::structural_verify",
+      "public_interface": "verify-structure contract lane",
+      "test_or_fixture_ids": ["S3-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VS-02",
+      "owner_module": "lispex::vouch_native::structural_verify",
+      "public_interface": "verify-structure contract lane",
+      "test_or_fixture_ids": ["S3-STRUCTURE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VS-03",
+      "owner_module": "lispex::vouch_native::structural_verify",
+      "public_interface": "verify-structure contract lane",
+      "test_or_fixture_ids": ["S3-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VS-04",
+      "owner_module": "lispex::vouch_native::structural_verify",
+      "public_interface": "verify-structure contract lane",
+      "test_or_fixture_ids": ["S3-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VS-05",
+      "owner_module": "lispex::vouch_native::structural_verify",
+      "public_interface": "verify-structure contract lane",
+      "test_or_fixture_ids": ["S3-STRUCTURE-01", "S3-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-11",
+      "owner_module": "lispex::vouch_native::structural_verify",
+      "public_interface": "verify-structure contract lane",
+      "test_or_fixture_ids": ["S3-STRUCTURE-01", "S3-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-01",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["S5-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-02",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["N01", "N14", "N16", "S5-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-03",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["N01", "N03", "N14"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-04",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["N19"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-05",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["T02"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-06",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["S5-NATIVE-VERIFY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-07",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["N02"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-08",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["B02"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-09",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["N03", "J09"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-10",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["N10"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-11",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["C-VN-11"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-VN-12",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": ["C-VN-12"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-12",
+      "owner_module": "lispex::vouch_native::verify",
+      "public_interface": "verify-native contract lane",
+      "test_or_fixture_ids": [
+        "N01",
+        "N14",
+        "N15",
+        "N16",
+        "S5-NATIVE-VERIFY-01"
+      ],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-01",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["S5-CAPABILITY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-02",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["S7-BRIDGE-API-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-13",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["S5-CAPABILITY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-03",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["U06", "U07", "U08", "U09", "U10", "U13"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-04",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["T02"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-05",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["U05", "U11"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-06",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["U04", "T01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-07",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["U03", "S5-VULNERABLE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-08",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["U05"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-09",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["U06"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-10",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["S5-CAPABILITY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-11",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["C-CAP-11"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-12",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["C-CAP-12"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-CAP-14",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "consumer capability API",
+      "test_or_fixture_ids": ["S5-CAPABILITY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-16",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "native evidence promotion and rendering API",
+      "test_or_fixture_ids": ["N01", "N14", "N15", "N16", "N17", "N18", "N19"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-17",
+      "owner_module": "packages/vouch-consumer",
+      "public_interface": "native evidence promotion and rendering API",
+      "test_or_fixture_ids": ["U05", "U06", "U11", "U12", "T01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-01",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["B01", "B07", "S7-BRIDGE-API-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-02",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["B01", "S7-BRIDGE-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-03",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["S7-BRIDGE-API-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-04",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["B06", "B07", "B08", "B09", "B10", "B11", "B12"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-05",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["B04"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-06",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["B01", "S7-BRIDGE-API-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-07",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": [
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B09",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-08",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["U04", "U06"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-09",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["B01", "S7-BRIDGE-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-10",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["B01", "S7-BRIDGE-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-11",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": ["S7-BRIDGE-CLI-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-BR-12",
+      "owner_module": "packages/vouch-consumer::bridge",
+      "public_interface": "Bridge verification API",
+      "test_or_fixture_ids": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B09",
+        "B10",
+        "B11",
+        "B12",
+        "S5-BRIDGE-BYTE-01",
+        "S7-BRIDGE-API-01",
+        "S7-BRIDGE-CLI-01"
+      ],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-13",
+      "owner_module": "lispex::vouch_native::checked_profile",
+      "public_interface": "checked-profile execution lane",
+      "test_or_fixture_ids": ["S9-MUTATION-MECHANISM-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-14",
+      "owner_module": "lispex::vouch_native::receipt",
+      "public_interface": "contract receipt model and consistency checks",
+      "test_or_fixture_ids": ["S3-STRUCTURE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "A-15",
+      "owner_module": "lispex::vouch_native::receipt",
+      "public_interface": "contract receipt model and consistency checks",
+      "test_or_fixture_ids": ["S3-STRUCTURE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FIX-01",
+      "owner_module": "artifact::fixtures",
+      "public_interface": "fixture registry and conformance runner",
+      "test_or_fixture_ids": ["S7-FIXTURE-GATE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FIX-02",
+      "owner_module": "artifact::fixtures",
+      "public_interface": "fixture registry and conformance runner",
+      "test_or_fixture_ids": ["S7-FIXTURE-GATE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FIX-03",
+      "owner_module": "artifact::fixtures",
+      "public_interface": "fixture registry and conformance runner",
+      "test_or_fixture_ids": ["S6-KEY-AUDIT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FIX-04",
+      "owner_module": "artifact::fixtures",
+      "public_interface": "fixture registry and conformance runner",
+      "test_or_fixture_ids": ["S5-NATIVE-VERIFY-01", "S6-KEY-AUDIT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FIX-05",
+      "owner_module": "artifact::fixtures",
+      "public_interface": "fixture registry and conformance runner",
+      "test_or_fixture_ids": ["S5-CAPABILITY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FIX-06",
+      "owner_module": "artifact::fixtures",
+      "public_interface": "fixture registry and conformance runner",
+      "test_or_fixture_ids": ["T01", "T02", "C-CAP-12"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FIX-07",
+      "owner_module": "artifact::fixtures",
+      "public_interface": "fixture registry and conformance runner",
+      "test_or_fixture_ids": [
+        "C-VN-11",
+        "C-ISSUE-13",
+        "C-CAP-11",
+        "C-CAP-12",
+        "C-VN-12",
+        "C-REP-09",
+        "A-19",
+        "C-ISSUE-09",
+        "C-REP-06",
+        "A-4",
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11A",
+        "L11B",
+        "L12",
+        "L13",
+        "L14",
+        "L15",
+        "L16",
+        "L17",
+        "L18",
+        "L19",
+        "L20",
+        "L21",
+        "S10-CLEANROOM-01"
+      ],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FIX-08",
+      "owner_module": "artifact::fixtures",
+      "public_interface": "fixture registry and conformance runner",
+      "test_or_fixture_ids": ["S7-FIXTURE-GATE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-01",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": ["P04", "P05", "P06", "P07", "P08", "P09"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-02",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-03",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-04",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-05",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-06",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": ["P09", "S2-GRAPH-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-07",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": ["S2-RESOURCE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-08",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": ["S2-RESOURCE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-09",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": ["P04", "P05", "P06", "P07", "P08", "P09"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-10",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-11",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-12",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": ["S2-RESOURCE-01", "S3-STRUCTURE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-LIM-13",
+      "owner_module": "vouch::artifact_json",
+      "public_interface": "artifact JSON byte gate",
+      "test_or_fixture_ids": [
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "S2-RESOURCE-01"
+      ],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-UNION-01",
+      "owner_module": "artifact::release",
+      "public_interface": "release acceptance gate",
+      "test_or_fixture_ids": ["U01", "U02"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-UNION-02",
+      "owner_module": "artifact::release",
+      "public_interface": "release acceptance gate",
+      "test_or_fixture_ids": ["U01", "U02"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-UNION-03",
+      "owner_module": "artifact::release",
+      "public_interface": "release acceptance gate",
+      "test_or_fixture_ids": ["N02", "U01", "U02"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-RM-01",
+      "owner_module": "vouch::release",
+      "public_interface": "replay-manifest verification API",
+      "test_or_fixture_ids": ["R01", "S8-REPLAY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-RM-02",
+      "owner_module": "vouch::release",
+      "public_interface": "replay-manifest verification API",
+      "test_or_fixture_ids": ["R01", "R02", "R03", "S8-REPLAY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-RM-03",
+      "owner_module": "vouch::release",
+      "public_interface": "replay-manifest verification API",
+      "test_or_fixture_ids": ["R01", "S8-REPLAY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-RM-04",
+      "owner_module": "vouch::release",
+      "public_interface": "replay-manifest verification API",
+      "test_or_fixture_ids": ["R01", "R04", "R05", "S8-REPLAY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-RM-05",
+      "owner_module": "vouch::release",
+      "public_interface": "replay-manifest verification API",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-01",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-02",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-03",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-04",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-05",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-06",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-07",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-08",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-09",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-10",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-11",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-12",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-13",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-14",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-15",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-23",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-24",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-16",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-17",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-18",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-19",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-20",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-21",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-WL-22",
+      "owner_module": "artifact::workload",
+      "public_interface": "workload generator and replay runner",
+      "test_or_fixture_ids": ["S8-WORKLOAD-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-01",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-02",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-MECHANISM-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-03",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-04",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-05",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-06",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-07",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-MECHANISM-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-08",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-09",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": ["S9-MUTATION-RESULT-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-MUT-10",
+      "owner_module": "artifact::mutation",
+      "public_interface": "mutation registry and campaign runner",
+      "test_or_fixture_ids": [
+        "S9-MUTATION-MECHANISM-01",
+        "S9-MUTATION-RESULT-01"
+      ],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-PERF-01",
+      "owner_module": "artifact::performance",
+      "public_interface": "performance measurement runner",
+      "test_or_fixture_ids": ["S10-SUPPLY-01", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-PERF-02",
+      "owner_module": "artifact::performance",
+      "public_interface": "performance measurement runner",
+      "test_or_fixture_ids": ["S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-PERF-03",
+      "owner_module": "artifact::performance",
+      "public_interface": "performance measurement runner",
+      "test_or_fixture_ids": ["S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-PERF-04",
+      "owner_module": "artifact::performance",
+      "public_interface": "performance measurement runner",
+      "test_or_fixture_ids": ["S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-PERF-05",
+      "owner_module": "artifact::performance",
+      "public_interface": "performance measurement runner",
+      "test_or_fixture_ids": ["S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-PERF-06",
+      "owner_module": "artifact::performance",
+      "public_interface": "performance measurement runner",
+      "test_or_fixture_ids": ["S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-01",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-02",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-03",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-04",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": [
+        "L14",
+        "L15",
+        "L18",
+        "L19",
+        "C-REP-09",
+        "S10-CLEANROOM-01"
+      ],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-05",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["L04", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-06",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["C-REP-06", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-07",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-08",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": [
+        "L01",
+        "L02",
+        "L03",
+        "L09",
+        "L12",
+        "L17",
+        "S10-PUBLICATION-01"
+      ],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-REP-09",
+      "owner_module": "vouch::release",
+      "public_interface": "release lifecycle API",
+      "test_or_fixture_ids": ["C-REP-09", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DATA-01",
+      "owner_module": "artifact::scripts",
+      "public_interface": "public-data generation and scan commands",
+      "test_or_fixture_ids": ["S8-WORKLOAD-FREEZE-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DATA-02",
+      "owner_module": "artifact::scripts",
+      "public_interface": "public-data generation and scan commands",
+      "test_or_fixture_ids": ["S10-SUPPLY-01", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-DATA-03",
+      "owner_module": "artifact::scripts",
+      "public_interface": "public-data generation and scan commands",
+      "test_or_fixture_ids": ["S10-SUPPLY-01"],
+      "scope": "built",
+      "platform": "portable",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FINAL-01",
+      "owner_module": "artifact::release",
+      "public_interface": "release acceptance gate",
+      "test_or_fixture_ids": ["L18", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FINAL-02",
+      "owner_module": "artifact::release",
+      "public_interface": "release acceptance gate",
+      "test_or_fixture_ids": ["S10-PUBLICATION-01", "S10-CLEANROOM-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    },
+    {
+      "condition_id": "C-FINAL-03",
+      "owner_module": "artifact::release",
+      "public_interface": "release acceptance gate",
+      "test_or_fixture_ids": ["S10-PUBLICATION-01"],
+      "scope": "built",
+      "platform": "linux",
+      "implementation_status": "built"
+    }
+  ]
+}

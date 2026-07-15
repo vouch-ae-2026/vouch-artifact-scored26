@@ -4,7 +4,11 @@
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "check": "node scripts/check-artifact-bundle.mjs"
+    "check": "npm run check:baseline && npm run check:vnext && npm run check:m7 && npm run check:anonymity",
+    "check:baseline": "node scripts/check-artifact-bundle.mjs",
+    "check:vnext": "node vnext-evidence/scripts/check-vnext-evidence.mjs",
+    "check:m7": "node m7-release/scripts/check-m7-release.mjs",
+    "check:anonymity": "node scripts/check-anonymity.mjs"
   },
   "engines": {
     "node": ">=18"
