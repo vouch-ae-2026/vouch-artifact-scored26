@@ -1,0 +1,501 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "map"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "+"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 19
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 21
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 23
+      }
+    },
+    {
+      "kind": "call",
+      "op": 1,
+      "args": [
+        2,
+        3
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 18
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "x"
+        }
+      ],
+      "body": 4,
+      "anchor": {
+        "line": 1,
+        "col": 6
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(1 2 3)",
+      "anchor": {
+        "line": 1,
+        "col": 27
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        5,
+        6
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "filter"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": ">"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 22
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 24
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 2,
+        "col": 26
+      }
+    },
+    {
+      "kind": "call",
+      "op": 9,
+      "args": [
+        10,
+        11
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 21
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "x"
+        }
+      ],
+      "body": 12,
+      "anchor": {
+        "line": 2,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(1 2 3)",
+      "anchor": {
+        "line": 2,
+        "col": 30
+      }
+    },
+    {
+      "kind": "call",
+      "op": 8,
+      "args": [
+        13,
+        14
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "reduce"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "+"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 26
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "acc"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 28
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 32
+      }
+    },
+    {
+      "kind": "call",
+      "op": 17,
+      "args": [
+        18,
+        19
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 25
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "acc"
+        },
+        {
+          "space": "user",
+          "text": "x"
+        }
+      ],
+      "body": 20,
+      "anchor": {
+        "line": 3,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "0",
+      "anchor": {
+        "line": 3,
+        "col": 36
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(1 2 3)",
+      "anchor": {
+        "line": 3,
+        "col": 38
+      }
+    },
+    {
+      "kind": "call",
+      "op": 16,
+      "args": [
+        21,
+        22,
+        23
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "fold-left"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cons"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 29
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 34
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "acc"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 36
+      }
+    },
+    {
+      "kind": "call",
+      "op": 26,
+      "args": [
+        27,
+        28
+      ],
+      "anchor": {
+        "line": 4,
+        "col": 28
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "acc"
+        },
+        {
+          "space": "user",
+          "text": "x"
+        }
+      ],
+      "body": 29,
+      "anchor": {
+        "line": 4,
+        "col": 12
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "()",
+      "anchor": {
+        "line": 4,
+        "col": 42
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(1 2)",
+      "anchor": {
+        "line": 4,
+        "col": 46
+      }
+    },
+    {
+      "kind": "call",
+      "op": 25,
+      "args": [
+        30,
+        31,
+        32
+      ],
+      "anchor": {
+        "line": 4,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "fold-right"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cons"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 30
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 35
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "acc"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 37
+      }
+    },
+    {
+      "kind": "call",
+      "op": 35,
+      "args": [
+        36,
+        37
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 29
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "x"
+        },
+        {
+          "space": "user",
+          "text": "acc"
+        }
+      ],
+      "body": 38,
+      "anchor": {
+        "line": 5,
+        "col": 13
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "()",
+      "anchor": {
+        "line": 5,
+        "col": 43
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(1 2)",
+      "anchor": {
+        "line": 5,
+        "col": 47
+      }
+    },
+    {
+      "kind": "call",
+      "op": 34,
+      "args": [
+        39,
+        40,
+        41
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        7,
+        15,
+        24,
+        33,
+        42
+      ]
+    }
+  ],
+  "roots": [
+    43
+  ]
+}

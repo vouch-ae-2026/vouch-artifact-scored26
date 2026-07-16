@@ -1,0 +1,324 @@
+{
+  "meaning_env_report": "csk.meaning-env-report/v0",
+  "engine": {
+    "name": "lispex-rust-reference",
+    "version": "1.4.0",
+    "commit": {
+      "vcs": "git",
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "dirty": false
+    }
+  },
+  "graph": {
+    "byte_len": 4924,
+    "hash": {
+      "domain": "csk/meaning-graph-hash/v0",
+      "algo": "sha-256",
+      "hex": "3577cf0342a96954149f2512653184c9fd26a3b7c20ece019dea8d2df5dc5f69"
+    }
+  },
+  "status": "ok",
+  "law_errors": [],
+  "trace": [
+    {
+      "step": 1,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:values>"
+      ]
+    },
+    {
+      "step": 2,
+      "node": 1,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 3,
+      "node": 2,
+      "kind": "lit",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 4,
+      "node": 3,
+      "kind": "call",
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "step": 5,
+      "node": 4,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:call-with-values>"
+      ]
+    },
+    {
+      "step": 6,
+      "node": 10,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 7,
+      "node": 11,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:list>"
+      ]
+    },
+    {
+      "step": 8,
+      "node": 5,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:values>"
+      ]
+    },
+    {
+      "step": 9,
+      "node": 6,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 10,
+      "node": 7,
+      "kind": "lit",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 11,
+      "node": 8,
+      "kind": "lit",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 12,
+      "node": 9,
+      "kind": "call",
+      "values": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "step": 13,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "(1 2 3)"
+      ]
+    },
+    {
+      "step": 14,
+      "node": 13,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:call-with-values>"
+      ]
+    },
+    {
+      "step": 15,
+      "node": 16,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 16,
+      "node": 18,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 17,
+      "node": 14,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:values>"
+      ]
+    },
+    {
+      "step": 18,
+      "node": 15,
+      "kind": "call",
+      "values": []
+    },
+    {
+      "step": 19,
+      "node": 17,
+      "kind": "lit",
+      "values": [
+        "done"
+      ]
+    },
+    {
+      "step": 20,
+      "node": 19,
+      "kind": "call",
+      "values": [
+        "done"
+      ]
+    },
+    {
+      "step": 21,
+      "node": 20,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:call-with-values>"
+      ]
+    },
+    {
+      "step": 22,
+      "node": 24,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 23,
+      "node": 25,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:values>"
+      ]
+    },
+    {
+      "step": 24,
+      "node": 21,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:values>"
+      ]
+    },
+    {
+      "step": 25,
+      "node": 22,
+      "kind": "lit",
+      "values": [
+        "5"
+      ]
+    },
+    {
+      "step": 26,
+      "node": 23,
+      "kind": "call",
+      "values": [
+        "5"
+      ]
+    },
+    {
+      "step": 27,
+      "node": 26,
+      "kind": "call",
+      "values": [
+        "5"
+      ]
+    },
+    {
+      "step": 28,
+      "node": 27,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:apply>"
+      ]
+    },
+    {
+      "step": 29,
+      "node": 28,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:values>"
+      ]
+    },
+    {
+      "step": 30,
+      "node": 29,
+      "kind": "lit",
+      "values": [
+        "(6 7)"
+      ]
+    },
+    {
+      "step": 31,
+      "node": 30,
+      "kind": "call",
+      "values": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "step": 32,
+      "node": 31,
+      "kind": "block",
+      "values": [
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "transcript": [
+    "1",
+    "2",
+    "(1 2 3)",
+    "done",
+    "5",
+    "6",
+    "7"
+  ],
+  "result": {
+    "values": [
+      "6",
+      "7"
+    ]
+  },
+  "fault": null,
+  "steps": {
+    "used": 32,
+    "limit": 65536
+  },
+  "boundary": {
+    "attests": [
+      "meaning-law-v0-validation-rust",
+      "bounded-deterministic-v0-subset-evaluation",
+      "lexical-closure-v0-evaluation",
+      "higher-order-traversal-v0-evaluation",
+      "profile-input-binding-when-supplied",
+      "transcript-bytes",
+      "graph-hash-binding"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "differential-receipt",
+      "independent-witness",
+      "external-backend-reporting",
+      "lispex-source-lowering",
+      "target-code-generation",
+      "full-cskernel-coverage",
+      "private-implementation-detail"
+    ]
+  }
+}

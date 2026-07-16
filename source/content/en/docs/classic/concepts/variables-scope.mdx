@@ -1,0 +1,93 @@
+---
+title: 'Variables and Scope'
+description: 'How Lispex creates bindings and how lexical scope decides where a name is visible.'
+---
+
+This guide explains how to create bindings and how **lexical scope** works in Lispex. It focuses on binding and scope rules; you can run every example live in the [Playground](/en/play) to see the values for yourself.
+
+## Top‑level bindings with `define`
+
+Use `define` to bind an identifier at the top level.
+
+```lispex
+(define x 10)
+(define y (+ x 5))      ; y ⇒ 15
+```
+
+Names that are reserved keywords cannot be bound.
+
+## Understanding Scope
+
+Lispex uses **lexical scoping**: scope is determined by program structure.
+
+Rule of thumb: code can look “outward” for variables, not “inward”.
+
+When you use a variable, the interpreter searches for it in this order:
+
+1.  The current, innermost scope.
+2.  If not found, it checks the parent scope (the scope that contains the current one).
+3.  ...and so on, all the way up to the global scope.
+
+```lispex
+(define global-val 100)
+
+(let ((outer 3))
+  (let ((inner 4))
+    (+ global-val (* outer inner))))      ; ⇒ 112
+;; `inner` is not visible here; only `global-val` is.
+```
+
+## Creating New Scopes
+
+You typically create nested scopes with `let` (and friends) or via function calls.
+
+### 1\. `let` for Local Bindings
+
+`(let ...)` creates local bindings that exist only within its body.
+
+```lispex
+(define x 10)
+
+(let ((x 20) (y 5))
+  (+ x y))                           ; ⇒ 25
+
+x                                     ; ⇒ 10 (outer binding)
+```
+
+`let*` evaluates and binds sequentially; `letrec` enables mutually recursive local definitions.
+
+```lispex
+;; let* sequencing
+(let* ((a 1)
+       (b (+ a 2)))  ; sees a = 1
+  (+ a b))           ; ⇒ 4
+
+;; letrec local recursion
+(letrec ((loop (lambda (xs acc)
+                 (if (null? xs) acc
+                     (loop (cdr xs) (+ acc (car xs)))))))
+  (loop (list 1 2 3) 0))             ; ⇒ 6
+```
+
+### 2\. Function calls
+
+Function calls create a fresh scope for parameters and locals.
+
+```lispex
+(define x 100)
+
+(define (my-func param)
+  (let ((local 10))
+    (+ x param local)))
+
+(my-func 50)                         ; ⇒ 160
+```
+
+Mutation uses `set!` on an existing binding:
+
+```lispex
+(define n 1)
+(set! n (+ n 1))                      ; n ⇒ 2
+```
+
+Functions “see” bindings from their definition environment via lexical scope; see **Functions & Closures** for more.

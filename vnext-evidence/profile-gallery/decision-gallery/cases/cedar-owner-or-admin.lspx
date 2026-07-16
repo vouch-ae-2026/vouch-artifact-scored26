@@ -1,5 +1,0 @@
-(if (or (string=? (car input) (car (cdr input)))
-        (any? (lambda (who) (string=? who (car input)))
-              (car (cdr (cdr input)))))
-    '(decision allow)
-    '(decision deny not-owner-or-admin))

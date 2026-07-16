@@ -1,0 +1,132 @@
+{
+  "authoritative_sources": [
+    "release/chain/release-descriptor.json",
+    "release/chain/release-descriptor.dsse.json",
+    "release/chain/trust-policy.json",
+    "release/chain/clean-run-report.json",
+    "release/chain/reproduction-observation.json",
+    "release/chain/reproduction-observation.dsse.json",
+    "release/chain/release-publication.json",
+    "release/chain/publication-report.json",
+    "release/results/exact-reproduction-comparisons.json",
+    "release/results/fixture-results.json",
+    "release/results/workload-results.json",
+    "release/results/mutation-results.json",
+    "release/results/performance-results.json",
+    "release/results/release-manifest.json",
+    "release/audit/bundle-reconciliation.json"
+  ],
+  "bundle_evidence": {
+    "reconciliation_sha256": "sha256:3f38a57cfb1b36d432de73f8f253235aafb27fab8fdc1a955fa4d275a17f2279",
+    "release_manifest_sha256": "sha256:2397c200d4cac10e4b5d1e1d5261fb7c99a6340fb80a363592ae5ce36a2544fb",
+    "scope": "exact-distributed-review-bundle-only-not-whole-source-projection",
+    "source_bundle_byte_length": 7778554,
+    "source_bundle_sha256": "sha256:18f40298fcf9e4d919fc9e5e0a1ac6b29c47b081daeaa402da017b3940a7f26a",
+    "status": "pass"
+  },
+  "final_scans": {
+    "actual_key_secret_scan": "pass",
+    "generic_private_key_marker_scan": "pass",
+    "markers": {
+      "actual-key-secret-scan": "SCORED26 release secret scan passed (archive/store/Git objects)",
+      "generic-private-key-marker-scan": "SCORED26 generic private-key marker scan passed",
+      "public-data-scan": "SCORED26 public-data scan passed (synthetic public inputs only)"
+    },
+    "public_data_scan": "pass",
+    "scope": "re-extracted-release-plus-chain-owner-reports-sanitized-logs-and-machine-pdf",
+    "status": "pass",
+    "surface": {
+      "regular_file_bytes": 484756434,
+      "regular_file_count": 2649,
+      "symlink_count": 0
+    }
+  },
+  "lifecycle_audit": "vouch.scored26-lifecycle-audit/v2",
+  "lifecycle_source": {
+    "artifact_commit": "3e910c9ff87cc01d3bc241d63297218b44e75ede",
+    "artifact_freeze_commit": "c90f97ddd6b1d662791a76fe4663b90e79c443ec",
+    "condition_contract_sha256": "ecc294798be49f5843bd84e0ebad5d94a930f2b09f51db4852e42d2789addddc"
+  },
+  "log_evidence": {
+    "authority": "structured-lifecycle-objects-remain-authoritative",
+    "distributed_form": "path-neutral-sanitized-copy",
+    "exit_code_basis": "exit_code=0 records retained completion markers under the lifecycle wrapper set -euo pipefail boundary",
+    "raw_stdout_retained_locally": true,
+    "transformation_manifest": "release/audit/sanitized-log-manifest.json"
+  },
+  "network": {
+    "assembly_network_mode": "enabled-for-lockfile-cache-population-before-D",
+    "build_image_sha256": "sha256:c40e87e9fbdf67f18850020696984308eda72bd8e9f89acc2b69c46bc550108e",
+    "container_platform": "linux/amd64",
+    "dependency_install_mode": "npm-ci-offline-from-local-cache-seed",
+    "dependency_install_network_mode": "none",
+    "final_scan_network_mode": "none",
+    "os_image_reference": "ubuntu@sha256:6015f66923d7afbc53558d7ccffd325d43b4e249f41a6e93eef074c9505d2233",
+    "phase1_network_mode": "none",
+    "phase2_network_mode": "none",
+    "phase3_network_mode": "none"
+  },
+  "phases": [
+    {
+      "completion_marker": "SCORED26 release assembled",
+      "exit_code": 0,
+      "name": "assembly",
+      "object_sha256": {
+        "archive": "49e9e1fd9e669b2da168d8763f4c61f88b95944f566a3e44232f3a8c443740ad",
+        "descriptor_envelope": "8803773addc832543b66c99a6ab7a16ef3e6fea3f0dcce70e697d3a87102b99c",
+        "descriptor_payload": "daca8fa97901d6396abd7e64c27cbd692929a23b70de82cc16f0d158220fd5ae"
+      }
+    },
+    {
+      "clean_run_runtime_seconds": 5122,
+      "completion_marker": "SCORED26 phase-1 clean-room gate passed",
+      "exit_code": 0,
+      "name": "phase1",
+      "object_sha256": {
+        "clean_run_report": "f0414f051e062f7b98a32f44b04ff526da79a61a6af00f2d95b62b024cc9ec2c",
+        "exact_reproduction_comparisons": "634bb491aa90a02c69533e099bcdf759fa825991b30cbb294fc64aea7387128b",
+        "fixture_results": "f6dc99af7c81ce6f0b8a8a580dba8e5c73b9f2fc9f597ac49676ee5dd07f55f7",
+        "mutation_results": "4b8604da8b97fc6550f52005c88166a65592e8cc7b97def0338c908597e75fd4",
+        "performance_results": "3c4c5bc8e487341acd998657fee61a1653675c4bd1fb58816252e00c2656e6ec",
+        "workload_results": "60aaa12d73d36f3183b5bac04e447d70aece9da2a9cc4c5841548fb84047b0fb"
+      }
+    },
+    {
+      "completion_marker": "SCORED26 reproduction observation finalized",
+      "exit_code": 0,
+      "name": "phase2",
+      "object_sha256": {
+        "finalize_report": "797197328e2e3ef902bb0e6a5e19972725a117a80d1096b969f9da347eb0b3fd",
+        "publication_index": "9855f8f3d67c64c87931f4347cbaebe31cf904a7586d962092ea5a42644f4a22",
+        "reproduction_observation_envelope": "4f2ccc76556fd88b836497c57b9439fcbf7e56517f44076d0a776db3275c90a5",
+        "reproduction_observation_payload": "ff36863387b2d865a817d699e8d7ba73ceeb42dc4c3e78818293f01727fd7e81"
+      }
+    },
+    {
+      "completion_marker": "SCORED26 publication check passed (S=pass)",
+      "exit_code": 0,
+      "name": "phase3",
+      "object_sha256": {
+        "machine_record_pdf": "cabff13cf9c34a3d96dfda4944d30ac681960eab007ee11267f09ca90200d556",
+        "terminal_report": "1922ac844a1dd0a90dc1664cacb5d315f3f27181a3e8aed6c7f0a99fa50a9149"
+      },
+      "terminal_fields": {
+        "chain_verified": "pass",
+        "claim_language_scan": "pass",
+        "paper_claims_matched": true,
+        "status": "pass"
+      }
+    }
+  ],
+  "signature_boundary": {
+    "digest_or_derivation_checked_objects": [
+      "Q",
+      "P",
+      "S"
+    ],
+    "signed_objects": [
+      "D",
+      "R"
+    ]
+  }
+}

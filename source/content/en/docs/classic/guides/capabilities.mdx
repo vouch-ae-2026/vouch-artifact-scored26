@@ -1,0 +1,28 @@
+---
+title: 'Capabilities'
+description: 'Lispex runs in its reference interpreter and keeps portable IO, file, and network effects outside the checked core.'
+---
+Lispex runs directly in the reference interpreter (try the [Playground](/en/play)). Lispex Vouch is deliberately small and deterministic; portable side effects are outside that checked core. This page outlines how to think about capabilities (IO/FS/Net) today.
+
+## Concept
+- Capabilities name effect categories: IO (console/stdio), FS (files/paths), Net (HTTP/sockets).
+- Lispex's reference interpreter runs pure computation, but ships no portable IO/FS/Net capability layer.
+- Guides avoid module headers/imports to keep examples portable; wire effects outside the checked Lispex rule when a host application needs them.
+
+## What’s stable now
+- Pure, side‑effect‑free code is the portable checked subset.
+- Printing results: some targets auto‑print the last expression, others require explicit print/log on the target side.
+
+## Constraints & limitations (current)
+- No cross‑target “standard” IO/FS/Net layer is guaranteed yet.
+- Path/encoding/timezone/permissions differ by OS/target; prefer UTF‑8, absolute paths only when necessary, and handle errors.
+- Network calls (HTTP, sockets) require the target’s libraries and policies (CORS, TLS, proxies).
+
+## Safety & permissions
+- Be explicit about where data comes from and where it goes (input validation, output encoding).
+- Respect sandboxing (browsers), UAC/ACL (desktop), and runtime flags (Node/deno/python).
+
+## Practical approach today
+1) Keep Lispex rules pure where possible.
+2) Pass explicit input data into the rule.
+3) Put IO/FS/Net in the host application around the rule, then record the checked input and result when you need receipt/replay evidence.

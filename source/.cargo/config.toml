@@ -1,0 +1,9 @@
+# Conservative parallelism for reproducible review builds.
+[build]
+jobs = 4
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"

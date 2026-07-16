@@ -1,16 +1,18 @@
 {
-  "name": "anonymous-vouch-artifact",
-  "version": "1.3.11",
+  "name": "vouch-scored26-review-artifact",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "license": "Apache-2.0",
   "scripts": {
-    "check": "npm run check:baseline && npm run check:vnext && npm run check:m7 && npm run check:anonymity",
-    "check:baseline": "node scripts/check-artifact-bundle.mjs",
-    "check:vnext": "node vnext-evidence/scripts/check-vnext-evidence.mjs",
-    "check:m7": "node m7-release/scripts/check-m7-release.mjs",
-    "check:anonymity": "node scripts/check-anonymity.mjs"
-  },
-  "engines": {
-    "node": ">=18"
+    "archive:chunk": "node scripts/archive-chunks/archive-chunks.mjs",
+    "archive:reassemble": "node scripts/archive-chunks/verify-archive-chunks.mjs --manifest release/archive-chunks/archive-chunks.json",
+    "build:manifest": "node scripts/build-artifact-manifest.mjs",
+    "check": "node scripts/check-artifact.mjs && node scripts/check-artifact-negative.mjs",
+    "check:archive-chunks": "node scripts/archive-chunks/verify-archive-chunks.mjs --manifest release/archive-chunks/archive-chunks.json",
+    "check:archive-chunks:self-test": "node scripts/archive-chunks/self-test.mjs",
+    "check:artifact": "node scripts/check-artifact.mjs",
+    "check:artifact-negative": "node scripts/check-artifact-negative.mjs",
+    "check:source-full": "node scripts/check-artifact.mjs --source-full"
   }
 }

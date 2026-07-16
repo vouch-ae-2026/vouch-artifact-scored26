@@ -1,0 +1,21 @@
+{
+  "interval_decisions": [
+    "deny",
+    "review",
+    "approve",
+    "approve",
+    "review",
+    "deny",
+    "deny"
+  ],
+  "rule_parameters": "vouch.scored26-rule-parameters/v0",
+  "rule_version": "baseline",
+  "thresholds": [
+    100156,
+    200156,
+    300156,
+    400153,
+    500156,
+    600156
+  ]
+}

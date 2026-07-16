@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+import('./scan-public-data.mjs').catch((error) => {
+  console.error(error instanceof Error ? error.message : String(error));
+  process.exitCode = 1;
+});

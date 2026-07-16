@@ -1,0 +1,354 @@
+{
+  "cross_writer_goldens": "csk.artifact-json-cross-writer/v0",
+  "fixture_id": "S1-CROSS-WRITER-01",
+  "required_artifact_classes": [
+    "dsse-envelope",
+    "native-receipt-payload",
+    "bridge-report",
+    "native-trust-policy",
+    "native-public-key-record",
+    "release-descriptor",
+    "reproduction-observation",
+    "release-publication-record",
+    "release-manifest",
+    "replay-corpus-manifest",
+    "workload-space-manifest",
+    "workload-candidate-manifest",
+    "workload-selection-manifest",
+    "workload-split-manifest",
+    "workload-holdout-manifest",
+    "fixture-manifest",
+    "clean-run-report",
+    "exact-reproduction-comparisons",
+    "native-report",
+    "structural-report",
+    "bridge-verification-report",
+    "replay-report",
+    "issue-report",
+    "workload-report",
+    "mutation-report",
+    "performance-report",
+    "fixture-report",
+    "reproduction-report",
+    "finalize-report",
+    "publication-report"
+  ],
+  "vectors": [
+    {
+      "artifact_class": "dsse-envelope",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJkc3NlLWVudmVsb3BlIiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-dsse-envelope",
+      "value": {
+        "artifact": "dsse-envelope",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "native-receipt-payload",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJuYXRpdmUtcmVjZWlwdC1wYXlsb2FkIiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-native-receipt",
+      "value": {
+        "artifact": "native-receipt-payload",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "bridge-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJicmlkZ2UtcmVwb3J0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-bridge-report",
+      "value": {
+        "artifact": "bridge-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "native-trust-policy",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJuYXRpdmUtdHJ1c3QtcG9saWN5IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-trust-policy",
+      "value": {
+        "artifact": "native-trust-policy",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "native-public-key-record",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJuYXRpdmUtcHVibGljLWtleS1yZWNvcmQiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-public-key",
+      "value": {
+        "artifact": "native-public-key-record",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "release-descriptor",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJyZWxlYXNlLWRlc2NyaXB0b3IiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-release-descriptor",
+      "value": {
+        "artifact": "release-descriptor",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "reproduction-observation",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJyZXByb2R1Y3Rpb24tb2JzZXJ2YXRpb24iLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-observation",
+      "value": {
+        "artifact": "reproduction-observation",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "release-publication-record",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJyZWxlYXNlLXB1YmxpY2F0aW9uLXJlY29yZCIsCiAgIm9rIjogdHJ1ZQp9Cg==",
+      "id": "class-publication-record",
+      "value": {
+        "artifact": "release-publication-record",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "release-manifest",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJyZWxlYXNlLW1hbmlmZXN0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-release-manifest",
+      "value": {
+        "artifact": "release-manifest",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "replay-corpus-manifest",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJyZXBsYXktY29ycHVzLW1hbmlmZXN0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-replay-manifest",
+      "value": {
+        "artifact": "replay-corpus-manifest",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "workload-space-manifest",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJ3b3JrbG9hZC1zcGFjZS1tYW5pZmVzdCIsCiAgIm9rIjogdHJ1ZQp9Cg==",
+      "id": "class-workload-space",
+      "value": {
+        "artifact": "workload-space-manifest",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "workload-candidate-manifest",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJ3b3JrbG9hZC1jYW5kaWRhdGUtbWFuaWZlc3QiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-workload-candidate",
+      "value": {
+        "artifact": "workload-candidate-manifest",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "workload-selection-manifest",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJ3b3JrbG9hZC1zZWxlY3Rpb24tbWFuaWZlc3QiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-workload-selection",
+      "value": {
+        "artifact": "workload-selection-manifest",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "workload-split-manifest",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJ3b3JrbG9hZC1zcGxpdC1tYW5pZmVzdCIsCiAgIm9rIjogdHJ1ZQp9Cg==",
+      "id": "class-workload-split",
+      "value": {
+        "artifact": "workload-split-manifest",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "workload-holdout-manifest",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJ3b3JrbG9hZC1ob2xkb3V0LW1hbmlmZXN0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-workload-holdout",
+      "value": {
+        "artifact": "workload-holdout-manifest",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "fixture-manifest",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJmaXh0dXJlLW1hbmlmZXN0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-fixture-manifest",
+      "value": {
+        "artifact": "fixture-manifest",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "clean-run-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJjbGVhbi1ydW4tcmVwb3J0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-clean-run",
+      "value": {
+        "artifact": "clean-run-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "exact-reproduction-comparisons",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJleGFjdC1yZXByb2R1Y3Rpb24tY29tcGFyaXNvbnMiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-comparisons",
+      "value": {
+        "artifact": "exact-reproduction-comparisons",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "native-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJuYXRpdmUtcmVwb3J0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-native-report",
+      "value": {
+        "artifact": "native-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "structural-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJzdHJ1Y3R1cmFsLXJlcG9ydCIsCiAgIm9rIjogdHJ1ZQp9Cg==",
+      "id": "class-structural-report",
+      "value": {
+        "artifact": "structural-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "bridge-verification-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJicmlkZ2UtdmVyaWZpY2F0aW9uLXJlcG9ydCIsCiAgIm9rIjogdHJ1ZQp9Cg==",
+      "id": "class-bridge-verification-report",
+      "value": {
+        "artifact": "bridge-verification-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "replay-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJyZXBsYXktcmVwb3J0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-replay-report",
+      "value": {
+        "artifact": "replay-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "issue-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJpc3N1ZS1yZXBvcnQiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-issue-report",
+      "value": {
+        "artifact": "issue-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "workload-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJ3b3JrbG9hZC1yZXBvcnQiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-workload-report",
+      "value": {
+        "artifact": "workload-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "mutation-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJtdXRhdGlvbi1yZXBvcnQiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-mutation-report",
+      "value": {
+        "artifact": "mutation-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "performance-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJwZXJmb3JtYW5jZS1yZXBvcnQiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-performance-report",
+      "value": {
+        "artifact": "performance-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "fixture-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJmaXh0dXJlLXJlcG9ydCIsCiAgIm9rIjogdHJ1ZQp9Cg==",
+      "id": "class-fixture-report",
+      "value": {
+        "artifact": "fixture-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "reproduction-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJyZXByb2R1Y3Rpb24tcmVwb3J0IiwKICAib2siOiB0cnVlCn0K",
+      "id": "class-reproduction-report",
+      "value": {
+        "artifact": "reproduction-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "finalize-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJmaW5hbGl6ZS1yZXBvcnQiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-finalize-report",
+      "value": {
+        "artifact": "finalize-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "publication-report",
+      "expected_base64": "ewogICJhcnRpZmFjdCI6ICJwdWJsaWNhdGlvbi1yZXBvcnQiLAogICJvayI6IHRydWUKfQo=",
+      "id": "class-publication-report",
+      "value": {
+        "artifact": "publication-report",
+        "ok": true
+      }
+    },
+    {
+      "artifact_class": "dsse-envelope",
+      "expected_base64": "ewogICJhIjogIvCfmYIiLAogICJhYSI6ICJxdW90ZVwiIHNsYXNoXFwgY29udHJvbHNcYlx0XG5cZlxyXHUwMDAwXHUwMDFmIiwKICAiw6kiOiAicmF3Igp9Cg==",
+      "id": "strings-and-order",
+      "value": {
+        "a": "🙂",
+        "aa": "quote\" slash\\ controls\b\t\n\f\r\u0000\u001f",
+        "é": "raw"
+      }
+    },
+    {
+      "artifact_class": "native-receipt-payload",
+      "expected_base64": "WwogIC05MDA3MTk5MjU0NzQwOTkxLAogIDAsCiAgOTAwNzE5OTI1NDc0MDk5MQpdCg==",
+      "id": "integer-bounds",
+      "value": [
+        -9007199254740991,
+        0,
+        9007199254740991
+      ]
+    },
+    {
+      "artifact_class": "fixture-manifest",
+      "expected_base64": "ewogICJhcnJheSI6IFtdLAogICJvYmplY3QiOiB7fQp9Cg==",
+      "id": "empty-collections",
+      "value": {
+        "array": [],
+        "object": {}
+      }
+    },
+    {
+      "artifact_class": "release-descriptor",
+      "expected_base64": "ewogICJvdXRlciI6IFsKICAgIDEsCiAgICB7CiAgICAgICJpbm5lciI6IFsKICAgICAgICBmYWxzZSwKICAgICAgICBudWxsLAogICAgICAgICJ4IgogICAgICBdCiAgICB9CiAgXQp9Cg==",
+      "id": "nested-layout",
+      "value": {
+        "outer": [
+          1,
+          {
+            "inner": [
+              false,
+              null,
+              "x"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

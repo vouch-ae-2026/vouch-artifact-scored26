@@ -1,0 +1,116 @@
+---
+title: 'Core Functions'
+description: 'These are the most fundamental functions that constitute Lispex. Combine them to build complex logic and breathe life into your data. Every great journey begins with these small first steps.'
+---
+
+This page provides a reference for the most fundamental built-in functions in Lispex. These functions are essential for basic data inspection and manipulation.
+
+---
+
+### `first`
+
+Returns the first element of a list.
+
+- **Syntax:** `(first LIST)`
+- **Arguments:**
+  - `LIST`: The list from which to get the first element. Must not be empty.
+- **Returns:** The first element of the list.
+- **Throws:** A `RuntimeError` if the list is empty.
+
+**Example:**
+```clojure
+(first (list 10 20 30))
+;; Result: 10
+
+(first (list "a" "b" "c"))
+;; Result: "a"
+```
+
+---
+
+### `rest`
+
+Returns a new list containing all elements except the first one.
+
+- **Syntax:** `(rest LIST)`
+- **Arguments:**
+  - `LIST`: The list to process.
+- **Returns:** A new list containing the rest of the elements. If the original list is empty or has only one element, it returns an empty list.
+- **Throws:** A `RuntimeError` if the argument is not a list.
+
+**Example:**
+```clojure
+(rest (list 10 20 30))
+;; Result: (list 20 30)
+
+(rest (list 10))
+;; Result: (list)
+
+(rest (list))
+;; Result: (list)
+```
+
+---
+
+### `empty?`
+
+Checks if a list is empty.
+
+- **Syntax:** `(empty? LIST)`
+- **Arguments:**
+  - `LIST`: The list to check.
+- **Returns:** `#t` if the list has no elements, `#f` otherwise.
+- **Throws:** A `RuntimeError` if the argument is not a list.
+
+**Example:**
+```lispex
+(empty? (list))
+;; Result: #t
+
+(empty? (list 1 2))
+;; Result: #f
+```
+
+---
+
+### `length`
+
+Returns the number of elements in a list.
+
+- **Syntax:** `(length LIST)`
+- **Arguments:**
+  - `LIST`: The list whose length you want to measure.
+- **Returns:** An integer representing the number of elements in the list.
+- **Throws:** A `RuntimeError` if the argument is not a list.
+
+**Example:**
+```clojure
+(length (list 10 20 30))
+;; Result: 3
+
+(length (list))
+;; Result: 0
+```
+
+---
+
+### `list?`
+
+Checks if a given value is a list.
+
+- **Syntax:** `(list? VALUE)`
+- **Arguments:**
+  - `VALUE`: The value to check.
+- **Returns:** `#t` if the value is a list, `#f` otherwise. This function does not throw an error.
+
+**Example:**
+```lispex
+(list? (list 1 2))
+;; Result: #t
+
+(list? 123)
+;; Result: #f
+
+(list? "hello")
+;; Result: #f
+```

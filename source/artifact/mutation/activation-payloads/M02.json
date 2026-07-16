@@ -1,0 +1,129 @@
+{
+  "boundary": {
+    "statement_sha256": "3808de6659be06e869b89b24cc760320f93a807ab27ee810c0e481ec41d7c948"
+  },
+  "canonical": {
+    "normalized_bytes_b64": "bGlzcGV4LmNvcmUuY2Fub25pY2FsL3YwCigtIChxdW90ZSA5KSAocXVvdGUgNCkpCg==",
+    "normalized_sha256": "fec4b6962d9b17fe62eac9ee6eba2605a01cc3e2f7eae328a7f8895dad19ddae"
+  },
+  "comparison": {
+    "comparison_unavailable_at": null,
+    "first_divergence_index": 0,
+    "status": "disagree"
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "executable_sha256": "sha256:5efbc580eeecff25dcd8e4918a84b8ba2bc57a1fc72c801171ec7def714c3903",
+    "target_triple": "aarch64-apple-darwin"
+  },
+  "execution": {
+    "build_commit": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+    "build_variant": "mutant",
+    "context_digest": "310aa36686be345bb0c27214d318e09cdd970b4b3936593b178a785b331b0808",
+    "executable_sha256": "sha256:5efbc580eeecff25dcd8e4918a84b8ba2bc57a1fc72c801171ec7def714c3903",
+    "invocation": "native-checked",
+    "lispex_version": "1.4.0",
+    "mutant_id": "M02",
+    "profile": "csk.checked-profile/v1",
+    "target_triple": "aarch64-apple-darwin"
+  },
+  "graph": {
+    "graph_sha256": "703b3042304878ff63540279b0ee88b9942cddf62d41e11ef5831a195d92018c",
+    "node_count": 4,
+    "value": {
+      "graph": "csk.graph/v0",
+      "nodes": [
+        {
+          "arguments": [
+            2,
+            3
+          ],
+          "id": 0,
+          "op": "app",
+          "operator": 1
+        },
+        {
+          "id": 1,
+          "name": "-",
+          "op": "prim"
+        },
+        {
+          "id": 2,
+          "op": "lit",
+          "value": {
+            "t": "int",
+            "v": "4"
+          }
+        },
+        {
+          "id": 3,
+          "op": "lit",
+          "value": {
+            "t": "int",
+            "v": "9"
+          }
+        }
+      ],
+      "roots": [
+        0
+      ]
+    }
+  },
+  "input": {
+    "byte_length": 62,
+    "canonical_value_sha256": "957c408c80fa1edd6b1dd0687b5e04c1bb1ca7892bbb04dac9d45d5859410663",
+    "sha256": "104d545e09a8501438e36a0fb8daa7fe4fbf4ea0ba0fe2b894cfdcf4f039acaa"
+  },
+  "meaning_env": {
+    "graph_sha256": "703b3042304878ff63540279b0ee88b9942cddf62d41e11ef5831a195d92018c",
+    "meaning_env": "csk.meaning-env-report/v0",
+    "node_count": 4,
+    "terminal": {
+      "kind": "completed"
+    },
+    "transcript": {
+      "events": [
+        {
+          "form_index": 0,
+          "kind": "value",
+          "value": {
+            "t": "int",
+            "v": "-5"
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "completed"
+      },
+      "transcript": "csk.transcript/v0"
+    },
+    "transcript_sha256": "82666792f7ad3c139ef6ee1114c00a5002805d8d135bb081523c234772540d27"
+  },
+  "reference": {
+    "terminal": {
+      "kind": "completed"
+    },
+    "transcript": {
+      "events": [
+        {
+          "form_index": 0,
+          "kind": "value",
+          "value": {
+            "t": "int",
+            "v": "5"
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "completed"
+      },
+      "transcript": "csk.transcript/v0"
+    },
+    "transcript_sha256": "f18079b295cf59336681aaf68bd3b7c6de5ea702b93fba8628590c590e71ae47"
+  },
+  "source": {
+    "byte_length": 8,
+    "sha256": "6d392a8bed141d9737645e2b582b3c814139854cb434bf3845d1e4d0bac67dd4"
+  }
+}

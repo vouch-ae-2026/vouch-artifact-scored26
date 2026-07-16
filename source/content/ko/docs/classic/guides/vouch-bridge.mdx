@@ -1,0 +1,62 @@
+---
+title: '바우치 브릿지 사용하기'
+description: '외부 엔진의 변환 증거를 바우치 형식의 보고서로 내보내고 오프라인에서 바이트를 검사합니다.'
+---
+
+바우치 브릿지는 비공개 엔진과 공개 증거 기록 사이의 접점입니다. 엔진은 여전히 자기 일을 직접 합니다. 브릿지 보고서는 그 일이 서비스 밖에서도 검사될 수 있는 형식을 제공합니다.
+
+## 언제 쓰는가
+
+변환 결과에 생성 과정의 증거를 함께 붙이고 싶지만 그 결과를 만든 엔진은 비공개로 유지해야 할 때 브릿지 보고서를 씁니다. 코드 변환 서비스는 원본 소스와 생성된 대상, 엔진 신원, 검사된 경로, 게이트 결과를 하나의 보고서로 묶을 수 있습니다.
+
+첫 번째 프로파일은 변환 증거입니다. example conversion engine은 이 프로파일이 겨냥하는 상업적 변환 엔진입니다. 리스펙스 바우치는 그 엔진이 내보내는 증거를 위한 공개 보고서 형식과 검사기 경계를 제공합니다.
+
+## 보고서에 들어가는 것
+
+`vouch.bridge-report/v0` 보고서는 다음을 기록합니다.
+
+- 원본 언어와 원본 경로, 바이트 길이, 원본 해시
+- 대상 언어와 대상 경로, 바이트 길이, 대상 해시
+- 외부 엔진 이름과 버전, 커밋
+- 엔진이 검사했다고 선언한 경로와 capability id
+- source boundary, conversion route, target adapter 같은 게이트 결과
+- 연결된 증거 아티팩트의 해시
+- 무엇을 주장하고 무엇을 제외하는지 적은 경계 목록
+
+이 보고서는 증거의 형식을 다룹니다. 대상 코드가 올바르다는 증명이 아닙니다.
+
+## 예제 검사하기
+
+공개 예제는 작은 TypeScript에서 Python으로 가는 변환 증거 보고서입니다.
+
+```bash
+lispex verify-bridge \
+  --source examples/vouch-bridge/source/checkout-discount.ts \
+  --target examples/vouch-bridge/target/checkout_discount.py \
+  examples/vouch-bridge/reports/checkout-discount.bridge.json
+```
+
+exit `0`은 보고서가 앞뒤가 맞는다는 뜻입니다. 원본과 대상 바이트가 보고서 안의 해시와 일치하고, 선언된 검사가 내부적으로 일관되며, 경계 목록이 브릿지 계약과 일치합니다.
+
+exit `1`은 보고서를 읽을 수는 있었지만 계약을 만족하지 못했다는 뜻입니다. 원본 해시가 달라졌거나, 필수 경계 제외 항목이 빠졌거나, 알 수 없는 최상위 필드가 들어갔거나, 선언된 게이트가 실패하면 검사도 실패합니다.
+
+보고서를 로컬 원본 바이트, 대상 바이트, 연결된 증거 바이트, 기대 context manifest와 함께 묶어 검사할 수도 있습니다. 이렇게 하면 보고서가 서비스 밖에서 확인될 때 다른 문맥에 잘못 재사용되는 일을 더 쉽게 드러낼 수 있습니다.
+
+```bash
+lispex verify-bridge \
+  --source examples/vouch-bridge/source/checkout-discount.ts \
+  --target examples/vouch-bridge/target/checkout_discount.py \
+  --linked conversion-gate-proof=examples/vouch-bridge/linked/conversion-gate-proof.json \
+  --expect-context examples/vouch-bridge/context/checkout-discount.context.json \
+  examples/vouch-bridge/reports/checkout-discount.bridge.json
+```
+
+기대 context manifest는 소비자가 이번 검사에서 확인하려는 의도를 적은 파일입니다. profile, subject, route, capability id가 기대한 값과 맞는지 묻습니다. 일치한다는 말은 보고서가 그 의도에 맞게 묶여 있다는 뜻입니다. 그 의도가 신뢰할 만하다는 뜻도, 변환이 올바르다는 뜻도 아닙니다.
+
+`verify-bridge`는 보고서 필드를 해석하기 전에 artifact JSON 규율을 먼저 봅니다. canonical 형식이 아닌 JSON은 그 단계에서 거부됩니다. 바이트가 canonical 형식으로 받아들여진 뒤에는 정의된 객체 계층마다 닫힌 스키마 검사를 적용합니다. 중첩된 알 수 없는 필드는 신뢰를 주장하는 이름을 달고 있어도 그대로 전달되지 않고 거부됩니다.
+
+## 하지 않는 일
+
+`verify-bridge`는 example conversion engine이나 다른 외부 엔진을 실행하지 않습니다. 대상 코드를 다시 생성하지 않고, 비공개 파이프라인 상태를 들여다보지 않습니다. 대상 프로그램이 올바르다는 것과 두 언어가 같은 뜻이라는 것을 증명하지도 않습니다.
+
+가치는 그보다 좁고 실용적입니다. 상업적 변환은 실행 중인 서비스를 믿으라고 요구하는 대신, 바이트와 선언된 게이트와 경계를 밖에서 살펴볼 수 있는 휴대 가능한 증거 보고서를 남길 수 있습니다.

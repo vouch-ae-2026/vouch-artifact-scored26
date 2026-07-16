@@ -1,0 +1,11 @@
+(list
+  (quotient 7 3)
+  (remainder -7 3)
+  (floor 199/2)
+  (ceiling 199/2)
+  (round 5/2)
+  (round 7/2)
+  (truncate -7/2)
+  (min 3 1 2)
+  (max 3 1 2)
+  (abs -5))

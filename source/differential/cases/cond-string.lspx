@@ -1,0 +1,3 @@
+(cond
+  ((string<? "alpha" "beta") "eligible")
+  (else "ineligible"))

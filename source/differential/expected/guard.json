@@ -1,0 +1,97 @@
+{
+  "boundary": {
+    "attests": [
+      "source-bytes",
+      "profile-input-hash-binding",
+      "canonical-core-v0-bytes",
+      "meaning-graph-v0-hash-binding",
+      "reference-transcript-bytes",
+      "meaning-env-transcript-bytes",
+      "lowered-subset-transcript-agreement"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "independent-witness",
+      "substrate-independence",
+      "error-agreement",
+      "input-provenance",
+      "external-backend-reporting",
+      "full-cskernel-coverage",
+      "target-code-generation",
+      "private-implementation-detail",
+      "receipt-authenticity",
+      "generation-honesty",
+      "issuer-binding",
+      "timestamping",
+      "non-repudiation"
+    ]
+  },
+  "canonical": {
+    "byte_len": 74,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/core-hash/v0",
+      "hex": "64497fdd41fa4a5bd4594f7378e5258992854f7bbbe1c854318ba416b62611cd"
+    },
+    "status": "ok"
+  },
+  "comparison": {
+    "blockers": [
+      {
+        "fault_class": "lowering-unsupported-core",
+        "reason": "lowering-fault"
+      }
+    ],
+    "fault_class": "lowering-unsupported-core",
+    "first_divergence": null,
+    "reason": "lowering-fault",
+    "status": "not-comparable",
+    "substrate": "shared-rust-reference"
+  },
+  "diagnostics": [
+    {
+      "code": "meaning-graph-lowering",
+      "col": 1,
+      "file": "differential/cases/guard.lspx",
+      "line": 1,
+      "message": "Core form `guard` is outside Meaning Graph v0 lowering",
+      "severity": "error"
+    }
+  ],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "canonical_format": "lispex.core.canonical/v0",
+    "commit": {
+      "dirty": false,
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "vcs": "git"
+    },
+    "name": "lispex-rust-reference",
+    "version": "1.4.0"
+  },
+  "graph": {
+    "col": 1,
+    "kind": "unsupported-core",
+    "line": 1,
+    "message": "Core form `guard` is outside Meaning Graph v0 lowering",
+    "status": "fault"
+  },
+  "input": {
+    "status": "absent"
+  },
+  "meaning_env": {
+    "status": "not-run"
+  },
+  "reference": {
+    "status": "not-run"
+  },
+  "source": {
+    "byte_len": 33,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/source-hash/v0",
+      "hex": "2a52ee5edf500504688f311481f39514636d13be42348e61f25c91d22cfe0ce7"
+    },
+    "path": "differential/cases/guard.lspx"
+  }
+}

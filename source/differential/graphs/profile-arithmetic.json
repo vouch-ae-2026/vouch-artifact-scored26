@@ -1,0 +1,164 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "+"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 2
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 4
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "/"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 7
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "6",
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "3",
+      "anchor": {
+        "line": 1,
+        "col": 11
+      }
+    },
+    {
+      "kind": "call",
+      "op": 2,
+      "args": [
+        3,
+        4
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 6
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "*"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 15
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 1,
+        "col": 17
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "4",
+      "anchor": {
+        "line": 1,
+        "col": 19
+      }
+    },
+    {
+      "kind": "call",
+      "op": 6,
+      "args": [
+        7,
+        8
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 14
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "-"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 23
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "10",
+      "anchor": {
+        "line": 1,
+        "col": 25
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "3",
+      "anchor": {
+        "line": 1,
+        "col": 28
+      }
+    },
+    {
+      "kind": "call",
+      "op": 10,
+      "args": [
+        11,
+        12
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 22
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        1,
+        5,
+        9,
+        13
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        14
+      ]
+    }
+  ],
+  "roots": [
+    15
+  ]
+}

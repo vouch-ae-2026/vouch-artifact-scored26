@@ -1,0 +1,15 @@
+{
+  "expected_error": "graph-tag",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v9",
+    "nodes": [
+      {
+        "kind": "lit",
+        "datum": "1"
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

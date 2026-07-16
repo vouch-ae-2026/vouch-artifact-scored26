@@ -1,0 +1,98 @@
+{
+  "meaning_env_report": "csk.meaning-env-report/v0",
+  "engine": {
+    "name": "lispex-rust-reference",
+    "version": "1.4.0",
+    "commit": {
+      "vcs": "git",
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "dirty": false
+    }
+  },
+  "graph": {
+    "byte_len": 722,
+    "hash": {
+      "domain": "csk/meaning-graph-hash/v0",
+      "algo": "sha-256",
+      "hex": "185053f4a1f0855e45325b81c059c974a0342f9c0bb9f15c74b603421a51e69d"
+    }
+  },
+  "status": "ok",
+  "law_errors": [],
+  "trace": [
+    {
+      "step": 1,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:cons>"
+      ]
+    },
+    {
+      "step": 2,
+      "node": 1,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 3,
+      "node": 2,
+      "kind": "lit",
+      "values": [
+        "()"
+      ]
+    },
+    {
+      "step": 4,
+      "node": 3,
+      "kind": "call",
+      "values": [
+        "(1)"
+      ]
+    },
+    {
+      "step": 5,
+      "node": 4,
+      "kind": "block",
+      "values": [
+        "(1)"
+      ]
+    }
+  ],
+  "transcript": [
+    "(1)"
+  ],
+  "result": {
+    "values": [
+      "(1)"
+    ]
+  },
+  "fault": null,
+  "steps": {
+    "used": 5,
+    "limit": 65536
+  },
+  "boundary": {
+    "attests": [
+      "meaning-law-v0-validation-rust",
+      "bounded-deterministic-v0-subset-evaluation",
+      "lexical-closure-v0-evaluation",
+      "higher-order-traversal-v0-evaluation",
+      "profile-input-binding-when-supplied",
+      "transcript-bytes",
+      "graph-hash-binding"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "differential-receipt",
+      "independent-witness",
+      "external-backend-reporting",
+      "lispex-source-lowering",
+      "target-code-generation",
+      "full-cskernel-coverage",
+      "private-implementation-detail"
+    ]
+  }
+}

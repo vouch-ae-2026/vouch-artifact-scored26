@@ -1,0 +1,139 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "(2 3)",
+      "anchor": {
+        "line": 1,
+        "col": 12
+      }
+    },
+    {
+      "kind": "bind",
+      "name": {
+        "space": "user",
+        "text": "xs"
+      },
+      "value": 0,
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cons"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 3
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 2,
+        "col": 3
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "append"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 5
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "xs"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 7
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cons"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 10
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "4",
+      "anchor": {
+        "line": 2,
+        "col": 10
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "()",
+      "anchor": {
+        "line": 2,
+        "col": 2
+      }
+    },
+    {
+      "kind": "call",
+      "op": 6,
+      "args": [
+        7,
+        8
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 10
+      }
+    },
+    {
+      "kind": "call",
+      "op": 4,
+      "args": [
+        5,
+        9
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 5
+      }
+    },
+    {
+      "kind": "call",
+      "op": 2,
+      "args": [
+        3,
+        10
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 3
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        1,
+        11
+      ]
+    }
+  ],
+  "roots": [
+    12
+  ]
+}

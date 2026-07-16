@@ -1,0 +1,95 @@
+---
+title: 'Control Flow'
+description: 'Conditional expressions, logical forms, and collection traversal in Lispex.'
+---
+
+Lispex manages the flow of execution primarily through expressions that evaluate to values, rather than imperative statements. This functional approach leads to more predictable and composable code. This section covers the primary mechanisms for controlling program flow.
+
+## Conditional Evaluation with `if`
+
+The primary tool for conditional branching is the `if` expression. It evaluates a condition and, based on the result, evaluates one of two possible expressions.
+
+**Syntax:** `(if CONDITION_EXPR TRUE_EXPR FALSE_EXPR)`
+
+- It first evaluates `CONDITION_EXPR`.
+- If the result is truthy (anything other than `#f`), it evaluates and returns `TRUE_EXPR`.
+- If the result is `#f`, it evaluates and returns `FALSE_EXPR`.
+
+```lispex
+(define temperature 25)
+
+(define clothing-advice
+  (if (> temperature 20)
+      "It's warm, wear a t-shirt!"
+      "It's cool, consider a jacket."))
+;; clothing-advice ⇒ "It's warm, wear a t-shirt!"
+
+;; Nested conditionals
+(define grade 85)
+
+(define letter-grade
+  (if (>= grade 90)
+      "A"
+      (if (>= grade 80)
+          "B"
+          (if (>= grade 70)
+              "C"
+              "F"))))
+;; letter-grade ⇒ "B"
+```
+
+## Logical Operators: `and` & `or`
+
+Lispex provides `and` and `or` operators for logical combinations. They use **short-circuit evaluation**, which makes them useful for control flow.
+
+- **`(and ...)`**: Evaluates left to right. Stops and returns `#f` as soon as it encounters `#f`. If all are truthy, returns the last value.
+- **`(or ...)`**: Evaluates left to right. Returns the first truthy value; if none, returns `#f`.
+
+```lispex
+(define user-is-admin #t)
+(define has-permission #t)
+
+;; Both are truthy; returns the last value
+(and user-is-admin has-permission "Access Granted")  ; ⇒ "Access Granted"
+
+;; Short-circuits on #f; second expr not evaluated
+(and #f (some-expensive-call))                        ; ⇒ #f
+```
+
+## Iteration
+
+True to its functional roots, Lispex prefers declarative approaches to iteration over traditional loops like `for` or `while`. This is achieved through recursion and higher-order functions.
+
+### Iteration with Recursion
+
+Recursion is a natural way to perform iteration, especially on lists. The pattern involves processing the first element of a list and then recursively calling the function on the rest of the list.
+
+**Example: Summing the numbers in a list**
+```lispex
+(define (sum-list xs)
+  (if (null? xs)
+      0                                 ; base case
+      (+ (car xs) (sum-list (cdr xs))))) ; recursive step
+
+(sum-list (list 10 20 30 40))           ; ⇒ 100
+```
+
+### Iteration with Higher-Order Functions
+
+A more declarative, and often preferred, way to handle collections is by using higher-order functions like `map`, `filter`, and `reduce`.
+
+```lispex
+(define numbers (list 1 2 3 4 5))
+
+;; map: apply a function to each element
+(define squared (map (lambda (n) (* n n)) numbers))
+;; squared ⇒ (list 1 4 9 16 25)
+
+;; filter: keep elements that satisfy a predicate
+(define evens (filter (lambda (n) (= (modulo n 2) 0)) numbers))
+;; evens ⇒ (list 2 4)
+
+;; reduce: combine all elements into a single value
+(define sum (reduce (lambda (acc elem) (+ acc elem)) 0 numbers))
+;; sum ⇒ 15
+```

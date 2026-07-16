@@ -1,0 +1,332 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "values"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 1,
+        "col": 11
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        1,
+        2
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "call-with-values"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "values"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 30
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 2,
+        "col": 38
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 2,
+        "col": 40
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "3",
+      "anchor": {
+        "line": 2,
+        "col": 42
+      }
+    },
+    {
+      "kind": "call",
+      "op": 5,
+      "args": [
+        6,
+        7,
+        8
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 30
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [],
+      "body": 9,
+      "anchor": {
+        "line": 2,
+        "col": 19
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "list"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 46
+      }
+    },
+    {
+      "kind": "call",
+      "op": 4,
+      "args": [
+        10,
+        11
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "call-with-values"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "values"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 30
+      }
+    },
+    {
+      "kind": "call",
+      "op": 14,
+      "args": [],
+      "anchor": {
+        "line": 3,
+        "col": 30
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [],
+      "body": 15,
+      "anchor": {
+        "line": 3,
+        "col": 19
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "done",
+      "anchor": {
+        "line": 3,
+        "col": 51
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [],
+      "body": 17,
+      "anchor": {
+        "line": 3,
+        "col": 40
+      }
+    },
+    {
+      "kind": "call",
+      "op": 13,
+      "args": [
+        16,
+        18
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "call-with-values"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "values"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 30
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "5",
+      "anchor": {
+        "line": 4,
+        "col": 38
+      }
+    },
+    {
+      "kind": "call",
+      "op": 21,
+      "args": [
+        22
+      ],
+      "anchor": {
+        "line": 4,
+        "col": 30
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [],
+      "body": 23,
+      "anchor": {
+        "line": 4,
+        "col": 19
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "values"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 42
+      }
+    },
+    {
+      "kind": "call",
+      "op": 20,
+      "args": [
+        24,
+        25
+      ],
+      "anchor": {
+        "line": 4,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "apply"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "values"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 8
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(6 7)",
+      "anchor": {
+        "line": 5,
+        "col": 15
+      }
+    },
+    {
+      "kind": "call",
+      "op": 27,
+      "args": [
+        28,
+        29
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        3,
+        12,
+        19,
+        26,
+        30
+      ]
+    }
+  ],
+  "roots": [
+    31
+  ]
+}

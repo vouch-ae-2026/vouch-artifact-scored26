@@ -1,0 +1,34 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cons"
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "temp",
+        "index": 0
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "()"
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        1,
+        2
+      ]
+    }
+  ],
+  "roots": [
+    3
+  ]
+}

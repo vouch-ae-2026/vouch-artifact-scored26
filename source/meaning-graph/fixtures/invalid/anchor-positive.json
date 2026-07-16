@@ -1,0 +1,19 @@
+{
+  "expected_error": "anchor-positive",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "lit",
+        "datum": "1",
+        "anchor": {
+          "line": 0,
+          "col": 1
+        }
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+---
+title: 'Error Handling'
+description: 'Parse, normalization, and runtime errors in Lispex, with the forms you can catch and the diagnostics you can expect.'
+---
+Lispex defines an S-expression surface and deterministic normalization. This page covers the diagnostics you can expect at parse and normalize time. Runtime faults are produced by the reference interpreter. Try them in the [Playground](/en/play).
+
+## Diagnostic codes
+
+Lispex emitters should use consistent codes (recommended):
+
+- E100, syntax: illegal token, paren/dotted list error
+- E110, reserved: attempt to bind a reserved keyword
+- E120, macro: forbidden user macro/reader extension
+- E130, derived: malformed derived form, such as empty `cond`
+- E140, syntax: illegal dotted list form, such as extra terms after dot
+- E150, string: invalid or out-of-range escape, such as malformed `\x..;`
+- W200, static: unused binding. Reserved and not emitted by the reference interpreter.
+- W210, static: possible immediate self-reference in `letrec`. Reserved and not emitted by the reference interpreter.
+- W330, style: `%` alias used. Prefer `modulo`.
+- W331, style: `list-first` or `list-rest` alias used. Prefer `first` or `rest`.
+
+Message format (recommended): `CODE file:line:col message`
+
+## Examples
+
+### E110: reserved keyword binding
+```lispex
+(let ((if 1)) if)   ; E110: cannot bind reserved word: if
+```
+
+### E120: forbidden macro/reader forms
+```lispex
+(define-syntax swap ...)    ; E120: user macros are not allowed
+#; (this is a reader extension)   ; E120
+```
+
+### E130: malformed derived forms
+```lispex
+(cond)                       ; E130: empty cond
+(and 1 . 2)                  ; E100/E130 depending on reader
+```
+
+### E100: dotted list syntax
+```lispex
+(a b . c d)                  ; E100: illegal dotted list
+```
+
+### E140: illegal dotted list form
+```lispex
+(a .)                         ; E140: missing tail after dot
+```
+
+### W330: modulo alias warning
+Using `%` instead of `modulo` may emit a style warning:
+```lispex
+(% 10 3)    ; W330: prefer (modulo 10 3)
+```
+
+## Recoverable error handling
+
+Runtime faults can be caught. `guard` binds the raised condition and runs `cond`‑style clauses, reraising it when none match and there is no `else`:
+
+```lispex
+(guard (e ((error-object? e) (error-object-message e))
+          (else e))
+  (error "file not found" 404))   ; ⇒ "file not found"
+```
+
+- `(raise obj)` raises any object (non‑continuable); `(raise-continuable obj)` lets the handler return a value back into the call.
+- `(error message irritant…)` makes an error object and raises it. `error-object?`, `error-object-message`, and `error-object-irritants` inspect one; a caught intrinsic fault (an unbound variable, `car` of a non‑pair, …) is also an error object.
+- `(with-exception-handler handler thunk)` is the low‑level primitive; the handler runs at the raise point, with the outer handler current. `guard` is the everyday form.
+- The deterministic recursion bound is **not** catchable. It always unwinds to the top.
+
+## Best practices
+- Stick to Core forms + allowed derived forms; avoid user macro constructs.
+- Prefer `let*` when sequential dependencies matter; use `letrec` for local recursion.
+- Keep module headers simple `(module ...)` if used; they are flattened at the top level.
+- Add small golden tests around normalization to catch E130 early.

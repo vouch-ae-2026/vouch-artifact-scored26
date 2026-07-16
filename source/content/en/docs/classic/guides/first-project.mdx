@@ -1,0 +1,112 @@
+---
+title: 'First Project'
+description: 'Now, let''s move beyond theory and build your first Lispex project. Experience firsthand how a small idea is embodied in code and brought to life. All creation begins with the first line of code.'
+---
+
+Welcome to your first Lispex project. In the [Getting Started](/en/docs/getting-started) guide, you ran code through the reference interpreter. Now we’ll build a small, complete program that processes data and prints a formatted report.
+
+## The Goal
+
+We will write a program that:
+
+1.  Defines a list of tasks, each with a name and a priority.
+2.  Filters this list to find only the high-priority tasks.
+3.  Formats the high-priority tasks into readable strings.
+4.  Prints the final report to the console.
+
+This will teach you how to define data structures, create helper functions, and use built-in functions in the deterministic Lispex runtime.
+
+## Step 1: Create a local file
+
+Create a file named `task-report.lspx`. You can also paste the same snippets into the [Playground](/en/play) while you iterate.
+
+## Step 2: Define Your Data
+
+First, let's define our list of tasks. We'll use a variable named `tasks` to hold a list of lists. Each inner list will contain a task name (a string) and its priority (a number, where higher is more important).
+
+```lispex
+;; task-report.lspx
+
+;; Define our source data: a list of tasks.
+(define tasks
+  (list (list "Write documentation" 2)
+        (list "Fix critical bug" 3)
+        (list "Refactor the core engine" 3)
+        (list "Add new feature" 1)
+        (list "Plan marketing campaign" 2)))
+```
+
+## Step 3: Write a Helper Function
+
+It's good practice to break down logic into small, reusable functions. Let's create a function that checks if a task is "high priority" (we'll define this as priority 3 or higher).
+
+```lispex
+;; (Add this in the same task-report.lspx file)
+
+;; A helper function that returns `#t` if a task's priority is ≥ 3.
+;; `(list-first (list-rest task))` is a common Lisp-family idiom to get the second element of a list.
+(define (is-high-priority? task)
+  (>= (list-first (list-rest task)) 3))
+```
+
+## Step 4: Process the Data into a Report
+
+Now for the main event! We will chain together built-in functions to transform our raw `tasks` data into a final list of formatted report strings.
+
+-   `filter` will use our `is-high-priority?` function to create a new list containing *only* the high-priority tasks.
+-   `map` will take that filtered list and apply a `lambda` function to format each task into a nicely readable string, using `str-concat` for safety.
+
+```lispex
+;; (Add this below, still in task-report.lspx)
+
+;; 1. Filter the tasks list.
+(define high-priority-tasks (filter is-high-priority? tasks))
+
+;; 2. Map the filtered list to a new list of formatted report lines.
+(define report-lines
+  (map (lambda (task)
+         (string-append "URGENT: " (list-first task)))
+       high-priority-tasks))
+```
+
+## Step 5: Print the Final Report
+
+Our `report-lines` variable now holds the data we want to display. To actually show it to the user, we need to perform an "I/O action" (Input/Output). We'll use the `println` function we imported earlier, applying it to each line in our report.
+
+```lispex
+;; (Add this as the final expressions in task-report.lspx)
+
+;; 3. Print each line of the report to the console.
+;; (Add this code to task_report.lspx)
+
+(println "--- High-Priority Task Report ---")
+(map println report-lines)
+(println "---------------------------------")
+```
+
+## Step 6: Run it
+
+Run the file with the CLI:
+
+```bash
+lispex run task-report.lspx
+```
+
+Expected output:
+
+```text
+--- High-Priority Task Report ---
+URGENT: Fix critical bug
+URGENT: Refactor the core engine
+---------------------------------
+```
+
+## Conclusion
+
+Congratulations! You’ve built a complete Lispex program that does something useful. You learned how to structure Lispex code, define data and functions, and use a filter/map pattern to transform data into a user-facing report.
+
+From here, try modifying the program:
+
+-   Change the priority threshold in the `is-high-priority?` function.
+-   Alter the report format in the `lambda` function passed to `map`.
+-   Add more tasks to the initial `tasks` list.

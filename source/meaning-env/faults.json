@@ -1,0 +1,29 @@
+{
+  "faults": [
+    {
+      "case": "unbound-ref.json",
+      "kind": "unbound-ref",
+      "status": "fault"
+    },
+    {
+      "case": "non-callable.json",
+      "kind": "non-callable",
+      "status": "fault"
+    },
+    {
+      "case": "intrinsic-domain.json",
+      "kind": "intrinsic-domain",
+      "status": "fault"
+    },
+    {
+      "case": "arity.json",
+      "kind": "arity",
+      "status": "fault"
+    },
+    {
+      "case": "shared-node.json",
+      "kind": "shared-node",
+      "status": "fault"
+    }
+  ]
+}

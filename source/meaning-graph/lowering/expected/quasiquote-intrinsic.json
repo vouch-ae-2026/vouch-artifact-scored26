@@ -1,0 +1,56 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cons"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 3
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 4
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "()",
+      "anchor": {
+        "line": 1,
+        "col": 2
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        1,
+        2
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 3
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        3
+      ]
+    }
+  ],
+  "roots": [
+    4
+  ]
+}

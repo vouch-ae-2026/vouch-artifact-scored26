@@ -1,0 +1,15 @@
+{
+  "expected_error": "node-kind",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "unknown",
+        "value": 0
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

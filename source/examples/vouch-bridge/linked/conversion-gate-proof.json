@@ -1,0 +1,21 @@
+{
+  "proof": "example.conversion-gate-proof/v0",
+  "case_id": "checkout-discount-ts-to-python",
+  "checks": [
+    {
+      "id": "source-boundary",
+      "status": "pass"
+    },
+    {
+      "id": "conversion-route",
+      "status": "pass"
+    },
+    {
+      "id": "target-adapter",
+      "status": "pass"
+    }
+  ],
+  "summary": {
+    "status": "pass"
+  }
+}

@@ -1,0 +1,22 @@
+[package]
+name = "lispex-wasm"
+version = "1.4.0"
+edition = "2021"
+description = "Lispex v1.4 reference interpreter — WebAssembly bindings for the browser playground"
+publish = false
+
+# A thin, faithful wasm wrapper around the `lispex` library: it mirrors
+# `bin/lispex.rs::run` (read -> normalize -> eval each top-level form, auto-printing
+# results) but captures stdout/diagnostics into a returned struct instead of touching
+# real stdio. It changes NO interpreter semantics; the only build-profile difference is
+# the smaller wasm `CALL_DEPTH_LIMIT` defined in `lispex::eval` (see LISPEX-RUNTIME.md §15).
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+lispex = { path = "../interp" }
+wasm-bindgen = "0.2"
+
+# The root workspace owns the deterministic release profile. It preserves the
+# playground-specific size optimization for this package while sharing the pinned
+# lockfile, LTO, and panic policy with the native release workspace.

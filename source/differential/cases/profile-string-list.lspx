@@ -1,0 +1,4 @@
+(begin
+  (length (list 1 2 3))
+  (equal? (cons 1 '()) (list 1))
+  (string=? "ok" "ok"))

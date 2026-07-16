@@ -1,0 +1,107 @@
+{
+  "measurement_protocol": {
+    "measured_runs": 30,
+    "monotonic_clock": "process.hrtime.bigint",
+    "percentile_method": "nearest-rank",
+    "warmup_runs": 5
+  },
+  "measurements": [
+    {
+      "excluded_ids": [],
+      "metric": "envelope_bytes",
+      "population": 480,
+      "statistic": "maximum",
+      "unit": "byte",
+      "value": 59994
+    },
+    {
+      "excluded_ids": [],
+      "metric": "envelope_bytes",
+      "population": 480,
+      "statistic": "median",
+      "unit": "byte",
+      "value": 59974
+    },
+    {
+      "excluded_ids": [],
+      "metric": "envelope_bytes",
+      "population": 480,
+      "statistic": "p95",
+      "unit": "byte",
+      "value": 59994
+    },
+    {
+      "excluded_ids": [],
+      "metric": "native_verification_latency",
+      "population": 14400,
+      "statistic": "maximum",
+      "unit": "microsecond",
+      "value": 3618773
+    },
+    {
+      "excluded_ids": [],
+      "metric": "native_verification_latency",
+      "population": 14400,
+      "statistic": "median",
+      "unit": "microsecond",
+      "value": 59459
+    },
+    {
+      "excluded_ids": [],
+      "metric": "native_verification_latency",
+      "population": 14400,
+      "statistic": "p95",
+      "unit": "microsecond",
+      "value": 170124
+    },
+    {
+      "excluded_ids": [],
+      "metric": "peak_resident_memory",
+      "population": 30,
+      "statistic": "maximum",
+      "unit": "byte",
+      "value": 81195008
+    },
+    {
+      "excluded_ids": [],
+      "metric": "peak_resident_memory",
+      "population": 30,
+      "statistic": "median",
+      "unit": "byte",
+      "value": 81014784
+    },
+    {
+      "excluded_ids": [],
+      "metric": "peak_resident_memory",
+      "population": 30,
+      "statistic": "p95",
+      "unit": "byte",
+      "value": 81174528
+    },
+    {
+      "excluded_ids": [],
+      "metric": "selected_corpus_replay_latency",
+      "population": 30,
+      "statistic": "maximum",
+      "unit": "microsecond",
+      "value": 24130904
+    },
+    {
+      "excluded_ids": [],
+      "metric": "selected_corpus_replay_latency",
+      "population": 30,
+      "statistic": "median",
+      "unit": "microsecond",
+      "value": 14864689
+    },
+    {
+      "excluded_ids": [],
+      "metric": "selected_corpus_replay_latency",
+      "population": 30,
+      "statistic": "p95",
+      "unit": "microsecond",
+      "value": 17709783
+    }
+  ],
+  "performance_report": "vouch.scored26-performance/v0"
+}

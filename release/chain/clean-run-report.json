@@ -1,0 +1,97 @@
+{
+  "clean_run_runtime_seconds": 5122,
+  "exact_reproduction_comparisons_sha256": "sha256:634bb491aa90a02c69533e099bcdf759fa825991b30cbb294fc64aea7387128b",
+  "fixture_report_sha256": "sha256:f6dc99af7c81ce6f0b8a8a580dba8e5c73b9f2fc9f597ac49676ee5dd07f55f7",
+  "fixture_results": {
+    "built": {
+      "expected": 165,
+      "matched": 165,
+      "mismatched": 0,
+      "skipped": 0
+    },
+    "design_target": {
+      "implemented": 0,
+      "listed": 0,
+      "matched": 0,
+      "not_implemented": 0
+    }
+  },
+  "mutation": {
+    "case_level": {
+      "common_mode_cases": 7,
+      "disagreement_cases": 640,
+      "infrastructure_failure_cases": 0,
+      "pipeline_failure_cases": 0,
+      "survivor_cases": 0
+    },
+    "mutant_level": {
+      "activated_any": 5,
+      "built": 12,
+      "detected_any": 4,
+      "detection_rate": "33.3",
+      "seeded": 12
+    }
+  },
+  "mutation_report_sha256": "sha256:4b8604da8b97fc6550f52005c88166a65592e8cc7b97def0338c908597e75fd4",
+  "performance_report_sha256": "sha256:3c4c5bc8e487341acd998657fee61a1653675c4bd1fb58816252e00c2656e6ec",
+  "public_data_scan": "pass",
+  "release_descriptor_sha256": "sha256:daca8fa97901d6396abd7e64c27cbd692929a23b70de82cc16f0d158220fd5ae",
+  "release_private_key_present": false,
+  "reproduction_report": "vouch.scored26-reproduction/v0",
+  "status": "pass",
+  "workload": {
+    "candidates": 1536,
+    "decision_distribution_baseline": {
+      "approve": 65,
+      "deny": 69,
+      "invalid-input": 48,
+      "review": 58
+    },
+    "decision_distribution_changed": {
+      "approve": 69,
+      "deny": 53,
+      "invalid-input": 48,
+      "review": 70
+    },
+    "decision_flips": 76,
+    "decision_pair_count": 240,
+    "development": 192,
+    "exception_count_by_kind": {
+      "not_comparable_executions": 0,
+      "pipeline_failure_executions": 0,
+      "profile_escape_executions": 0
+    },
+    "excluded_from_matrix_count": 0,
+    "held_out": 48,
+    "held_out_flips": 13,
+    "selected_case_count": 240,
+    "transition_matrix": {
+      "approve": {
+        "approve": 37,
+        "deny": 0,
+        "invalid-input": 0,
+        "review": 28
+      },
+      "deny": {
+        "approve": 0,
+        "deny": 53,
+        "invalid-input": 0,
+        "review": 16
+      },
+      "invalid-input": {
+        "approve": 0,
+        "deny": 0,
+        "invalid-input": 48,
+        "review": 0
+      },
+      "review": {
+        "approve": 32,
+        "deny": 0,
+        "invalid-input": 0,
+        "review": 26
+      }
+    }
+  },
+  "workload_report_sha256": "sha256:60aaa12d73d36f3183b5bac04e447d70aece9da2a9cc4c5841548fb84047b0fb",
+  "worktree_clean": true
+}

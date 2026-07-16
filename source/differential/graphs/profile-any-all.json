@@ -1,0 +1,540 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "list"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "any?"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 4
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "="
+      },
+      "anchor": {
+        "line": 2,
+        "col": 26
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 28
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "0",
+      "anchor": {
+        "line": 2,
+        "col": 30
+      }
+    },
+    {
+      "kind": "call",
+      "op": 2,
+      "args": [
+        3,
+        4
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 25
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#t",
+      "anchor": {
+        "line": 2,
+        "col": 33
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "/"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 37
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 2,
+        "col": 39
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "0",
+      "anchor": {
+        "line": 2,
+        "col": 41
+      }
+    },
+    {
+      "kind": "call",
+      "op": 7,
+      "args": [
+        8,
+        9
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 36
+      }
+    },
+    {
+      "kind": "if",
+      "test": 5,
+      "then": 6,
+      "else": 10,
+      "anchor": {
+        "line": 2,
+        "col": 21
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "x"
+        }
+      ],
+      "body": 11,
+      "anchor": {
+        "line": 2,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(0 1)",
+      "anchor": {
+        "line": 2,
+        "col": 46
+      }
+    },
+    {
+      "kind": "call",
+      "op": 1,
+      "args": [
+        12,
+        13
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 3
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "all?"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 4
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "="
+      },
+      "anchor": {
+        "line": 3,
+        "col": 26
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 28
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "0",
+      "anchor": {
+        "line": 3,
+        "col": 30
+      }
+    },
+    {
+      "kind": "call",
+      "op": 16,
+      "args": [
+        17,
+        18
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 25
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#f",
+      "anchor": {
+        "line": 3,
+        "col": 33
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "/"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 37
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 3,
+        "col": 39
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "0",
+      "anchor": {
+        "line": 3,
+        "col": 41
+      }
+    },
+    {
+      "kind": "call",
+      "op": 21,
+      "args": [
+        22,
+        23
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 36
+      }
+    },
+    {
+      "kind": "if",
+      "test": 19,
+      "then": 20,
+      "else": 24,
+      "anchor": {
+        "line": 3,
+        "col": 21
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "x"
+        }
+      ],
+      "body": 25,
+      "anchor": {
+        "line": 3,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(0 1)",
+      "anchor": {
+        "line": 3,
+        "col": 46
+      }
+    },
+    {
+      "kind": "call",
+      "op": 15,
+      "args": [
+        26,
+        27
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 3
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "all?"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 9
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "number?"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 14
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(1 2 3)",
+      "anchor": {
+        "line": 4,
+        "col": 22
+      }
+    },
+    {
+      "kind": "call",
+      "op": 29,
+      "args": [
+        30,
+        31
+      ],
+      "anchor": {
+        "line": 4,
+        "col": 8
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "any?"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 9
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "boolean?"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 14
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(alpha 0 #f)",
+      "anchor": {
+        "line": 5,
+        "col": 23
+      }
+    },
+    {
+      "kind": "call",
+      "op": 33,
+      "args": [
+        34,
+        35
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 8
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "all?"
+      },
+      "anchor": {
+        "line": 6,
+        "col": 9
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "symbol?"
+      },
+      "anchor": {
+        "line": 6,
+        "col": 14
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(alpha beta gamma)",
+      "anchor": {
+        "line": 6,
+        "col": 22
+      }
+    },
+    {
+      "kind": "call",
+      "op": 37,
+      "args": [
+        38,
+        39
+      ],
+      "anchor": {
+        "line": 6,
+        "col": 8
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "any?"
+      },
+      "anchor": {
+        "line": 7,
+        "col": 9
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "number?"
+      },
+      "anchor": {
+        "line": 7,
+        "col": 14
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "()",
+      "anchor": {
+        "line": 7,
+        "col": 22
+      }
+    },
+    {
+      "kind": "call",
+      "op": 41,
+      "args": [
+        42,
+        43
+      ],
+      "anchor": {
+        "line": 7,
+        "col": 8
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "all?"
+      },
+      "anchor": {
+        "line": 8,
+        "col": 9
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "number?"
+      },
+      "anchor": {
+        "line": 8,
+        "col": 14
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "()",
+      "anchor": {
+        "line": 8,
+        "col": 22
+      }
+    },
+    {
+      "kind": "call",
+      "op": 45,
+      "args": [
+        46,
+        47
+      ],
+      "anchor": {
+        "line": 8,
+        "col": 8
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        14,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        49
+      ]
+    }
+  ],
+  "roots": [
+    50
+  ]
+}

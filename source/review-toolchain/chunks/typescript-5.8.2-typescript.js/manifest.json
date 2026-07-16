@@ -1,0 +1,24 @@
+{
+  "chunk_manifest": "vouch.review-toolchain-chunks/v1",
+  "distributed_file_limit_bytes": 8000000,
+  "original": {
+    "bytes": 9065569,
+    "mode": "0644",
+    "path": "review-toolchain/typescript/lib/typescript.js",
+    "sha256": "795e49e46d497cc16e4b02916b50cbca257b4256d62cddc4cc504103f7961027"
+  },
+  "part_size_limit_bytes": 7340032,
+  "parts": [
+    {
+      "bytes": 7340032,
+      "path": "review-toolchain/chunks/typescript-5.8.2-typescript.js/part-0000",
+      "sha256": "d1372a4193d979f0b75250f75fce87cefd3a3f2545db648cb6cd9e97527d11df"
+    },
+    {
+      "bytes": 1725537,
+      "path": "review-toolchain/chunks/typescript-5.8.2-typescript.js/part-0001",
+      "sha256": "fea0556aa41ad26b2ba08e1bd1337abb5924d11f57618525c6412f78e008bec9"
+    }
+  ],
+  "reassembly": "ordered byte concatenation"
+}

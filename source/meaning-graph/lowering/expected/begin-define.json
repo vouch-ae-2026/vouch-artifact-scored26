@@ -1,0 +1,56 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 18
+      }
+    },
+    {
+      "kind": "bind",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "value": 0,
+      "anchor": {
+        "line": 1,
+        "col": 8
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 21
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        1,
+        2
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        3
+      ]
+    }
+  ],
+  "roots": [
+    4
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "list"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "member"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 8
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(alpha 2)",
+      "anchor": {
+        "line": 2,
+        "col": 15
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "((beta 1) (alpha 2))",
+      "anchor": {
+        "line": 2,
+        "col": 26
+      }
+    },
+    {
+      "kind": "call",
+      "op": 1,
+      "args": [
+        2,
+        3
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 7
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "member-equal",
+      "anchor": {
+        "line": 2,
+        "col": 49
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "bad",
+      "anchor": {
+        "line": 2,
+        "col": 63
+      }
+    },
+    {
+      "kind": "if",
+      "test": 4,
+      "then": 5,
+      "else": 6,
+      "anchor": {
+        "line": 2,
+        "col": 3
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "memv"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 8
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "beta",
+      "anchor": {
+        "line": 3,
+        "col": 13
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(alpha beta gamma)",
+      "anchor": {
+        "line": 3,
+        "col": 19
+      }
+    },
+    {
+      "kind": "call",
+      "op": 8,
+      "args": [
+        9,
+        10
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 7
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "memv-eqv",
+      "anchor": {
+        "line": 3,
+        "col": 40
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "bad",
+      "anchor": {
+        "line": 3,
+        "col": 50
+      }
+    },
+    {
+      "kind": "if",
+      "test": 11,
+      "then": 12,
+      "else": 13,
+      "anchor": {
+        "line": 3,
+        "col": 3
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cdr"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 4
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "assoc"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "rate",
+      "anchor": {
+        "line": 4,
+        "col": 15
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "((limit . 1000) (rate . 199/2))",
+      "anchor": {
+        "line": 4,
+        "col": 21
+      }
+    },
+    {
+      "kind": "call",
+      "op": 16,
+      "args": [
+        17,
+        18
+      ],
+      "anchor": {
+        "line": 4,
+        "col": 8
+      }
+    },
+    {
+      "kind": "call",
+      "op": 15,
+      "args": [
+        19
+      ],
+      "anchor": {
+        "line": 4,
+        "col": 3
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cdr"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 4
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "assv"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "tier",
+      "anchor": {
+        "line": 5,
+        "col": 14
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "((tier . gold) (flag . #t))",
+      "anchor": {
+        "line": 5,
+        "col": 20
+      }
+    },
+    {
+      "kind": "call",
+      "op": 22,
+      "args": [
+        23,
+        24
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 8
+      }
+    },
+    {
+      "kind": "call",
+      "op": 21,
+      "args": [
+        25
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 3
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        7,
+        14,
+        20,
+        26
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        27
+      ]
+    }
+  ],
+  "roots": [
+    28
+  ]
+}

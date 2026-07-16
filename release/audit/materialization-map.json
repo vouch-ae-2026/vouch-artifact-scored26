@@ -1,0 +1,225 @@
+{
+  "audit_surface": [
+    {
+      "destination": "vouch-scored26-artifact/",
+      "operation": "safe-extract",
+      "role": "persistent release archive",
+      "source": "phase1/clean-room/vouch-scored26-artifact.tar.zst"
+    },
+    {
+      "destination": "lifecycle/descriptor/release-descriptor.json",
+      "role": "D payload",
+      "source": "phase1/clean-room/release-descriptor.json"
+    },
+    {
+      "destination": "lifecycle/descriptor/release-descriptor.dsse.json",
+      "role": "D signed envelope",
+      "source": "phase1/clean-room/release-descriptor.dsse.json"
+    },
+    {
+      "destination": "lifecycle/descriptor/trust-policy.json",
+      "role": "release trust policy",
+      "source": "phase1/clean-room/trust-policy.json"
+    },
+    {
+      "destination": "lifecycle/descriptor/vouch-scored26-artifact.tar.zst.sha256",
+      "role": "archive digest sidecar",
+      "source": "phase1/clean-room/vouch-scored26-artifact.tar.zst.sha256"
+    },
+    {
+      "destination": "lifecycle/phase1/clean-run-report.json",
+      "role": "Q clean-run report",
+      "source": "phase1/clean-room/external/clean-run-report.json"
+    },
+    {
+      "destination": "lifecycle/phase1/exact-reproduction-comparisons.json",
+      "role": "exact reproduction comparisons",
+      "source": "phase1/clean-room/external/exact-reproduction-comparisons.json"
+    },
+    {
+      "destination": "lifecycle/owners/fixture-results.json",
+      "role": "fixture owner report",
+      "source": "phase1/clean-room/phase1-results/artifact/results/fixture-results.json"
+    },
+    {
+      "destination": "lifecycle/owners/workload-results.json",
+      "role": "workload owner report",
+      "source": "phase1/clean-room/phase1-results/artifact/workload/workload-results.json"
+    },
+    {
+      "destination": "lifecycle/owners/mutation-results.json",
+      "role": "mutation owner report",
+      "source": "phase1/clean-room/phase1-results/artifact/mutation/mutation-results.json"
+    },
+    {
+      "destination": "lifecycle/owners/performance-results.json",
+      "role": "performance owner report",
+      "source": "phase1/clean-room/phase1-results/artifact/performance/performance-results.json"
+    },
+    {
+      "destination": "lifecycle/phase2/finalize-report.json",
+      "role": "phase-2 finalizer status",
+      "source": "phase2/finalized/finalize-report.json"
+    },
+    {
+      "destination": "lifecycle/phase2/reproduction-observation.json",
+      "role": "R payload",
+      "source": "phase2/finalized/reproduction-observation.json"
+    },
+    {
+      "destination": "lifecycle/phase2/reproduction-observation.dsse.json",
+      "role": "R signed envelope",
+      "source": "phase2/finalized/reproduction-observation.dsse.json"
+    },
+    {
+      "destination": "lifecycle/phase2/release-publication.json",
+      "role": "P publication record",
+      "source": "phase2/finalized/release-publication.json"
+    },
+    {
+      "destination": "lifecycle/phase3/publication-report.json",
+      "role": "S terminal publication report",
+      "source": "phase3/publication/publication-report.json"
+    },
+    {
+      "destination": "lifecycle/phase3/vouch-scored26-paper.pdf",
+      "role": "machine-readable release PDF",
+      "source": "phase3/publication/vouch-scored26-paper.pdf"
+    }
+  ],
+  "bundle_evidence": {
+    "archive_bundle": {
+      "source": "vouch-scored26-artifact/release/vouch-scored26.bundle"
+    },
+    "distributed_review_bundle": {
+      "input_option": "--review-bundle",
+      "logical_path": "source/synthetic-history/vouch-scored26.bundle"
+    },
+    "reconciliation": {
+      "destination": "release/audit/bundle-reconciliation.json"
+    },
+    "release_manifest": {
+      "destination": "release/results/release-manifest.json",
+      "role": "D-bound archive release manifest",
+      "source": "vouch-scored26-artifact/artifact/release-manifest.json"
+    }
+  },
+  "copy": [
+    {
+      "destination": "release/chain/release-descriptor.json",
+      "role": "D payload",
+      "source": "phase1/clean-room/release-descriptor.json"
+    },
+    {
+      "destination": "release/chain/release-descriptor.dsse.json",
+      "role": "D signed envelope",
+      "source": "phase1/clean-room/release-descriptor.dsse.json"
+    },
+    {
+      "destination": "release/chain/trust-policy.json",
+      "role": "release trust policy",
+      "source": "phase1/clean-room/trust-policy.json"
+    },
+    {
+      "destination": "release/chain/native-release-public-key.json",
+      "role": "release public-key record",
+      "source": "phase3/paper-source/artifact/trust/native-release-public-key.json"
+    },
+    {
+      "destination": "release/chain/clean-run-report.json",
+      "role": "Q clean-run report",
+      "source": "phase1/clean-room/external/clean-run-report.json"
+    },
+    {
+      "destination": "release/chain/finalize-report.json",
+      "role": "phase-2 finalizer status",
+      "source": "phase2/finalized/finalize-report.json"
+    },
+    {
+      "destination": "release/chain/reproduction-observation.json",
+      "role": "R payload",
+      "source": "phase2/finalized/reproduction-observation.json"
+    },
+    {
+      "destination": "release/chain/reproduction-observation.dsse.json",
+      "role": "R signed envelope",
+      "source": "phase2/finalized/reproduction-observation.dsse.json"
+    },
+    {
+      "destination": "release/chain/release-publication.json",
+      "role": "P publication record",
+      "source": "phase2/finalized/release-publication.json"
+    },
+    {
+      "destination": "release/chain/publication-report.json",
+      "role": "S terminal publication report",
+      "source": "phase3/publication/publication-report.json"
+    },
+    {
+      "destination": "release/results/condition-map.json",
+      "role": "condition ledger map",
+      "source": "phase3/paper-source/artifact/contract/condition-map.json"
+    },
+    {
+      "destination": "release/results/fixture-results.json",
+      "role": "fixture owner report",
+      "source": "phase1/clean-room/phase1-results/artifact/results/fixture-results.json"
+    },
+    {
+      "destination": "release/results/workload-results.json",
+      "role": "workload owner report",
+      "source": "phase1/clean-room/phase1-results/artifact/workload/workload-results.json"
+    },
+    {
+      "destination": "release/results/mutation-results.json",
+      "role": "mutation owner report",
+      "source": "phase1/clean-room/phase1-results/artifact/mutation/mutation-results.json"
+    },
+    {
+      "destination": "release/results/performance-results.json",
+      "role": "performance owner report",
+      "source": "phase1/clean-room/phase1-results/artifact/performance/performance-results.json"
+    },
+    {
+      "destination": "release/results/exact-reproduction-comparisons.json",
+      "role": "exact reproduction comparisons",
+      "source": "phase1/clean-room/external/exact-reproduction-comparisons.json"
+    },
+    {
+      "destination": "machine-record/vouch-scored26-release-record.pdf",
+      "role": "machine-readable release PDF",
+      "source": "phase3/publication/vouch-scored26-paper.pdf"
+    }
+  ],
+  "logs": [
+    {
+      "destination": "release/audit/logs/00-npm-ci.log",
+      "source": "assembly/npm-ci.log"
+    },
+    {
+      "destination": "release/audit/logs/01-assembly.log",
+      "required_marker": "SCORED26 release assembled",
+      "source": "assembly/assembly.log"
+    },
+    {
+      "destination": "release/audit/logs/02-trusted-bootstrap.log",
+      "source": "trusted-bootstrap.log"
+    },
+    {
+      "destination": "release/audit/logs/03-phase1.log",
+      "required_marker": "SCORED26 phase-1 clean-room gate passed",
+      "source": "phase1/phase1.log"
+    },
+    {
+      "destination": "release/audit/logs/04-phase2.log",
+      "required_marker": "SCORED26 reproduction observation finalized",
+      "source": "phase2/phase2.log"
+    },
+    {
+      "destination": "release/audit/logs/05-phase3.log",
+      "required_marker": "SCORED26 publication check passed (S=pass)",
+      "source": "phase3/phase3.log"
+    }
+  ],
+  "mapping_contract": "vouch.scored26-release-materialization-map/v2"
+}

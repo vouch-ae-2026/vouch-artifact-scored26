@@ -1,0 +1,15 @@
+{
+  "expected_error": "block-body-non-empty",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "block",
+        "body": []
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

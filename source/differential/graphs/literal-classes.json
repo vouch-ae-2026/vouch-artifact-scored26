@@ -1,0 +1,76 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#t",
+      "anchor": {
+        "line": 2,
+        "col": 1
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "\"hi\"",
+      "anchor": {
+        "line": 3,
+        "col": 1
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(1 2)",
+      "anchor": {
+        "line": 4,
+        "col": 1
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#(1 2)",
+      "anchor": {
+        "line": 5,
+        "col": 1
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#u8(1 2)",
+      "anchor": {
+        "line": 6,
+        "col": 1
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "-0.0",
+      "anchor": {
+        "line": 7,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "roots": [
+    7
+  ]
+}

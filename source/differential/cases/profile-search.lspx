@@ -1,0 +1,5 @@
+(list
+  (if (member '(alpha 2) '((beta 1) (alpha 2))) 'member-equal 'bad)
+  (if (memv 'beta '(alpha beta gamma)) 'memv-eqv 'bad)
+  (cdr (assoc 'rate '((limit . 1000) (rate . 199/2))))
+  (cdr (assv 'tier '((tier . gold) (flag . #t)))))

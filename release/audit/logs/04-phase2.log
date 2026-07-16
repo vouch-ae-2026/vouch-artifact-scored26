@@ -1,0 +1,5 @@
+
+> lispex@1.4.0 scored26:finalize-observation
+> node artifact/scripts/finalize-observation.mjs --descriptor <RELEASE_ROOT>/phase1/clean-room/release-descriptor.json --descriptor-envelope <RELEASE_ROOT>/phase1/clean-room/release-descriptor.dsse.json --trust-policy <RELEASE_ROOT>/phase1/clean-room/trust-policy.json --clean-run-report <RELEASE_ROOT>/phase1/clean-room/external/clean-run-report.json --fixture-report <RELEASE_ROOT>/phase1/clean-room/phase1-results/artifact/results/fixture-results.json --workload-report <RELEASE_ROOT>/phase1/clean-room/phase1-results/artifact/workload/workload-results.json --mutation-report <RELEASE_ROOT>/phase1/clean-room/phase1-results/artifact/mutation/mutation-results.json --performance-report <RELEASE_ROOT>/phase1/clean-room/phase1-results/artifact/performance/performance-results.json --reproduction-comparisons <RELEASE_ROOT>/phase1/clean-room/external/exact-reproduction-comparisons.json --key-handle pkcs8-file://<RELEASE_KEY_HANDLE> --out-dir <RELEASE_ROOT>/phase2/finalized
+
+SCORED26 reproduction observation finalized

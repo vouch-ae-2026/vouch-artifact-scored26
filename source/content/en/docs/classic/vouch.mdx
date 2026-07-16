@@ -1,0 +1,123 @@
+---
+title: 'Lispex Vouch'
+description: 'Attach receipts to small decision rules. Keep a record you can check offline, and compare corpora when a rule changes.'
+---
+
+**Lispex Vouch is not a framework for building apps. It is a way to attach receipts to the small decision rules inside one.** No screens, no servers, no databases live here. You pull out one judgement that may need explaining later, write it as a small Lispex rule, and each recorded answer gets a file you can check later. The reference interpreter is still what runs Lispex programs.
+
+## The questions it answers
+
+Some of the judgements your code makes come back as questions later.
+
+- Support asks why an order was refused an automatic refund. You need a concrete record of what was written down for that rule and input three months ago.
+- You want to change the discount rule. Before merging, you want a list of last quarter's orders whose discount would come out differently under the new rule.
+- You maintain rules like approval limits or access decisions, the kind where an audit or a review asks you to show your grounds.
+
+Rules like these are usually a tiny slice of the codebase. Lispex Vouch takes on only that slice.
+
+## One rule, end to end
+
+The word rule stays abstract until you see one, so here is the whole thing. Say a refund is approved automatically when the order is within fourteen days of delivery and unopened.
+
+```lispex
+(define (refund-auto-approved? days-since-delivery opened?)
+  (and (<= days-since-delivery 14)
+       (not opened?)))
+
+(refund-auto-approved? 9 #f)  ; ⇒ #t
+```
+
+The host application passes the inputs in as arguments, and they are pinned exactly as given. Pin nine days since delivery and unopened, evaluate, and the answer is `#t`. In the Lispex Vouch workflow, that evaluation leaves a receipt file, `csk.differential-receipt/v0`, which records the rule, the pinned input, and the answer together with hashes. Commit the receipt next to the rule, and three months later the question "why did we answer that then" starts from a concrete file instead of memory. A receipt is a record, not a proof. It shows what was written down at evaluation time, and it is only as trustworthy as the process that produced it. Starting with v1.3.4, the native standalone binary is the public receipt generator.
+
+You can paste this rule into the [Playground](/en/play) right now. How to choose what belongs in a rule, and more realistic examples, are covered in the [Writing Decision Rules](/en/docs/guides/decision-rules) guide.
+
+## What the Vouch commands answer
+
+`lispex diff-receipt --input <datum-file> <rule.lspx>` generates a receipt with the native standalone binary. It evaluates a rule against a pinned datum and writes `csk.differential-receipt/v0` JSON to stdout.
+
+```bash
+lispex diff-receipt --input inputs/refund-2026-03-0412.datum rules/refund.lspx > receipts/refund-2026-03-0412.json
+```
+
+`lispex verify <receipt>` checks that a receipt file holds together. It validates the schema, recomputes the hashes the receipt carries, and with `--source` confirms that a local rule file matches the recorded source hash. Run it when an old receipt resurfaces in a support case, an audit, or a handover and you want to know the file has not drifted. It works offline, with no network and no service. It does not re-run the evaluation, and it cannot tell you whether the receipt was generated honestly, who applied the decision, or when. A passing check means the file is consistent with itself and with the rule text you point it at, nothing more.
+
+```bash
+lispex verify receipts/refund-2026-03-0412.json
+```
+
+`lispex replay <corpus> --against <version-or-receipts-dir>` answers "if I change the rule, which past answers move". Run it before merging a rule change. It compares the committed decision corpus against a version pin or a directory of receipts and reports exactly which answers differ.
+
+```bash
+lispex replay decisions/refund --against receipts/2026-Q1
+```
+
+## Vouch Bridge
+
+Lispex Vouch began with one checked rule, one pinned input, one receipt, and offline replay. Vouch Bridge keeps that discipline and opens it to engines built outside Lispex. An external engine runs its own pipeline, produces its own gate results, and emits a report in a public Vouch shape that anyone can check with the Lispex CLI.
+
+The first bridge profile is conversion evidence. The example conversion engine performs the conversion. Lispex Vouch supplies the public evidence shape, report format, and checker boundary for the evidence that engine emits. A conversion result can travel with a Vouch-shaped report whose bytes and boundaries anyone can check, while the engine keeps its pipeline private.
+
+```bash
+lispex verify-bridge \
+  --source examples/vouch-bridge/source/checkout-discount.ts \
+  --target examples/vouch-bridge/target/checkout_discount.py \
+  examples/vouch-bridge/reports/checkout-discount.bridge.json
+```
+
+The checker confirms that the report
+
+- binds source bytes to target bytes
+- records the engine identity and declared route
+- lists the gate results
+- pins linked proof hashes
+
+It does not run the example conversion engine or any external engine, look inside private implementation, judge whether the target code is correct, or prove that two languages mean the same thing. The full bridge shape is described in [Using Vouch Bridge](/en/docs/guides/vouch-bridge).
+
+## Public evidence status
+
+The current public evidence is small enough to inspect, but it is no longer just
+a toy loop. The welfare replay corpus fixes 12 inputs and shows 6 decisions
+moving under a rule change. It uses the checked profile as it stands, with zero
+profile extensions.
+
+A separate transcription fidelity ledger maps five rules from JSON Logic, Cedar,
+and OpenFisca Core into the checked profile through declared input and output
+maps. It records 676 out of 676 declared-map agreements, including executable
+OpenFisca Core cases. That is evidence that the transcriptions match the maps
+they declare. It is not evidence of semantic equivalence, policy correctness, or
+future profile completeness.
+
+In v1.4, Lispex also records same-origin native/WASM backend agreement over the
+current embedded-source campaign: 38 differential cases agree, 59 conformance
+cases agree, and 59 native receipt attempts emit receipts that `npm verify`
+checks. Only 15 of those receipts are currently comparable with the lowered
+receipt transcript; the remaining cases are explicitly classified as
+not-comparable. This is useful engineering evidence for the reference runtime
+and receipt boundary. It is not an independent backend witness and not a proof
+of semantic equivalence.
+
+## What a receipt says, and what it doesn't
+
+A receipt records a specific rule, a pinned input, and an answer, then binds that record to hashes. It shows whether the recorded artifacts agree with each other. It does not prove that the receipt was generated honestly, that a real system treated a customer according to that answer, when, or by whom, and it is not a substitute for review. Those belong to separate signing, timestamping, deployment, and review layers.
+
+The npm CLI runs Lispex source through the WebAssembly build of the reference
+interpreter and checks public-spec artifacts with `verify` and `replay`. It does
+not generate receipts. Receipt generation remains the native binary's job.
+
+## The conditions of the checked subset
+
+None of this works unless the same rule over the same input always gives the same answer. So Lispex Vouch operates only on a slice of Lispex closed off for exactly that.
+
+- a fixed set of forms in the R7RS tradition, with no macros and no ambient state
+- pinned builtins, with inputs bound explicitly by the host rather than fetched by the rule
+- receipts and the other outputs follow byte-exact JSON contracts
+
+Lispex code outside these conditions still runs fine. The receipt promise simply holds only inside the subset.
+
+## What you can do today, and what is coming
+
+- Rules themselves evaluate right now in the [Playground](/en/play).
+- The native standalone binary generates receipts with `lispex diff-receipt`.
+- The CLI installed with `npm install -g lispex` runs files with `lispex run` and checks existing receipts and corpora with `lispex verify` and `lispex replay`. It does not generate receipts. Command examples are in [Getting Started](/en/docs/getting-started).
+- The browser Playground runs snippets only. It does not generate receipts.
+- The public mirror and release bundle include `examples/vouch-loop`, a one-rule corpus that runs generation, verification, and replay with no private repository state.

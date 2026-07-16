@@ -1,0 +1,29 @@
+{
+  "expected_error": "bind-name-space",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "lit",
+        "datum": "1"
+      },
+      {
+        "kind": "bind",
+        "name": {
+          "space": "intrinsic",
+          "name": "cons"
+        },
+        "value": 0
+      },
+      {
+        "kind": "block",
+        "body": [
+          1
+        ]
+      }
+    ],
+    "roots": [
+      2
+    ]
+  }
+}

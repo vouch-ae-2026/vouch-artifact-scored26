@@ -1,0 +1,229 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "="
+      },
+      "anchor": {
+        "line": 3,
+        "col": 10
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "n"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 12
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "0",
+      "anchor": {
+        "line": 3,
+        "col": 14
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        1,
+        2
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 4,
+        "col": 9
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "*"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 10
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "n"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 12
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "fact"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 15
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "-"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 21
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "n"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 23
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 5,
+        "col": 25
+      }
+    },
+    {
+      "kind": "call",
+      "op": 8,
+      "args": [
+        9,
+        10
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 20
+      }
+    },
+    {
+      "kind": "call",
+      "op": 7,
+      "args": [
+        11
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 14
+      }
+    },
+    {
+      "kind": "call",
+      "op": 5,
+      "args": [
+        6,
+        12
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 9
+      }
+    },
+    {
+      "kind": "if",
+      "test": 3,
+      "then": 4,
+      "else": 13,
+      "anchor": {
+        "line": 3,
+        "col": 5
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "n"
+        }
+      ],
+      "body": 14,
+      "anchor": {
+        "line": 2,
+        "col": 3
+      }
+    },
+    {
+      "kind": "bind",
+      "name": {
+        "space": "user",
+        "text": "fact"
+      },
+      "value": 15,
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "fact"
+      },
+      "anchor": {
+        "line": 7,
+        "col": 2
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "5",
+      "anchor": {
+        "line": 7,
+        "col": 7
+      }
+    },
+    {
+      "kind": "call",
+      "op": 17,
+      "args": [
+        18
+      ],
+      "anchor": {
+        "line": 7,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        16,
+        19
+      ]
+    }
+  ],
+  "roots": [
+    20
+  ]
+}

@@ -1,0 +1,670 @@
+{
+  "meaning_env_report": "csk.meaning-env-report/v0",
+  "engine": {
+    "name": "lispex-rust-reference",
+    "version": "1.4.0",
+    "commit": {
+      "vcs": "git",
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "dirty": false
+    }
+  },
+  "graph": {
+    "byte_len": 7426,
+    "hash": {
+      "domain": "csk/meaning-graph-hash/v0",
+      "algo": "sha-256",
+      "hex": "af8f777d7461c779f995d2b1a3cdf2b6314f4362b354363f16269a608f37dc32"
+    }
+  },
+  "status": "ok",
+  "law_errors": [],
+  "trace": [
+    {
+      "step": 1,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:map>"
+      ]
+    },
+    {
+      "step": 2,
+      "node": 5,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 3,
+      "node": 6,
+      "kind": "lit",
+      "values": [
+        "(1 2 3)"
+      ]
+    },
+    {
+      "step": 4,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:+>"
+      ]
+    },
+    {
+      "step": 5,
+      "node": 2,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 6,
+      "node": 3,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 7,
+      "node": 4,
+      "kind": "call",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 8,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:+>"
+      ]
+    },
+    {
+      "step": 9,
+      "node": 2,
+      "kind": "ref",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 10,
+      "node": 3,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 11,
+      "node": 4,
+      "kind": "call",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 12,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:+>"
+      ]
+    },
+    {
+      "step": 13,
+      "node": 2,
+      "kind": "ref",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 14,
+      "node": 3,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 15,
+      "node": 4,
+      "kind": "call",
+      "values": [
+        "4"
+      ]
+    },
+    {
+      "step": 16,
+      "node": 7,
+      "kind": "call",
+      "values": [
+        "(2 3 4)"
+      ]
+    },
+    {
+      "step": 17,
+      "node": 8,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:filter>"
+      ]
+    },
+    {
+      "step": 18,
+      "node": 13,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 19,
+      "node": 14,
+      "kind": "lit",
+      "values": [
+        "(1 2 3)"
+      ]
+    },
+    {
+      "step": 20,
+      "node": 9,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:>>"
+      ]
+    },
+    {
+      "step": 21,
+      "node": 10,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 22,
+      "node": 11,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 23,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "#f"
+      ]
+    },
+    {
+      "step": 24,
+      "node": 9,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:>>"
+      ]
+    },
+    {
+      "step": 25,
+      "node": 10,
+      "kind": "ref",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 26,
+      "node": 11,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 27,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "#t"
+      ]
+    },
+    {
+      "step": 28,
+      "node": 9,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:>>"
+      ]
+    },
+    {
+      "step": 29,
+      "node": 10,
+      "kind": "ref",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 30,
+      "node": 11,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 31,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "#t"
+      ]
+    },
+    {
+      "step": 32,
+      "node": 15,
+      "kind": "call",
+      "values": [
+        "(2 3)"
+      ]
+    },
+    {
+      "step": 33,
+      "node": 16,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:reduce>"
+      ]
+    },
+    {
+      "step": 34,
+      "node": 21,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 35,
+      "node": 22,
+      "kind": "lit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 36,
+      "node": 23,
+      "kind": "lit",
+      "values": [
+        "(1 2 3)"
+      ]
+    },
+    {
+      "step": 37,
+      "node": 17,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:+>"
+      ]
+    },
+    {
+      "step": 38,
+      "node": 18,
+      "kind": "ref",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 39,
+      "node": 19,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 40,
+      "node": 20,
+      "kind": "call",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 41,
+      "node": 17,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:+>"
+      ]
+    },
+    {
+      "step": 42,
+      "node": 18,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 43,
+      "node": 19,
+      "kind": "ref",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 44,
+      "node": 20,
+      "kind": "call",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 45,
+      "node": 17,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:+>"
+      ]
+    },
+    {
+      "step": 46,
+      "node": 18,
+      "kind": "ref",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 47,
+      "node": 19,
+      "kind": "ref",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 48,
+      "node": 20,
+      "kind": "call",
+      "values": [
+        "6"
+      ]
+    },
+    {
+      "step": 49,
+      "node": 24,
+      "kind": "call",
+      "values": [
+        "6"
+      ]
+    },
+    {
+      "step": 50,
+      "node": 25,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:fold-left>"
+      ]
+    },
+    {
+      "step": 51,
+      "node": 30,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 52,
+      "node": 31,
+      "kind": "lit",
+      "values": [
+        "()"
+      ]
+    },
+    {
+      "step": 53,
+      "node": 32,
+      "kind": "lit",
+      "values": [
+        "(1 2)"
+      ]
+    },
+    {
+      "step": 54,
+      "node": 26,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:cons>"
+      ]
+    },
+    {
+      "step": 55,
+      "node": 27,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 56,
+      "node": 28,
+      "kind": "ref",
+      "values": [
+        "()"
+      ]
+    },
+    {
+      "step": 57,
+      "node": 29,
+      "kind": "call",
+      "values": [
+        "(1)"
+      ]
+    },
+    {
+      "step": 58,
+      "node": 26,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:cons>"
+      ]
+    },
+    {
+      "step": 59,
+      "node": 27,
+      "kind": "ref",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 60,
+      "node": 28,
+      "kind": "ref",
+      "values": [
+        "(1)"
+      ]
+    },
+    {
+      "step": 61,
+      "node": 29,
+      "kind": "call",
+      "values": [
+        "(2 1)"
+      ]
+    },
+    {
+      "step": 62,
+      "node": 33,
+      "kind": "call",
+      "values": [
+        "(2 1)"
+      ]
+    },
+    {
+      "step": 63,
+      "node": 34,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:fold-right>"
+      ]
+    },
+    {
+      "step": 64,
+      "node": 39,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 65,
+      "node": 40,
+      "kind": "lit",
+      "values": [
+        "()"
+      ]
+    },
+    {
+      "step": 66,
+      "node": 41,
+      "kind": "lit",
+      "values": [
+        "(1 2)"
+      ]
+    },
+    {
+      "step": 67,
+      "node": 35,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:cons>"
+      ]
+    },
+    {
+      "step": 68,
+      "node": 36,
+      "kind": "ref",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 69,
+      "node": 37,
+      "kind": "ref",
+      "values": [
+        "()"
+      ]
+    },
+    {
+      "step": 70,
+      "node": 38,
+      "kind": "call",
+      "values": [
+        "(2)"
+      ]
+    },
+    {
+      "step": 71,
+      "node": 35,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:cons>"
+      ]
+    },
+    {
+      "step": 72,
+      "node": 36,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 73,
+      "node": 37,
+      "kind": "ref",
+      "values": [
+        "(2)"
+      ]
+    },
+    {
+      "step": 74,
+      "node": 38,
+      "kind": "call",
+      "values": [
+        "(1 2)"
+      ]
+    },
+    {
+      "step": 75,
+      "node": 42,
+      "kind": "call",
+      "values": [
+        "(1 2)"
+      ]
+    },
+    {
+      "step": 76,
+      "node": 43,
+      "kind": "block",
+      "values": [
+        "(1 2)"
+      ]
+    }
+  ],
+  "transcript": [
+    "(2 3 4)",
+    "(2 3)",
+    "6",
+    "(2 1)",
+    "(1 2)"
+  ],
+  "result": {
+    "values": [
+      "(1 2)"
+    ]
+  },
+  "fault": null,
+  "steps": {
+    "used": 76,
+    "limit": 65536
+  },
+  "boundary": {
+    "attests": [
+      "meaning-law-v0-validation-rust",
+      "bounded-deterministic-v0-subset-evaluation",
+      "lexical-closure-v0-evaluation",
+      "higher-order-traversal-v0-evaluation",
+      "profile-input-binding-when-supplied",
+      "transcript-bytes",
+      "graph-hash-binding"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "differential-receipt",
+      "independent-witness",
+      "external-backend-reporting",
+      "lispex-source-lowering",
+      "target-code-generation",
+      "full-cskernel-coverage",
+      "private-implementation-detail"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@lispex/vouch-consumer",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "../../node_modules/.bin/tsc -p tsconfig.json",
+    "check": "../../node_modules/.bin/tsc -p tsconfig.json && node test/runtime.test.mjs && node test/check-type-negative.mjs && node ../../artifact/consumer-demo/vulnerable/check.mjs"
+  }
+}

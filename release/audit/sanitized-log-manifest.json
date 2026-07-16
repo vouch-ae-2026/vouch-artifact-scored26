@@ -1,0 +1,114 @@
+{
+  "log_manifest": "vouch.scored26-sanitized-lifecycle-logs/v1",
+  "logs": [
+    {
+      "completion_marker": null,
+      "destination": "release/audit/logs/00-npm-ci.log",
+      "raw_bytes": 1411,
+      "raw_sha256": "a54bc58342344de06ef566ee2fc390e16baf8ed4fbd75b4d8ed43ccebd45e2d4",
+      "replacements": {
+        "ansi_sequences": 0,
+        "carriage_returns": 0,
+        "container_paths": 0,
+        "email_addresses": 2,
+        "explicit_paths": 0,
+        "host_paths": 0
+      },
+      "sanitized_bytes": 1427,
+      "sanitized_sha256": "464dd1da922e6c63d035db4511673c9ef171a138bd61d1627ffd10517ea5b86f",
+      "source": "assembly/npm-ci.log"
+    },
+    {
+      "completion_marker": "SCORED26 release assembled",
+      "destination": "release/audit/logs/01-assembly.log",
+      "raw_bytes": 620,
+      "raw_sha256": "426676c7b6837f41459a35b403bc56f1d635bc1bf50267e933a6ae19f3629563",
+      "replacements": {
+        "ansi_sequences": 0,
+        "carriage_returns": 0,
+        "container_paths": 3,
+        "email_addresses": 0,
+        "explicit_paths": 0,
+        "host_paths": 0
+      },
+      "sanitized_bytes": 573,
+      "sanitized_sha256": "97df4636296ae48e64f92fc57a2fff8c3923124af32c7983bd4c3471fa5b185f",
+      "source": "assembly/assembly.log"
+    },
+    {
+      "completion_marker": null,
+      "destination": "release/audit/logs/02-trusted-bootstrap.log",
+      "raw_bytes": 67,
+      "raw_sha256": "7e8842ced9054b425651fc79ceb4d34782b390b73ed8e71fbf487d6f12df41d8",
+      "replacements": {
+        "ansi_sequences": 0,
+        "carriage_returns": 0,
+        "container_paths": 0,
+        "email_addresses": 0,
+        "explicit_paths": 0,
+        "host_paths": 0
+      },
+      "sanitized_bytes": 67,
+      "sanitized_sha256": "7e8842ced9054b425651fc79ceb4d34782b390b73ed8e71fbf487d6f12df41d8",
+      "source": "trusted-bootstrap.log"
+    },
+    {
+      "completion_marker": "SCORED26 phase-1 clean-room gate passed",
+      "destination": "release/audit/logs/03-phase1.log",
+      "raw_bytes": 7681,
+      "raw_sha256": "487bbe453d5bdde7352495fcb2055b02dc408dfb97426fe9d364fe537f8825ef",
+      "replacements": {
+        "ansi_sequences": 0,
+        "carriage_returns": 93,
+        "container_paths": 4,
+        "email_addresses": 2,
+        "explicit_paths": 0,
+        "host_paths": 0
+      },
+      "sanitized_bytes": 7532,
+      "sanitized_sha256": "b3dcbe4168e9aa8a4a8aad7014606f016cf3eb7512c50260b8da8a7f6bb2fa7b",
+      "source": "phase1/phase1.log"
+    },
+    {
+      "completion_marker": "SCORED26 reproduction observation finalized",
+      "destination": "release/audit/logs/04-phase2.log",
+      "raw_bytes": 1208,
+      "raw_sha256": "e8930137320498fcac05870d6c094c34334a779696fe5a253a1478305fe1622f",
+      "replacements": {
+        "ansi_sequences": 0,
+        "carriage_returns": 0,
+        "container_paths": 11,
+        "email_addresses": 0,
+        "explicit_paths": 0,
+        "host_paths": 0
+      },
+      "sanitized_bytes": 1067,
+      "sanitized_sha256": "b6eb3993641514bc5405beea8ce786fbc5942af78d0ee4f578e5acd2a620a745",
+      "source": "phase2/phase2.log"
+    },
+    {
+      "completion_marker": "SCORED26 publication check passed (S=pass)",
+      "destination": "release/audit/logs/05-phase3.log",
+      "raw_bytes": 1475,
+      "raw_sha256": "9b28ed58937de92f4b1d96496f78bbd9ab210428d34d401f8b1334f22586be48",
+      "replacements": {
+        "ansi_sequences": 0,
+        "carriage_returns": 0,
+        "container_paths": 14,
+        "email_addresses": 0,
+        "explicit_paths": 0,
+        "host_paths": 0
+      },
+      "sanitized_bytes": 1293,
+      "sanitized_sha256": "1bea61d6dbc4b827e3a7020827dc5e222ce420fcb200d260690fa53e8eda1b33",
+      "source": "phase3/phase3.log"
+    }
+  ],
+  "transformation": {
+    "ansi": "removed",
+    "carriage_returns": "normalized-to-lf",
+    "host_and_container_paths": "replaced-with-angle-bracket-placeholders",
+    "non-example_email_addresses": "replaced-with-REDACTED_EMAIL",
+    "semantic_result_lines": "otherwise-preserved"
+  }
+}

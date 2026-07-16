@@ -1,0 +1,13 @@
+[package]
+name = "lispex-wasm"
+version = "1.4.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+lispex = { path = "../../interp" }
+wasm-bindgen = "0.2"
+

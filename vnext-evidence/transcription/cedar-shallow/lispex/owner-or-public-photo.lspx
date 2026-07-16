@@ -1,6 +1,0 @@
-(if (and (string=? (car (cdr input)) "view")
-         (and (string=? (car (cdr (cdr input))) "Photo")
-              (or (string=? (car input) (car (cdr (cdr (cdr input)))))
-                  (not (car (cdr (cdr (cdr (cdr input)))))))))
-    '(decision allow)
-    '(decision deny))

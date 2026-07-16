@@ -1,0 +1,80 @@
+---
+title: 'Functions and Closures'
+description: 'A function is a named definition of a reusable ''action''. A closure is a special function that remembers the environment (context) in which it was born, breathing life and state into your code.'
+---
+
+In Lispex, functions are the primary building blocks for logic and abstraction. Functions are **first-class citizens**: you can bind them, pass them, and return them.
+
+## Defining Functions
+
+Create named functions with `define` sugar, and anonymous functions with `lambda`.
+
+### Named Functions with `define`
+```lispex
+(define (add x y)
+  (+ x y))
+
+(add 5 10)     ; ⇒ 15
+```
+
+### Anonymous Functions with `lambda`
+```lispex
+(lambda (n) (* n 2))
+```
+
+## Functions as First-Class Citizens
+
+Being "first-class" means functions are treated like any other data value (such as a number or a list). They can be:
+
+### 1. Stored in bindings
+Bind functions like any other value.
+
+```lispex
+(define square (lambda (n) (* n n)))
+(define square-alias square)
+(square-alias 10)                      ; ⇒ 100
+```
+
+### 2. Passed as Arguments
+You can pass functions as arguments to other functions. This is fundamental to higher-order functions.
+
+```lispex
+(define (apply-it f v)
+  (f v))
+
+(define square (lambda (n) (* n n)))
+(apply-it square 10)                   ; ⇒ 100
+```
+
+### 3. Returned from Other Functions
+A function can create and return another function. This powerful pattern is explained in the "Closures" section below.
+
+## Understanding Closures
+
+When a function is created, it captures the environment (the variables and their values) in which it was defined. This captured environment is called a **closure**. This allows a function to "remember" values, even when it's called outside of its original scope.
+
+**Example: A Function Factory**
+```lispex
+(define (make-adder amount-to-add)
+  (lambda (n)
+    (+ n amount-to-add)))
+
+(define add-five (make-adder 5))
+(define add-ten  (make-adder 10))
+
+(add-five 100)   ; ⇒ 105
+(add-ten 100)    ; ⇒ 110
+```
+
+## Recursion
+
+In Lispex, iteration is most idiomatically achieved through **recursion**. This approach avoids side effects and state mutations.
+
+```lispex
+(define (factorial n)
+  (if (<= n 1)
+      1
+      (* n (factorial (- n 1)))))
+
+(factorial 5)     ; ⇒ 120
+```

@@ -1,0 +1,54 @@
+# syntax=docker/dockerfile:1-labs
+
+FROM docker.io/library/rust@sha256:9f841bbe9e7d8e37ceb96ed907265a3a0df7f44e3737d0b100e7907a679acb36 AS rust-toolchain
+RUN rustup component add clippy rustfmt
+
+FROM docker.io/library/node@sha256:1c18d9ab3af4585870b92e4dbc5cac5a0dc77dd13df1a5905cea89fc720eb05b AS node-toolchain
+FROM docker.io/library/ubuntu@sha256:6015f66923d7afbc53558d7ccffd325d43b4e249f41a6e93eef074c9505d2233
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    RUSTUP_HOME=/usr/local/rustup \
+    CARGO_HOME=/usr/local/cargo \
+    PATH=/usr/local/cargo/bin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    LANG=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
+    SOURCE_DATE_EPOCH=0
+
+LABEL org.csk.scored26.typescript="5.8.2" \
+      org.csk.scored26.ajv="8.17.1" \
+      org.csk.scored26.rustc="rustc 1.85.1 (4eb161250 2025-03-15)" \
+      org.csk.scored26.cargo="cargo 1.85.1 (d73d2caf9 2024-12-31)" \
+      org.csk.scored26.node="v22.14.0" \
+      org.csk.scored26.npm="10.9.2" \
+      org.csk.scored26.glibc="glibc 2.39" \
+      org.csk.scored26.linker="GNU ld (GNU Binutils for Ubuntu) 2.42"
+
+RUN --device=lima-vm.io/rosetta=cached \
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+      build-essential \
+      ca-certificates \
+      git \
+      latexmk \
+      lmodern \
+      pkg-config \
+      poppler-utils \
+      texlive-fonts-recommended \
+      texlive-latex-base \
+      texlive-latex-recommended \
+      time \
+      xz-utils \
+      zstd && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY --from=rust-toolchain /usr/local/cargo /usr/local/cargo
+COPY --from=rust-toolchain /usr/local/rustup /usr/local/rustup
+COPY --from=node-toolchain /usr/local/bin/node /usr/local/bin/node
+COPY --from=node-toolchain /usr/local/include/node /usr/local/include/node
+COPY --from=node-toolchain /usr/local/lib/node_modules /usr/local/lib/node_modules
+
+RUN --device=lima-vm.io/rosetta=cached \
+    ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm && \
+    ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
+
+WORKDIR /opt/vouch-scored26

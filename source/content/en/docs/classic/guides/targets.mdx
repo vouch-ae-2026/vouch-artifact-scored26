@@ -1,0 +1,34 @@
+---
+title: 'Targets'
+description: 'A single piece of Lispex code can be transformed into multiple target languages. Discover how your ideas come to life in different environments like JavaScript, Python, and C++, and learn how to understand and leverage the characteristics of each target.'
+---
+Lispex runs directly in the [Playground](/en/play) and in the npm CLI. If another tool in your workflow produces target-language code, running that output is target-specific. Below are quick hints and common caveats.
+
+## Python
+- Run: `python file.py`
+- Virtual envs recommended for dependencies.
+- Printing: use `print(...)` if your snippet returns a value.
+
+## TypeScript / Node.js
+- Run: `tsx file.ts` (or `ts-node`), or compile `tsc && node file.js`.
+- ESM/CJS differences can affect imports; prefer single‑file snippets.
+- Printing: `console.log(...)`.
+
+## Go
+- Run: `go run .` or `go run file.go`.
+- Module init may be required (`go mod init …`) for multi‑file projects.
+
+## Rust
+- Run: `cargo run` (inside a crate), or `rustc file.rs && ./file` for single file.
+- Edition/toolchain: keep `rustup` toolchain up to date.
+
+## C / C++
+- Compile: `clang file.c -O2 -std=c11 -o app && ./app` (adjust flags) / `g++ file.cpp -O2 -std=c++17 -o app && ./app`.
+- Mind platform‑specific line endings and `setlocale` if needed for UTF‑8.
+
+## Cross‑cutting caveats
+- Encoding: assume UTF‑8; some targets need explicit locale/encoding setup.
+- Newlines/paths: Windows vs POSIX differences; prefer portable path joins.
+- Last value: many targets do not auto-print. Call the target's print/log.
+
+For Lispex Vouch evidence, keep the checked Lispex rule and its receipt/replay artifacts in the repository even if surrounding host code runs elsewhere.

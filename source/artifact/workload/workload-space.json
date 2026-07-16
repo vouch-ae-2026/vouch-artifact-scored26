@@ -1,0 +1,5767 @@
+{
+  "amount_domain": {
+    "maximum": 1000000,
+    "minimum": 0
+  },
+  "artifact_schema_versions": {
+    "checked_input": "csk.checked-input/v1",
+    "workload_candidates": "vouch.scored26-workload-candidates/v0",
+    "workload_selection": "vouch.scored26-workload-selection/v0",
+    "workload_split": "vouch.scored26-workload-split/v0"
+  },
+  "category_codes": {
+    "dependents": {
+      "0": "none",
+      "1": "one",
+      "2": "two-plus"
+    },
+    "household": {
+      "0": "single",
+      "1": "couple",
+      "2": "single-parent",
+      "3": "multi-adult"
+    },
+    "period": {
+      "2025": "2025",
+      "2026": "2026"
+    },
+    "residency": {
+      "0": "resident",
+      "1": "temporary"
+    }
+  },
+  "checked_profile": "csk.checked-profile/v1",
+  "rule_versions": [
+    {
+      "parameter_file": "artifact/workload/parameters/baseline.json",
+      "parameter_sha256": "sha256:ede6f540b7e80e178b6a7ac3d88e7c89d9c0f74c08a940e400d8a95dfe44a450",
+      "rule_hash_domain": "vouch/rule-source/v0",
+      "rule_sha256": "sha256:a113ed819520ce13d7213d247e68ecd49f098ff5087c1e8a851fe59cc4e84c9d",
+      "rule_source": "artifact/workload/rules/baseline.lspx",
+      "rule_version": "baseline"
+    },
+    {
+      "parameter_file": "artifact/workload/parameters/changed.json",
+      "parameter_sha256": "sha256:a993b66887897ce752cbb9d682ce9cf2def7a00572fc4a2c931c8797eb18f14b",
+      "rule_hash_domain": "vouch/rule-source/v0",
+      "rule_sha256": "sha256:6af18f75997141299e5031eae50fdc95cd144d3d29da0bf33a2627b6681d321e",
+      "rule_source": "artifact/workload/rules/changed.lspx",
+      "rule_version": "changed"
+    }
+  ],
+  "strata": [
+    {
+      "codes": [
+        2025,
+        0,
+        0,
+        0
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "single",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S01",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        0,
+        0,
+        1
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "single",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S02",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        0,
+        1,
+        0
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "single",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S03",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        0,
+        1,
+        1
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "single",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S04",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        0,
+        2,
+        0
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "single",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S05",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        0,
+        2,
+        1
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "single",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S06",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        1,
+        0,
+        0
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "couple",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S07",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        1,
+        0,
+        1
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "couple",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S08",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        1,
+        1,
+        0
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "couple",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S09",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        1,
+        1,
+        1
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "couple",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S10",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        1,
+        2,
+        0
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "couple",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S11",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        1,
+        2,
+        1
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "couple",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S12",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        2,
+        0,
+        0
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "single-parent",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S13",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        2,
+        0,
+        1
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "single-parent",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S14",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        2,
+        1,
+        0
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "single-parent",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S15",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        2,
+        1,
+        1
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "single-parent",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S16",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        2,
+        2,
+        0
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "single-parent",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S17",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        2,
+        2,
+        1
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "single-parent",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S18",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        3,
+        0,
+        0
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "multi-adult",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S19",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        3,
+        0,
+        1
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "multi-adult",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S20",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        3,
+        1,
+        0
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "multi-adult",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S21",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        3,
+        1,
+        1
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "multi-adult",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S22",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        3,
+        2,
+        0
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "multi-adult",
+        "period": "2025",
+        "residency": "resident"
+      },
+      "stratum_id": "S23",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2025,
+        3,
+        2,
+        1
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "multi-adult",
+        "period": "2025",
+        "residency": "temporary"
+      },
+      "stratum_id": "S24",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        0,
+        0,
+        0
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "single",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S25",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        0,
+        0,
+        1
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "single",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S26",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        0,
+        1,
+        0
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "single",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S27",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        0,
+        1,
+        1
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "single",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S28",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        0,
+        2,
+        0
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "single",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S29",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        0,
+        2,
+        1
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "single",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S30",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        1,
+        0,
+        0
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "couple",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S31",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        1,
+        0,
+        1
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "couple",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S32",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        1,
+        1,
+        0
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "couple",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S33",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        1,
+        1,
+        1
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "couple",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S34",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        1,
+        2,
+        0
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "couple",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S35",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        1,
+        2,
+        1
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "couple",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S36",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        2,
+        0,
+        0
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "single-parent",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S37",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        2,
+        0,
+        1
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "single-parent",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S38",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        2,
+        1,
+        0
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "single-parent",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S39",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        2,
+        1,
+        1
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "single-parent",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S40",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        2,
+        2,
+        0
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "single-parent",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S41",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        2,
+        2,
+        1
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "single-parent",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S42",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        3,
+        0,
+        0
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "multi-adult",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S43",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        3,
+        0,
+        1
+      ],
+      "labels": {
+        "dependents": "none",
+        "household": "multi-adult",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S44",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        3,
+        1,
+        0
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "multi-adult",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S45",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        3,
+        1,
+        1
+      ],
+      "labels": {
+        "dependents": "one",
+        "household": "multi-adult",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S46",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        3,
+        2,
+        0
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "multi-adult",
+        "period": "2026",
+        "residency": "resident"
+      },
+      "stratum_id": "S47",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    },
+    {
+      "codes": [
+        2026,
+        3,
+        2,
+        1
+      ],
+      "labels": {
+        "dependents": "two-plus",
+        "household": "multi-adult",
+        "period": "2026",
+        "residency": "temporary"
+      },
+      "stratum_id": "S48",
+      "thresholds": [
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 100156
+            },
+            {
+              "json_path": "/thresholds/0",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 100156
+            }
+          ],
+          "value": 100156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 200156
+            },
+            {
+              "json_path": "/thresholds/1",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 200156
+            }
+          ],
+          "value": 200156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 300156
+            },
+            {
+              "json_path": "/thresholds/2",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 300156
+            }
+          ],
+          "value": 300156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 400153
+            },
+            {
+              "json_path": "/thresholds/3",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 400153
+            }
+          ],
+          "value": 400153
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 500156
+            },
+            {
+              "json_path": "/thresholds/4",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 500156
+            }
+          ],
+          "value": 500156
+        },
+        {
+          "sources": [
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "baseline",
+              "source_file": "artifact/workload/parameters/baseline.json",
+              "value": 600156
+            },
+            {
+              "json_path": "/thresholds/5",
+              "rule_version": "changed",
+              "source_file": "artifact/workload/parameters/changed.json",
+              "value": 600156
+            }
+          ],
+          "value": 600156
+        }
+      ]
+    }
+  ],
+  "workload_space": "vouch.scored26-workload-space/v0"
+}

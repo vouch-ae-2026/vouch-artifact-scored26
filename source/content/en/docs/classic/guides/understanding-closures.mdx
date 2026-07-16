@@ -1,0 +1,76 @@
+---
+title: 'Understanding Closures'
+description: 'A function is not just an action, but an action with memory. Closures allow a function to remember the environment in which it was born. Explore how Lispex functions encapsulate their context to create powerful, stateful logic.'
+---
+
+Closures are one of the most powerful features in Lispex. They are the mechanism that allows a function to "remember" the environment in which it was created. This guide will walk you through what a closure is and why it's so useful.
+
+## What is a Closure?
+
+In simple terms, a closure is a **function bundled together with its "backpack"**. This backpack contains all the variables that were in scope at the moment the function was created.
+
+This means a function can access those "remembered" variables, even if it's called from a completely different part of your program.
+
+Let's explore this with the most common pattern: a "function factory."
+
+## The Function Factory Pattern
+
+Imagine you need many functions that do similar things. For example, one function that adds 5 to a number, another that adds 10, and another that adds 100. Instead of writing each one by hand, you can create a "factory" that manufactures these functions for you.
+
+### Step 1: Write the Factory Function
+
+Our factory, `make-adder`, will take one argument, `amount-to-add`, and its job is to return a *new function*.
+
+```lispex
+(define (make-adder amount-to-add)
+  (lambda (n)
+    (+ n amount-to-add)))
+```
+
+### Step 2: The "Magic" of the Closure
+
+When we call `(make-adder 5)`, here’s what happens:
+
+1.  A new, temporary environment is created for the `make-adder` call.
+2.  Inside this environment, the parameter `amount-to-add` is bound to the value `5`.
+3.  The `lambda` function is created. As it is created, it **looks around and packs all the variables it can see into its "backpack"**. It sees `amount-to-add` is `5`, so it packs that information away.
+4.  `make-adder` finishes and returns the `lambda` function, complete with its backpack containing `amount-to-add = 5`.
+
+This returned function--the lambda plus its backpack--is a **closure**.
+
+### Step 3: Use the Created Functions
+
+Now we can create specialized functions using our factory:
+
+```lispex
+;; Create a function that will always add 5.
+(define add-five (make-adder 5))
+
+;; Create a function that will always add 10.
+(define add-ten (make-adder 10))
+
+;; Let's use them!
+(add-five 100)
+;; Result: 105
+;; The `add-five` function reaches into its "backpack" and remembers that
+;; `amount-to-add` was 5.
+
+(add-ten 100)
+;; Result: 110
+;; The `add-ten` function has its own, separate backpack where
+;; `amount-to-add` was 10.
+```
+
+## Why is This Useful?
+
+This pattern is incredibly powerful. It allows you to create customized, pre-configured functions on the fly. You can use it for:
+
+  - Creating configurable event handlers.
+  - Setting up functions with initial state.
+  - Advanced patterns like currying and partial application.
+
+## Conclusion
+
+Understanding closures is key to mastering functional programming in Lispex. Just remember: it's a **function + its creation environment (backpack)**. With this concept, you can write more elegant, modular, and reusable code.
+
+For a more formal definition, you can revisit the current **[Procedures and Closures](/en/docs/manual/procedures)** manual page.

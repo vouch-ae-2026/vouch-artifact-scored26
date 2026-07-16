@@ -1,0 +1,20 @@
+*.css text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.datum text eol=lf
+*.lspx text eol=lf
+*.md text eol=lf
+*.mdx text eol=lf
+*.mjs text eol=lf
+*.py text eol=lf
+*.rs text eol=lf
+*.toml text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.tex text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Cargo's checksum files cover the exact published crate bytes.  Preserve the
+# vendored byte stream even when an upstream crate intentionally contains CRLF.
+vendor/** -text !eol -whitespace

@@ -1,0 +1,71 @@
+---
+title: 'Using Vouch Bridge'
+description: 'Export conversion evidence from an external engine in a Vouch-shaped report and check the bytes offline.'
+---
+
+Vouch Bridge sits on the line between a private engine and a public evidence record. The engine still does its own work. The bridge report gives that work a shape anyone can check outside the service.
+
+## When to use it
+
+Use a bridge report when you want conversion output to travel with evidence of how it was produced, while the engine that produced it stays private. A code conversion service can bind source, target, engine identity, checked route, and gate results into one report.
+
+The first profile is conversion evidence. The example conversion engine represents the external service this profile is built to meet. Lispex Vouch provides the public report shape, report format, and checker boundary for the evidence that engine emits.
+
+## What the report records
+
+A `vouch.bridge-report/v0` report records
+
+- source language, source path, byte length, and source hash
+- target language, target path, byte length, and target hash
+- the external engine name, version, and commit
+- the route and capability ids the engine says it checked
+- gate results such as source boundary, conversion route, and target adapter
+- linked proof artifact hashes
+- boundary lists for what the report attests and what it excludes
+
+The report is deliberately about evidence shape. It is not a target-code correctness proof.
+
+## Check the example
+
+The public example is a small TypeScript to Python conversion evidence report.
+
+```bash
+lispex verify-bridge \
+  --source examples/vouch-bridge/source/checkout-discount.ts \
+  --target examples/vouch-bridge/target/checkout_discount.py \
+  examples/vouch-bridge/reports/checkout-discount.bridge.json
+```
+
+Exit `0` means the report is internally consistent. The source and target bytes match the hashes in the report, the declared checks are coherent, and the boundary lists match the bridge contract.
+
+Exit `1` means the report was readable but did not satisfy the contract. Source hash drift, a missing boundary exclusion, an unknown top-level field, or a failed declared gate all fail the check.
+
+You can also bind the report to local source bytes, target bytes, linked proof
+bytes, and an expected context manifest. This makes reuse mistakes visible when
+the report is checked outside the service.
+
+```bash
+lispex verify-bridge \
+  --source examples/vouch-bridge/source/checkout-discount.ts \
+  --target examples/vouch-bridge/target/checkout_discount.py \
+  --linked conversion-gate-proof=examples/vouch-bridge/linked/conversion-gate-proof.json \
+  --expect-context examples/vouch-bridge/context/checkout-discount.context.json \
+  examples/vouch-bridge/reports/checkout-discount.bridge.json
+```
+
+The expected context manifest records what the consumer intended to check. It
+can name the profile, subject, route, and capability ids the report should bind
+to. A match means the report fits that stated intent. It does not make the
+intent trustworthy, and it does not prove the conversion is correct.
+
+`verify-bridge` reads the report under the artifact JSON discipline.
+Non-canonical JSON is rejected before any report fields are interpreted. Once
+the bytes are accepted as canonical, the checker applies a closed-world schema
+at every defined object layer. Unknown nested trust fields are rejected instead
+of being carried forward.
+
+## What it does not do
+
+`verify-bridge` does not run the example conversion engine or any other external engine. It does not regenerate the target code. It does not inspect private pipeline state. It does not prove that the target program is correct or that the two languages have the same meaning.
+
+The value is narrower and more practical. A commercial conversion does not have to ask people to trust a running service alone. It can leave behind a portable evidence report whose bytes, declared gates, and boundaries anyone can inspect outside that service.

@@ -1,4 +1,0 @@
-(if (and (car (cdr (cdr input)))
-         (not (string=? (car input) (car (cdr input)))))
-    '(decision deny private-not-owner)
-    '(decision allow))

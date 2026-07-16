@@ -1,0 +1,202 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[expansion=false]{microtype}
+
+\IfFileExists{../../generated/artifact-identity.tex}{%
+  \input{../../generated/artifact-identity.tex}%
+}{}
+\IfFileExists{../../generated/release-results.tex}{%
+  \input{../../generated/release-results.tex}%
+}{}
+
+% A committed source checkout intentionally has unresolved release fields.
+% Phase 3 replaces the two generated inputs only after D/Q/R/P verification.
+\providecommand{\ArtifactFreezeCommit}{UNRESOLVED}
+\providecommand{\ArtifactSourceCommit}{UNRESOLVED}
+\providecommand{\ArtifactReleaseKeyId}{UNRESOLVED}
+\providecommand{\ArtifactReleaseDescriptorDigest}{UNRESOLVED}
+\providecommand{\ArtifactArchiveDigest}{UNRESOLVED}
+\providecommand{\ArtifactEngineDigest}{UNRESOLVED}
+\providecommand{\ArtifactTargetTriple}{UNRESOLVED}
+\providecommand{\ArtifactObservationDigest}{UNRESOLVED}
+\providecommand{\ArtifactCleanRunSeconds}{UNRESOLVED}
+\providecommand{\ArtifactFixtureBuiltExpected}{UNRESOLVED}
+\providecommand{\ArtifactFixtureBuiltMatched}{UNRESOLVED}
+\providecommand{\ArtifactFixtureBuiltMismatched}{UNRESOLVED}
+\providecommand{\ArtifactFixtureBuiltSkipped}{UNRESOLVED}
+\providecommand{\ArtifactFixtureDesignTargets}{UNRESOLVED}
+\providecommand{\ArtifactWorkloadCandidates}{UNRESOLVED}
+\providecommand{\ArtifactWorkloadSelected}{UNRESOLVED}
+\providecommand{\ArtifactWorkloadDecisionPairs}{UNRESOLVED}
+\providecommand{\ArtifactWorkloadDecisionFlips}{UNRESOLVED}
+\providecommand{\ArtifactWorkloadHeldOutFlips}{UNRESOLVED}
+\providecommand{\ArtifactMutationSeeded}{UNRESOLVED}
+\providecommand{\ArtifactMutationBuilt}{UNRESOLVED}
+\providecommand{\ArtifactMutationActivated}{UNRESOLVED}
+\providecommand{\ArtifactMutationDetected}{UNRESOLVED}
+\providecommand{\ArtifactMutationRate}{UNRESOLVED}
+\providecommand{\ArtifactComparisonCount}{UNRESOLVED}
+\providecommand{\ArtifactCleanRuntime}{UNRESOLVED}
+\providecommand{\ArtifactObservationalFileCount}{UNRESOLVED}
+\providecommand{\ArtifactPerformanceRows}{%
+  UNRESOLVED & UNRESOLVED & 0 & UNRESOLVED & 0 \\}
+
+\newcommand{\artifactvalue}[1]{\texttt{\small #1}}
+\newcommand{\artifacthash}[1]{\par\noindent\texttt{\footnotesize #1}\par}
+
+\title{Vouch SCORED26: Authenticated-Native Artifact Boundary\\
+  Implementation and Reproduction Record}
+\author{Artifact release record}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This record reports the implemented authenticated-native boundary for Vouch.
+It separates structural acceptance from authenticated origin, binds Native
+evidence to a consumer-supplied trust policy, and promotes evidence to a
+decision only after transcript agreement and release signability checks.  The
+reported fixture, workload, mutation, and performance values are rendered
+from digest-verified owner reports after the signed release chain is checked.
+The result is evidence about observed agreement over an explicit checked
+surface; it is not a proof of policy correctness or whole-language semantic
+equivalence.
+\end{abstract}
+
+\section{Problem and threat model}
+
+Native-shaped JSON is not evidence of native origin.  A verifier must first
+apply bounded canonical parsing, select an already-authorized Ed25519 key from
+an out-of-band consumer policy, verify the DSSE signature, and only then
+interpret the authenticated payload.  Bridge evidence remains a distinct
+artifact class and cannot be promoted through the Native decision boundary.
+
+The threat model includes artifact-class confusion, context substitution,
+payload/envelope mismatch, a path replaced after command entry, a source inode
+mutated after its digest check, cross-release mixing, and a caller attempting
+to reach a release key with an unsigned or non-signable result.  The model does
+not assume an honest application after a capability has been returned.  It
+also excludes freshness, signer compromise, dishonest input collection, legal
+fitness, and the correctness of the policy itself.
+
+\section{Mechanism and implementation}
+
+The checked lane evaluates the same normalized source and immutable input in a
+reference evaluator and a separately implemented Meaning Environment
+evaluator.  Invocation-bound, one-shot trace tokens prevent a caller from
+assembling a receipt from serialized transcripts.  Issuance requires complete
+terminals, byte-identical observable traces, an empty diagnostic set, a final
+decision value, a release build, and a non-mutant build before the key handle
+is resolved.  Refusals before key resolution are tested with a counting key
+provider and perform zero key operations.
+
+Verification uses a fixed order: resource and canonical gates; closed policy
+and envelope schemas; selected-key authorization; signature verification;
+payload canonicality and schema; intrinsic receipt consistency; and expected
+context comparison.  Successful verification yields authenticated evidence,
+not a decision.  A separate promotion step checks agreement, completed
+terminals, trace completeness, the final decision, and release metadata.
+
+The release lifecycle is acyclic.  A signed deterministic descriptor $D$
+binds the source commit, archive, executable, toolchains, dependency manifests,
+and exact-reproduction results.  A trusted Linux outer driver authenticates
+$D$ before extracting an immutable private snapshot, executes phase 1, and
+constructs the clean-run report $Q$.  Phase 2 derives and signs observation
+$R$ from $D$, $Q$, and the exact owner-report buffers; publication record $P$
+names $D$ and $R$.  Phase 3 verifies $D\rightarrow Q\rightarrow R\rightarrow P$,
+replays the final derivations, verifies the paper-source snapshot, renders this
+document, and emits terminal report $S$.
+
+\section{Implementation validation}
+
+The phase-1 fixture report records
+\artifactvalue{\ArtifactFixtureBuiltMatched} matched of
+\artifactvalue{\ArtifactFixtureBuiltExpected} built fixtures, with
+\artifactvalue{\ArtifactFixtureBuiltMismatched} mismatches and
+\artifactvalue{\ArtifactFixtureBuiltSkipped} skips.  It records
+\artifactvalue{\ArtifactFixtureDesignTargets} remaining design-target rows.
+These values are observations from the verified fixture report, not constants
+embedded in this paper.
+
+The frozen workload contains \artifactvalue{\ArtifactWorkloadCandidates}
+candidates and \artifactvalue{\ArtifactWorkloadSelected} selected cases.
+There are \artifactvalue{\ArtifactWorkloadDecisionPairs} comparable decision
+pairs, \artifactvalue{\ArtifactWorkloadDecisionFlips} decision flips, and
+\artifactvalue{\ArtifactWorkloadHeldOutFlips} held-out flips.  These results
+describe only the supplied deterministic workload.
+
+The mutation campaign seeded \artifactvalue{\ArtifactMutationSeeded} and built
+\artifactvalue{\ArtifactMutationBuilt} compile-time mutants.  The frozen
+workload activated \artifactvalue{\ArtifactMutationActivated};
+\artifactvalue{\ArtifactMutationDetected} were detected, for a mutant-level
+detection rate of \artifactvalue{\ArtifactMutationRate}\%.  Detection is an
+empirical diagnostic, not a conformance threshold.
+
+The clean run took \artifactvalue{\ArtifactCleanRuntime} seconds.  The trusted
+outer driver recorded \artifactvalue{\ArtifactComparisonCount} deterministic
+exact-reproduction comparisons, while
+\artifactvalue{\ArtifactObservationalFileCount} owner reports remained
+verify-only observations.
+
+\begin{table}[h]
+\centering
+\small
+\caption{Five warmups followed by thirty measured runs; nearest-rank statistics.}
+\begin{tabular}{llllr}
+\toprule
+Metric & Statistic & Value & Unit & Population\\
+\midrule
+\ArtifactPerformanceRows
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Release identity}
+
+The following values are injected only after the publication checker verifies
+the descriptor and signed observation.  They are absent from the source
+commit and distributed archive as resolved publication fields.
+
+\noindent Source commit:
+\artifacthash{\ArtifactSourceCommit}
+\noindent Freeze ancestor:
+\artifacthash{\ArtifactFreezeCommit}
+\noindent Release key identifier:
+\artifacthash{\ArtifactReleaseKeyId}
+\noindent Release descriptor digest:
+\artifacthash{\ArtifactReleaseDescriptorDigest}
+\noindent Reproduction observation digest:
+\artifacthash{\ArtifactObservationDigest}
+\noindent Archive digest:
+\artifacthash{\ArtifactArchiveDigest}
+\noindent Engine digest:
+\artifacthash{\ArtifactEngineDigest}
+\noindent Target:
+\artifacthash{\ArtifactTargetTriple}
+
+\section{Limitations}
+
+The two evaluators share numeric and value substrates, so common-mode errors
+remain possible.  A receipt establishes observed agreement for the recorded
+source, input, profile, engine, budgets, and transcript boundary.  It does not
+establish semantic equivalence for Lispex in general, independent witnessing,
+freshness, fairness, legality, generation honesty outside the signed release
+boundary, or protection against a dishonest consumer that ignores the API.
+Unsalted public hashes do not protect low-entropy real-world records.  Public
+welfare-shaped inputs in this artifact are synthetic and generated by the
+committed workload procedure; they are not drawn from people, case files,
+production logs, or administrative datasets.
+
+\section{Artifact availability}
+
+The release set consists of the source archive, signed descriptor, clean-run
+report, signed reproduction observation, publication record, resolved paper,
+and terminal publication report.  Authorization comes from the consumer's
+out-of-band trust policy; the adjacent public-key record and unsigned
+publication record are distribution and indexing aids, not trust roots.
+
+\end{document}

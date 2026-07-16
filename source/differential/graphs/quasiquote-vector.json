@@ -1,0 +1,130 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 1,
+        "col": 11
+      }
+    },
+    {
+      "kind": "bind",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "value": 0,
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "list->vector"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 2
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cons"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 4
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 2,
+        "col": 4
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "cons"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 6
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 7
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "()",
+      "anchor": {
+        "line": 2,
+        "col": 2
+      }
+    },
+    {
+      "kind": "call",
+      "op": 5,
+      "args": [
+        6,
+        7
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 6
+      }
+    },
+    {
+      "kind": "call",
+      "op": 3,
+      "args": [
+        4,
+        8
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 4
+      }
+    },
+    {
+      "kind": "call",
+      "op": 2,
+      "args": [
+        9
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 2
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        1,
+        10
+      ]
+    }
+  ],
+  "roots": [
+    11
+  ]
+}

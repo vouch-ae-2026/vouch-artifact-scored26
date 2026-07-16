@@ -1,0 +1,501 @@
+{
+  "fixture_registry": "vouch.scored26-fixture-registry/v0",
+  "contract_sha256": "ecc294798be49f5843bd84e0ebad5d94a930f2b09f51db4852e42d2789addddc",
+  "fixtures": [
+    {
+      "fixture_id": "N01"
+    },
+    {
+      "fixture_id": "N02"
+    },
+    {
+      "fixture_id": "N03"
+    },
+    {
+      "fixture_id": "N04"
+    },
+    {
+      "fixture_id": "N05"
+    },
+    {
+      "fixture_id": "N06"
+    },
+    {
+      "fixture_id": "N07"
+    },
+    {
+      "fixture_id": "N08"
+    },
+    {
+      "fixture_id": "N09"
+    },
+    {
+      "fixture_id": "N10"
+    },
+    {
+      "fixture_id": "N11"
+    },
+    {
+      "fixture_id": "N12"
+    },
+    {
+      "fixture_id": "N13"
+    },
+    {
+      "fixture_id": "N14"
+    },
+    {
+      "fixture_id": "N15"
+    },
+    {
+      "fixture_id": "N16"
+    },
+    {
+      "fixture_id": "N17"
+    },
+    {
+      "fixture_id": "N18"
+    },
+    {
+      "fixture_id": "N19"
+    },
+    {
+      "fixture_id": "N20"
+    },
+    {
+      "fixture_id": "J01"
+    },
+    {
+      "fixture_id": "J02"
+    },
+    {
+      "fixture_id": "J03"
+    },
+    {
+      "fixture_id": "J04"
+    },
+    {
+      "fixture_id": "J05"
+    },
+    {
+      "fixture_id": "J06"
+    },
+    {
+      "fixture_id": "J07"
+    },
+    {
+      "fixture_id": "J08"
+    },
+    {
+      "fixture_id": "J09"
+    },
+    {
+      "fixture_id": "J10"
+    },
+    {
+      "fixture_id": "J11"
+    },
+    {
+      "fixture_id": "J12"
+    },
+    {
+      "fixture_id": "J13"
+    },
+    {
+      "fixture_id": "J14"
+    },
+    {
+      "fixture_id": "J15"
+    },
+    {
+      "fixture_id": "P01"
+    },
+    {
+      "fixture_id": "P02"
+    },
+    {
+      "fixture_id": "P03"
+    },
+    {
+      "fixture_id": "P04"
+    },
+    {
+      "fixture_id": "P05"
+    },
+    {
+      "fixture_id": "P06"
+    },
+    {
+      "fixture_id": "P07"
+    },
+    {
+      "fixture_id": "P08"
+    },
+    {
+      "fixture_id": "P09"
+    },
+    {
+      "fixture_id": "P10"
+    },
+    {
+      "fixture_id": "P11"
+    },
+    {
+      "fixture_id": "B01"
+    },
+    {
+      "fixture_id": "B02"
+    },
+    {
+      "fixture_id": "B03"
+    },
+    {
+      "fixture_id": "B04"
+    },
+    {
+      "fixture_id": "B05"
+    },
+    {
+      "fixture_id": "B06"
+    },
+    {
+      "fixture_id": "B07"
+    },
+    {
+      "fixture_id": "B08"
+    },
+    {
+      "fixture_id": "B09"
+    },
+    {
+      "fixture_id": "B10"
+    },
+    {
+      "fixture_id": "B11"
+    },
+    {
+      "fixture_id": "B12"
+    },
+    {
+      "fixture_id": "R01"
+    },
+    {
+      "fixture_id": "R02"
+    },
+    {
+      "fixture_id": "R03"
+    },
+    {
+      "fixture_id": "R04"
+    },
+    {
+      "fixture_id": "R05"
+    },
+    {
+      "fixture_id": "U01"
+    },
+    {
+      "fixture_id": "U02"
+    },
+    {
+      "fixture_id": "U03"
+    },
+    {
+      "fixture_id": "U04"
+    },
+    {
+      "fixture_id": "U05"
+    },
+    {
+      "fixture_id": "U06"
+    },
+    {
+      "fixture_id": "U07"
+    },
+    {
+      "fixture_id": "U08"
+    },
+    {
+      "fixture_id": "U09"
+    },
+    {
+      "fixture_id": "U10"
+    },
+    {
+      "fixture_id": "U11"
+    },
+    {
+      "fixture_id": "U12"
+    },
+    {
+      "fixture_id": "U13"
+    },
+    {
+      "fixture_id": "T01"
+    },
+    {
+      "fixture_id": "T02"
+    },
+    {
+      "fixture_id": "I01"
+    },
+    {
+      "fixture_id": "I02"
+    },
+    {
+      "fixture_id": "I03"
+    },
+    {
+      "fixture_id": "I04"
+    },
+    {
+      "fixture_id": "I05"
+    },
+    {
+      "fixture_id": "I06"
+    },
+    {
+      "fixture_id": "I07"
+    },
+    {
+      "fixture_id": "I08"
+    },
+    {
+      "fixture_id": "I09"
+    },
+    {
+      "fixture_id": "I10"
+    },
+    {
+      "fixture_id": "I11"
+    },
+    {
+      "fixture_id": "I12"
+    },
+    {
+      "fixture_id": "I13"
+    },
+    {
+      "fixture_id": "G01"
+    },
+    {
+      "fixture_id": "G02"
+    },
+    {
+      "fixture_id": "G03"
+    },
+    {
+      "fixture_id": "C-VN-11"
+    },
+    {
+      "fixture_id": "C-ISSUE-13"
+    },
+    {
+      "fixture_id": "C-CAP-11"
+    },
+    {
+      "fixture_id": "C-CAP-12"
+    },
+    {
+      "fixture_id": "C-VN-12"
+    },
+    {
+      "fixture_id": "C-REP-09"
+    },
+    {
+      "fixture_id": "A-19"
+    },
+    {
+      "fixture_id": "C-ISSUE-09"
+    },
+    {
+      "fixture_id": "C-REP-06"
+    },
+    {
+      "fixture_id": "A-4"
+    },
+    {
+      "fixture_id": "L01"
+    },
+    {
+      "fixture_id": "L02"
+    },
+    {
+      "fixture_id": "L03"
+    },
+    {
+      "fixture_id": "L04"
+    },
+    {
+      "fixture_id": "L05"
+    },
+    {
+      "fixture_id": "L06"
+    },
+    {
+      "fixture_id": "L07"
+    },
+    {
+      "fixture_id": "L08"
+    },
+    {
+      "fixture_id": "L09"
+    },
+    {
+      "fixture_id": "L10"
+    },
+    {
+      "fixture_id": "L11A"
+    },
+    {
+      "fixture_id": "L11B"
+    },
+    {
+      "fixture_id": "L12"
+    },
+    {
+      "fixture_id": "L13"
+    },
+    {
+      "fixture_id": "L14"
+    },
+    {
+      "fixture_id": "L15"
+    },
+    {
+      "fixture_id": "L16"
+    },
+    {
+      "fixture_id": "L17"
+    },
+    {
+      "fixture_id": "L18"
+    },
+    {
+      "fixture_id": "L19"
+    },
+    {
+      "fixture_id": "L20"
+    },
+    {
+      "fixture_id": "L21"
+    },
+    {
+      "fixture_id": "S1-CROSS-WRITER-01"
+    },
+    {
+      "fixture_id": "S25-METER-01"
+    },
+    {
+      "fixture_id": "S2-VALUE-01"
+    },
+    {
+      "fixture_id": "S2-INPUT-01"
+    },
+    {
+      "fixture_id": "S2-PROFILE-01"
+    },
+    {
+      "fixture_id": "S2-GRAPH-01"
+    },
+    {
+      "fixture_id": "S2-TRANSCRIPT-01"
+    },
+    {
+      "fixture_id": "S2-DETERMINISM-01"
+    },
+    {
+      "fixture_id": "S2-RESOURCE-01"
+    },
+    {
+      "fixture_id": "S3-STRUCTURE-01"
+    },
+    {
+      "fixture_id": "S3-CLI-01"
+    },
+    {
+      "fixture_id": "S4-EVALUATORS-01"
+    },
+    {
+      "fixture_id": "S4-TOKENS-01"
+    },
+    {
+      "fixture_id": "S4-MUTATION-CFG-01"
+    },
+    {
+      "fixture_id": "S5-NATIVE-VERIFY-01"
+    },
+    {
+      "fixture_id": "S5-CLI-01"
+    },
+    {
+      "fixture_id": "S5-CAPABILITY-01"
+    },
+    {
+      "fixture_id": "S5-BRIDGE-BYTE-01"
+    },
+    {
+      "fixture_id": "S5-VULNERABLE-01"
+    },
+    {
+      "fixture_id": "S6-ISSUE-01"
+    },
+    {
+      "fixture_id": "S6-KEY-AUDIT-01"
+    },
+    {
+      "fixture_id": "S6-ATOMIC-PUBLISH-01"
+    },
+    {
+      "fixture_id": "S6-CLI-01"
+    },
+    {
+      "fixture_id": "S6-PKCS8-01"
+    },
+    {
+      "fixture_id": "S7-BRIDGE-API-01"
+    },
+    {
+      "fixture_id": "S7-BRIDGE-CLI-01"
+    },
+    {
+      "fixture_id": "S7-FIXTURE-GATE-01"
+    },
+    {
+      "fixture_id": "S8-WORKLOAD-FREEZE-01"
+    },
+    {
+      "fixture_id": "S8-REPLAY-01"
+    },
+    {
+      "fixture_id": "S8-WORKLOAD-RESULT-01"
+    },
+    {
+      "fixture_id": "S8-APPLICATION-SCHEMA-01"
+    },
+    {
+      "fixture_id": "S9-MUTATION-MECHANISM-01"
+    },
+    {
+      "fixture_id": "S9-MUTATION-RESULT-01"
+    },
+    {
+      "fixture_id": "S10-RELEASE-SCHEMA-01"
+    },
+    {
+      "fixture_id": "S10-FINALIZER-01"
+    },
+    {
+      "fixture_id": "S10-PUBLICATION-01"
+    },
+    {
+      "fixture_id": "S10-SUPPLY-01"
+    },
+    {
+      "fixture_id": "S10-CLEANROOM-01"
+    },
+    {
+      "fixture_id": "S10-CONDITION-LEDGER-01"
+    }
+  ]
+}

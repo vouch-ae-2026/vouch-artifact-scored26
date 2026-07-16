@@ -1,0 +1,108 @@
+{
+  "boundary": {
+    "attests": [
+      "source-bytes",
+      "profile-input-hash-binding",
+      "canonical-core-v0-bytes",
+      "meaning-graph-v0-hash-binding",
+      "reference-transcript-bytes",
+      "meaning-env-transcript-bytes",
+      "lowered-subset-transcript-agreement"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "independent-witness",
+      "substrate-independence",
+      "error-agreement",
+      "input-provenance",
+      "external-backend-reporting",
+      "full-cskernel-coverage",
+      "target-code-generation",
+      "private-implementation-detail",
+      "receipt-authenticity",
+      "generation-honesty",
+      "issuer-binding",
+      "timestamping",
+      "non-repudiation"
+    ]
+  },
+  "canonical": {
+    "byte_len": 336,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/core-hash/v0",
+      "hex": "654f50244ba4d9af6bcfe894ce8a2e1b7d4af942411584fb4b86448fb2ff10dd"
+    },
+    "status": "ok"
+  },
+  "comparison": {
+    "blockers": [],
+    "fault_class": null,
+    "first_divergence": null,
+    "reason": "transcript-bytes-equal",
+    "status": "agree",
+    "substrate": "shared-rust-reference"
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "canonical_format": "lispex.core.canonical/v0",
+    "commit": {
+      "dirty": false,
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "vcs": "git"
+    },
+    "name": "lispex-rust-reference",
+    "version": "1.4.0"
+  },
+  "graph": {
+    "byte_len": 4328,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-graph-hash/v0",
+      "hex": "0068778d432fc69d3701a217300ac400f346b7abc2626301900aeab52666a938"
+    },
+    "status": "ok"
+  },
+  "input": {
+    "status": "absent"
+  },
+  "meaning_env": {
+    "fault": null,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-env-transcript-hash/v0",
+      "hex": "36cc4fa29fa372ac32497d34ff13aafd708c5b75d147209fe416155fbce7c5dd"
+    },
+    "status": "ok",
+    "steps": {
+      "limit": 1000000,
+      "used": 27
+    },
+    "transcript": [
+      "(member-equal memv-eqv 199/2 gold)"
+    ],
+    "transcript_byte_len": 35
+  },
+  "reference": {
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/runtime-hash/v0",
+      "hex": "09e5f6431631cb24cc42731d3c1960e11308f48c81ed5dc6bd3a5f0108cb9183"
+    },
+    "status": "ok",
+    "transcript": [
+      "(member-equal memv-eqv 199/2 gold)"
+    ],
+    "transcript_byte_len": 35
+  },
+  "source": {
+    "byte_len": 235,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/source-hash/v0",
+      "hex": "af5f058f764d75dc2e91426c5e23f1203ac4b60ddb86f9bffc552e16a5e3b2e9"
+    },
+    "path": "differential/cases/profile-search.lspx"
+  }
+}

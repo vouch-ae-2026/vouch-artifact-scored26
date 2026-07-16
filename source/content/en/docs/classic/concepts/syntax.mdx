@@ -1,0 +1,157 @@
+---
+title: 'Lispex Syntax'
+description: 'Tokens, literals, S-expressions, and the normalization rules that shape Lispex source before it reaches the runtime.'
+---
+
+Welcome to the Lispex syntax reference. This page defines the **input S‑expression grammar** (R7RS‑small inspired) and the **deterministic normalization rules** that rewrite source into the Core AST. Execution semantics live in the runtime; you can run real Lispex programs in the [Playground](/en/play).
+
+> Scope: input grammar + normalization only. No user macros or reader extensions are allowed.
+
+## 0) File Header (optional)
+
+You may declare a version at the top of a file as a line comment:
+
+```lispex
+;! lispex 1.4
+```
+
+## 1) Encoding / Whitespace / Comments
+
+- Encoding: UTF‑8
+- Whitespace: space, tab, CR, LF
+- Comments:
+  - line: `; ...\n`
+  - block: `#| ... |#` (nested)
+
+## 2) Tokens & Literals
+
+### Symbols (identifiers)
+Case‑sensitive symbols (Unicode allowed). Conceptually: `[^()\[\]{}\s"';,`]+` (informal). Reserved words cannot be bound (see Reserved).
+
+### Booleans
+```lispex
+#t   #f
+```
+
+### Numbers (input forms)
+- Integers (decimal): `0 | -?[1-9][0-9]*`
+- Rationals: `p/q` (q ≠ 0)
+- Reals: `-?[0-9]+(\.[0-9]+)?([eE][-+]?[0-9]+)?`
+> Precision/accuracy is outside this page’s scope (input surface only).
+
+### Characters / Strings
+- Characters: `#\a`, `#\space`, `#\x03B1`
+- Strings: `"..."` with escapes `\" \\ \n \t \r \xHH;`
+
+### Lists / Dotted Lists / Vectors / Bytevectors
+- Lists: `(a b c)`; dotted: `(a b . c)`
+- Vectors: `#(a b c)`
+- Bytevectors: `#u8(0 255 ...)`
+
+### Quote family (reader shorthands)
+```lispex
+'x      ⇒ (quote x)
+`x      ⇒ (quasiquote x)
+,x      ⇒ (unquote x)
+,@xs    ⇒ (unquote-splicing xs)
+```
+
+## 3) Module Header (optional)
+
+```lispex
+(module <name>
+  (export id ...)
+  (import <name> ...)
+  body ...)
+```
+
+`<name>` is a symbol or dotted path (`util.string`). No rename/only/except in this surface header. Files without a module header are allowed.
+
+Note: This header is optional and not used in the Guides. Lispex runs directly in the reference interpreter. Guides favor plain top-level forms to keep examples minimal. Tooling may flatten or ignore this header when it prepares source for another target.
+
+## 4) Reserved Keywords
+
+```lispex
+quote quasiquote unquote unquote-splicing
+lambda if begin set! define let let* letrec
+cond case and or when unless do
+values call-with-values
+call/cc dynamic-wind
+module export import
+```
+
+Immediate error if user macro machinery is used: `define-syntax` `syntax-rules` `syntax-case` `let-syntax` `letrec-syntax` `#lang` `#;` (user macros/reader extensions are not part of the input grammar).
+
+## 5) Core Forms
+
+```lispex
+(lambda (formals) body+)
+(if test then else)
+(begin e1 ... en)
+(set! id expr)
+(define id expr)
+(define (f params) body+)      ; sugar → define+lambda during normalization
+(let ((id expr) ...) body+)
+(letrec ((id expr) ...) body+)
+(quote datum)
+(quasiquote template)          ; expands per §10 rules to Core forms
+(values expr*)
+(call-with-values producer consumer)
+(call/cc proc)
+(dynamic-wind before thunk after)
+```
+
+`call/cc` creates a one-shot upward escape continuation. Its first invocation
+consumes it before unwinding; any later invocation, including from a
+`dynamic-wind` `after` thunk still running during that unwind, fails with E340
+(`escape continuation is no longer active`). Continuation re-entry is not part
+of the current profile.
+
+## 6) Derived Forms
+
+### Function definition sugar
+```lispex
+(define (f a b) body...) ⇒ (define f (lambda (a b) body...))
+```
+
+### let*
+```lispex
+(let* ((x e1) (y e2) ...) body)
+⇒ (let ((x e1)) (let* ((y e2) ...) body))
+```
+
+### cond
+```lispex
+(cond (t1 b1...) ... (else e...))
+⇒ (if t1 (begin b1...)
+      (if t2 (begin b2...)
+          ...
+          (begin e...)))
+```
+(`=>` variant is not supported.)
+
+### case (uses `eqv?`, R7RS)
+```lispex
+(case key
+  ((k11 k12 ...) b1...)
+  ...
+  (else e...))
+⇒ (let ((t key))
+     (if (eqv? t (quote k11)) (begin b1...)
+         (if (eqv? t (quote k12)) (begin b1...)
+             ...
+             (begin e...))))
+```
+
+> `case` compares via the hidden `eqv?` intrinsic, so rebinding `eqv?` in user code does not change it.
+
+### and / or
+```lispex
+(and)              ⇒ #t
+(and e1)           ⇒ e1
+(and e1 e2 ... en) ⇒ (if e1 (and e2 ... en) #f)
+
+(or)               ⇒ #f
+(or e1)            ⇒ e1
+(or e1 e2 ... en)  ⇒ (let ((t e1)) (if t t (or e2 ... en)))
+```

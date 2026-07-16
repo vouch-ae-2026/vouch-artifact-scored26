@@ -1,0 +1,6 @@
+{
+  "version": "v1.4",
+  "spec": "v1.4 (R7RS-small input surface + recoverable errors)",
+  "canonical": "https://artifact.invalid/lispex",
+  "install": "https://artifact.invalid/lispex/install.sh"
+}

@@ -1,0 +1,157 @@
+---
+title: 'Functional Library'
+description: 'Higher-order functions such as map, filter, and reduce for processing lists in Lispex.'
+---
+
+This page provides a reference for the core higher-order functions in Lispex. These functions take other functions as arguments to process lists, enabling a powerful and declarative programming style.
+
+---
+
+### `map`
+
+Applies a given function to every element in a list and returns a new list containing the results. The new list will always have the same number of elements as the original list.
+
+- **Syntax:** `(map FUNCTION LIST)`
+- **Arguments:**
+  - `FUNCTION`: A function that takes one argument (the list element) and returns a transformed value.
+  - `LIST`: The list to iterate over.
+- **Returns:** A new list containing the transformed elements.
+- **Throws:** A `RuntimeError` if the arguments are not a function and a list respectively.
+
+**Example:**
+```lispex
+;; Create a new list with each number squared.
+(map (lambda (n) (* n n)) (list 1 2 3 4))
+;; Result: (list 1 4 9 16)
+```
+
+---
+
+### `filter`
+
+Returns a new list containing only the elements from the original list for which a given predicate function returns a truthy value (anything other than `#f`).
+
+- **Syntax:** `(filter PREDICATE_FUNCTION LIST)`
+- **Arguments:**
+  - `PREDICATE_FUNCTION`: A function that takes one argument and returns a boolean (`#t` to keep the element, `#f` to discard it).
+  - `LIST`: The list to filter.
+- **Returns:** A new list, which may be shorter than or the same length as the original.
+- **Throws:** A `RuntimeError` if the arguments are not a function and a list respectively.
+
+**Example:**
+```lispex
+;; Create a new list with only numbers greater than 5.
+(filter (lambda (n) (> n 5)) (list 2 8 4 10 5 7))
+;; Result: (list 8 10 7)
+```
+
+---
+
+### `reduce`
+
+Reduces a list to a single value by repeatedly applying a function. It iterates through the list, maintaining an "accumulator" that is updated at each step.
+
+- **Syntax:** `(reduce FUNCTION INITIAL_VALUE LIST)`
+- **Arguments:**
+  - `FUNCTION`: A function that takes two arguments: `(accumulator, current_element)`. It should return the new value of the accumulator.
+  - `INITIAL_VALUE`: The starting value for the accumulator.
+  - `LIST`: The list to reduce.
+- **Returns:** The final value of the accumulator after iterating through the entire list.
+- **Throws:** A `RuntimeError` if the arguments are not a function, a value, and a list.
+
+**Example: Summing all numbers in a list**
+```lispex
+(reduce (lambda (sum el) (+ sum el))
+        0
+        (list 10 20 30 40))
+;; Result: 100
+```
+
+**Example: Finding the longest word in a list**
+```lispex
+(reduce (lambda (longest word)
+          (if (> (length word) (length longest))
+              word
+              longest))
+        ""
+        (list "Lispex" "is" "a" "delightful" "language"))
+;; Result: "delightful"
+```
+
+---
+
+### `fold-left`
+
+Reduces a list to a single value by folding from the **left**, from first element to last. `fold-left` is the R6RS name for the same operation as `reduce`. The function receives the accumulator first and the current element second.
+
+- **Syntax:** `(fold-left FUNCTION INITIAL_VALUE LIST)`
+- **Arguments:**
+  - `FUNCTION`: A function of `(accumulator current_element)` that returns the next accumulator.
+  - `INITIAL_VALUE`: The starting value of the accumulator.
+  - `LIST`: The list to fold.
+- **Returns:** The final accumulator (the `INITIAL_VALUE` if the list is empty).
+- **Throws:** A `RuntimeError` if the arguments are not a function, a value, and a list.
+
+**Example:**
+```lispex
+(fold-left - 0 (list 1 2 3))
+;; Result: -6
+```
+
+---
+
+### `fold-right`
+
+Reduces a list by folding from the **right** (last element to first). Unlike `fold-left`, the function receives the current element first and the accumulator second, so `(fold-right cons (list) …)` rebuilds the list unchanged.
+
+- **Syntax:** `(fold-right FUNCTION INITIAL_VALUE LIST)`
+- **Arguments:**
+  - `FUNCTION`: A function of `(current_element accumulator)` that returns the next accumulator.
+  - `INITIAL_VALUE`: The accumulator used at the right end of the list.
+  - `LIST`: The list to fold.
+- **Returns:** The final accumulator (the `INITIAL_VALUE` if the list is empty).
+- **Throws:** A `RuntimeError` if the arguments are not a function, a value, and a list.
+
+**Example:**
+```lispex
+(fold-right cons (list) (list 1 2 3))
+;; Result: (list 1 2 3)
+
+(fold-right - 0 (list 1 2 3))
+;; Result: 2
+```
+
+---
+
+### `apply`
+
+Calls a function with a list of arguments. Any arguments before the final one are passed first, then the elements of the final list are spread in as the remaining arguments. The final argument must be a list. `apply` is a tail call.
+
+```lispex
+(apply + (list 1 2 3 4))   ;; Result: 10
+```
+
+---
+
+### `values` and `call-with-values`
+
+`values` produces zero or more values from one expression. `call-with-values`
+connects a producer thunk to a consumer procedure: the values produced by the
+producer become the consumer's arguments. At the top level, multiple values are
+printed one per line. In a single-value position, producing zero or more than
+one value is a runtime error.
+
+The v1.4 runtime refresh exercises this multiple-value path in the native
+interpreter, the browser/Node WebAssembly build, the Meaning Environment, and
+the same-origin backend agreement checks.
+
+---
+
+### `for-each`
+
+Applies a function to each element of a list from left to right for its side effects, discarding the results, and returns an unspecified value. Use `map` instead when you need the collected results.
+
+```lispex
+(for-each display (list 1 2 3))
+;; prints: 123
+```

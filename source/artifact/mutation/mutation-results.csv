@@ -1,0 +1,8 @@
+class,seeded,built,activated_any,detected_any,disagreement_cases,common_mode_cases,pipeline_failure_cases,infrastructure_failure_cases,survivor_cases
+Lowering,2,2,1,1,16,0,0,0,0
+Graph evaluator,2,2,1,1,192,0,0,0,0
+Source evaluator,2,2,1,1,192,0,0,0,0
+Shared numeric,2,2,0,0,0,0,0,0,0
+Path serialization,2,2,1,1,240,0,0,0,0
+Shared reader and normalizer,2,2,1,0,0,7,0,0,0
+Total,12,12,5,4,640,7,0,0,0

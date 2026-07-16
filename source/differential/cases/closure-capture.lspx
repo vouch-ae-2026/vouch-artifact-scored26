@@ -1,0 +1,5 @@
+(define add10
+  (let ((x 10))
+    (lambda (y) (+ x y))))
+
+(add10 5)

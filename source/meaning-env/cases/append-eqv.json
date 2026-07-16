@@ -1,0 +1,182 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "append"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 2
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(1)",
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "(2)",
+      "anchor": {
+        "line": 1,
+        "col": 13
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "3",
+      "anchor": {
+        "line": 1,
+        "col": 17
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        1,
+        2,
+        3
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "eqv?"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 2
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 2,
+        "col": 7
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 2,
+        "col": 9
+      }
+    },
+    {
+      "kind": "call",
+      "op": 5,
+      "args": [
+        6,
+        7
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "eqv?"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 2
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 3,
+        "col": 7
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1.0",
+      "anchor": {
+        "line": 3,
+        "col": 9
+      }
+    },
+    {
+      "kind": "call",
+      "op": 9,
+      "args": [
+        10,
+        11
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "eqv?"
+      },
+      "anchor": {
+        "line": 4,
+        "col": 2
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "0.0",
+      "anchor": {
+        "line": 4,
+        "col": 7
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "-0.0",
+      "anchor": {
+        "line": 4,
+        "col": 11
+      }
+    },
+    {
+      "kind": "call",
+      "op": 13,
+      "args": [
+        14,
+        15
+      ],
+      "anchor": {
+        "line": 4,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        4,
+        8,
+        12,
+        16
+      ]
+    }
+  ],
+  "roots": [
+    17
+  ]
+}

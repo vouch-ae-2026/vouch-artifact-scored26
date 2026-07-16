@@ -1,0 +1,99 @@
+---
+title: 'Data Types'
+description: 'Numbers, strings, lists, booleans, and the other concrete values you use in Lispex.'
+---
+
+This page introduces the everyday data found on Lispex’s S-expression surface. Lispex runs directly in the reference interpreter. Try the [Playground](/en/play). Lispex Vouch uses the same concrete values when it binds rule inputs and receipt transcripts.
+
+Tip: open the [Playground](/en/play) in a new tab and try snippets as you read.
+
+## Primitive Types
+The fundamental values that appear in Lispex.
+
+### Numbers
+Integers, rationals, and reals (input forms):
+
+```lispex
+30
+19.99
+-100
+42/7          ; rational input form
+```
+
+### Booleans
+Truth values are `#t` and `#f`.
+
+```lispex
+#t
+#f
+(and #t #t)       ; ⇒ #t
+(or #f #t)        ; ⇒ #t
+(not #t)          ; ⇒ #f
+(if #t "yes" "no") ; ⇒ "yes"
+```
+
+### Characters
+Single character values.
+
+```lispex
+#\a
+#\space
+#\x03B1          ; Greek alpha
+```
+
+### Strings
+Represents sequences of characters, enclosed in double quotes.
+
+```lispex
+"Lispex Language"
+"Hello, Lispex! 👋"
+""
+"quote: \" \n tab: \t hex: \x41;" ; escapes
+```
+
+## Collection Types
+
+### Lists
+Ordered collections of items. Create with `(list ...)`. The empty list literal is `()`. Dotted lists are allowed as input.
+
+```lispex
+(list)                          ; empty
+(list 1 2 3 4 5)
+(list "hello" "world" "lispex")
+(list 1 (list 2 3) 4)          ; nested
+(1 2 3 . 4)                     ; dotted list input
+```
+
+Common operations live in the standard library (first/rest/length, append, map/filter, …).
+
+### Vectors
+
+```lispex
+#(1 2 3)
+#("a" "b" "c")
+```
+
+### Bytevectors
+Arrays of bytes (integers 0–255).
+
+```lispex
+#u8(72 101 108 108 111)
+```
+
+### Quote family
+Reader shorthands to build data.
+
+```lispex
+'x               ; ⇒ (quote x)
+`(a ,x ,@ys b)   ; ⇒ (append (list 'a x) ys (list 'b))
+```
+
+## Functions
+
+Functions are first‑class. Define with `lambda`, or with definition sugar:
+
+```lispex
+(define (add a b) (+ a b))
+(add 10 20) ; ⇒ 30
+(lambda (n) (+ n 1)) ; anonymous function value
+```

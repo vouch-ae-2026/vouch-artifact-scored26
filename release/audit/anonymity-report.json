@@ -1,0 +1,9 @@
+{
+  "absolute_path_findings": 0,
+  "anonymity_report": "vouch.scored26-anonymity/v1",
+  "email_findings": 0,
+  "identity_findings": 0,
+  "repository_residue_findings": 0,
+  "scope": "distributed-artifact",
+  "status": "pass"
+}

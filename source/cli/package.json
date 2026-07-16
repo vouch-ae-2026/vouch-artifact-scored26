@@ -1,0 +1,33 @@
+{
+  "name": "lispex",
+  "version": "1.4.0",
+  "description": "Local CLI for the Lispex reference interpreter and Lispex Vouch artifact checks. Evaluates .lspx files, verifies receipts and bridge reports, and replays decision corpora; no codegen.",
+  "bin": {
+    "lispex": "bin/lispex.js"
+  },
+  "files": [
+    "bin/lispex.js",
+    "pkg/lispex_wasm.js",
+    "pkg/lispex_wasm_bg.wasm",
+    "pkg/lispex_wasm.d.ts",
+    "pkg/lispex_wasm_bg.wasm.d.ts",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "lispex",
+    "lisp",
+    "scheme",
+    "r7rs",
+    "interpreter",
+    "wasm",
+    "webassembly",
+    "receipts",
+    "verify",
+    "replay",
+    "vouch-bridge"
+  ],
+  "homepage": "https://artifact.invalid/lispex"
+}

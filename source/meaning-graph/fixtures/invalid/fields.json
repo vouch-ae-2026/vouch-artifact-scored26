@@ -1,0 +1,16 @@
+{
+  "expected_error": "fields",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "lit",
+        "datum": "1",
+        "extra": true
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

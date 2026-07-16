@@ -1,0 +1,41 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 1,
+        "col": 3
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        1
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        2
+      ]
+    }
+  ],
+  "roots": [
+    3
+  ]
+}

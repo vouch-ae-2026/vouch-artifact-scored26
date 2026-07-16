@@ -1,0 +1,64 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "file": "examples/simple.lspx",
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "+"
+      },
+      "anchor": {
+        "file": "examples/simple.lspx",
+        "line": 1,
+        "col": 2
+      }
+    },
+    {
+      "kind": "call",
+      "op": 1,
+      "args": [
+        0,
+        0
+      ],
+      "anchor": {
+        "file": "examples/simple.lspx",
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "bind",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "value": 2
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        3,
+        4
+      ]
+    }
+  ],
+  "roots": [
+    5
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "expected_error": "intrinsic-name",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "ref",
+        "name": {
+          "space": "intrinsic",
+          "name": "for-each"
+        }
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

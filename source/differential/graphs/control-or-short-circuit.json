@@ -1,0 +1,110 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "\"kept\"",
+      "anchor": {
+        "line": 1,
+        "col": 5
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "temp",
+        "index": 0
+      },
+      "anchor": {
+        "line": 1,
+        "col": 5
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "temp",
+        "index": 0
+      },
+      "anchor": {
+        "line": 1,
+        "col": 5
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "/"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 13
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 15
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "0",
+      "anchor": {
+        "line": 1,
+        "col": 17
+      }
+    },
+    {
+      "kind": "call",
+      "op": 3,
+      "args": [
+        4,
+        5
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 12
+      }
+    },
+    {
+      "kind": "if",
+      "test": 1,
+      "then": 2,
+      "else": 6,
+      "anchor": {
+        "line": 1,
+        "col": 5
+      }
+    },
+    {
+      "kind": "let",
+      "bindings": [
+        {
+          "name": {
+            "space": "temp",
+            "index": 0
+          },
+          "value": 0
+        }
+      ],
+      "body": 7,
+      "anchor": {
+        "line": 1,
+        "col": 5
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        8
+      ]
+    }
+  ],
+  "roots": [
+    9
+  ]
+}

@@ -1,5 +1,0 @@
-(if (and (string=? (car input) "alice")
-         (and (string=? (car (cdr input)) "view")
-              (string=? (car (cdr (cdr input))) "VacationPhoto94.jpg")))
-    '(decision allow)
-    '(decision deny not-matching-request))

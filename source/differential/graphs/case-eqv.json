@@ -1,0 +1,133 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 7
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "eqv?"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "temp",
+        "index": 0
+      },
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "call",
+      "op": 1,
+      "args": [
+        2,
+        3
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#t",
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#f",
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "if",
+      "test": 4,
+      "then": 5,
+      "else": 6,
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 1,
+        "col": 14
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "3",
+      "anchor": {
+        "line": 1,
+        "col": 23
+      }
+    },
+    {
+      "kind": "if",
+      "test": 7,
+      "then": 8,
+      "else": 9,
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "let",
+      "bindings": [
+        {
+          "name": {
+            "space": "temp",
+            "index": 0
+          },
+          "value": 0
+        }
+      ],
+      "body": 10,
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        11
+      ]
+    }
+  ],
+  "roots": [
+    12
+  ]
+}

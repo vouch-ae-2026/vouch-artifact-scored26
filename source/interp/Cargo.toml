@@ -1,0 +1,64 @@
+[package]
+name = "lispex"
+version = "1.4.0"
+edition = "2021"
+description = "Lispex v1.4 reference interpreter"
+publish = false
+default-run = "lispex"
+
+[features]
+default = []
+scored-native-contract = ["dep:ed25519-dalek", "dep:getrandom", "dep:vouch"]
+
+# Round 1 deps: arbitrary-precision integers/rationals are used ONLY to STORE
+# exact integer/rational literal values produced by the reader. No arithmetic
+# beyond what literal construction needs (rational reduction / int parsing).
+[dependencies]
+num-bigint = "0.4"
+num-rational = "0.4"
+num-traits = "0.2"
+num-integer = "0.1"
+# The shortest-round-trip float formatter (value::format_real) generates its digits
+# with the published **Ryū** algorithm (deterministic, shortest, ties-to-even) so the
+# digit string is a NAMED, cross-language-portable spec a external backend port re-implements —
+# NOT Rust's unspecified default float printing (LISPEX-RUNTIME.md §2).
+ryu = "1.0"
+# SHA-256 for receipt/source/core/runtime hash domains (CSK-CANONICAL-CORE.md).
+sha2 = "=0.10.8"
+# Structured receipt JSON for the native Rust CLI. The JSON bytes are not a hash
+# preimage, but serde_json keeps diagnostic/user text escaping correct.
+serde = "=1.0.219"
+serde_json = "=1.0.140"
+ed25519-dalek = { version = "=2.1.1", features = ["pkcs8"], optional = true }
+getrandom = { version = "0.2", optional = true }
+vouch = { path = "../vouch", optional = true }
+
+# Grows the host stack on the heap on demand at the evaluator's non-tail re-entry, so
+# the logical CALL_DEPTH_LIMIT is reachable on any thread without a host stack overflow
+# (the §4 clean-RecursionLimit guarantee). See eval::Interp::eval.
+#
+# NON-wasm only: on wasm32 there is no real host stack to grow, so `stacker::maybe_grow`
+# would be a no-op (the wasm build instead pins a smaller deterministic CALL_DEPTH_LIMIT
+# that fits the fixed wasm stack — see eval.rs). Gating it out of the wasm build also
+# drops its host-only C toolchain chain (psm/cc) which wasm32 does not need.
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+psm = "=0.1.27"
+stacker = "0.1"
+
+[lib]
+name = "lispex"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lispex"
+path = "src/bin/lispex.rs"
+
+[[bin]]
+name = "scored26-workload-runner"
+path = "src/bin/scored26-workload-runner.rs"
+required-features = ["scored-native-contract"]
+
+[[bin]]
+name = "scored26-mutation-runner"
+path = "src/bin/scored26-mutation-runner.rs"
+required-features = ["scored-native-contract"]

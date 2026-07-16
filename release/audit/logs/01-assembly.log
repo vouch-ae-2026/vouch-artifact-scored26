@@ -1,0 +1,5 @@
+
+> lispex@1.4.0 scored26:assemble-release
+> node artifact/scripts/assemble-release.mjs --source-root <CLEAN_ROOM>/vouch-scored26-artifact/work --clean-room-root <CLEAN_ROOM> --key-handle pkcs8-file://<RELEASE_KEY_HANDLE> --build-image-sha256 sha256:c40e87e9fbdf67f18850020696984308eda72bd8e9f89acc2b69c46bc550108e --os-image-reference ubuntu@sha256:6015f66923d7afbc53558d7ccffd325d43b4e249f41a6e93eef074c9505d2233 --linker GNU ld (GNU Binutils for Ubuntu) 2.42 --npm /usr/local/bin/npm
+
+SCORED26 release assembled (3e910c9ff87c, 482 exact results, 429428296 archive bytes)

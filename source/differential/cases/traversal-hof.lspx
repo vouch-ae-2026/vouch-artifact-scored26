@@ -1,0 +1,5 @@
+(map (lambda (x) (+ x 1)) '(1 2 3))
+(filter (lambda (x) (> x 1)) '(1 2 3))
+(reduce (lambda (acc x) (+ acc x)) 0 '(1 2 3))
+(fold-left (lambda (acc x) (cons x acc)) '() '(1 2))
+(fold-right (lambda (x acc) (cons x acc)) '() '(1 2))

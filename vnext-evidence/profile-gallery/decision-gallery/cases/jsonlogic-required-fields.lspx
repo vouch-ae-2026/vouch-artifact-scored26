@@ -1,3 +1,0 @@
-(if (and (car input) (car (cdr input)))
-    '(decision allow)
-    '(decision invalid-input missing-required-field))

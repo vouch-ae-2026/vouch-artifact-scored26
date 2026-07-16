@@ -1,0 +1,320 @@
+{
+  "direct_copies": [
+    {
+      "bytes": 80812,
+      "destination": "release/chain/release-descriptor.json",
+      "role": "D payload",
+      "sha256": "daca8fa97901d6396abd7e64c27cbd692929a23b70de82cc16f0d158220fd5ae",
+      "source": "phase1/clean-room/release-descriptor.json"
+    },
+    {
+      "bytes": 108068,
+      "destination": "release/chain/release-descriptor.dsse.json",
+      "role": "D signed envelope",
+      "sha256": "8803773addc832543b66c99a6ab7a16ef3e6fea3f0dcce70e697d3a87102b99c",
+      "source": "phase1/clean-room/release-descriptor.dsse.json"
+    },
+    {
+      "bytes": 897,
+      "destination": "release/chain/trust-policy.json",
+      "role": "release trust policy",
+      "sha256": "f91781d30e296eb6c02bb2d0603fccbde46ccbab8ed8ff1b7bfa7b4565d08ed1",
+      "source": "phase1/clean-room/trust-policy.json"
+    },
+    {
+      "bytes": 231,
+      "destination": "release/chain/native-release-public-key.json",
+      "role": "release public-key record",
+      "sha256": "d08064f8e50982321a58a84a5b901441b246918a5e42f824faa32e695306429a",
+      "source": "phase3/paper-source/artifact/trust/native-release-public-key.json"
+    },
+    {
+      "bytes": 2640,
+      "destination": "release/chain/clean-run-report.json",
+      "role": "Q clean-run report",
+      "sha256": "f0414f051e062f7b98a32f44b04ff526da79a61a6af00f2d95b62b024cc9ec2c",
+      "source": "phase1/clean-room/external/clean-run-report.json"
+    },
+    {
+      "bytes": 189,
+      "destination": "release/chain/finalize-report.json",
+      "role": "phase-2 finalizer status",
+      "sha256": "797197328e2e3ef902bb0e6a5e19972725a117a80d1096b969f9da347eb0b3fd",
+      "source": "phase2/finalized/finalize-report.json"
+    },
+    {
+      "bytes": 49139,
+      "destination": "release/chain/reproduction-observation.json",
+      "role": "R payload",
+      "sha256": "ff36863387b2d865a817d699e8d7ba73ceeb42dc4c3e78818293f01727fd7e81",
+      "source": "phase2/finalized/reproduction-observation.json"
+    },
+    {
+      "bytes": 65842,
+      "destination": "release/chain/reproduction-observation.dsse.json",
+      "role": "R signed envelope",
+      "sha256": "4f2ccc76556fd88b836497c57b9439fcbf7e56517f44076d0a776db3275c90a5",
+      "source": "phase2/finalized/reproduction-observation.dsse.json"
+    },
+    {
+      "bytes": 275,
+      "destination": "release/chain/release-publication.json",
+      "role": "P publication record",
+      "sha256": "9855f8f3d67c64c87931f4347cbaebe31cf904a7586d962092ea5a42644f4a22",
+      "source": "phase2/finalized/release-publication.json"
+    },
+    {
+      "bytes": 598,
+      "destination": "release/chain/publication-report.json",
+      "role": "S terminal publication report",
+      "sha256": "1922ac844a1dd0a90dc1664cacb5d315f3f27181a3e8aed6c7f0a99fa50a9149",
+      "source": "phase3/publication/publication-report.json"
+    },
+    {
+      "bytes": 65977,
+      "destination": "release/results/condition-map.json",
+      "role": "condition ledger map",
+      "sha256": "849cb7458ddd91079c29587e3a8775df1afd23d59339282f9a19ef3c381c3ac4",
+      "source": "phase3/paper-source/artifact/contract/condition-map.json"
+    },
+    {
+      "bytes": 27409,
+      "destination": "release/results/fixture-results.json",
+      "role": "fixture owner report",
+      "sha256": "f6dc99af7c81ce6f0b8a8a580dba8e5c73b9f2fc9f597ac49676ee5dd07f55f7",
+      "source": "phase1/clean-room/phase1-results/artifact/results/fixture-results.json"
+    },
+    {
+      "bytes": 24832,
+      "destination": "release/results/workload-results.json",
+      "role": "workload owner report",
+      "sha256": "60aaa12d73d36f3183b5bac04e447d70aece9da2a9cc4c5841548fb84047b0fb",
+      "source": "phase1/clean-room/phase1-results/artifact/workload/workload-results.json"
+    },
+    {
+      "bytes": 3629,
+      "destination": "release/results/mutation-results.json",
+      "role": "mutation owner report",
+      "sha256": "4b8604da8b97fc6550f52005c88166a65592e8cc7b97def0338c908597e75fd4",
+      "source": "phase1/clean-room/phase1-results/artifact/mutation/mutation-results.json"
+    },
+    {
+      "bytes": 2452,
+      "destination": "release/results/performance-results.json",
+      "role": "performance owner report",
+      "sha256": "3c4c5bc8e487341acd998657fee61a1653675c4bd1fb58816252e00c2656e6ec",
+      "source": "phase1/clean-room/phase1-results/artifact/performance/performance-results.json"
+    },
+    {
+      "bytes": 142514,
+      "destination": "release/results/exact-reproduction-comparisons.json",
+      "role": "exact reproduction comparisons",
+      "sha256": "634bb491aa90a02c69533e099bcdf759fa825991b30cbb294fc64aea7387128b",
+      "source": "phase1/clean-room/external/exact-reproduction-comparisons.json"
+    },
+    {
+      "bytes": 96723,
+      "destination": "machine-record/vouch-scored26-release-record.pdf",
+      "role": "machine-readable release PDF",
+      "sha256": "cabff13cf9c34a3d96dfda4944d30ac681960eab007ee11267f09ca90200d556",
+      "source": "phase3/publication/vouch-scored26-paper.pdf"
+    },
+    {
+      "bytes": 1139394,
+      "destination": "release/results/release-manifest.json",
+      "role": "D-bound archive release manifest",
+      "sha256": "2397c200d4cac10e4b5d1e1d5261fb7c99a6340fb80a363592ae5ce36a2544fb",
+      "source": "vouch-scored26-artifact/artifact/release-manifest.json"
+    }
+  ],
+  "generated_files": [
+    "release/audit/bundle-reconciliation.json",
+    "release/audit/lifecycle-audit.json",
+    "release/audit/lifecycle-command-record.md",
+    "release/audit/logs/00-npm-ci.log",
+    "release/audit/logs/01-assembly.log",
+    "release/audit/logs/02-trusted-bootstrap.log",
+    "release/audit/logs/03-phase1.log",
+    "release/audit/logs/04-phase2.log",
+    "release/audit/logs/05-phase3.log",
+    "release/audit/logs/scan-actual-key-secret-scan.log",
+    "release/audit/logs/scan-generic-private-key-marker-scan.log",
+    "release/audit/logs/scan-public-data-scan.log",
+    "release/audit/materialization-map.json",
+    "release/audit/sanitized-log-manifest.json",
+    "release/audit/secret-scan-report.json"
+  ],
+  "materialization_manifest": "vouch.scored26-release-materialization/v1",
+  "output_files_before_manifest": [
+    {
+      "bytes": 96723,
+      "path": "machine-record/vouch-scored26-release-record.pdf",
+      "sha256": "cabff13cf9c34a3d96dfda4944d30ac681960eab007ee11267f09ca90200d556"
+    },
+    {
+      "bytes": 2015,
+      "path": "release/audit/bundle-reconciliation.json",
+      "sha256": "3f38a57cfb1b36d432de73f8f253235aafb27fab8fdc1a955fa4d275a17f2279"
+    },
+    {
+      "bytes": 5771,
+      "path": "release/audit/lifecycle-audit.json",
+      "sha256": "4c3e805e42dc3a563e836e7fb4e4d302382b0eb59aef54a19072451c2fc48dd5"
+    },
+    {
+      "bytes": 5435,
+      "path": "release/audit/lifecycle-command-record.md",
+      "sha256": "4f39e297d7dc43da990a8f20f0df6b9dad6b36ad6ee24aa0df1bcb95f1990b0e"
+    },
+    {
+      "bytes": 1427,
+      "path": "release/audit/logs/00-npm-ci.log",
+      "sha256": "464dd1da922e6c63d035db4511673c9ef171a138bd61d1627ffd10517ea5b86f"
+    },
+    {
+      "bytes": 573,
+      "path": "release/audit/logs/01-assembly.log",
+      "sha256": "97df4636296ae48e64f92fc57a2fff8c3923124af32c7983bd4c3471fa5b185f"
+    },
+    {
+      "bytes": 67,
+      "path": "release/audit/logs/02-trusted-bootstrap.log",
+      "sha256": "7e8842ced9054b425651fc79ceb4d34782b390b73ed8e71fbf487d6f12df41d8"
+    },
+    {
+      "bytes": 7532,
+      "path": "release/audit/logs/03-phase1.log",
+      "sha256": "b3dcbe4168e9aa8a4a8aad7014606f016cf3eb7512c50260b8da8a7f6bb2fa7b"
+    },
+    {
+      "bytes": 1067,
+      "path": "release/audit/logs/04-phase2.log",
+      "sha256": "b6eb3993641514bc5405beea8ce786fbc5942af78d0ee4f578e5acd2a620a745"
+    },
+    {
+      "bytes": 1293,
+      "path": "release/audit/logs/05-phase3.log",
+      "sha256": "1bea61d6dbc4b827e3a7020827dc5e222ce420fcb200d260690fa53e8eda1b33"
+    },
+    {
+      "bytes": 64,
+      "path": "release/audit/logs/scan-actual-key-secret-scan.log",
+      "sha256": "451f06e6787b6dad29feddae874b69f9caa763681e5b52f460ed634cacb029f6"
+    },
+    {
+      "bytes": 48,
+      "path": "release/audit/logs/scan-generic-private-key-marker-scan.log",
+      "sha256": "47260f09f650b6d8cd4d602c65d16d3f572c4b47045a1c3037d2a9365f0d8c74"
+    },
+    {
+      "bytes": 64,
+      "path": "release/audit/logs/scan-public-data-scan.log",
+      "sha256": "1f36e3ca185cd7de0884ed3b60cc6dacea1f74cad9aa69dc43f2a34c2ba0b4ca"
+    },
+    {
+      "bytes": 8125,
+      "path": "release/audit/materialization-map.json",
+      "sha256": "f4f86505530d96e8d87ae7551fa1cd56c7c5d343dfe6d5840ec9b152ec1aaada"
+    },
+    {
+      "bytes": 4031,
+      "path": "release/audit/sanitized-log-manifest.json",
+      "sha256": "c0b7ea7d3742da417adfad3485831c0c4d2807efcc8c064f51809a1271a2f024"
+    },
+    {
+      "bytes": 513,
+      "path": "release/audit/secret-scan-report.json",
+      "sha256": "1544887932df916746843e5cfa0aa00a17853c6e8c46670cf31a919b8dd8eb11"
+    },
+    {
+      "bytes": 2640,
+      "path": "release/chain/clean-run-report.json",
+      "sha256": "f0414f051e062f7b98a32f44b04ff526da79a61a6af00f2d95b62b024cc9ec2c"
+    },
+    {
+      "bytes": 189,
+      "path": "release/chain/finalize-report.json",
+      "sha256": "797197328e2e3ef902bb0e6a5e19972725a117a80d1096b969f9da347eb0b3fd"
+    },
+    {
+      "bytes": 231,
+      "path": "release/chain/native-release-public-key.json",
+      "sha256": "d08064f8e50982321a58a84a5b901441b246918a5e42f824faa32e695306429a"
+    },
+    {
+      "bytes": 598,
+      "path": "release/chain/publication-report.json",
+      "sha256": "1922ac844a1dd0a90dc1664cacb5d315f3f27181a3e8aed6c7f0a99fa50a9149"
+    },
+    {
+      "bytes": 108068,
+      "path": "release/chain/release-descriptor.dsse.json",
+      "sha256": "8803773addc832543b66c99a6ab7a16ef3e6fea3f0dcce70e697d3a87102b99c"
+    },
+    {
+      "bytes": 80812,
+      "path": "release/chain/release-descriptor.json",
+      "sha256": "daca8fa97901d6396abd7e64c27cbd692929a23b70de82cc16f0d158220fd5ae"
+    },
+    {
+      "bytes": 275,
+      "path": "release/chain/release-publication.json",
+      "sha256": "9855f8f3d67c64c87931f4347cbaebe31cf904a7586d962092ea5a42644f4a22"
+    },
+    {
+      "bytes": 65842,
+      "path": "release/chain/reproduction-observation.dsse.json",
+      "sha256": "4f2ccc76556fd88b836497c57b9439fcbf7e56517f44076d0a776db3275c90a5"
+    },
+    {
+      "bytes": 49139,
+      "path": "release/chain/reproduction-observation.json",
+      "sha256": "ff36863387b2d865a817d699e8d7ba73ceeb42dc4c3e78818293f01727fd7e81"
+    },
+    {
+      "bytes": 897,
+      "path": "release/chain/trust-policy.json",
+      "sha256": "f91781d30e296eb6c02bb2d0603fccbde46ccbab8ed8ff1b7bfa7b4565d08ed1"
+    },
+    {
+      "bytes": 65977,
+      "path": "release/results/condition-map.json",
+      "sha256": "849cb7458ddd91079c29587e3a8775df1afd23d59339282f9a19ef3c381c3ac4"
+    },
+    {
+      "bytes": 142514,
+      "path": "release/results/exact-reproduction-comparisons.json",
+      "sha256": "634bb491aa90a02c69533e099bcdf759fa825991b30cbb294fc64aea7387128b"
+    },
+    {
+      "bytes": 27409,
+      "path": "release/results/fixture-results.json",
+      "sha256": "f6dc99af7c81ce6f0b8a8a580dba8e5c73b9f2fc9f597ac49676ee5dd07f55f7"
+    },
+    {
+      "bytes": 3629,
+      "path": "release/results/mutation-results.json",
+      "sha256": "4b8604da8b97fc6550f52005c88166a65592e8cc7b97def0338c908597e75fd4"
+    },
+    {
+      "bytes": 2452,
+      "path": "release/results/performance-results.json",
+      "sha256": "3c4c5bc8e487341acd998657fee61a1653675c4bd1fb58816252e00c2656e6ec"
+    },
+    {
+      "bytes": 1139394,
+      "path": "release/results/release-manifest.json",
+      "sha256": "2397c200d4cac10e4b5d1e1d5261fb7c99a6340fb80a363592ae5ce36a2544fb"
+    },
+    {
+      "bytes": 24832,
+      "path": "release/results/workload-results.json",
+      "sha256": "60aaa12d73d36f3183b5bac04e447d70aece9da2a9cc4c5841548fb84047b0fb"
+    }
+  ],
+  "source": {
+    "artifact_commit": "3e910c9ff87cc01d3bc241d63297218b44e75ede",
+    "artifact_freeze_commit": "c90f97ddd6b1d662791a76fe4663b90e79c443ec",
+    "mapping_contract": "vouch.scored26-release-materialization-map/v2"
+  }
+}

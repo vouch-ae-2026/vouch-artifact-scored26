@@ -1,0 +1,18 @@
+{
+  "expected_error": "name",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "ref",
+        "name": {
+          "space": "module",
+          "text": "x"
+        }
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

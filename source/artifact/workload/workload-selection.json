@@ -1,0 +1,5288 @@
+{
+  "counts": {
+    "boundary": 144,
+    "interior": 48,
+    "invalid": 48,
+    "total": 240
+  },
+  "selected": [
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0010",
+      "canonical_input_sha256": "sha256:87d2ebd7ae3fa27317587a3c671b3a75cc0af8151d91191250cf8a32578df605",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          0,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:08093241eb0b70bb000bd2804dcb598d1ff0097a0c18915caccdc8f7863a17f4",
+      "stratum_id": "S01"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0008",
+      "canonical_input_sha256": "sha256:3f8ceab9e9b1e6da37242e77102ec67dcd6e315f670d0b4d6ec3ef9c78cf2b0e",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          0,
+          300156
+        ]
+      },
+      "selection_sha256": "sha256:211cbaacf1a0ede3f80be20052ec2968e4eb9d50bd57f045547d3d7032131078",
+      "stratum_id": "S01"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0004",
+      "canonical_input_sha256": "sha256:47c94ea592c28f385bb3c1c0784831837306d176169915abac3d3d375c899471",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          0,
+          200155
+        ]
+      },
+      "selection_sha256": "sha256:2846bc938b41a1e83bd44343fa0ccd7dbf145fb3a4716aab7e3f13432c62f32f",
+      "stratum_id": "S01"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0020",
+      "canonical_input_sha256": "sha256:5f0622ad98adf2bca221f1f5d1a900a3df2be6558026430aa5fc05e825007d30",
+      "descriptor": {
+        "amount": 108545,
+        "interior_sha256": "sha256:00025ffd5c28581184f72b837b537ddea5e273085af3a2c201a9336e168fd484",
+        "interval_id": "2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          0,
+          108545
+        ]
+      },
+      "selection_sha256": "sha256:319279456c67d56f56877118d39728841f305411a560895333dcc40ddd185ed7",
+      "stratum_id": "S01"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0027",
+      "canonical_input_sha256": "sha256:803b6f642876b9aab71a71e2b51923d604a8f8e74a59e52cf465bccf5d737058",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:03e012d2785ba4efa55233e9a00293b6d17bab805ed10ed435aa67579fd5236f",
+      "stratum_id": "S01"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0039",
+      "canonical_input_sha256": "sha256:2f337e59ffb3fe4933ebcc782474a2100e18d9afc74659d382f49ce9b1ac39d5",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          1,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:13037c3460fb1e99ef363ac386c054d935f3eed688f854d1faff234830808867",
+      "stratum_id": "S02"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0034",
+      "canonical_input_sha256": "sha256:fbfc5d5b285df68d37215c6b4abefd4df292d2fe37cd1828bb7fdbc2146cc17f",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          1,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:14cdaadfc1c16f6012a63a9ee57055b180b112837bdf4bfc637d727c3d4692cc",
+      "stratum_id": "S02"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0046",
+      "canonical_input_sha256": "sha256:b2ba98d90b28e61c90d2739e7d704a37a40ada7ae5667c69eb109def58dc590b",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          1,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:1f30d510613ca4bc0fbfe7b12d4a290f55a0c5631cf46b6ac5205c402bde5283",
+      "stratum_id": "S02"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0055",
+      "canonical_input_sha256": "sha256:2b2d45a2841d615bf0ff026dab760f9e7c87fef67f8681c02433c5fe47797100",
+      "descriptor": {
+        "amount": 427988,
+        "interior_sha256": "sha256:0000201c4fe2bbbe3f39b8657a3caa580c3ae33de32f4bf33ca1260eea7c7d82",
+        "interval_id": "5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          1,
+          427988
+        ]
+      },
+      "selection_sha256": "sha256:0ca0d36eee9d5a26caecb4f52740941b51038f0de99604344bd2038fa4aca77c",
+      "stratum_id": "S02"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0064",
+      "canonical_input_sha256": "sha256:952178d31e01566c1267b483dececb52f5e082a58f628231940c6b9de6080e81",
+      "descriptor": {
+        "invalid_id": "I7"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          0,
+          1,
+          -1
+        ]
+      },
+      "selection_sha256": "sha256:6eacce6681432d557d3fb9650e5c08af77462367d181b26556dc071a4f696293",
+      "stratum_id": "S02"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0072",
+      "canonical_input_sha256": "sha256:435ed369082415874fa1a87380e71c32429b3a52aa27de73cd49c0323c648864",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          0,
+          300156
+        ]
+      },
+      "selection_sha256": "sha256:1366647ac8e2fbb2fa96040572a60b6c4f61b946b2fb4caae9719a35a10ac997",
+      "stratum_id": "S03"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0070",
+      "canonical_input_sha256": "sha256:3e316321fdfd4fab40ee68106e067398ae1d8d55ab9829981bf2ea4017b354f7",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          0,
+          200157
+        ]
+      },
+      "selection_sha256": "sha256:1e35f2bd3debcca7b9fe0e57d4b65084dc79f842656297500a6f4c89052e67a2",
+      "stratum_id": "S03"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0069",
+      "canonical_input_sha256": "sha256:cd31a3f6fbb32c09a9c13dcd5f23794d02ce6ca0f5e22d11547d64cead07ab62",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          0,
+          200156
+        ]
+      },
+      "selection_sha256": "sha256:3832b8f6a779e0f8409e085d7912b8be468617a74c648425426ce977fb7e1fbd",
+      "stratum_id": "S03"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0086",
+      "canonical_input_sha256": "sha256:649f12009e0c6a88a676844ce089dbb1916bec3e85c1632d46ae7400e6e148ce",
+      "descriptor": {
+        "amount": 328198,
+        "interior_sha256": "sha256:0001bebf627c1bbb5d352d65eb11b664469b6ae168f62f97169c59bdb7cb2329",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          0,
+          328198
+        ]
+      },
+      "selection_sha256": "sha256:32923dece943005e8a5095c9572f319b37808e7cfb95bb7dd558093b7e3eb609",
+      "stratum_id": "S03"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0091",
+      "canonical_input_sha256": "sha256:eaed4c850d5038f5204e3102feca8dbd2cae3123f29f6afee27a91c249d3a398",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:4be6090b0b097dfb18e9d380b37bfd6ba590d189b8dce7dd9f4949364e4dfb74",
+      "stratum_id": "S03"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0102",
+      "canonical_input_sha256": "sha256:109b576dcdf76727a372a65bfcadba8582d01f81529d6f6029a49faeea05941a",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          1,
+          200157
+        ]
+      },
+      "selection_sha256": "sha256:037f8550c585a04f8d10df82c039ff757e044da3bbbcf9cc176e1bb161fbbbbb",
+      "stratum_id": "S04"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0108",
+      "canonical_input_sha256": "sha256:1be47bb5a49b86bf9397fe6d1d1a970553b8774c96839bf011429feb875b6bfa",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          1,
+          400154
+        ]
+      },
+      "selection_sha256": "sha256:0f056e1264d1b4a0910d1cad9e78c921d41e46077317623bd58249c30d3689fb",
+      "stratum_id": "S04"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0109",
+      "canonical_input_sha256": "sha256:810acb987905c8b2f2a1d799c183a8dde1f0c38ed3909a11abf8156c2d0310d5",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          1,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:1bcc191a743dff5febe2ad1d615259f9d0e484715f6977c5c3a2d2123546bdfd",
+      "stratum_id": "S04"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0118",
+      "canonical_input_sha256": "sha256:e5b7b4ee23cbc26331022fe582d4ef377b5145f853fd5d7c9ddd937a6f7c554f",
+      "descriptor": {
+        "amount": 354943,
+        "interior_sha256": "sha256:00003a2a424a6f38ee8f5326a9dce0f89c60c9c320aa37a83a67e0f1853c5fda",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          1,
+          1,
+          354943
+        ]
+      },
+      "selection_sha256": "sha256:127a30f1d00f41060f22d566e34adf4d0cfd61647c675865e63266352668dea1",
+      "stratum_id": "S04"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0124",
+      "canonical_input_sha256": "sha256:3767e68bff2cbce9bbe2b078b5deb8de1a4f98f7499f1581a0a6aa28b0471ce3",
+      "descriptor": {
+        "invalid_id": "I3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:101bb95d7d42cc3cf29acb66a6cbb352614918915a333edb5decd5c98ab3407f",
+      "stratum_id": "S04"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0142",
+      "canonical_input_sha256": "sha256:39d0e6d8c7a04bbd44fa0afe0aef60bbd9b35dcffa37de36900369795932119d",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          0,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:07f28276f2417df0838c6017a768c53c71c741df0987873028cd841cce3f5c51",
+      "stratum_id": "S05"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0130",
+      "canonical_input_sha256": "sha256:9b85452aa8d08437acccc5ca0fa359d31ccdce28f259cb8d31ab6222d33cdc7d",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          0,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:098539c3920dea7ba68281775505c6bc2f1f8ae5fb1c5235f9790fea0da9d80e",
+      "stratum_id": "S05"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0138",
+      "canonical_input_sha256": "sha256:34387f827ccbfccc25e5cdabb6b075bef0145ffa72b0011caa23916907e8d0dd",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          0,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:13e5aec7beb35ce9bd12183db50c69ed9e5d893de0f92e0e827df4cd0411e312",
+      "stratum_id": "S05"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0147",
+      "canonical_input_sha256": "sha256:309e7d41c4423bf99403fdf5637714bd42672fb6768b1e9547673a8ad09c3b1e",
+      "descriptor": {
+        "amount": 12257,
+        "interior_sha256": "sha256:00002693aa5061253f3efc7503391c72ce1bd63f9a591d43d6135878f5a5504a",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          0,
+          12257
+        ]
+      },
+      "selection_sha256": "sha256:2246596b893a9cc534d0fa5b017421bf99e14fbdb66b5e7a2db98092be76f8f7",
+      "stratum_id": "S05"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0160",
+      "canonical_input_sha256": "sha256:534b4ea7e264154c5de95d6515c6527343c9e51cb51134276c7e1cb4f2d571dd",
+      "descriptor": {
+        "invalid_id": "I7"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          0,
+          -1
+        ]
+      },
+      "selection_sha256": "sha256:1a4221577a2906f8b75fdc39ed8c345bfdc3b702fc4428b3f21ee45d48a01cea",
+      "stratum_id": "S05"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0177",
+      "canonical_input_sha256": "sha256:240fccb6684182ba0fdad1c9e7d3f62fe5bac9e0e2b0d2ff0804e35866db70a0",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          1,
+          600156
+        ]
+      },
+      "selection_sha256": "sha256:039142d2e91cbe672f98f78d7ca4125fef1d29a46ffef45a71fbb02c261ba680",
+      "stratum_id": "S06"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0170",
+      "canonical_input_sha256": "sha256:eb7cabb8c909e01ad10d20d377e4fd634d14ec6f7f1755a4add8fa4617b5e748",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          1,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:081df1cb29f03e6f0a93f3693ca8acc7a714ebda67f7f3e2521debab0fbedbde",
+      "stratum_id": "S06"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0178",
+      "canonical_input_sha256": "sha256:a69b90857daf5ee78e42f9543752b0853faa4790ee62700c0f41f5d360f108a3",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          1,
+          600157
+        ]
+      },
+      "selection_sha256": "sha256:0a76b01245f47124de719044604ab257b427b41efbaf09e264d13b7cc0e32173",
+      "stratum_id": "S06"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0180",
+      "canonical_input_sha256": "sha256:18ba665239b298cf133bbc1f142ce72ff18a5785a975134c8c800b47eb7abafa",
+      "descriptor": {
+        "amount": 157836,
+        "interior_sha256": "sha256:00014a5a67216f0404e64225d4bae8938b2522d298713d90dab616398470169e",
+        "interval_id": "2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          0,
+          2,
+          1,
+          157836
+        ]
+      },
+      "selection_sha256": "sha256:260752a95b7b2f82b596d8f5e7894ce3e20c0d7416340a7752ec64716800bdd8",
+      "stratum_id": "S06"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0189",
+      "canonical_input_sha256": "sha256:111bc3fe76e5f2df82560081c1c7a66f4291679549020b1041ab8fa9b9d3d943",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          2,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:3071a92aaa9c113b30f987fa81a448509798b85277cd201119a564ae590faaf8",
+      "stratum_id": "S06"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0194",
+      "canonical_input_sha256": "sha256:1f116a236bbe1a5bdc1e68811b828e7ae4c324e977406e68a2cd146dbb473ef9",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          0,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:08659614d4cc58f420fee561c8b060d281190325442a342649053d42cec7f2d9",
+      "stratum_id": "S07"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0203",
+      "canonical_input_sha256": "sha256:9b2529f61e26e8c772a036fd991200e280b11927fce5ede00ab2b3fcefff7623",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          0,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:09b69f7d2bb3e3f49fc98531c91878b1461e4d84d54e8ce0569aa99adb610d3c",
+      "stratum_id": "S07"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0208",
+      "canonical_input_sha256": "sha256:98b66aa5e1b4eb1851b4883c4974b0bd9fde45139cb7b5605fa292019526cf11",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          0,
+          600155
+        ]
+      },
+      "selection_sha256": "sha256:0b7d58ec41502c5393b9242bf13427977c0f64a6950049f6242246be0516585f",
+      "stratum_id": "S07"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0216",
+      "canonical_input_sha256": "sha256:91b94cffcc874de4655c1ced31e7a81b426a512ffbf09450acb22fcfd39b2646",
+      "descriptor": {
+        "amount": 530163,
+        "interior_sha256": "sha256:0001338a55279a4042b4080e4980d64d8a25619e912b4dcfba571bfd2e2da59c",
+        "interval_id": "6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          0,
+          530163
+        ]
+      },
+      "selection_sha256": "sha256:09b0ae2df5e2c417429198aa9d7ec0e754dcc740697f1f501c1c735248b705d3",
+      "stratum_id": "S07"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0221",
+      "canonical_input_sha256": "sha256:da6f0fa3fd7db2bb013fcba4bd41321bdef6dc432c977360a6963a56f50b0428",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          0,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:0a8d58a091d3d9f75c3a8e3cd15e24003ad2af87efb2d97ebe3f49ed7f3c3a02",
+      "stratum_id": "S07"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0237",
+      "canonical_input_sha256": "sha256:5d85e559817c26f788a472052cd1324f3e4d326db7248cdb296100699ec8610b",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          1,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:18855e5272e935febe630e2f328fd40199e4f5c3586176da03386cde1f70ee75",
+      "stratum_id": "S08"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0231",
+      "canonical_input_sha256": "sha256:d8091368c24aaea492d26ff43bae1757a0d300ee19d22170b9f8b380003fb836",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          1,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:31a96c35756987d727ce7bb7463f35100a7d866baf8493d825863f103a979804",
+      "stratum_id": "S08"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0239",
+      "canonical_input_sha256": "sha256:3b02fa675f733627d0457c83cd5f34418ea0c4129777a8c1fdeb3d70f988b4a2",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          1,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:330d5c7e4643e7a8646cbc8edc45d09b427459f4526f0e8e377b098dd56e8bcc",
+      "stratum_id": "S08"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0243",
+      "canonical_input_sha256": "sha256:7d005fc34a6710d94d939a2574abf523d63a44f6e4d6dd4d99d66151c24a63e3",
+      "descriptor": {
+        "amount": 40460,
+        "interior_sha256": "sha256:0000abfcc7c4209c4165cf6ab4f91a89daa26589df7d5cfbb96ec411b6168eee",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          1,
+          40460
+        ]
+      },
+      "selection_sha256": "sha256:07f41697ea40e4c2ae9d3b7d8d943dd8b56ddea0b8cfecf8cd5f0754ec12a320",
+      "stratum_id": "S08"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0251",
+      "canonical_input_sha256": "sha256:c0a974c9cc41f2b4b6bb56e67057969ec202998dfa75babc45ce80972fd85835",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:1b035afec8f3671a8669b8940c2e828228b92fac1533cd7e34dbddc9fd34b159",
+      "stratum_id": "S08"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0267",
+      "canonical_input_sha256": "sha256:e7dda2ee3e222c5e841c90edb19ff94323366d13d21df0bf0026d7036ab33c31",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          0,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:0cdc18c5d1c06793516c6b36e18f313f4815f9b806d9968b9ff38b03761824c8",
+      "stratum_id": "S09"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0257",
+      "canonical_input_sha256": "sha256:939199ea1f26e7328207483e9c7f488fdb86a261b7da5847243a8f3389cb1e97",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          0,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:1d14dc6f8bc6acc9770f856d097ac82e4a6d2746b30ac22812b54588a042dc20",
+      "stratum_id": "S09"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0268",
+      "canonical_input_sha256": "sha256:a5b8c84b640c4b4ecee76b228ddd81445b26d3f1e8029585bc45fdb733fa43ee",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          0,
+          400154
+        ]
+      },
+      "selection_sha256": "sha256:54a5da0cc03ea5539bdfebdfb73ac9284b1d79fb84d2f4c22f3fb51753cca0a6",
+      "stratum_id": "S09"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0277",
+      "canonical_input_sha256": "sha256:d875dbc12b8e8440d3f8fd50934077f8474e11cc5993a540d1cb7e500327a55a",
+      "descriptor": {
+        "amount": 211749,
+        "interior_sha256": "sha256:0000015e01bc86793737ef2a8719dbc4c4644327825518dcaf45047d8d7da46d",
+        "interval_id": "3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          0,
+          211749
+        ]
+      },
+      "selection_sha256": "sha256:1cddba21f46b248c40398b6f41c56a075dec721e99edb89cbe1c10e4a630eba6",
+      "stratum_id": "S09"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0282",
+      "canonical_input_sha256": "sha256:91822b3f873942ce6c0a359ad223d5f74ef3f245dd8ceee4045aa22d59202cbe",
+      "descriptor": {
+        "invalid_id": "I1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:022d158d17e8f8233b6c3e3898e269d5640b2493abb5c8bb937abc03c4d17a1c",
+      "stratum_id": "S09"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0295",
+      "canonical_input_sha256": "sha256:01a87bcabfd316c3c4cb8034978f2fe5706e82d2b0a49760af193ceb866e611d",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          1,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:074ecf5db6ff0ccaffe37ae9bfb24ee1d5bb123c62bb36007d46cddaa62528c7",
+      "stratum_id": "S10"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0291",
+      "canonical_input_sha256": "sha256:ef4642c0e18d01804a98e252aa2443e314cfbd3036c979779e413515ca6bfed9",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          1,
+          100157
+        ]
+      },
+      "selection_sha256": "sha256:2808c8bdd9aef7e2a314df21d609699123a8f1d0fe85d8cdea5aa0027d9903ee",
+      "stratum_id": "S10"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0290",
+      "canonical_input_sha256": "sha256:80ab6dd596581a7434b2d2c6d564780dff3ab0bb46aad832301042f75c416ef9",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          1,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:5658c39e526b98b844a77de9030ee12d5230521cb75a318d6ac32ef21c3b1e4a",
+      "stratum_id": "S10"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0309",
+      "canonical_input_sha256": "sha256:749e941497d5ce1c11aded82759f678c7ac2a3b8067a5e856d3415559e129b68",
+      "descriptor": {
+        "amount": 204163,
+        "interior_sha256": "sha256:000088ce5c754a66555437f6b40dff47fa4b37112ac265462c5a49b71516307c",
+        "interval_id": "3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          1,
+          1,
+          204163
+        ]
+      },
+      "selection_sha256": "sha256:015e2ed33a3690fd60f947ed6035aac132941839c2cf49855ec5d5eaf1d82222",
+      "stratum_id": "S10"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0316",
+      "canonical_input_sha256": "sha256:c4dd062f9801a45ea105e9b7352a31bdaf345aaa86a80afb1bac855d40e86a46",
+      "descriptor": {
+        "invalid_id": "I3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:153766a57c2eaa24ac7aa5ae95ac222f2c6d7aeb8f39edcc84d79cf4eac94acb",
+      "stratum_id": "S10"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0333",
+      "canonical_input_sha256": "sha256:ab303f4de1ee6352d652aa65d9c96036ec71432f1c47ad6a684d52d9581a16a9",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          0,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:063251d2cfcddae9d6e6892a019ab25476e18c50b7b78d5469eef521780894c0",
+      "stratum_id": "S11"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0322",
+      "canonical_input_sha256": "sha256:1e7bdf89b2884590795b367a8f2e89e153c4e40252bdca07a0757cdeb07f70ec",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          0,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:0e9c74c85c747b1bd31f325f1966bae1cee26cb7f71a8e2955272f5d7660ceaf",
+      "stratum_id": "S11"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0327",
+      "canonical_input_sha256": "sha256:fa27bd72d20a309abaad782052b4d1ab9fe1b62675c64c970528b31ab626fe08",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          0,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:1879906969a49aa44c7b205660fe4f8ba7e12fbbc019ed137ed4e1f5878436fb",
+      "stratum_id": "S11"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0342",
+      "canonical_input_sha256": "sha256:adde37d96c8b82511f01e1ba332acddb88e3b47e138f56359b34f40088e5f0fc",
+      "descriptor": {
+        "amount": 378432,
+        "interior_sha256": "sha256:0000c4bbdfc800a9ed78056087f206a0055f5d4c4d688ef795c827f0224fe72a",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          0,
+          378432
+        ]
+      },
+      "selection_sha256": "sha256:106bfa48395b9e6ceb7894373f8a10c8b38312d5ed1672a97faa8e58483bab6f",
+      "stratum_id": "S11"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0349",
+      "canonical_input_sha256": "sha256:96b50f9f40613292ae66c8be41f46e2c9875841855ec4b4f3b0ccbfad9dc012e",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          2,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:1ed956e5162e4a339aed7e91f68558aaa5a0a36d4d920835b7e938a3f3c1b564",
+      "stratum_id": "S11"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0369",
+      "canonical_input_sha256": "sha256:636660654e6d1c2ec7eb9b0697feb8c4d590c608ff84d3cd213522432722731d",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          1,
+          600156
+        ]
+      },
+      "selection_sha256": "sha256:07fe9037aa96283b0d256466f5d8470cbc9e164c28727d160deac1baab4f6abc",
+      "stratum_id": "S12"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0368",
+      "canonical_input_sha256": "sha256:fcb9ce45e51cf78572d8800eee8186b26ec942b47d078de0a17858e486053632",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          1,
+          600155
+        ]
+      },
+      "selection_sha256": "sha256:239e7bdb50de3b683393a624af6cc0441d3d4d99d87fe5bd45940a561f774e22",
+      "stratum_id": "S12"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0359",
+      "canonical_input_sha256": "sha256:3ffe6e28cdae47cc8601946db177cfaa06b0a1cf28a6482bdb20a11743725a3f",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          1,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:24e7d1eba3cb2b4dea334b53ba9f668e9986c1306b70fd661149cdb2b9b6f0a1",
+      "stratum_id": "S12"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0376",
+      "canonical_input_sha256": "sha256:83d90514427fad1deee839c89931ad75b168a310bd36831a1304a4ccea8cc03d",
+      "descriptor": {
+        "amount": 560787,
+        "interior_sha256": "sha256:000048aadc22fb6e1c703976827be3555a34192e8ecc9f00c571fb885203db4c",
+        "interval_id": "6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          1,
+          560787
+        ]
+      },
+      "selection_sha256": "sha256:1f297cc58cb032de6dd0cfb5741e19443ff363351f5715b30bbda90698befa98",
+      "stratum_id": "S12"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0379",
+      "canonical_input_sha256": "sha256:3ea15939b34231ecc342c442d2bde060b915e558e48d0d61e5e7754e647ddbda",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          1,
+          2,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:1bbd84e9ea6993c262125b96c31d863c77adf7130fb41bf9fefab90529d869f8",
+      "stratum_id": "S12"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0400",
+      "canonical_input_sha256": "sha256:c62da5ddf5e8df983266eefaf58b5e0cb17b17496949f97e7996f4f9b2955bc4",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          0,
+          600155
+        ]
+      },
+      "selection_sha256": "sha256:0ed337e62d4116c28ed08c457f562b9372a3166616ce401b707c067ef8c8dd05",
+      "stratum_id": "S13"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0401",
+      "canonical_input_sha256": "sha256:fb3fd33d61a41c197f952d09851bdffefffa15ad2fb3a9bff9db2722047a61a1",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          0,
+          600156
+        ]
+      },
+      "selection_sha256": "sha256:121cee941a78c9a25ac3ffb19e973dd5ba7e29b3306f221f4e11a0c96404ca80",
+      "stratum_id": "S13"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0399",
+      "canonical_input_sha256": "sha256:deadc7720169a099cbb8258917aed492ad5488ef727d1776f0b5314687a30515",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          0,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:1f1831ecc057aa9e394386b5ee873a167bbcd6d34f9faaba0382f76f6bce596c",
+      "stratum_id": "S13"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0403",
+      "canonical_input_sha256": "sha256:492c6c9fac28283080cf7f6f07e934688fb5754c313aa1daf7b4cec6445228d1",
+      "descriptor": {
+        "amount": 359,
+        "interior_sha256": "sha256:0001079306591ffb81cacbc61ede46c067eb428a75739115e1ca3d85e7576fd6",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          0,
+          359
+        ]
+      },
+      "selection_sha256": "sha256:0560dc9a076df26a233e07e3dc824545b3a68757dbce831f4eb460cb283bc1e3",
+      "stratum_id": "S13"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0410",
+      "canonical_input_sha256": "sha256:0e58112b3b6a124676e12d3dbea686afa527e0b33ec0dd12f347f63214dc095f",
+      "descriptor": {
+        "invalid_id": "I1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:3afbf33f9e9b6f342dd683d86a8b1bac0111e6ddfe5d06f979978de190afe492",
+      "stratum_id": "S13"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0431",
+      "canonical_input_sha256": "sha256:2ba6d0add6dee6bb4aa7558047476809a4a1aad5cf7cc17f7d4f5ff7b1074ee1",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          1,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:07899f6795ddb22fcfef8b041854d242169a6d28bd427fdee0b4a60eaed49f5c",
+      "stratum_id": "S14"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0425",
+      "canonical_input_sha256": "sha256:e24dcb77dbd76d20ca623674510c18bc09db1e4c1634bb35de39ccb9d0bc2bb4",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          1,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:08509262cd3c2feac7d43a64e45bd6c2b2e8011e064cb27212cf56746aa34dd2",
+      "stratum_id": "S14"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0420",
+      "canonical_input_sha256": "sha256:b9292c24d573ffa466138d883fdfbfdd138022dfc083c126333c10e2cd9e7f85",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          1,
+          200155
+        ]
+      },
+      "selection_sha256": "sha256:21444cc6dc793e73c16cd0c189b88f36ed6617ca3efc97b1b62e41bc970ba90a",
+      "stratum_id": "S14"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0438",
+      "canonical_input_sha256": "sha256:d7b0fcae769face5093d0579d780cdd16f7e9bc5d5ff33aa896c5c590664a881",
+      "descriptor": {
+        "amount": 321908,
+        "interior_sha256": "sha256:0000587a4a8a1d7d94cbb746659dbb98aaed533a6e5f8f03f79e54c8b4d11214",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          1,
+          321908
+        ]
+      },
+      "selection_sha256": "sha256:1d32e4050f32b2b9879c3e63f1094c96ce36e612bc971365d39312affbf931ee",
+      "stratum_id": "S14"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0443",
+      "canonical_input_sha256": "sha256:7cffffc8fd82febf59c99910ca8e2040110528c79b0b30643d4534a878259c54",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:28520484a3b91828bdcd8ff79546740dca6ca01490c2efce9672b97200264858",
+      "stratum_id": "S14"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0456",
+      "canonical_input_sha256": "sha256:2bc57276262638ea59bffcffd3562d8b44aa0b834410ad29504fc98977af3d3e",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          0,
+          300156
+        ]
+      },
+      "selection_sha256": "sha256:10222019171eb1e7fa400d84775b054f08cef846d2e1310a87c0cbdec84c1a0e",
+      "stratum_id": "S15"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0461",
+      "canonical_input_sha256": "sha256:12ddf33b56345800499803b3028602a04be0b9a385610b6a7c7eaebc7a35e702",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          0,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:112dffe5eb77af8c71ad28a6b6d2aa15812e5c7244d64666dc1e3f978fd8ce88",
+      "stratum_id": "S15"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0457",
+      "canonical_input_sha256": "sha256:3569e25202960994ee869af76e2ae0af91ef3b626bf3f6badf89b92c798f8e9f",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          0,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:1df3e14cc203f61007a430bec437cbd9f8f31f245e201e96ba99d24375056d33",
+      "stratum_id": "S15"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0471",
+      "canonical_input_sha256": "sha256:4937a6e805a2df886ea803ef3d949c20e49411362db6a700125da95c80359b4a",
+      "descriptor": {
+        "amount": 491801,
+        "interior_sha256": "sha256:000152348f7def4c4825c4d47e9b1e45af366bdc3080007aa48f096e52c108cb",
+        "interval_id": "5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          0,
+          491801
+        ]
+      },
+      "selection_sha256": "sha256:2d87995797188d583797ec8c4b76d90ae4548ae78b02759a90c3542db96b1601",
+      "stratum_id": "S15"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0474",
+      "canonical_input_sha256": "sha256:76075a5f1bf6f881deb672b0b13548c6018136b0a151317183599152cecce90d",
+      "descriptor": {
+        "invalid_id": "I1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:20acaaa5b3bebff89248a4c8d553ebe4433f025b11d177bf814d43d74d50a9dd",
+      "stratum_id": "S15"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0494",
+      "canonical_input_sha256": "sha256:b7086ce6f8517af46fc0fbb34e5ba775b140e491a7c9e30aa78b077adb2927f8",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          1,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:0622df1cf67e6200ff0f816566e9e2d3f6c59faa777abd108afde0b6f44ed14b",
+      "stratum_id": "S16"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0489",
+      "canonical_input_sha256": "sha256:e7be4893b6effebed2670c9f831e91feb26d84eaa0fad2ea10f40be9e80ea1b8",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          1,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:22d016b195914249efcc6041ab59abc7b15c5410266c632dc9432a6915676e03",
+      "stratum_id": "S16"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0497",
+      "canonical_input_sha256": "sha256:54e6bb1d0136ee5c5cd6e448188ca1684198d7eb85c0553b988f8e164dd8d799",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          1,
+          600156
+        ]
+      },
+      "selection_sha256": "sha256:255f8bdb881fdea2bf120ac4ba2dc07b719935744d5fff44562abb871efd375b",
+      "stratum_id": "S16"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0499",
+      "canonical_input_sha256": "sha256:0baa386273dcc3051a504cc4c51d5f635f5357a4aef26b5b54227cc61ddfe924",
+      "descriptor": {
+        "amount": 75601,
+        "interior_sha256": "sha256:0000c3206f4253658c3272e8618f2652c86087f19fab5935e1d4284e169e50b3",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          1,
+          75601
+        ]
+      },
+      "selection_sha256": "sha256:0aaf3004c8a3a1a930b17c7b2da9bf64dbeeb260961a3c172e44fac8d006a106",
+      "stratum_id": "S16"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0507",
+      "canonical_input_sha256": "sha256:e12e7afbc799cfeb57c51662067f9ae37f78760152ab8a4a58225019d4d84522",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:0f003fb749e125719f6a512fab06dbbef77872e20f427a6c7c967b30f414cac5",
+      "stratum_id": "S16"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0523",
+      "canonical_input_sha256": "sha256:765dd21b10dcdb5d29b032c53fb96f64ff60c25dea2f2dbdffaefdef2305d458",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          0,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:0e7c17715c41c44f1faf85e0e3f11fd5063ec2a8646a1a21bdf921e2f0d4e5c9",
+      "stratum_id": "S17"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0521",
+      "canonical_input_sha256": "sha256:e269f5b17e3f02c5410ba9184a48b808c64a2e04d9e326eaf778b2b940d1b986",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          0,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:11bf27b5bf5913cc8af79d036be0b6c7a790b77da9cc7963fc166220b01a0e17",
+      "stratum_id": "S17"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0516",
+      "canonical_input_sha256": "sha256:b5cbdaac0dfed402af7a59ef09fa75a8834b27cbea2446c39c93b60a642b01be",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          0,
+          200155
+        ]
+      },
+      "selection_sha256": "sha256:242bed7d29685c6176286c0ff0e25d7b2fac327117693c3645c75252c93d864d",
+      "stratum_id": "S17"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0536",
+      "canonical_input_sha256": "sha256:581b424ddaab39a6eaf0e4d9ec2c1e6cb41a4751c285a4a6c02839030fbe4ded",
+      "descriptor": {
+        "amount": 540553,
+        "interior_sha256": "sha256:00006b12d4b982c8efa563fd2b699cb08aa77ab0f602f46663788dd36f954a77",
+        "interval_id": "6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          0,
+          540553
+        ]
+      },
+      "selection_sha256": "sha256:0ea02b1ac108ca0ee5029962d3e9fb767da201bf6e721d30202fea5837455fa6",
+      "stratum_id": "S17"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0541",
+      "canonical_input_sha256": "sha256:96b50f9f40613292ae66c8be41f46e2c9875841855ec4b4f3b0ccbfad9dc012e",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          2,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:3ec84ba0685ffbdcbb493eaac1c7719b60e0ddccd7b5073bae6ac6f499657c41",
+      "stratum_id": "S17"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0556",
+      "canonical_input_sha256": "sha256:b9babf1487d0cc31f906b80242e500d6409eeaa93894e5791887cb941cd17c79",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          1,
+          400154
+        ]
+      },
+      "selection_sha256": "sha256:08d6d349d85241961fabb4261d47fa5b007599af2f878ea774a4c28804c1ae7e",
+      "stratum_id": "S18"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0557",
+      "canonical_input_sha256": "sha256:0fbb2b665b48a3881c49c5278b03735c6f6de582dbc349f2f6e09603cafe18b9",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          1,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:09b5dc91249d2e93f154c7a43aea871aef53346cac6548a6727ece6c09efdfcb",
+      "stratum_id": "S18"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0545",
+      "canonical_input_sha256": "sha256:aa8b8d431be2275deab4512c108dda4bb50a938770a458c4cfa6ce2605b5cf36",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          1,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:0a1bc10116717587684a9f2e4d3c5564a3a80a995c2968589013f1fa357a78a8",
+      "stratum_id": "S18"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0569",
+      "canonical_input_sha256": "sha256:139c582f803b28b4165c352b5e490bda46d47622ee74c54af45dbc6838c3a7e7",
+      "descriptor": {
+        "amount": 877155,
+        "interior_sha256": "sha256:00003d7496d1646a30257eb2360d82667dde8f40dca0209d36a33cee87a8ea98",
+        "interval_id": "7"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          1,
+          877155
+        ]
+      },
+      "selection_sha256": "sha256:03aa8d860520ee8e43327396a0dbe92ea24a46fcbb1765d45985179edb634d15",
+      "stratum_id": "S18"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0575",
+      "canonical_input_sha256": "sha256:44fc9d53a7bf2471f96d8207a8a00d8c3d02120346a2c0597c593f88067bfb0c",
+      "descriptor": {
+        "invalid_id": "I6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:00b11ee9352562ec5823ed438797752084e76ffa5cce557cfe0d8b6166655b56",
+      "stratum_id": "S18"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0588",
+      "canonical_input_sha256": "sha256:948a241529a24a2859bc75a7f1a6f6e4fc4777e20c1e0e20bfebf86ba8fc16d6",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          0,
+          400154
+        ]
+      },
+      "selection_sha256": "sha256:0849d53be85e2b94a166cdc9cbbdb96c12e1fa801aa18a48ae5f44cc294ada0c",
+      "stratum_id": "S19"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0589",
+      "canonical_input_sha256": "sha256:1510269536acf1f37e9eaa464a83c511e72ee6cc771f209ac79efe902df7a1e9",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          0,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:23d8d0d7cfa7c38ce0e41b34ea2cfae3d7dd798677acca4389a23f8d5c16ffda",
+      "stratum_id": "S19"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0577",
+      "canonical_input_sha256": "sha256:42df6f80102b52435a98f4fd0e65ffd9481b6e99d8213921251e9d7dea6dc528",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          0,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:28e4b9f0d3c42c1b580621898d72fbc07d4db011f277658ae6fd0e8fe381b00d",
+      "stratum_id": "S19"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0598",
+      "canonical_input_sha256": "sha256:ed79080cac57cdcb78c4435857bc44ba2ef51cc121d540dade810de16c08cde3",
+      "descriptor": {
+        "amount": 365624,
+        "interior_sha256": "sha256:00002b79405dfe1b5af9878339f21494f6eddca7b4d02218edc5bc6e9536ff11",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          0,
+          365624
+        ]
+      },
+      "selection_sha256": "sha256:0de113a3d2402f03db5d66885e192030bfa32037c207815cdb7a25a72ea2d930",
+      "stratum_id": "S19"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0602",
+      "canonical_input_sha256": "sha256:c5c31e06e498c16f8f85389922c199db036a446f62e80a75c1354ca71da3b74e",
+      "descriptor": {
+        "invalid_id": "I1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:0cf45108afaf2ded97c8b75ca4eba0a43105b89c01a7486a2fec628939f0c48e",
+      "stratum_id": "S19"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0615",
+      "canonical_input_sha256": "sha256:71f882b73cad5e5bb41248b44e2c09e2b6f5e42fd6f328de3d7a009fec079155",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          1,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:0d17907d0e7c265b420dbd85c91bf3b767e4d4130e3540484ed532000162c124",
+      "stratum_id": "S20"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0623",
+      "canonical_input_sha256": "sha256:ca3b3c9c18fa67103dc2d54941343580f1630d48581d07d11385e59b5064e568",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          1,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:1ede59775380ceb36d9c6c93cab9f00b70b7091cbf67045dc571945cbb7dd09d",
+      "stratum_id": "S20"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0616",
+      "canonical_input_sha256": "sha256:987e1e990ea19c71302bf6babcf22bf409c53b6e5bd4fec2d5b6a046459d9b4a",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          1,
+          300156
+        ]
+      },
+      "selection_sha256": "sha256:216a71961b2b082cbed7fcfb6d1afbba250e43bef9504dd34a844f49b0d6fa43",
+      "stratum_id": "S20"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0631",
+      "canonical_input_sha256": "sha256:07edd2dfb2b871504f494d0d5f60cebf2c56459cb61bcea188bb013715ec7cbd",
+      "descriptor": {
+        "amount": 408967,
+        "interior_sha256": "sha256:000056f3d5f40268af596c9874ff67c5f412ec6ce8a3107afd63bce5bb472891",
+        "interval_id": "5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          1,
+          408967
+        ]
+      },
+      "selection_sha256": "sha256:1e1baa63a5366173643121cdbb8b874b844b983c1b13c5ef75ce2cee2a336da3",
+      "stratum_id": "S20"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0639",
+      "canonical_input_sha256": "sha256:f2d14a9775d8f0b64b23ac0ae64192ce295ec16b39dacefba096e0efa76f5744",
+      "descriptor": {
+        "invalid_id": "I6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          0,
+          2,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:041b3af6372245fd976ea12b8b80b8ede94f5a19605db0fa94f182d2361788e3",
+      "stratum_id": "S20"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0643",
+      "canonical_input_sha256": "sha256:1295e6701a37f68bfebcd42b2e221ea8392763a58323df6a1534876b9455373b",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          0,
+          100157
+        ]
+      },
+      "selection_sha256": "sha256:20ff71ff64b97f588edb6a047129fa7251dc2befa59a68c82acadeba87514956",
+      "stratum_id": "S21"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0647",
+      "canonical_input_sha256": "sha256:ac1d57bca5a2aa0b22aa0865bd5c0ebbf087c64aeb1c4885734cb77f2ba509c6",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          0,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:36f96e3a9223bf3eb1e12261b858f740e76a911a68b3c9db485919e75d2403c0",
+      "stratum_id": "S21"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0650",
+      "canonical_input_sha256": "sha256:5594d816779fc3271ca62e06e740760eb50f480a3db5c81f89939367fd78bd9f",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          0,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:4d034ecd8ff6ace417ed0f1905d124c33ecb67c97e3afa2bfaf7cf249e72e42e",
+      "stratum_id": "S21"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0664",
+      "canonical_input_sha256": "sha256:1de5ee5101183889e338f7be6f555f0a78772b92b740d2b7e3774a51702afdef",
+      "descriptor": {
+        "amount": 555786,
+        "interior_sha256": "sha256:00002829378b38e82a6538f75e443da38f6d6799e694f239979fc40f46dfde26",
+        "interval_id": "6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          0,
+          555786
+        ]
+      },
+      "selection_sha256": "sha256:115b48ab49d6fada0e7cd4f6c8e4d5abd17ac5e8d9c3749f59450e471abbe6ca",
+      "stratum_id": "S21"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0668",
+      "canonical_input_sha256": "sha256:7134adf27112455a0da5527b7ee83036f0cd8c1a0973776076e8f54488baa5e2",
+      "descriptor": {
+        "invalid_id": "I3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          3,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:06e4d1b957415e85d26c3e5845c56edadf3087c7e5d86064597423e154c3fbc3",
+      "stratum_id": "S21"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0683",
+      "canonical_input_sha256": "sha256:964c13dc5e0e2c26492f2d061c942467203fdfe532d57869385eaded41ecddd7",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          1,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:03bd7e6f8b67b8568e8001e2ca5c3d1fbce723a11357a036bb503a3a33532349",
+      "stratum_id": "S22"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0686",
+      "canonical_input_sha256": "sha256:fed9e92b3c57de4c7f0a27e9e78eb9d54b72733af39bea374b8d622515b0e163",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          1,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:12fb2628ca22ee267da9640b63c8d596ef6c5a8279332f4c2c67000a3bdc1669",
+      "stratum_id": "S22"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0687",
+      "canonical_input_sha256": "sha256:fe5f4bdadd992fd2c8248cc4a4032c3d375ad1ac754ae1c3dce07e0ccefab511",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          1,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:24531215ab89bda068b30d645c0df59262c53470898f779b916bdfa77dba2a9c",
+      "stratum_id": "S22"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0694",
+      "canonical_input_sha256": "sha256:f4a98563954b78fffd4925d99eef3533c00366e602acc901096f7fecd84881f1",
+      "descriptor": {
+        "amount": 381610,
+        "interior_sha256": "sha256:0000303f98cf2d1d0b4e0104c90546bae148d5734e2097025b75a2dd97825bb7",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          1,
+          381610
+        ]
+      },
+      "selection_sha256": "sha256:0613a873c009942131308ba3fbc70d0516f75d5e823342157deebbbca2ba3d04",
+      "stratum_id": "S22"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0699",
+      "canonical_input_sha256": "sha256:d387f7af496ce2e74f111431458991182633efd44c0f34689e66ff9218b8ca94",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:189ce86f7a4123eaa9609e370495a3750553028f7747b9546bd5b9e42a8bec97",
+      "stratum_id": "S22"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0721",
+      "canonical_input_sha256": "sha256:b0df6c7c42b18db3a14df8c8b2e891efdb8fa81e76af93f402ade2a587943e28",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          0,
+          600156
+        ]
+      },
+      "selection_sha256": "sha256:0dda7bd6a230a77f30230126b34d00035fadf0b121cb5fcb0f839f39362cb177",
+      "stratum_id": "S23"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0717",
+      "canonical_input_sha256": "sha256:4bcd7c86427f82263593ce9cb6cf5df7b73b306a672448b10d1321c936066228",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          0,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:197bfbe52e45c7a97abc6fef6212b8bc936182580f96428e17b201890b4ddd1e",
+      "stratum_id": "S23"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0715",
+      "canonical_input_sha256": "sha256:b74d4fd9309ed9fb514ef371d35752dba095e237c2a415bf643761bbe72b5278",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          0,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:1ac2b6912463a7e185dccf41fbd656349dcd7c738657df9d12ccf51ca31757ee",
+      "stratum_id": "S23"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0725",
+      "canonical_input_sha256": "sha256:f11aa8b692ef5426ae38be17840ba60969c19714bef86c6c5c1dbfc95fde1909",
+      "descriptor": {
+        "amount": 207176,
+        "interior_sha256": "sha256:00003b4b61fff34ba8da864be10206b882de9d89cc309c076850be17e1101c69",
+        "interval_id": "3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          0,
+          207176
+        ]
+      },
+      "selection_sha256": "sha256:03ab7628987e6db14de44e09bb33f53cdec5c94af77016590bfc33f536b312ba",
+      "stratum_id": "S23"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0733",
+      "canonical_input_sha256": "sha256:96b50f9f40613292ae66c8be41f46e2c9875841855ec4b4f3b0ccbfad9dc012e",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          2,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:136c744cb95712b902a3ae682afc0bf384691974c0764cfe3947cc7136bd7c2e",
+      "stratum_id": "S23"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0754",
+      "canonical_input_sha256": "sha256:d5da724fa84817083e8945a20d07c850a26f978470986d177897b3997a7b69b0",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          1,
+          600157
+        ]
+      },
+      "selection_sha256": "sha256:11394120602458e315105ce20f4fd0ba823c9ba5e20691c5e21a9825990ed121",
+      "stratum_id": "S24"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0750",
+      "canonical_input_sha256": "sha256:c83e9b4b127ebbba62f9df649e47ec8cb92de5b21e4df7cf2edb4acbaa6f039c",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          1,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:115bc0ea32f1a94bc4302299642db1f8c8bc6553dc2cbc5f8f3d7e346395d270",
+      "stratum_id": "S24"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0741",
+      "canonical_input_sha256": "sha256:933461f75705c6b0af5aba8fc879cdf16be852a8178676fa35d0d65ed8adcce4",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          1,
+          200156
+        ]
+      },
+      "selection_sha256": "sha256:52414e599ca2523b2885196cbb968be8be6f4cde84b68e1f92e5f70516df1fd5",
+      "stratum_id": "S24"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0757",
+      "canonical_input_sha256": "sha256:c8e93aef17d6aab1660cc9401a4e2b70052d820d8211a094c5e0ed4642c0bb38",
+      "descriptor": {
+        "amount": 246564,
+        "interior_sha256": "sha256:0002424cd74c4764dfa4cc1b2b2c9315bfa3c686eb5ededf7ee784fed33868a1",
+        "interval_id": "3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          1,
+          246564
+        ]
+      },
+      "selection_sha256": "sha256:1f495ee38abf2844cf52dceffdb2808eb764b3c252b9804b251daa7ccbd0fb03",
+      "stratum_id": "S24"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0762",
+      "canonical_input_sha256": "sha256:f473e23eda76ca63d4591c1cfe70d5590678de9597d04b43819c3949cbc9643a",
+      "descriptor": {
+        "invalid_id": "I1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2025,
+          3,
+          2,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:0e7cdac1995c2bf5f912df1162103bfcc608e3adaf42828002a9d47adb4fadfe",
+      "stratum_id": "S24"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0779",
+      "canonical_input_sha256": "sha256:fc553c7b16499553586956eb549ccbf5ff6895ca7a3820e7343d2d99cc28b91e",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          0,
+          0,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:04b4bbd9d37d392daec363af200b5520596b05be6f6018204559d68227e3afc9",
+      "stratum_id": "S25"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0772",
+      "canonical_input_sha256": "sha256:7ed774607c10e3cf72030439b8caa04038469f59ae7b6ad312c066f14ff33bce",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          0,
+          0,
+          200155
+        ]
+      },
+      "selection_sha256": "sha256:16bc9849debdd3b10c702462615ee7de3af7ca005411e6fa7392518163acb8c9",
+      "stratum_id": "S25"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0783",
+      "canonical_input_sha256": "sha256:1a6ec0ecb16675e3dae24f877f72f55f39aa490e9d55554b1871a1c3d37c8fa8",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          0,
+          0,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:35d399bc00a99d4ba1b4d395d96ca0ca8b675b3d116683b3a441758112427cdf",
+      "stratum_id": "S25"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0791",
+      "canonical_input_sha256": "sha256:2495bc80d9b20d6c69d24851569a3ecf764e4e370f5af394552f92a2eddfd7ef",
+      "descriptor": {
+        "amount": 446435,
+        "interior_sha256": "sha256:00002717b3aa0546b25cb96f163599784c2a7b80f5078ffdd21c3dfd32a61e37",
+        "interval_id": "5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          0,
+          0,
+          446435
+        ]
+      },
+      "selection_sha256": "sha256:02bb9615b606781dd7ff6344545e72a0860b372ce65e15bda2a1b3a5e77c9e63",
+      "stratum_id": "S25"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0797",
+      "canonical_input_sha256": "sha256:f87c360bd0452d92a2884c264143a7a04f79b6d3d48df84cf41cc559c8baf20a",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          0,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:084acc8938fcad026f3b33af15c822d1f18f18c1666232c6335b5a641dc26dea",
+      "stratum_id": "S25"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0805",
+      "canonical_input_sha256": "sha256:ef7681db048d462094ff0de345daa7fb28b11ee52dc1eb306483b327354e1940",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          0,
+          1,
+          200156
+        ]
+      },
+      "selection_sha256": "sha256:066073a65f8e19ea6dd4dcc8dd5c8166cfa35b782c253e7cc0f1e2ec1675e444",
+      "stratum_id": "S26"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0810",
+      "canonical_input_sha256": "sha256:1ce6fd835b522c33cea367818355bfba726058767f2709da6afde52b5248c56e",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          0,
+          1,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:1dec68f0c817f22a7ec03df2deddb73bb8de459b7630a565e416c4c93f1589cb",
+      "stratum_id": "S26"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0818",
+      "canonical_input_sha256": "sha256:81c74ae8865ab7fc745757516f2e95609495804122daa49999b2bdcab8b308c0",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          0,
+          1,
+          600157
+        ]
+      },
+      "selection_sha256": "sha256:3e9755654766d7ffdc26b2388adc5ecc38efb4cc281d53d91d050cf7a08774cc",
+      "stratum_id": "S26"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0825",
+      "canonical_input_sha256": "sha256:39d980cfb02ec01579bfa386a98ee2f18b59d47702fe648ec72e962ab3c49b0f",
+      "descriptor": {
+        "amount": 700397,
+        "interior_sha256": "sha256:000038634550d6aa2d63c3b460c0742a623df6ce25dca9460ae0aacce9ec3349",
+        "interval_id": "7"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          0,
+          1,
+          700397
+        ]
+      },
+      "selection_sha256": "sha256:108e5d0ff2ab2f4ee04601e7adbe28df2b1ffb7d7598b0b220630ba7246a1fed",
+      "stratum_id": "S26"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0830",
+      "canonical_input_sha256": "sha256:812549a83942def3f1c98cadb07f3e9537a29077afea695f7c49eb0c0684ff25",
+      "descriptor": {
+        "invalid_id": "I5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          3,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:6113a085732765a538e46760a2ad7801796cf272a1d2219a9fa9487946dd650f",
+      "stratum_id": "S26"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0840",
+      "canonical_input_sha256": "sha256:764db8f1525cff37b47f4e55e904dd32751ea391ebc438a26a2ee3683efd8e56",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          0,
+          300156
+        ]
+      },
+      "selection_sha256": "sha256:08952bf7381b6203d2a4eef66c9407ebf0e146be8675eddc0418bb6ac8a9a7cd",
+      "stratum_id": "S27"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0833",
+      "canonical_input_sha256": "sha256:88a71f11abe90258040b1037de87d1b0c42e56376b52f5c6c50ea234f4bc5090",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          0,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:1a6c4e149e133c7980d8e3c9fde738ca63520b41026064053fd1f24df776e000",
+      "stratum_id": "S27"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0847",
+      "canonical_input_sha256": "sha256:fb6f1fa8fe68552c7eccc23c5be654d00725b949ce6ea1938a67de41a7426ac8",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          0,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:327c7063e4c697d52252ce31c880a738b0021ce0fc912ed94762ef6427b9cc0c",
+      "stratum_id": "S27"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0854",
+      "canonical_input_sha256": "sha256:5a671bd014fc4d603519f6a934b0456f04a86107ea754985708db3c61d04f0e2",
+      "descriptor": {
+        "amount": 371558,
+        "interior_sha256": "sha256:0000da3ec2965718266cd891792b16a65bcd956d351cd95a9e317059f8da3b37",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          0,
+          371558
+        ]
+      },
+      "selection_sha256": "sha256:1df9584e68a044e3a4737330892e98f4599e72902e260a19d051d5e74d4f604a",
+      "stratum_id": "S27"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0861",
+      "canonical_input_sha256": "sha256:fefdd35baec42c4232d1625a4cd78e06e0316ac22ce25e198880de991ef5411a",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:05face66c5ae09a82a822b1d4e1a29ed11cbeb77e419cb289cc19527bab3e8eb",
+      "stratum_id": "S27"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0873",
+      "canonical_input_sha256": "sha256:1a32285384e30fca9f2fa0f58d03d31ca43d6b5cc65cca286f8548685b4e5938",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          1,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:00ead329a1771e34792a0a274a7e41d88d2ad3b7db8f96f3ed1e10d06596a9ea",
+      "stratum_id": "S28"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0866",
+      "canonical_input_sha256": "sha256:7b872fa80894c5860c3ec237c0656b83b23d0a40c3439503ba5711a6deaca738",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          1,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:02f993dc1e34fb3d6aa232e511539d01aa0f8103b6c2173976c141e767c43c5d",
+      "stratum_id": "S28"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0878",
+      "canonical_input_sha256": "sha256:aee948c9af634699dec086e2ee5c3f06003e4121e92cd19453aad78b6a1217d9",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          1,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:183e5e443885b64c2819cd3fd93614b9b0d2a7651fb36a9c4f1c199935702aa8",
+      "stratum_id": "S28"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0884",
+      "canonical_input_sha256": "sha256:c4e201141e1f1dee35bc93a34b1f831713d13027b8e4ae69142af45ddb15c96d",
+      "descriptor": {
+        "amount": 173592,
+        "interior_sha256": "sha256:0001272f0d7b35f854bb43c7b620b94e7775dfbaa78da851678158508863f613",
+        "interval_id": "2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          1,
+          173592
+        ]
+      },
+      "selection_sha256": "sha256:1f748524493fef36c1f6f3b434e0553a5805647a69c0fb6661a49aa31139e6f6",
+      "stratum_id": "S28"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0896",
+      "canonical_input_sha256": "sha256:6b8d06d8f9b5bfcfc8a35dce17dd5b59c97e87c896519b6bc33d606d7332dbff",
+      "descriptor": {
+        "invalid_id": "I7"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          1,
+          1,
+          -1
+        ]
+      },
+      "selection_sha256": "sha256:29fc814ffefc04519df8ad02f4e06210222dd302ad0c74796916352a53639815",
+      "stratum_id": "S28"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0906",
+      "canonical_input_sha256": "sha256:31cc3121e6ba1ef89c53bc270b229d19060036eea1d44bc289ffbf5d55ec4432",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          0,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:0977a0c8df199453476f2385776a8604608aa6052ef5329c1ae5c91ee5ce3670",
+      "stratum_id": "S29"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0911",
+      "canonical_input_sha256": "sha256:b21536b115f14d46f7dde3061e47c2d8398f5338eb8683c9ae4b673feb237020",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          0,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:0c5e2ddaa80adfb8579924bf421c532bfab847c8b9022877940c0ea32e7485ae",
+      "stratum_id": "S29"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0903",
+      "canonical_input_sha256": "sha256:f78f8327bcb52975b1df1d788e61fcab0eab0024a7526eee8fddd6da132d2ab8",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          0,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:13ca50527823d85d6c84b4959f4c7bbcf507f334c8fefbcbdb1936ac176bda4a",
+      "stratum_id": "S29"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0920",
+      "canonical_input_sha256": "sha256:78a4cdff6c87859dc226eadc5adc410972a1b93b9530886a3fee0e2fb990458f",
+      "descriptor": {
+        "amount": 509990,
+        "interior_sha256": "sha256:0000341eaef64099e784f521e2b0a7f92bb86ae33ef69d70c6dcf823f56472f2",
+        "interval_id": "6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          0,
+          509990
+        ]
+      },
+      "selection_sha256": "sha256:3c8369f12a150c5b5b84a9a30c0364e5c25683ff6b92ec0d15e05908de0f614e",
+      "stratum_id": "S29"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0927",
+      "canonical_input_sha256": "sha256:ac02b7c931aec9fd9e6f63e6d196718c1bec0959ea7f4da67b0b6ba5046ee6e9",
+      "descriptor": {
+        "invalid_id": "I6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          2,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:0607afbc902e601865655a01a0aa372621dd79bbc74ed332ea732f3b208be83d",
+      "stratum_id": "S29"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0937",
+      "canonical_input_sha256": "sha256:10892238a9c5f4d1b0e0ce7d5616d6ca3a58bef3895de04ed1bd2357991e96ad",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          1,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:07ae88bc7167f08f06d3e736020d1f582772fc07d06c22a67dd35ce6ad023861",
+      "stratum_id": "S30"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0934",
+      "canonical_input_sha256": "sha256:52278dabd52e99b17ab18d50a1e1cf0c1759c5e0ac88937eb557a655dde34163",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          1,
+          200157
+        ]
+      },
+      "selection_sha256": "sha256:0dbb47aa27f18f57857dd90a20941a29efddc37fec53da8214972e7e3e293deb",
+      "stratum_id": "S30"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0940",
+      "canonical_input_sha256": "sha256:f88a36b1cc7e315e461ae309146a3c901b744b55755ad448f86f9cfb17ef2012",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          1,
+          400154
+        ]
+      },
+      "selection_sha256": "sha256:21cf7952d997dfeea1e0cee408e10adc7d584590db0eec7078d3cb994633ff61",
+      "stratum_id": "S30"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0952",
+      "canonical_input_sha256": "sha256:d492b4dc8ef8da1e0cdfb0ab47187ade00aae4f8318c48c011944de1443d53f2",
+      "descriptor": {
+        "amount": 537251,
+        "interior_sha256": "sha256:000099bb33335da57d4e14d1b29add6b11bd39cbcb260bcf670c82437f44c476",
+        "interval_id": "6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          0,
+          2,
+          1,
+          537251
+        ]
+      },
+      "selection_sha256": "sha256:4a28d9bf360c50a07cae9adb7c000be66656671defd26d8cb3dfb494adc2d42a",
+      "stratum_id": "S30"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0956",
+      "canonical_input_sha256": "sha256:ba0ac8215c4b8be35fe9ee7b6a96cb187cdccc70545aab8e08debbc9465af3d6",
+      "descriptor": {
+        "invalid_id": "I3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:477318344f041404aa0feaeaf88dca194686739018b747ade972dbaeae4ae32d",
+      "stratum_id": "S30"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0967",
+      "canonical_input_sha256": "sha256:a67067f2ce022db31ae63f167f7c73dda0b7570caf2d238541175b967bffc3a3",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          0,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:02a2d52885c233c129767be1bf521a881d32e107b6ced3d8309ecd1910633ac4",
+      "stratum_id": "S31"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0978",
+      "canonical_input_sha256": "sha256:fb4b94563a939273b9837c414477cfbcc19e93580585625e0fdf1f061228e8b8",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          0,
+          600157
+        ]
+      },
+      "selection_sha256": "sha256:04dc9f5c5806adf19df69014d9005cf6e2fe89cc0a96e345a01c0d50b81b3646",
+      "stratum_id": "S31"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C0974",
+      "canonical_input_sha256": "sha256:1922427f6da880c5b736273d42441fef106962ddd4101d344029a186328b58cb",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          0,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:05a7e701d8828e99501076c7025bacd8f99fa21337face57486de24206bc78e8",
+      "stratum_id": "S31"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C0979",
+      "canonical_input_sha256": "sha256:2c5805c2d681bad0ddab053d44d570613c84a62703fab83fcf1131c3e2e23a03",
+      "descriptor": {
+        "amount": 77848,
+        "interior_sha256": "sha256:00012101f38de4b30726529bef72c55bbb8c81333c4372f16bcabd59e0472f9e",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          0,
+          77848
+        ]
+      },
+      "selection_sha256": "sha256:103295ab52849e625b3db911618b5c533ecdc7d6c5305e3bc997c5faf6dd8b24",
+      "stratum_id": "S31"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C0992",
+      "canonical_input_sha256": "sha256:fbdbcce01935dc99bac36a17866cfa7ed4f6d495858b70aaed6a7f8a683431a6",
+      "descriptor": {
+        "invalid_id": "I7"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          0,
+          -1
+        ]
+      },
+      "selection_sha256": "sha256:0d525e4488a0f69358697302a49badcc4cf26ecf4c0dc7eb3cbf8c1672054300",
+      "stratum_id": "S31"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1006",
+      "canonical_input_sha256": "sha256:9a1dd8633081c0811eb4d25cd18ba1204b543fd9b88a88e0f4714cf0eb3a81d5",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          1,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:10966a0c3a557869fabfe9ce04cdf312f7584a8117237204462469d5267c7ca8",
+      "stratum_id": "S32"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1001",
+      "canonical_input_sha256": "sha256:e12363631de8824d9bc3866a5ed5e62664174f97ff1ec08d18c085888b37b117",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          1,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:165044215a5b1d37659f3534e23670b0a20ff4e9f33e4ffc4072723ec5f7dc6b",
+      "stratum_id": "S32"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1010",
+      "canonical_input_sha256": "sha256:328e3187b53ae6746a4436ce551a8842fc7d1e372d266ed05795695d45ef8d0a",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          1,
+          600157
+        ]
+      },
+      "selection_sha256": "sha256:3e80d93e40f212c05e45b181b9741f7f1b7b2c19a8eddc994fd53f6b111486ae",
+      "stratum_id": "S32"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1011",
+      "canonical_input_sha256": "sha256:15cdbff6cda1776923d41569f4e45a066ad6ad59e92899a404f2a920e1c86b51",
+      "descriptor": {
+        "amount": 50619,
+        "interior_sha256": "sha256:00012753f2ec4625cef4de8562c68e3db335b348a67dde4426a50cc569a98a52",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          0,
+          1,
+          50619
+        ]
+      },
+      "selection_sha256": "sha256:841f6864060e4ba97041a1c73ac3b773eea0d283ef43315fd2758e973e5391ff",
+      "stratum_id": "S32"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1021",
+      "canonical_input_sha256": "sha256:7b083153e7f04e95403d51319479fa5c8778553437e3e3c6e47be236f502b1a4",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          0,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:1204c901df63e2f827b15cae94fe2c085c1936a9cab40ed4b97c7dbc02de7064",
+      "stratum_id": "S32"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1042",
+      "canonical_input_sha256": "sha256:82f978e359286f60382656d06181989593653d60a735adb3ea2276b157a9a4a9",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          0,
+          600157
+        ]
+      },
+      "selection_sha256": "sha256:22aa8854acceeb9502240fce6e9eb0293fe08cc34d45d85bb9f0c935879b6ec3",
+      "stratum_id": "S33"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1032",
+      "canonical_input_sha256": "sha256:9add588a12c3ead45e4005e11ec4a4655712f9577f8c254adacd3e06674e3f09",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          0,
+          300156
+        ]
+      },
+      "selection_sha256": "sha256:23d1435d094f3d884fca7816e7ebf46bb565e1c81d1a4db6db74118dc1c04f7e",
+      "stratum_id": "S33"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1040",
+      "canonical_input_sha256": "sha256:078c1a8875e97fe0916add836ebd8ff9fdd48f19e5b11aac2cd85cd03f239797",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          0,
+          600155
+        ]
+      },
+      "selection_sha256": "sha256:27e7fa1e34d996c29612f3f8231397080086f2a494ff506bf56cff70d40fee9c",
+      "stratum_id": "S33"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1044",
+      "canonical_input_sha256": "sha256:73d17b8cc220faa1db6f0156d8eb7e09d5388c3263aeaf0aa3ffe87397ad16fa",
+      "descriptor": {
+        "amount": 195337,
+        "interior_sha256": "sha256:00014f207f1fe0dab66b187cd8bb4e9ab204b6bba71244fbe40944c776e1aacf",
+        "interval_id": "2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          0,
+          195337
+        ]
+      },
+      "selection_sha256": "sha256:070aa74724d313f5887f883f6ad5f7dff06bbd66e06fc09929a3f75ccca3b97f",
+      "stratum_id": "S33"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1052",
+      "canonical_input_sha256": "sha256:5ad2ec55b4bd42fa14bddfd6061cd0fbd6bd222db871f042e6da6fc646533d45",
+      "descriptor": {
+        "invalid_id": "I3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:115c99972dc79a959ccaf52a20bc708206e063b607529ccec3cfb3edd4635375",
+      "stratum_id": "S33"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1073",
+      "canonical_input_sha256": "sha256:b9f633ecf57f607e37352c302212d2f7a5a57f9b4fe2e1f6733e5c8a4a931065",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          1,
+          600156
+        ]
+      },
+      "selection_sha256": "sha256:19cca002e7a9b248f3d0f8c1d1dfd02c3ef0856be1a889d736713b5c8df059cd",
+      "stratum_id": "S34"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1059",
+      "canonical_input_sha256": "sha256:9f0d862cd179f6c1a208b0d7c6fffde9f9282af40427638b3365b439f7a71784",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          1,
+          100157
+        ]
+      },
+      "selection_sha256": "sha256:2204e6053cb3581e1ba6793ceba8b8fba756983a2e1854625abcd236d185ca20",
+      "stratum_id": "S34"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1067",
+      "canonical_input_sha256": "sha256:2024300663559515a7688dde93208b9a0d43975ff1071219f47b32cc5fc1455b",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          1,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:4cde97133239db9e4a849b8d7e865428b1bdd3f749e6a839b3a2de9fc72d0551",
+      "stratum_id": "S34"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1075",
+      "canonical_input_sha256": "sha256:d525c536db9037ce25b48b9c53db39d5dbdda77f22775f2d2210b3f722289d22",
+      "descriptor": {
+        "amount": 98027,
+        "interior_sha256": "sha256:000090b801070bff5ddf2ccb804f3befd3c8743a7117529e859594fbbd7b5e9e",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          1,
+          98027
+        ]
+      },
+      "selection_sha256": "sha256:1b32de9fa45624223ccbff239b80cbeafdf7a9c7069831c8f7599e28d6d0cdbc",
+      "stratum_id": "S34"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1082",
+      "canonical_input_sha256": "sha256:6ef2bed8f535d3fd562c8a5f316d9482b0cabffdb530ceff995dedcc479daa5d",
+      "descriptor": {
+        "invalid_id": "I1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:13fec167a965c9f0357e4eab153178cbee3045cb075aa4cf0191e2b89002f975",
+      "stratum_id": "S34"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1098",
+      "canonical_input_sha256": "sha256:781f95814d242aed5e0a92168f885e5e982c5fdfd35f52c625b1147576a09fbb",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          0,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:23ddc5faa54a4dab1198e6ca6d8bb869ac0520c1a4ac5a0bab8dccfac52d4c3d",
+      "stratum_id": "S35"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1101",
+      "canonical_input_sha256": "sha256:c52e4e1c334028466cfccd26802f6a3ee87051f69f08be997d53b4b8e257a1a5",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          0,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:2af9ac2e06ce8bacbe8d17a5b735edd2c7ea63fabe2a32eafe97088d96b89348",
+      "stratum_id": "S35"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1099",
+      "canonical_input_sha256": "sha256:f35e14b9a9fa22a49926250f3909e544a84811a718162412e792cd13c99b3628",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          0,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:3a8d2b8d2e3cbff7a1bf83db5871754a7db8f94ddecb0da41d6e624a56fd491f",
+      "stratum_id": "S35"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1109",
+      "canonical_input_sha256": "sha256:140579e476c5379b4d12477535f91c86a2f3bafe2cb84d650ef04b265ca04843",
+      "descriptor": {
+        "amount": 260639,
+        "interior_sha256": "sha256:00001c052b2119a83755ee3acbf5c3459404a31ffcde912ee122cbcd6b755dc3",
+        "interval_id": "3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          0,
+          260639
+        ]
+      },
+      "selection_sha256": "sha256:03bbfe10fad96eaa5d67a4e9929587a1a17867b896038e72af88a46701a56fed",
+      "stratum_id": "S35"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1118",
+      "canonical_input_sha256": "sha256:2796f59fd7762f3c7418c6e8461fc40b0208ec2db22edae7892a83bf7b4ca14f",
+      "descriptor": {
+        "invalid_id": "I5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          3,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:0c30b47b40fa663f5872ae702e0e1ff4c734de8d7031be003d12f782bbc1a011",
+      "stratum_id": "S35"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1138",
+      "canonical_input_sha256": "sha256:f08f771fca3f7d6b112cc9cb2b4dc0e88a74c860e82f4538efca4edde7734e19",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          1,
+          600157
+        ]
+      },
+      "selection_sha256": "sha256:0e04c556ab549afa4eed024259987456da7fc16f928e1532b559ab384a1a40d7",
+      "stratum_id": "S36"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1128",
+      "canonical_input_sha256": "sha256:b0a9607ab4e449e9ce9e6cf9f823c47861e31ba456a774549855b78416bd8d2e",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          1,
+          300156
+        ]
+      },
+      "selection_sha256": "sha256:290ddd58f522ceec2ec371aead48537260dadd114d70b508b1a7f5bbbccc14f2",
+      "stratum_id": "S36"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1124",
+      "canonical_input_sha256": "sha256:53c8238da38610d537055d1fec5e6dc49ca9a9c561aca91d9867801dabfc84b6",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          1,
+          200155
+        ]
+      },
+      "selection_sha256": "sha256:37c3029c240595320b36c95829ebcfc945e86e3ebc6da9201245d8e1e6d3c5aa",
+      "stratum_id": "S36"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1142",
+      "canonical_input_sha256": "sha256:b00005922fa97ff0598e9ebf5bfb9477e39d0dacbdff1a44e95aff27d9380312",
+      "descriptor": {
+        "amount": 350227,
+        "interior_sha256": "sha256:000184c4203090cfde3eb5fcfe5e0b2773c9fffc80d715e5f081531b01f06fed",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          1,
+          350227
+        ]
+      },
+      "selection_sha256": "sha256:60ac072c9f54633ece63a30b31d1d659fd2e28be0f32311d65096df3ee0a74a2",
+      "stratum_id": "S36"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1147",
+      "canonical_input_sha256": "sha256:987b5d8ef743cff5fcb3c08014e4a865b651532cb76b1d6d6732685ed9681646",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          1,
+          2,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:05a3cee4c92372f9bab785fd9d8817bf4ef974c259a3420b3bb0dfa3b1e3a186",
+      "stratum_id": "S36"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1158",
+      "canonical_input_sha256": "sha256:c3e92dff921fddfb889db251f5aad577224073fed00556c9631ce83403787314",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          0,
+          200157
+        ]
+      },
+      "selection_sha256": "sha256:1c0fe91fbe13b7c513f355e1090e3db797d1c369c66b3e6c1b021cf670f6ffb7",
+      "stratum_id": "S37"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1154",
+      "canonical_input_sha256": "sha256:38cd7cbbe776bbc83d829f1ba70c0799dd0f5f237fdcb5ebe8345335c57dd53c",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          0,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:22cad7389a6518a17adaf2ca7aacd26bfdd724aea5b865d322f2dc0d92b477c8",
+      "stratum_id": "S37"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1163",
+      "canonical_input_sha256": "sha256:84874b65bb0c0c0535ea087e5eb6a987fbf40cd6eb6573bd05616dcd25001ac7",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          0,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:2a8ba313dcd260df3faeb1bda1ae096f366e19432730612deab129974a0bcaaa",
+      "stratum_id": "S37"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1171",
+      "canonical_input_sha256": "sha256:e1853bdfc14e4a5b44399fb4d3d253fc040c8fa2df811d4f3e7a0f08367c4768",
+      "descriptor": {
+        "amount": 41626,
+        "interior_sha256": "sha256:000013939d5052efa809779db6cbf0f63d99b5de6ec93a4f6ed6f970a4771a39",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          0,
+          41626
+        ]
+      },
+      "selection_sha256": "sha256:1218f4228a73db0af9587543c09e2644707c1a199958163815e79ab33e2e0d03",
+      "stratum_id": "S37"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1178",
+      "canonical_input_sha256": "sha256:7fc22b34d94f2bf2d9be69a027cf121c70d03cfd0973a0d2b530f088e1bcd4a5",
+      "descriptor": {
+        "invalid_id": "I1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:212dbe0415b6bf910c1ab14caacb89da142024ba1060830cdbfed0dee3e6a356",
+      "stratum_id": "S37"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1187",
+      "canonical_input_sha256": "sha256:daf0bf1ab46c45073e0f66898bb3b3b9194e36e7bc1a0759c1538f06d5526b8a",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          1,
+          100157
+        ]
+      },
+      "selection_sha256": "sha256:09381aed34d408e7b0e31acdec540cfbfe39324f03f880be8dec8b57d0958505",
+      "stratum_id": "S38"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1199",
+      "canonical_input_sha256": "sha256:101a64041e5c06251dc0829f342822202188017e861ee634900ad95ae029a498",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          1,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:192a51f9f37a3d1aedd4f147ced4cfc169b26e92c41a8f606b2a432584a77bd9",
+      "stratum_id": "S38"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1194",
+      "canonical_input_sha256": "sha256:8f193366fafbe7d8018a3a906ef5a5bb4bda6685ad4948d4fea55d580f3a0654",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          1,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:494f5a697f689d05a9081d92a0c9b25436f2c0836fb67f3f97cc300ba195b7c4",
+      "stratum_id": "S38"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1206",
+      "canonical_input_sha256": "sha256:f1157ea60026d22c8528e01c4d1ec04a9d7090eeb4f65797f1ee36fdae193a50",
+      "descriptor": {
+        "amount": 374956,
+        "interior_sha256": "sha256:000014586e37e81bd84dd198269402d8650a0858d3d893fa8cd6fbb0b14490c4",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          0,
+          1,
+          374956
+        ]
+      },
+      "selection_sha256": "sha256:0df300e7eb448d30764e9de039365af1f9c62463deee30c964a0611cb413f602",
+      "stratum_id": "S38"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1214",
+      "canonical_input_sha256": "sha256:101b6d9bbd57425655da17084d1b13b1c43d94a573758fb1e4666eddea0f37ab",
+      "descriptor": {
+        "invalid_id": "I5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          3,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:958bdca6feff6426a379e0a23650e51b3a870847647a3c06c1c8cb32890917c8",
+      "stratum_id": "S38"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1226",
+      "canonical_input_sha256": "sha256:d0ec4449e60966b565de3231b8d6b8318207892fb6ef50bf1e1e704f0a958618",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          0,
+          400152
+        ]
+      },
+      "selection_sha256": "sha256:08c5248c7845cff0cc28d8aa1c67b5b60ae2afdcc33e69520ae82f5c2da5150d",
+      "stratum_id": "S39"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1229",
+      "canonical_input_sha256": "sha256:d30e3dfb86dd76390393228620a7d5397aab4f03035212c376698bf5e02dc160",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          0,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:0a8f6b9f1c3fa52af5f692f615255eccaf2d60551003ec7c2a925dbf7c2e76fb",
+      "stratum_id": "S39"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1218",
+      "canonical_input_sha256": "sha256:8722cf004ab346e46c536ebdc11f3f34e9821ab18dfd756d85edea648fbf3677",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          0,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:24c745706a86be1d0811913c3461a224d3a0dd5ccd0a79d463a7ab53a209fc88",
+      "stratum_id": "S39"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1235",
+      "canonical_input_sha256": "sha256:4b19b4ec13b14aed2406e999dd8fabf3e882a447af0c9ebf801dda7fc925da86",
+      "descriptor": {
+        "amount": 6277,
+        "interior_sha256": "sha256:00004df00669ba89516ea21aea340ce87a0cf800024b440880462c859fc7a1d7",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          0,
+          6277
+        ]
+      },
+      "selection_sha256": "sha256:48eab5b698145624516e9e2613183705efaf55576f93b39e121895a78e7d8bd9",
+      "stratum_id": "S39"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1243",
+      "canonical_input_sha256": "sha256:6d919ab869540e7ef544798814dca837f69355df06dcaa35bf7be02f4908061f",
+      "descriptor": {
+        "invalid_id": "I2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:0b7d87a54e94c42a527b4cfc8b64897ab8660e0334fa515a171a61f88967ab18",
+      "stratum_id": "S39"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1262",
+      "canonical_input_sha256": "sha256:88c347fcfec6d4151071ee4bc027e71ea08424e534a7298fd53ac5fa4bfe2a14",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          1,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:0a4afccbb57ef780c9983d6961397450ce30ea594cc9f57d8721cd92618f7dd7",
+      "stratum_id": "S40"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1255",
+      "canonical_input_sha256": "sha256:93ac3359752a3921158a8d5390c09a43362e5629772fc9d8539013564d68d5f9",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          1,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:11bcb783e98b90d5ba22e52ec417c4a4473a9541a28e5a3081630b28da47927c",
+      "stratum_id": "S40"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1249",
+      "canonical_input_sha256": "sha256:a6347ffb055af54f668e401526254bfde0fcee9c920897d131b9c6f6c1170a91",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          1,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:13ebfa64437504c38036630e5550f4d23ee126f5ed2dd863999f3be1215b192e",
+      "stratum_id": "S40"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1267",
+      "canonical_input_sha256": "sha256:6a03b66f0cf0211288e61446aab4e3acf49b6b85fe6d4b3c4e980969402b32d9",
+      "descriptor": {
+        "amount": 20588,
+        "interior_sha256": "sha256:0000a7f15fe13d05fe4b824068c0ffdce1dc9a487b0eb46d68bc92c5005975fe",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          1,
+          1,
+          20588
+        ]
+      },
+      "selection_sha256": "sha256:17e39cc5a3cd95e22a37de2b01adf24226179aa6894a03a9aa7978f47615beb2",
+      "stratum_id": "S40"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1277",
+      "canonical_input_sha256": "sha256:5ac856402b8d15dabb89af4aea90369170d6f7f983be8082c08d3e0ea6b94c86",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          1,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:1e7d157f1a2f7aafd58a575b71c6ca4911a9f0538b4015ce57cc2c435e488cf3",
+      "stratum_id": "S40"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1289",
+      "canonical_input_sha256": "sha256:b333c3d837616ba91da4a729fdcf4912e4ef7870a0a8f3cb71ed20cb1d69f0c1",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          0,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:095f20c49c2696e330049c0464a54a333ec2c1aa441623d9382ec85bff9da6b2",
+      "stratum_id": "S41"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1293",
+      "canonical_input_sha256": "sha256:3824f16467c7b0ac07f10935b007b2de9271045d9f2f2bed566b5e75e4a63c32",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          0,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:1d30e7770624ce0e62d7d9dcb064c3a36eb9a2e80e9bfd8f95fff9a7cb7ad86c",
+      "stratum_id": "S41"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1281",
+      "canonical_input_sha256": "sha256:639fe226a6f56a46dce97d6f23ae7a0bb1aac3817576412eb5f2da01f1a4c852",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          0,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:3392e1f3ddf3a4d2ec64c5593f654300af500bf8234663248a845eb2299a7194",
+      "stratum_id": "S41"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1299",
+      "canonical_input_sha256": "sha256:c863e50dbe2294cec3e2a0e6742b135db09145168a35e86ad9c2655c9ad677a1",
+      "descriptor": {
+        "amount": 24643,
+        "interior_sha256": "sha256:00007aece3a3f97a416569f10564e59d2603dd829ff75d6438b7c82123d3e390",
+        "interval_id": "1"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          0,
+          24643
+        ]
+      },
+      "selection_sha256": "sha256:454f0a2e09423833e6b369fccf7ef25b90596dc3742c2079321a8e2ec40eabe7",
+      "stratum_id": "S41"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1312",
+      "canonical_input_sha256": "sha256:938cbcb2f4cad1b72afb2f362dcf2b9e07aaecb337d8c036588e4af14e0e0730",
+      "descriptor": {
+        "invalid_id": "I7"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          0,
+          -1
+        ]
+      },
+      "selection_sha256": "sha256:2363142fc5751a4cc074386149dc8dec7160e928b492409f801345c1a22b79d5",
+      "stratum_id": "S41"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1315",
+      "canonical_input_sha256": "sha256:c371d6e513b79d16b28631253896ef6dcf06b6265f3eda98128d9f8fd861f310",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          1,
+          100157
+        ]
+      },
+      "selection_sha256": "sha256:00f252866b423306bd1cf64acf5994ccd6bf37e031238dca71c0b34ec4b277ac",
+      "stratum_id": "S42"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1313",
+      "canonical_input_sha256": "sha256:9af72bd9071e905a78dfae8d5f9e0eaa7a4dd3ad2d1e981576979cbd9858577f",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          1,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:17984c6982d02d3987aeca9400ebe98e032214ff957f3f2ef5b2abc2e73f4716",
+      "stratum_id": "S42"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1327",
+      "canonical_input_sha256": "sha256:6b96722cdea5009d67f8629c5d93387cba4fb64c4a26e74a17965165ee496983",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          1,
+          500157
+        ]
+      },
+      "selection_sha256": "sha256:1e7e4078dbb1b29f77ab4efa2c27ead0dad05daddcfc9fbe4689467d760a25fe",
+      "stratum_id": "S42"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1335",
+      "canonical_input_sha256": "sha256:deacffa01484818a810a53dbde3eac0a6b4d64fbf056397436edb71cdd2297c4",
+      "descriptor": {
+        "amount": 407348,
+        "interior_sha256": "sha256:000019bdafa75bc93069a2964d8dec4e11296afa1e4b0f70239f4f87985c7cfa",
+        "interval_id": "5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          2,
+          1,
+          407348
+        ]
+      },
+      "selection_sha256": "sha256:024ca0c0b961ce8be482e06f390a70e661a60ed9b69630626efa6ebba492a1ac",
+      "stratum_id": "S42"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1342",
+      "canonical_input_sha256": "sha256:101b6d9bbd57425655da17084d1b13b1c43d94a573758fb1e4666eddea0f37ab",
+      "descriptor": {
+        "invalid_id": "I5"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          2,
+          3,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:025363eacf81ffc573bfba61133bcea4efd1acc765ae756e730b7edbbb6b5056",
+      "stratum_id": "S42"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1358",
+      "canonical_input_sha256": "sha256:746dc649ca1c62c312eaf24d8ae2349f591bb2756f9c561715b626b0d89153ad",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          0,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:161485d8b0fc1a923400361787cf7d06ae24079a1046324253a49787ff28fa45",
+      "stratum_id": "S43"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1347",
+      "canonical_input_sha256": "sha256:658b951f1357d1dd9a66b3878c3a9e66b00764bc0f5cc165317166e578e93e62",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          0,
+          100157
+        ]
+      },
+      "selection_sha256": "sha256:27443745a97e61cca702fa94c491b4d0121a4b6000b1acc47a9ebe0faf053d77",
+      "stratum_id": "S43"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1355",
+      "canonical_input_sha256": "sha256:616a919730e15b6e512ed82a6bb5b05e550c2ea09517fc567099b8a90196e034",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          0,
+          400153
+        ]
+      },
+      "selection_sha256": "sha256:2abbb69adc94d4dfc3b4792b59540b7b48400a34a3ee03b1c9081410c567b92a",
+      "stratum_id": "S43"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1364",
+      "canonical_input_sha256": "sha256:b3ff0a45286fc45a1a9ac99b3e3dc28f4827acd80b7a19d5f995d5114696f9e2",
+      "descriptor": {
+        "amount": 123582,
+        "interior_sha256": "sha256:0000231fad322ddf4b01bfbaab0cf214a04be34852b9e7d5094a7ac45f57cf0e",
+        "interval_id": "2"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          0,
+          123582
+        ]
+      },
+      "selection_sha256": "sha256:4c098617f43aabaed925e5491cf6bdf6f3a5fcf16b97ece0de71126f6ab40961",
+      "stratum_id": "S43"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1373",
+      "canonical_input_sha256": "sha256:f87c360bd0452d92a2884c264143a7a04f79b6d3d48df84cf41cc559c8baf20a",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          0,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:07f230351e8651725d08cd7855a2913441246bdd6f05cc2db67d91b613a2b41b",
+      "stratum_id": "S43"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1377",
+      "canonical_input_sha256": "sha256:54b5410b0c66a3076f2fd078042bbf940dbb10807e94c7f158187cfb1c6a95ac",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          1,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:24e032676e5e80e40f9484dd977b45e6ad7f87b35fc0aefbb30813fdac81533e",
+      "stratum_id": "S44"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1381",
+      "canonical_input_sha256": "sha256:70f5ba0aeb48ae55413e3a9b390f63c3df1533cb19ba570ef006dda152fd5153",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          1,
+          200156
+        ]
+      },
+      "selection_sha256": "sha256:2f2d38ef3d1ffdad86bb5f9783a0d742f1ec5db1bb1c0a9208627aa761ab1f47",
+      "stratum_id": "S44"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1383",
+      "canonical_input_sha256": "sha256:da28f1f43cade1e847753f2fbc361e77caab46d1edd38965ac330b1d2c408cc1",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          1,
+          300155
+        ]
+      },
+      "selection_sha256": "sha256:31778463984efdaf9d0741a597e79858ab169bb71b4880d66f0c1171273fcf8f",
+      "stratum_id": "S44"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1397",
+      "canonical_input_sha256": "sha256:0945966c27194670b2a626e9003867b1c6ad01871815ee38d4c85da1a8c398f8",
+      "descriptor": {
+        "amount": 294706,
+        "interior_sha256": "sha256:0000f3221af7e6789e968bc60d7ee027c15d8b25ec8ace077e78b8e324faf730",
+        "interval_id": "3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          1,
+          294706
+        ]
+      },
+      "selection_sha256": "sha256:62ce19d6f714bf674e25bfa10133ae953b1cc572317609b4f9585179d92f43c6",
+      "stratum_id": "S44"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1407",
+      "canonical_input_sha256": "sha256:5f3bc813120b162696c7e809a91436375ee7d006e880d0a4b290eb20993bf1cb",
+      "descriptor": {
+        "invalid_id": "I6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          0,
+          2,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:4aa3a025728edc41122ee43c022a159f0a526081c35633aae4c2ee9eb15465d7",
+      "stratum_id": "S44"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1424",
+      "canonical_input_sha256": "sha256:52462e329c2c1d8d0d36b58e23be6132137d28687ce968071e0acd70b70c96b2",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 6,
+        "threshold_value": 600156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          1,
+          0,
+          600155
+        ]
+      },
+      "selection_sha256": "sha256:1fb96622810b3f8233f39dbb8ad0c5ba75f1572f6a62b70029a8f58df5d5d533",
+      "stratum_id": "S45"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1421",
+      "canonical_input_sha256": "sha256:693b366a18207143c784363171c80988aceebea78be40bb996f77eb6345e7db4",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          1,
+          0,
+          500155
+        ]
+      },
+      "selection_sha256": "sha256:303bbf1e2bbf6a2444d998746df154f499e2bf71c1213c293bf532909752b78a",
+      "stratum_id": "S45"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1416",
+      "canonical_input_sha256": "sha256:9273fd75399c5c4d8dc9724e3302cf663cc02c5c16f335a55ee57cca6499a76c",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          1,
+          0,
+          300156
+        ]
+      },
+      "selection_sha256": "sha256:354b2d136d2333a7d9e9bef72078fba669a3e6890ce3e3bd31be2171d5f14be0",
+      "stratum_id": "S45"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1429",
+      "canonical_input_sha256": "sha256:ec25488071a91c0a638dcdeb92e2086cd062b85c8223584b4e52354b707d8897",
+      "descriptor": {
+        "amount": 232269,
+        "interior_sha256": "sha256:00002ceede66059c28d46c58a54ebb2907cb065f7e29a7d17af9ad3b70e941bc",
+        "interval_id": "3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          1,
+          0,
+          232269
+        ]
+      },
+      "selection_sha256": "sha256:300b3886ac2ab837c93168585c8ec96ab88a43efe8cb3e969360d414a88d6dcc",
+      "stratum_id": "S45"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1436",
+      "canonical_input_sha256": "sha256:7134adf27112455a0da5527b7ee83036f0cd8c1a0973776076e8f54488baa5e2",
+      "descriptor": {
+        "invalid_id": "I3"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          3,
+          1,
+          0,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:260e061682fa2d84822c29a19d699bcb0126da230d88d48c47dd69c6a06b60fc",
+      "stratum_id": "S45"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1446",
+      "canonical_input_sha256": "sha256:e7e173b40bdcdae792c4ae855fa43a59206943fa9a32b922188103c708f3b8ef",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          1,
+          1,
+          200157
+        ]
+      },
+      "selection_sha256": "sha256:57b35f7fe08eb8d498233cc09212b99ea082f84b6197183eea4e4635d8eedfe5",
+      "stratum_id": "S46"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1442",
+      "canonical_input_sha256": "sha256:66af7f438a3bba883bff6db3c6370e52952ed6e783b5b8d583585d5daca51767",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          1,
+          1,
+          100156
+        ]
+      },
+      "selection_sha256": "sha256:67806d88ba05a9791d70881e48a2d54e1f08e71a6c572cb2d0edcebe847a3d27",
+      "stratum_id": "S46"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1441",
+      "canonical_input_sha256": "sha256:b979b18034b46e9cd4d6344302b58374a900df38a1e0277cbc5088ce185fc643",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          1,
+          1,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:6fd0842cb14e9331b91f1cdcf9ae9c827173cb45aea55e39246141634450ff91",
+      "stratum_id": "S46"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1465",
+      "canonical_input_sha256": "sha256:1d97bb5352f40e9e3815e60651f6deb2a2816e8f7c7914f88bf48483812e19c2",
+      "descriptor": {
+        "amount": 965710,
+        "interior_sha256": "sha256:00004efec1156841e52c609d38eba0fc0f8486c78ae668912de61bb32c00fc2b",
+        "interval_id": "7"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          1,
+          1,
+          965710
+        ]
+      },
+      "selection_sha256": "sha256:2ff45b0615193a422c751db660f7192909769c66035d48439d7a8331e4e10dc9",
+      "stratum_id": "S46"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1469",
+      "canonical_input_sha256": "sha256:5ac856402b8d15dabb89af4aea90369170d6f7f983be8082c08d3e0ea6b94c86",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          1,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:07b47a7160494e88a423d398faafad23005b2a7bb055fdf07c2629fe2f1dcb80",
+      "stratum_id": "S46"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1478",
+      "canonical_input_sha256": "sha256:ef76c5b4c5f177665d676443bb800191ada6652dc94fd58a693dcbb301d70f8b",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          0,
+          200157
+        ]
+      },
+      "selection_sha256": "sha256:01f9c97592cea68d7dd883f4fa739b78fb5e0a223a8e7658db7d2d3e98ed5cc1",
+      "stratum_id": "S47"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1481",
+      "canonical_input_sha256": "sha256:65f978180140f5955a5f513466064795f8b3ca07918a778938f7e23f9cae96f8",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 3,
+        "threshold_value": 300156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          0,
+          300157
+        ]
+      },
+      "selection_sha256": "sha256:03448e469f59f34ee61522a59c71af0950984876c3738342b8e168bc52da8aa6",
+      "stratum_id": "S47"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1476",
+      "canonical_input_sha256": "sha256:cd94db841ca9a4403eb4a66255da5ee6c722a9bbe662b16e7789737d00535c1f",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 2,
+        "threshold_value": 200156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          0,
+          200155
+        ]
+      },
+      "selection_sha256": "sha256:32b205cfb35feb69f30507d432912bff641f782d6dddee3e27df0642ca9edbd9",
+      "stratum_id": "S47"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1494",
+      "canonical_input_sha256": "sha256:3a18120c5fc0857645db05587ceb8e16c25d83923ddfc6226177bbb913e3d7e7",
+      "descriptor": {
+        "amount": 307605,
+        "interior_sha256": "sha256:00007390f4a94f75441e9bccc719ec6defca39ee2a0f7de9e17029c01e3f1e6b",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          0,
+          307605
+        ]
+      },
+      "selection_sha256": "sha256:0fd4ce7706efd8c8d83b2e3f39c5d517cc32ea72c0e19a3f766ed3b21c109d9a",
+      "stratum_id": "S47"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1503",
+      "canonical_input_sha256": "sha256:b0456f02ca08e3e662c729e374eea3c57bb453259dd0816b941176350331265d",
+      "descriptor": {
+        "invalid_id": "I6"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          2,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:3da33d51f78898a1d895e65ffaa576e1b7f83f27f1503ec106d3763c123ce4e3",
+      "stratum_id": "S47"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1505",
+      "canonical_input_sha256": "sha256:f137db132294855dbde2c49ae9cee18b54ecde2452076c7a6199ef32080c70f4",
+      "descriptor": {
+        "boundary_delta": -1,
+        "threshold_index": 1,
+        "threshold_value": 100156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          1,
+          100155
+        ]
+      },
+      "selection_sha256": "sha256:002f3996ba43bfa7ce838736696525564f812f37f04ec4d381c0cb6629d012aa",
+      "stratum_id": "S48"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1518",
+      "canonical_input_sha256": "sha256:bb5699f8b5bf45a02024cbff136fb88229e99d1fc105e35b55d2312d5656132f",
+      "descriptor": {
+        "boundary_delta": 0,
+        "threshold_index": 5,
+        "threshold_value": 500156
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          1,
+          500156
+        ]
+      },
+      "selection_sha256": "sha256:0378b69a43383458c5dd1ca626ff08e6d5d15150db198fe14d7b4d7fecfa05e7",
+      "stratum_id": "S48"
+    },
+    {
+      "candidate_class": "boundary",
+      "candidate_id": "C1516",
+      "canonical_input_sha256": "sha256:6e27a29aa017d31608ce57424807e36ab20a0372a61b52507e8ee19ec84d1326",
+      "descriptor": {
+        "boundary_delta": 1,
+        "threshold_index": 4,
+        "threshold_value": 400153
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          1,
+          400154
+        ]
+      },
+      "selection_sha256": "sha256:0cc6fcdea222b4c77a37bc82307fd5e34b08830f29a9faa78037dd024ed986da",
+      "stratum_id": "S48"
+    },
+    {
+      "candidate_class": "interior",
+      "candidate_id": "C1526",
+      "canonical_input_sha256": "sha256:06f9ecff5cd925197cd71b2d2f718a6b5445fdebf8a3f90c62f60b0e2f8e4476",
+      "descriptor": {
+        "amount": 306274,
+        "interior_sha256": "sha256:000028d039267b2da180f4d5e934a395d95fd7120a7ca92da6d3ec11c232036a",
+        "interval_id": "4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          3,
+          2,
+          1,
+          306274
+        ]
+      },
+      "selection_sha256": "sha256:04b5aec88d089226b5ba3eddb8d432028f624be75769ff52ba1bbdf93934f0cb",
+      "stratum_id": "S48"
+    },
+    {
+      "candidate_class": "invalid",
+      "candidate_id": "C1533",
+      "canonical_input_sha256": "sha256:8b638761431fae41795b9cf6b50b777fc94bec74951d94bc4d5b3c77376d8ae1",
+      "descriptor": {
+        "invalid_id": "I4"
+      },
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          2026,
+          {
+            "$rat": {
+              "d": "2",
+              "n": "1"
+            }
+          },
+          2,
+          1,
+          0
+        ]
+      },
+      "selection_sha256": "sha256:37ac9796ecef2bd3169c996aa1d280c84176ef6f97ef6a97faa9139db99786c5",
+      "stratum_id": "S48"
+    }
+  ],
+  "workload_candidates_sha256": "sha256:fe680ce8cdb16908d640d0b22d9e73ac4fb9c0c29d6a064a61ecd15535054297",
+  "workload_selection": "vouch.scored26-workload-selection/v0"
+}

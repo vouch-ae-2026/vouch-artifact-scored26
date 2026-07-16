@@ -1,0 +1,102 @@
+---
+title: 'Getting Started with Lispex'
+description: 'Set up Lispex in five minutes, run your first piece of code, and get a feel for the shape of the language.'
+---
+
+Welcome! The fastest way to learn Lispex is to run it directly. Use the
+Playground for a zero-install first look, install the npm CLI if you already
+work in Node, or install the standalone native binary when you want
+dependency-free scripts and Lispex Vouch receipt generation.
+
+## Install or run in the browser
+
+**Playground.** The quickest way to run Lispex is the in-site
+[Playground](/en/play). A reference interpreter, written in Rust and compiled to
+WebAssembly, executes your code entirely in the browser.
+
+**Native binary.** Install the standalone binary when you want
+`lispex diff-receipt`, a dependency-free CLI, or a server/script install with no
+Node.
+
+```bash
+# macOS / Linux
+curl -fsSL https://artifact.invalid/lispex/install.sh | sh
+```
+
+```powershell
+# Windows PowerShell
+irm https://artifact.invalid/lispex/install.ps1 | iex
+```
+
+You can also download binaries and checksums manually from the
+[Downloads page](/downloads).
+
+**npm.** Use npm when you already have Node 18+ and need `lispex run`,
+`lispex verify`, or `lispex replay`.
+
+```bash
+npm install -g lispex
+```
+
+The npm CLI and Playground use the WebAssembly build of the same Rust reference
+interpreter. The native binary uses the same reference interpreter directly and
+is the public receipt generator.
+
+Confirm the install:
+
+```bash
+lispex --version
+```
+
+## Run your first program
+
+Create `hello.lspx`. The first line is an optional header that pins the input grammar version.
+
+```lispex
+;! lispex 1.4
+
+(define message "Hello, Lispex!")
+message
+```
+
+Run it.
+
+```bash
+lispex run hello.lspx
+```
+
+The browser Playground and the CLI use the same reference interpreter semantics.
+In v1.4 that shared path includes the refreshed multiple-value and higher-order
+call surface: `apply`, `values`, `call-with-values`, `modulo`,
+`string-append`, and `number->string` are exercised across the native
+interpreter and the WebAssembly build used by the Playground and npm package.
+
+## Check Lispex Vouch artifacts
+
+Lispex Vouch adds an evidence workflow for the rule corpora you commit in your
+own projects. `lispex verify` checks a differential receipt offline, and
+`lispex replay` compares a decision corpus against a version or a set of receipts.
+
+```bash
+lispex diff-receipt --input inputs/age-threshold.datum rules/age-threshold.lspx > receipts/age-threshold.json
+lispex verify receipts/age-threshold.json
+lispex replay decision-gallery --against decision-gallery/expected
+```
+
+Use the native standalone binary for the first command. It is the public receipt
+generator and writes `csk.differential-receipt/v0` JSON to stdout. The npm CLI
+can run `verify` and `replay` on existing artifacts, but it does not generate
+receipts. A receipt is still a record. It does not authenticate where a receipt
+came from, prove that it was generated honestly, show who applied a decision or
+when, prove deployment, or replace the reference interpreter.
+
+## Next steps
+
+- Run more code instantly in the [Playground](/en/play).
+- Download a standalone binary on the [Downloads page](/downloads).
+- Explore [Syntax](/en/docs/concepts/syntax) for tokens, literals, core and derived forms, and normalization rules.
+- Write your first real rules, a refund approval and a discount rate, in [Writing Decision Rules](/en/docs/guides/decision-rules).
+- Browse the guides on [Capability Modules](/en/docs/guides/capabilities) and [Target Run Tips](/en/docs/guides/targets).
+- Read [Lispex Vouch](/en/docs/vouch) for the checked subset, receipts, `verify`, and `replay`.
+
+We’re excited to see what you’ll build with Lispex.

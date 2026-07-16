@@ -1,0 +1,712 @@
+{
+  "meaning_env_report": "csk.meaning-env-report/v0",
+  "engine": {
+    "name": "lispex-rust-reference",
+    "version": "1.4.0",
+    "commit": {
+      "vcs": "git",
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "dirty": false
+    }
+  },
+  "graph": {
+    "byte_len": 3318,
+    "hash": {
+      "domain": "csk/meaning-graph-hash/v0",
+      "algo": "sha-256",
+      "hex": "e9056b2fb1db943bd3b0afb5ea54d5f181cf9e0145d9f07ef7d8e6c08fb949ea"
+    }
+  },
+  "status": "ok",
+  "law_errors": [],
+  "trace": [
+    {
+      "step": 1,
+      "node": 15,
+      "kind": "lambda",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 2,
+      "node": 16,
+      "kind": "bind",
+      "values": []
+    },
+    {
+      "step": 3,
+      "node": 17,
+      "kind": "ref",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 4,
+      "node": 18,
+      "kind": "lit",
+      "values": [
+        "5"
+      ]
+    },
+    {
+      "step": 5,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:=>"
+      ]
+    },
+    {
+      "step": 6,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "5"
+      ]
+    },
+    {
+      "step": 7,
+      "node": 2,
+      "kind": "lit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 8,
+      "node": 3,
+      "kind": "call",
+      "values": [
+        "#f"
+      ]
+    },
+    {
+      "step": 9,
+      "node": 5,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:*>"
+      ]
+    },
+    {
+      "step": 10,
+      "node": 6,
+      "kind": "ref",
+      "values": [
+        "5"
+      ]
+    },
+    {
+      "step": 11,
+      "node": 7,
+      "kind": "ref",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 12,
+      "node": 8,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:->"
+      ]
+    },
+    {
+      "step": 13,
+      "node": 9,
+      "kind": "ref",
+      "values": [
+        "5"
+      ]
+    },
+    {
+      "step": 14,
+      "node": 10,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 15,
+      "node": 11,
+      "kind": "call",
+      "values": [
+        "4"
+      ]
+    },
+    {
+      "step": 16,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:=>"
+      ]
+    },
+    {
+      "step": 17,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "4"
+      ]
+    },
+    {
+      "step": 18,
+      "node": 2,
+      "kind": "lit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 19,
+      "node": 3,
+      "kind": "call",
+      "values": [
+        "#f"
+      ]
+    },
+    {
+      "step": 20,
+      "node": 5,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:*>"
+      ]
+    },
+    {
+      "step": 21,
+      "node": 6,
+      "kind": "ref",
+      "values": [
+        "4"
+      ]
+    },
+    {
+      "step": 22,
+      "node": 7,
+      "kind": "ref",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 23,
+      "node": 8,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:->"
+      ]
+    },
+    {
+      "step": 24,
+      "node": 9,
+      "kind": "ref",
+      "values": [
+        "4"
+      ]
+    },
+    {
+      "step": 25,
+      "node": 10,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 26,
+      "node": 11,
+      "kind": "call",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 27,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:=>"
+      ]
+    },
+    {
+      "step": 28,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 29,
+      "node": 2,
+      "kind": "lit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 30,
+      "node": 3,
+      "kind": "call",
+      "values": [
+        "#f"
+      ]
+    },
+    {
+      "step": 31,
+      "node": 5,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:*>"
+      ]
+    },
+    {
+      "step": 32,
+      "node": 6,
+      "kind": "ref",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 33,
+      "node": 7,
+      "kind": "ref",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 34,
+      "node": 8,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:->"
+      ]
+    },
+    {
+      "step": 35,
+      "node": 9,
+      "kind": "ref",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "step": 36,
+      "node": 10,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 37,
+      "node": 11,
+      "kind": "call",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 38,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:=>"
+      ]
+    },
+    {
+      "step": 39,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 40,
+      "node": 2,
+      "kind": "lit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 41,
+      "node": 3,
+      "kind": "call",
+      "values": [
+        "#f"
+      ]
+    },
+    {
+      "step": 42,
+      "node": 5,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:*>"
+      ]
+    },
+    {
+      "step": 43,
+      "node": 6,
+      "kind": "ref",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 44,
+      "node": 7,
+      "kind": "ref",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 45,
+      "node": 8,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:->"
+      ]
+    },
+    {
+      "step": 46,
+      "node": 9,
+      "kind": "ref",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 47,
+      "node": 10,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 48,
+      "node": 11,
+      "kind": "call",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 49,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:=>"
+      ]
+    },
+    {
+      "step": 50,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 51,
+      "node": 2,
+      "kind": "lit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 52,
+      "node": 3,
+      "kind": "call",
+      "values": [
+        "#f"
+      ]
+    },
+    {
+      "step": 53,
+      "node": 5,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:*>"
+      ]
+    },
+    {
+      "step": 54,
+      "node": 6,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 55,
+      "node": 7,
+      "kind": "ref",
+      "values": [
+        "#<procedure>"
+      ]
+    },
+    {
+      "step": 56,
+      "node": 8,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:->"
+      ]
+    },
+    {
+      "step": 57,
+      "node": 9,
+      "kind": "ref",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 58,
+      "node": 10,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 59,
+      "node": 11,
+      "kind": "call",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 60,
+      "node": 0,
+      "kind": "ref",
+      "values": [
+        "#<intrinsic:=>"
+      ]
+    },
+    {
+      "step": 61,
+      "node": 1,
+      "kind": "ref",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 62,
+      "node": 2,
+      "kind": "lit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "step": 63,
+      "node": 3,
+      "kind": "call",
+      "values": [
+        "#t"
+      ]
+    },
+    {
+      "step": 64,
+      "node": 4,
+      "kind": "lit",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 65,
+      "node": 14,
+      "kind": "if",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 66,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 67,
+      "node": 13,
+      "kind": "call",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 68,
+      "node": 14,
+      "kind": "if",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 69,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "step": 70,
+      "node": 13,
+      "kind": "call",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 71,
+      "node": 14,
+      "kind": "if",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 72,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "step": 73,
+      "node": 13,
+      "kind": "call",
+      "values": [
+        "6"
+      ]
+    },
+    {
+      "step": 74,
+      "node": 14,
+      "kind": "if",
+      "values": [
+        "6"
+      ]
+    },
+    {
+      "step": 75,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "6"
+      ]
+    },
+    {
+      "step": 76,
+      "node": 13,
+      "kind": "call",
+      "values": [
+        "24"
+      ]
+    },
+    {
+      "step": 77,
+      "node": 14,
+      "kind": "if",
+      "values": [
+        "24"
+      ]
+    },
+    {
+      "step": 78,
+      "node": 12,
+      "kind": "call",
+      "values": [
+        "24"
+      ]
+    },
+    {
+      "step": 79,
+      "node": 13,
+      "kind": "call",
+      "values": [
+        "120"
+      ]
+    },
+    {
+      "step": 80,
+      "node": 14,
+      "kind": "if",
+      "values": [
+        "120"
+      ]
+    },
+    {
+      "step": 81,
+      "node": 19,
+      "kind": "call",
+      "values": [
+        "120"
+      ]
+    },
+    {
+      "step": 82,
+      "node": 20,
+      "kind": "block",
+      "values": [
+        "120"
+      ]
+    }
+  ],
+  "transcript": [
+    "120"
+  ],
+  "result": {
+    "values": [
+      "120"
+    ]
+  },
+  "fault": null,
+  "steps": {
+    "used": 82,
+    "limit": 65536
+  },
+  "boundary": {
+    "attests": [
+      "meaning-law-v0-validation-rust",
+      "bounded-deterministic-v0-subset-evaluation",
+      "lexical-closure-v0-evaluation",
+      "higher-order-traversal-v0-evaluation",
+      "profile-input-binding-when-supplied",
+      "transcript-bytes",
+      "graph-hash-binding"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "differential-receipt",
+      "independent-witness",
+      "external-backend-reporting",
+      "lispex-source-lowering",
+      "target-code-generation",
+      "full-cskernel-coverage",
+      "private-implementation-detail"
+    ]
+  }
+}

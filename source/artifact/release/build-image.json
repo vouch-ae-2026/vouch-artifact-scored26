@@ -1,0 +1,9 @@
+{
+  "build_image": "vouch.scored26-build-image/v0",
+  "build_image_sha256": "sha256:c40e87e9fbdf67f18850020696984308eda72bd8e9f89acc2b69c46bc550108e",
+  "dockerfile_path": "artifact/release/Dockerfile.scored26",
+  "node_base_image": "node@sha256:1c18d9ab3af4585870b92e4dbc5cac5a0dc77dd13df1a5905cea89fc720eb05b",
+  "os_base_image": "ubuntu@sha256:6015f66923d7afbc53558d7ccffd325d43b4e249f41a6e93eef074c9505d2233",
+  "platform": "linux/amd64",
+  "rust_base_image": "rust@sha256:9f841bbe9e7d8e37ceb96ed907265a3a0df7f44e3737d0b100e7907a679acb36"
+}

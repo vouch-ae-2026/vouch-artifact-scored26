@@ -1,0 +1,64 @@
+---
+title: 'Lispex'
+description: 'Lispex distills the essence of Lisp into a small, closed language. The same reference interpreter runs it in the browser and from the CLI.'
+---
+
+Welcome to **Lispex**, a small Lisp built for clear source, deterministic evaluation, and the plain pleasure of writing it.
+
+Lispex is a modern reading of Lisp's power and simplicity. It keeps the core idea that code is data and sheds the machinery that tends to pile up around it. The grammar is small and consistent, and it stays out of your way.
+
+## One Language, One Grammar
+
+Lispex discards special syntax and follows a single principle. Everything is written in parentheses `()`. Arithmetic, function definitions, conditionals, and lists of data all take the same S-expression shape.
+
+One grammar means the code itself is data with a visible structure. Reading and analyzing code gets easier, and programs can generate and work on other programs. That is Lisp's old idea, code as data, carried in its plainest form.
+
+## What is Lispex?
+
+Lispex is short for **Lisp Expression**. The name is literal: programs are written as Lisp expressions, and those expressions stay easy to read as data.
+
+There are no special constructs to memorize. The same S-expression shape covers values, calls, conditionals, definitions, and quoted data.
+
+The ambition is modest and specific: keep the grammar small enough that source remains inspectable.
+
+## A Taste of Lispex
+
+See how the grammar works in a small example. The code below filters even numbers from a list and multiplies each by 10. Lispex runs directly in the browser, so you can paste it into the [Playground](/en/play) and watch it evaluate.
+
+```clojure
+;; All code consists of core forms and standard library functions.
+
+(define numbers '(1 2 3 4 5 6))
+
+;; Filter for even numbers.
+(define evens 
+  (filter (lambda (n) (= (modulo n 2) 0)) 
+          numbers))
+
+;; Multiply each even number by 10.
+(map (lambda (n) (* n 10)) evens)
+
+;; ⇒ (list 20 40 60)
+```
+
+The example reads top to bottom as one data pipeline, filter then map, with no other syntax in the way.
+
+## Key Strengths
+
+* **Runs directly.** Lispex ships a reference interpreter, written in Rust and compiled to WebAssembly, that runs entirely in your browser. Write code in the [Playground](/en/play) and see results instantly, with nothing to install.
+* **Small, predictable core.** A minimal set of core forms and deterministic transformation rules keep programs easy to learn and easy to predict.
+* **Refreshed v1.4 runtime path.** The Playground, npm CLI, and native interpreter now share the expanded exercised surface for multiple values, `apply`, `modulo`, and string formatting paths.
+* **Unified S-expression.** Code and data share one structure, so analyzing, transforming, and generating code stays simple.
+* **Practical standard library.** The pure core language is separated from explicit I/O and system modules, so the core stays stable and real programs stay practical.
+
+## Next Steps
+
+Ready to begin your journey with Lispex?
+
+* Run Lispex right now in the [**Playground**](/en/play). The reference interpreter executes your code directly in the browser.
+* Start with the [**Getting Started**](/en/docs/getting-started) guide to set up your environment and run your first Lispex program.
+* Explore the [**Syntax**](/en/docs/concepts/syntax) pages for the input grammar, its tokens, literals, core and derived forms, and normalization rules.
+* Read about [**Lispex Vouch**](/en/docs/vouch), the receipt workflow that began in v1.3 for decision rules inside the checked subset.
+
+
+We're excited to see what you'll build with Lispex.

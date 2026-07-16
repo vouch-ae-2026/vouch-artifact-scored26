@@ -1,0 +1,122 @@
+{
+  "boundary": {
+    "attests": [
+      "source-bytes",
+      "profile-input-hash-binding",
+      "canonical-core-v0-bytes",
+      "meaning-graph-v0-hash-binding",
+      "reference-transcript-bytes",
+      "meaning-env-transcript-bytes",
+      "lowered-subset-transcript-agreement"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "independent-witness",
+      "substrate-independence",
+      "error-agreement",
+      "input-provenance",
+      "external-backend-reporting",
+      "full-cskernel-coverage",
+      "target-code-generation",
+      "private-implementation-detail",
+      "receipt-authenticity",
+      "generation-honesty",
+      "issuer-binding",
+      "timestamping",
+      "non-repudiation"
+    ]
+  },
+  "canonical": {
+    "byte_len": 111,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/core-hash/v0",
+      "hex": "d0472967a30c79aede1c86c0cf8464998946df2021f0149ee1ffd05fa98b3927"
+    },
+    "status": "ok"
+  },
+  "comparison": {
+    "blockers": [
+      {
+        "fault_class": "reference-runtime-error",
+        "reason": "reference-runtime-error"
+      }
+    ],
+    "fault_class": "reference-runtime-error",
+    "first_divergence": null,
+    "reason": "reference-runtime-error",
+    "status": "not-comparable",
+    "substrate": "shared-rust-reference"
+  },
+  "diagnostics": [
+    {
+      "code": "E312",
+      "col": 3,
+      "file": "differential/cases/runtime-error.lspx",
+      "line": 2,
+      "message": "append: expected a proper list, got 5",
+      "severity": "error"
+    }
+  ],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "canonical_format": "lispex.core.canonical/v0",
+    "commit": {
+      "dirty": false,
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "vcs": "git"
+    },
+    "name": "lispex-rust-reference",
+    "version": "1.4.0"
+  },
+  "graph": {
+    "byte_len": 1535,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-graph-hash/v0",
+      "hex": "5637dbfc566ddb44c1ea92fae37274d24dcfd246ebe7e742d0d8a1aeaa8074d2"
+    },
+    "status": "ok"
+  },
+  "input": {
+    "status": "absent"
+  },
+  "meaning_env": {
+    "fault": {
+      "anchor": {
+        "col": 3,
+        "line": 2
+      },
+      "kind": "intrinsic-domain",
+      "message": "intrinsic domain mismatch",
+      "node": 8
+    },
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-env-transcript-hash/v0",
+      "hex": "c7ab13aece364a8f8c340a9ecd321e09239fdc2774ac46d87ee2decc19fbb62b"
+    },
+    "status": "fault",
+    "steps": {
+      "limit": 1000000,
+      "used": 10
+    },
+    "transcript": [],
+    "transcript_byte_len": 0
+  },
+  "reference": {
+    "hash": null,
+    "status": "error",
+    "transcript": [],
+    "transcript_byte_len": 0
+  },
+  "source": {
+    "byte_len": 22,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/source-hash/v0",
+      "hex": "c5446b82262c086917f248ff03233d180e872810965cd04647cc5152cec4871e"
+    },
+    "path": "differential/cases/runtime-error.lspx"
+  }
+}

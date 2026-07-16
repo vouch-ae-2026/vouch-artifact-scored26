@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "bridge": {
+      "additionalProperties": false,
+      "properties": {
+        "bridge_report": {
+          "const": "vouch.bridge-report/v0"
+        },
+        "comparison_status": {
+          "enum": ["agree", "disagree", "not-comparable"]
+        },
+        "decision": {
+          "type": ["string", "null"]
+        },
+        "diagnostics": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": ["code", "message"],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "engine_sha256": {
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "input_canonical_value_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "input_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "profile": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]*$",
+          "type": "string"
+        },
+        "source_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "bridge_report",
+        "profile",
+        "engine_sha256",
+        "source_sha256",
+        "input_sha256",
+        "input_canonical_value_sha256",
+        "comparison_status",
+        "decision",
+        "diagnostics"
+      ],
+      "type": "object"
+    },
+    "native": {
+      "additionalProperties": false,
+      "properties": {
+        "boundary": {
+          "type": "object"
+        },
+        "canonical": {
+          "type": "object"
+        },
+        "comparison": {
+          "type": "object"
+        },
+        "diagnostics": {
+          "type": "array"
+        },
+        "differential_receipt": {
+          "const": "csk.differential-receipt/v0"
+        },
+        "engine": {
+          "type": "object"
+        },
+        "execution": {
+          "type": "object"
+        },
+        "graph": {
+          "type": "object"
+        },
+        "input": {
+          "type": "object"
+        },
+        "meaning_env": {
+          "type": "object"
+        },
+        "reference": {
+          "type": "object"
+        },
+        "source": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "differential_receipt",
+        "engine",
+        "execution",
+        "source",
+        "input",
+        "canonical",
+        "graph",
+        "reference",
+        "meaning_env",
+        "comparison",
+        "diagnostics",
+        "boundary"
+      ],
+      "type": "object"
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/native"
+    },
+    {
+      "$ref": "#/$defs/bridge"
+    }
+  ],
+  "type": "object",
+  "unevaluatedProperties": false
+}

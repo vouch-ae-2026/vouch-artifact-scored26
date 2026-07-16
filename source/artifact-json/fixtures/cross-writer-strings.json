@@ -1,0 +1,20 @@
+{
+  "artifact_json_fixture": "csk.artifact-json-cross-writer-fixture/v0",
+  "numbers": [
+    0,
+    1,
+    -1,
+    65536
+  ],
+  "object": {
+    "fault_class": null,
+    "first_divergence": null
+  },
+  "strings": [
+    "quote:\"",
+    "backslash:\\",
+    "control:\u0000\u0001\b\t\n\f\r",
+    "non_ascii:한글 λ Ж",
+    "separators:  "
+  ]
+}

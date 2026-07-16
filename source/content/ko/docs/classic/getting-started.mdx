@@ -1,0 +1,84 @@
+---
+title: '리스펙스 시작하기'
+description: '5분 안에 리스펙스를 실행하고, 첫 코드를 돌려 보며 언어의 모양을 익혀 보세요.'
+---
+
+리스펙스를 배우는 가장 빠른 길은 바로 실행해 보는 것입니다. 설치 없이 보려면 플레이그라운드를 쓰고, Node 환경이 익숙하면 npm CLI를 쓰고, 의존성 없는 CLI나 리스펙스 바우치 영수증 생성이 필요하면 네이티브 단독 실행 바이너리를 설치하세요.
+
+## 설치하거나 브라우저에서 실행
+
+**플레이그라운드.** 가장 빠른 방법은 사이트 안의 [플레이그라운드](/ko/play)입니다. Rust로 작성되어 WebAssembly로 컴파일된 레퍼런스 인터프리터가 브라우저 안에서 그대로 동작하므로 설치가 필요 없습니다.
+
+**네이티브 바이너리.** `lispex diff-receipt`, 의존성 없는 CLI, 서버나 스크립트용 설치가 필요하면 단독 실행 바이너리를 설치합니다.
+
+```bash
+# macOS / Linux
+curl -fsSL https://artifact.invalid/lispex/install.sh | sh
+```
+
+```powershell
+# Windows PowerShell
+irm https://artifact.invalid/lispex/install.ps1 | iex
+```
+
+[다운로드 페이지](/downloads)에서 바이너리와 체크섬을 직접 받을 수도 있습니다.
+
+**npm.** Node 18 이상이 이미 있다면 `lispex run`, `lispex verify`, `lispex replay`용으로 npm CLI를 설치할 수 있습니다.
+
+```bash
+npm install -g lispex
+```
+
+브라우저 플레이그라운드와 npm CLI는 같은 Rust 레퍼런스 인터프리터의 WebAssembly 빌드를 사용합니다. 네이티브 바이너리는 같은 레퍼런스 인터프리터를 직접 실행하며 공개 영수증 생성 경로입니다.
+
+설치를 확인합니다.
+
+```bash
+lispex --version
+```
+
+## 첫 프로그램 실행
+
+`hello.lspx` 파일을 만듭니다. 첫 줄은 입력 문법 버전을 고정하는 선택 헤더입니다.
+
+```lispex
+;! lispex 1.4
+
+(define message "안녕, 리스펙스!")
+message
+```
+
+실행합니다.
+
+```bash
+lispex run hello.lspx
+```
+
+브라우저 플레이그라운드와 CLI는 같은 레퍼런스 인터프리터 의미론을 사용합니다.
+v1.4에서는 이 공유 경로가 더 넓어졌습니다. `apply`, `values`,
+`call-with-values`, `modulo`, `string-append`, `number->string`이 네이티브
+인터프리터와 플레이그라운드/npm 패키지가 쓰는 WebAssembly 빌드에서 함께
+검사됩니다.
+
+## 리스펙스 바우치 아티팩트 검사
+
+리스펙스 바우치는 프로젝트에 커밋해 둔 규칙 코퍼스에 영수증 기반 검사 흐름을 더합니다. `lispex verify`는 영수증을 오프라인으로 검사하고, `lispex replay`는 결정 코퍼스를 버전이나 영수증 집합과 비교합니다.
+
+```bash
+lispex diff-receipt --input inputs/age-threshold.datum rules/age-threshold.lspx > receipts/age-threshold.json
+lispex verify receipts/age-threshold.json
+lispex replay decision-gallery --against decision-gallery/expected
+```
+
+첫 번째 명령은 네이티브 단독 실행 바이너리에서 실행합니다. 이 바이너리가 공개 영수증 생성 경로이며 `csk.differential-receipt/v0` JSON을 표준 출력에 씁니다. npm CLI는 이미 있는 아티팩트에 대해 `verify`와 `replay`를 실행할 수 있지만 영수증은 생성하지 않습니다. 영수증은 어디까지나 기록입니다. 영수증이 어디에서 왔는지 인증하거나, 정직하게 만들어졌는지 증명하거나, 결정을 누가 언제 적용했는지 보여 주거나, 배포 사실을 증명하거나, 레퍼런스 인터프리터를 대체하지 않습니다.
+
+## 다음 단계
+
+- [구문](/ko/docs/concepts/syntax)에서 토큰, 리터럴, 코어 폼, 파생 폼, 정규화 규칙을 확인하세요.
+- [다운로드 페이지](/downloads)에서 단독 실행 바이너리를 받을 수 있습니다.
+- [결정 규칙 작성하기](/ko/docs/guides/decision-rules)에서 환불 승인과 할인율 같은 규칙을 직접 만들어 보세요.
+- 가이드에서 [능력 모듈](/ko/docs/guides/capabilities)과 [타깃 언어 실행 팁](/ko/docs/guides/targets)을 읽어 보세요.
+- [플레이그라운드](/ko/play)에서 바로 실행해 보세요.
+- [리스펙스 바우치](/ko/docs/vouch)에서 검사 가능한 부분집합, 영수증, `verify`, `replay`를 살펴보세요.
+
+리스펙스로 무엇을 만들어낼지 기대됩니다.

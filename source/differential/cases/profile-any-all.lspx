@@ -1,0 +1,8 @@
+(list
+  (any? (lambda (x) (if (= x 0) #t (/ 1 0))) '(0 1))
+  (all? (lambda (x) (if (= x 0) #f (/ 1 0))) '(0 1))
+       (all? number? '(1 2 3))
+       (any? boolean? '(alpha 0 #f))
+       (all? symbol? '(alpha beta gamma))
+       (any? number? '())
+       (all? number? '()))

@@ -1,0 +1,48 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "#t",
+      "anchor": {
+        "line": 1,
+        "col": 5
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 8
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 1,
+        "col": 10
+      }
+    },
+    {
+      "kind": "if",
+      "test": 0,
+      "then": 1,
+      "else": 2,
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        3
+      ]
+    }
+  ],
+  "roots": [
+    4
+  ]
+}

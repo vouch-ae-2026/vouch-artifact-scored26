@@ -1,0 +1,79 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "string<?"
+      },
+      "anchor": {
+        "line": 2,
+        "col": 5
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "\"alpha\"",
+      "anchor": {
+        "line": 2,
+        "col": 14
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "\"beta\"",
+      "anchor": {
+        "line": 2,
+        "col": 22
+      }
+    },
+    {
+      "kind": "call",
+      "op": 0,
+      "args": [
+        1,
+        2
+      ],
+      "anchor": {
+        "line": 2,
+        "col": 4
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "\"eligible\"",
+      "anchor": {
+        "line": 2,
+        "col": 30
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "\"ineligible\"",
+      "anchor": {
+        "line": 3,
+        "col": 9
+      }
+    },
+    {
+      "kind": "if",
+      "test": 3,
+      "then": 4,
+      "else": 5,
+      "anchor": {
+        "line": 2,
+        "col": 3
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        6
+      ]
+    }
+  ],
+  "roots": [
+    7
+  ]
+}

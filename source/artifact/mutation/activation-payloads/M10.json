@@ -1,0 +1,107 @@
+{
+  "boundary": {
+    "statement_sha256": "3808de6659be06e869b89b24cc760320f93a807ab27ee810c0e481ec41d7c948"
+  },
+  "canonical": {
+    "normalized_bytes_b64": "bGlzcGV4LmNvcmUuY2Fub25pY2FsL3YwCihxdW90ZSAibGluZVxuYnJlYWsiKQo=",
+    "normalized_sha256": "24737c4edd5daa1309232400c00706ecd5dab3725621853f5f56067920b09ba1"
+  },
+  "comparison": {
+    "comparison_unavailable_at": null,
+    "first_divergence_index": 0,
+    "status": "disagree"
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "executable_sha256": "sha256:2d4ccb113a1dd2cf7de348b39410862b58b49d2da70fed407d05055e1e44ff0b",
+    "target_triple": "aarch64-apple-darwin"
+  },
+  "execution": {
+    "build_commit": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+    "build_variant": "mutant",
+    "context_digest": "43476e3e779c014ea75eede2f68c273eef918e9e1750e06ae723e7acc155ab6c",
+    "executable_sha256": "sha256:2d4ccb113a1dd2cf7de348b39410862b58b49d2da70fed407d05055e1e44ff0b",
+    "invocation": "native-checked",
+    "lispex_version": "1.4.0",
+    "mutant_id": "M10",
+    "profile": "csk.checked-profile/v1",
+    "target_triple": "aarch64-apple-darwin"
+  },
+  "graph": {
+    "graph_sha256": "bc4e3bc0afe973a12de1d33ab94348cff1f7a50ff7d278dffee46dabd1beca8c",
+    "node_count": 1,
+    "value": {
+      "graph": "csk.graph/v0",
+      "nodes": [
+        {
+          "id": 0,
+          "op": "lit",
+          "value": {
+            "t": "str",
+            "v": "line\nbreak"
+          }
+        }
+      ],
+      "roots": [
+        0
+      ]
+    }
+  },
+  "input": {
+    "byte_length": 62,
+    "canonical_value_sha256": "957c408c80fa1edd6b1dd0687b5e04c1bb1ca7892bbb04dac9d45d5859410663",
+    "sha256": "104d545e09a8501438e36a0fb8daa7fe4fbf4ea0ba0fe2b894cfdcf4f039acaa"
+  },
+  "meaning_env": {
+    "graph_sha256": "bc4e3bc0afe973a12de1d33ab94348cff1f7a50ff7d278dffee46dabd1beca8c",
+    "meaning_env": "csk.meaning-env-report/v0",
+    "node_count": 1,
+    "terminal": {
+      "kind": "completed"
+    },
+    "transcript": {
+      "events": [
+        {
+          "form_index": 0,
+          "kind": "value",
+          "value": {
+            "t": "str",
+            "v": "line\nbreak"
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "completed"
+      },
+      "transcript": "csk.transcript/v0"
+    },
+    "transcript_sha256": "4f44e035f7d868465ec613ba0ec1dae9306d94c07a872823858e8981ea695165"
+  },
+  "reference": {
+    "terminal": {
+      "kind": "completed"
+    },
+    "transcript": {
+      "events": [
+        {
+          "form_index": 0,
+          "kind": "value",
+          "value": {
+            "t": "str",
+            "v": "line\\nbreak"
+          }
+        }
+      ],
+      "terminal": {
+        "kind": "completed"
+      },
+      "transcript": "csk.transcript/v0"
+    },
+    "transcript_sha256": "9fb794289c74e0ac74b2648085002e27d94a50a218fbdbab4c7874e264988412"
+  },
+  "source": {
+    "byte_length": 13,
+    "sha256": "48f3b7f2f38b4b26b97d80a78eef5cc0487bc3ceecef40869c02089de325add3"
+  }
+}

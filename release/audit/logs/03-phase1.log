@@ -1,0 +1,98 @@
+SCORED26 sealed archive snapshot extracted (sha256:49e9e1fd9e669b2da168d8763f4c61f88b95944f566a3e44232f3a8c443740ad)
+Cloning into 'work'...
+Note: switching to '3e910c9ff87cc01d3bc241d63297218b44e75ede'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  14% (332/2367)Updating files:  15% (356/2367)Updating files:  16% (379/2367)Updating files:  17% (403/2367)Updating files:  18% (427/2367)Updating files:  19% (450/2367)Updating files:  20% (474/2367)Updating files:  21% (498/2367)Updating files:  22% (521/2367)Updating files:  23% (545/2367)Updating files:  24% (569/2367)Updating files:  25% (592/2367)Updating files:  26% (616/2367)Updating files:  27% (640/2367)Updating files:  28% (663/2367)Updating files:  29% (687/2367)Updating files:  30% (711/2367)Updating files:  31% (734/2367)Updating files:  32% (758/2367)Updating files:  32% (781/2367)Updating files:  33% (782/2367)Updating files:  34% (805/2367)Updating files:  35% (829/2367)Updating files:  36% (853/2367)Updating files:  37% (876/2367)Updating files:  38% (900/2367)Updating files:  39% (924/2367)Updating files:  40% (947/2367)Updating files:  41% (971/2367)Updating files:  42% (995/2367)Updating files:  43% (1018/2367)Updating files:  44% (1042/2367)Updating files:  44% (1058/2367)Updating files:  45% (1066/2367)Updating files:  46% (1089/2367)Updating files:  47% (1113/2367)Updating files:  48% (1137/2367)Updating files:  49% (1160/2367)Updating files:  50% (1184/2367)Updating files:  51% (1208/2367)Updating files:  52% (1231/2367)Updating files:  53% (1255/2367)Updating files:  54% (1279/2367)Updating files:  55% (1302/2367)Updating files:  56% (1326/2367)Updating files:  57% (1350/2367)Updating files:  58% (1373/2367)Updating files:  59% (1397/2367)Updating files:  59% (1408/2367)Updating files:  60% (1421/2367)Updating files:  61% (1444/2367)Updating files:  62% (1468/2367)Updating files:  63% (1492/2367)Updating files:  64% (1515/2367)Updating files:  65% (1539/2367)Updating files:  66% (1563/2367)Updating files:  67% (1586/2367)Updating files:  68% (1610/2367)Updating files:  69% (1634/2367)Updating files:  70% (1657/2367)Updating files:  71% (1681/2367)Updating files:  72% (1705/2367)Updating files:  73% (1728/2367)Updating files:  73% (1729/2367)Updating files:  74% (1752/2367)Updating files:  75% (1776/2367)Updating files:  76% (1799/2367)Updating files:  77% (1823/2367)Updating files:  78% (1847/2367)Updating files:  79% (1870/2367)Updating files:  80% (1894/2367)Updating files:  81% (1918/2367)Updating files:  82% (1941/2367)Updating files:  83% (1965/2367)Updating files:  84% (1989/2367)Updating files:  85% (2012/2367)Updating files:  86% (2036/2367)Updating files:  87% (2060/2367)Updating files:  88% (2083/2367)Updating files:  88% (2095/2367)Updating files:  89% (2107/2367)Updating files:  90% (2131/2367)Updating files:  91% (2154/2367)Updating files:  92% (2178/2367)Updating files:  93% (2202/2367)Updating files:  94% (2225/2367)Updating files:  95% (2249/2367)Updating files:  95% (2265/2367)Updating files:  96% (2273/2367)Updating files:  97% (2296/2367)Updating files:  98% (2320/2367)Updating files:  99% (2344/2367)Updating files: 100% (2367/2367)Updating files: 100% (2367/2367), done.
+HEAD is now at 3e910c9 Record B-bound Vouch evaluation outputs
+
+added 588 packages, and audited 589 packages in 1m
+
+274 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting <REDACTED_EMAIL>
+npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting <REDACTED_EMAIL>
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+npm warn deprecated next@14.2.4: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/security-update-2025-12-11 for more details.
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling version_check v0.9.5
+   Compiling quote v1.0.46
+   Compiling typenum v1.20.1
+   Compiling generic-array v0.14.7
+   Compiling cfg-if v1.0.4
+   Compiling zeroize v1.9.0
+   Compiling semver v1.0.28
+   Compiling const-oid v0.9.6
+   Compiling der v0.7.10
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling syn v2.0.118
+   Compiling rustc_version v0.4.1
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.9
+   Compiling libc v0.2.172
+   Compiling cc v1.2.67
+   Compiling spki v0.7.3
+   Compiling curve25519-dalek v4.1.3
+   Compiling digest v0.10.7
+   Compiling serde v1.0.219
+   Compiling cpufeatures v0.2.17
+   Compiling autocfg v1.5.1
+   Compiling pkcs8 v0.10.2
+   Compiling num-traits v0.2.19
+   Compiling subtle v2.6.1
+   Compiling curve25519-dalek-derive v0.1.1
+   Compiling serde_json v1.0.140
+   Compiling signature v2.2.0
+   Compiling ed25519 v2.2.3
+   Compiling sha2 v0.10.8
+   Compiling memchr v2.8.3
+   Compiling ryu v1.0.23
+   Compiling vouch v0.1.0 (<CLEAN_ROOM>/vouch-scored26-artifact/work/vouch)
+   Compiling itoa v1.0.18
+   Compiling ed25519-dalek v2.1.1
+   Compiling psm v0.1.27
+   Compiling base64 v0.22.1
+   Compiling num-integer v0.1.46
+   Compiling stacker v0.1.24
+   Compiling wasm-bindgen-shared v0.2.126
+   Compiling num-bigint v0.4.8
+   Compiling lispex v1.4.0 (<CLEAN_ROOM>/vouch-scored26-artifact/work/interp)
+   Compiling getrandom v0.2.17
+   Compiling rustversion v1.0.23
+   Compiling num-rational v0.4.2
+   Compiling bumpalo v3.20.3
+   Compiling wasm-bindgen-macro-support v0.2.126
+   Compiling wasm-bindgen v0.2.126
+   Compiling once_cell v1.21.4
+   Compiling wasm-bindgen-macro v0.2.126
+   Compiling scored26-release-anchor v0.0.0 (<CLEAN_ROOM>/vouch-scored26-artifact/work/scored26-release)
+   Compiling lispex-wasm v1.4.0 (<CLEAN_ROOM>/vouch-scored26-artifact/work/lock-anchors/wasm)
+    Finished `release` profile [optimized] target(s) in 7m 46s
+
+> lispex@1.4.0 scored26:reproduce
+> node artifact/scripts/reproduce-release.mjs
+
+SCORED26 phase-1 inner reproduction passed (3e910c9ff87c, 482 exact results)
+SCORED26 phase-1 clean-room gate passed (3e910c9ff87c, 5122s)

@@ -1,0 +1,76 @@
+---
+title: 'Using map'
+description: 'The map function projects a single transformation rule across an entire collection of data. Escape the tedium of iteration and learn how to consistently apply one idea to many pieces of data, creating new forms of information.'
+---
+
+In Lispex, you'll often work with lists of data. Instead of using traditional loops, Lispex provides powerful higher-order functions to process lists in a clean, functional way. This guide introduces two of the most essential functions: `map` and `filter`.
+
+## Transforming Every Item with `map`
+
+What if you have a list of numbers and want to create a new list where every number is doubled? This is a perfect job for `map`.
+
+The `map` function takes a function and a list, applies the function to **every single item** in the original list, and returns a **new list** containing the results. The new list will always have the same number of items as the original.
+
+**Syntax:** `(map FUNCTION LIST)`
+
+### Example: Doubling Numbers
+```lispex
+(define numbers (list 10 20 30 40))
+
+(define doubled-numbers
+  (map (lambda (x) (* x 2)) numbers))
+
+;; The value of doubled-numbers is now (list 20 40 60 80)
+;; The original `numbers` list remains unchanged.
+```
+In this example, the `(lambda (x) (* x 2))` function is applied to each element, producing a new list.
+
+## Selecting Items with `filter`
+
+Now, what if you have a list of numbers and you only want to keep the ones that are even? This is a job for `filter`.
+
+The `filter` function takes a predicate (returns `#t` or `#f`) and a list. It applies the predicate to every item and returns a new list containing only the items for which the predicate returned `#t`.
+
+**Syntax:** `(filter PREDICATE_FUNCTION LIST)`
+
+### Example: Finding Even Numbers
+```lispex
+(define numbers (list 1 2 3 4 5 6 7 8))
+
+(define even-numbers
+  (filter (lambda (n) (= (modulo n 2) 0)) numbers))
+
+;; The value of even-numbers is now (list 2 4 6 8)
+```
+
+## Putting It All Together: A Data Pipeline
+
+The real power comes when you chain these functions together to create a data processing pipeline.
+
+Let's solve a practical problem: **From a list of numbers, find all the numbers greater than 5, and then create a new list containing a descriptive string for each of them.**
+
+```lispex
+(define all-scores (list 2 8 5 10 3 7))
+
+;; Step 1: Filter the scores to keep only those greater than 5.
+(define high-scores (filter (lambda (score) (> score 5)) all-scores))
+;; high-scores ⇒ (list 8 10 7)
+
+;; Step 2: Map the high scores to formatted strings (using string-append).
+(define report
+  (map (lambda (score)
+         (string-append "High score: " (number->string score)))
+       high-scores))
+;; The value of report is now (list "High score: 8" "High score: 10" "High score: 7")
+```
+
+You can even nest these calls for more concise code:
+```lispex
+(map (lambda (score) (string-append "High score: " (number->string score)))
+     (filter (lambda (score) (> score 5))
+             (list 2 8 5 10 3 7)))
+```
+
+## Conclusion
+
+By using `map` and `filter`, you can write expressive, readable, and powerful code for data manipulation without needing traditional loops. This functional approach is a cornerstone of the Lispex language.

@@ -1,0 +1,45 @@
+{
+  "archive_bundle": {
+    "archive_member": "release/vouch-scored26.bundle",
+    "byte_length": 7778554,
+    "sha256": "sha256:18f40298fcf9e4d919fc9e5e0a1ac6b29c47b081daeaa402da017b3940a7f26a"
+  },
+  "bundle_reconciliation": "vouch.scored26-bundle-reconciliation/v1",
+  "checks": {
+    "d_archive_sha256_matches_extracted_archive": true,
+    "release_manifest_row_matches_archive_bundle": true,
+    "source_bundle_byte_identical_to_archive_bundle": true
+  },
+  "descriptor_archive": {
+    "byte_length": 429428296,
+    "d_archive_sha256": "sha256:49e9e1fd9e669b2da168d8763f4c61f88b95944f566a3e44232f3a8c443740ad"
+  },
+  "release_manifest": {
+    "archive_member": "artifact/release-manifest.json",
+    "bundle_row": {
+      "artifact_class": "source-bundle",
+      "byte_length": 7778554,
+      "expected_result": "sha256:18f40298fcf9e4d919fc9e5e0a1ac6b29c47b081daeaa402da017b3940a7f26a",
+      "generating_command": "git bundle create",
+      "path": "release/vouch-scored26.bundle",
+      "sha256": "sha256:18f40298fcf9e4d919fc9e5e0a1ac6b29c47b081daeaa402da017b3940a7f26a"
+    },
+    "byte_length": 1139394,
+    "distributed_copy": "release/results/release-manifest.json",
+    "sha256": "sha256:2397c200d4cac10e4b5d1e1d5261fb7c99a6340fb80a363592ae5ce36a2544fb"
+  },
+  "source_bundle": {
+    "byte_length": 7778554,
+    "distributed_path": "source/synthetic-history/vouch-scored26.bundle",
+    "sha256": "sha256:18f40298fcf9e4d919fc9e5e0a1ac6b29c47b081daeaa402da017b3940a7f26a"
+  },
+  "source_projection_report_fact": {
+    "boundary": "The true equivalence and authentication values apply only to the exact distributed review bundle bytes; they do not authenticate or make archive-equivalent the whole source projection.",
+    "release_archive_equivalent": true,
+    "release_chain_authenticated": true,
+    "subject": "source/synthetic-history/vouch-scored26.bundle",
+    "whole_projection_release_archive_equivalent": false,
+    "whole_projection_release_chain_authenticated": false
+  },
+  "status": "pass"
+}

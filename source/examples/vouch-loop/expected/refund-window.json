@@ -1,0 +1,117 @@
+{
+  "boundary": {
+    "attests": [
+      "source-bytes",
+      "profile-input-hash-binding",
+      "canonical-core-v0-bytes",
+      "meaning-graph-v0-hash-binding",
+      "reference-transcript-bytes",
+      "meaning-env-transcript-bytes",
+      "lowered-subset-transcript-agreement"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "independent-witness",
+      "substrate-independence",
+      "error-agreement",
+      "input-provenance",
+      "external-backend-reporting",
+      "full-cskernel-coverage",
+      "target-code-generation",
+      "private-implementation-detail",
+      "receipt-authenticity",
+      "generation-honesty",
+      "issuer-binding",
+      "timestamping",
+      "non-repudiation"
+    ]
+  },
+  "canonical": {
+    "byte_len": 243,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/core-hash/v0",
+      "hex": "e3180e5c2e46e05ea53944ee3c699f4ec560e3e050781ae6d624917b3f5c928b"
+    },
+    "status": "ok"
+  },
+  "comparison": {
+    "blockers": [],
+    "fault_class": null,
+    "first_divergence": null,
+    "reason": "transcript-bytes-equal",
+    "status": "agree",
+    "substrate": "shared-rust-reference"
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "canonical_format": "lispex.core.canonical/v0",
+    "commit": {
+      "dirty": false,
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "vcs": "git"
+    },
+    "name": "lispex-rust-reference",
+    "version": "1.4.0"
+  },
+  "graph": {
+    "byte_len": 3717,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-graph-hash/v0",
+      "hex": "a72eab8bd90eeb510a9bb7cbd410483b31ffeed01777b840e36e773dcd861d9a"
+    },
+    "status": "ok"
+  },
+  "input": {
+    "byte_len": 6,
+    "datum": "(9 #f)",
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/profile-input-hash/v0",
+      "hex": "88eb13c4b3b0953f207bf1a6e754c77b3c296563def30288b766793945aa9033"
+    },
+    "name": "input",
+    "path": "examples/vouch-loop/inputs/refund-window.datum",
+    "status": "bound"
+  },
+  "meaning_env": {
+    "fault": null,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-env-transcript-hash/v0",
+      "hex": "f0dfd43e2b272c0ec36731090325f53e11b41d5b8a80ecc682355b83e158ac51"
+    },
+    "status": "ok",
+    "steps": {
+      "limit": 1000000,
+      "used": 21
+    },
+    "transcript": [
+      "(decision allow)"
+    ],
+    "transcript_byte_len": 17
+  },
+  "reference": {
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/runtime-hash/v0",
+      "hex": "dafb01565d181ad602e7a31d83aede59aa10462cf4723daab00edfb49b007abb"
+    },
+    "status": "ok",
+    "transcript": [
+      "(decision allow)"
+    ],
+    "transcript_byte_len": 17
+  },
+  "source": {
+    "byte_len": 204,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/source-hash/v0",
+      "hex": "50d60a3eef321168052750043a314f7b6465572f93d8052004b477610d94742d"
+    },
+    "path": "examples/vouch-loop/cases/refund-window.lspx"
+  }
+}

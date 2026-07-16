@@ -1,0 +1,119 @@
+{
+  "boundary": {
+    "attests": [
+      "source-bytes",
+      "profile-input-hash-binding",
+      "canonical-core-v0-bytes",
+      "meaning-graph-v0-hash-binding",
+      "reference-transcript-bytes",
+      "meaning-env-transcript-bytes",
+      "lowered-subset-transcript-agreement"
+    ],
+    "excludes": [
+      "semantic-equivalence",
+      "independent-witness",
+      "substrate-independence",
+      "error-agreement",
+      "input-provenance",
+      "external-backend-reporting",
+      "full-cskernel-coverage",
+      "target-code-generation",
+      "private-implementation-detail",
+      "receipt-authenticity",
+      "generation-honesty",
+      "issuer-binding",
+      "timestamping",
+      "non-repudiation"
+    ]
+  },
+  "canonical": {
+    "byte_len": 51,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/core-hash/v0",
+      "hex": "4475a0493414e2e15b55824f420f5e1a0a8ec411ea6df9d28226c0c48ffdad31"
+    },
+    "status": "ok"
+  },
+  "comparison": {
+    "blockers": [
+      {
+        "fault_class": "meaning-intrinsic-domain",
+        "reason": "meaning-env-fault"
+      }
+    ],
+    "fault_class": "meaning-intrinsic-domain",
+    "first_divergence": null,
+    "reason": "meaning-env-fault",
+    "status": "not-comparable",
+    "substrate": "shared-rust-reference"
+  },
+  "diagnostics": [],
+  "differential_receipt": "csk.differential-receipt/v0",
+  "engine": {
+    "canonical_format": "lispex.core.canonical/v0",
+    "commit": {
+      "dirty": false,
+      "hex": "ef7ef9bb4b56382ef5d413408a5f93a6898498c2",
+      "vcs": "git"
+    },
+    "name": "lispex-rust-reference",
+    "version": "1.4.0"
+  },
+  "graph": {
+    "byte_len": 720,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-graph-hash/v0",
+      "hex": "89e2fb115c064fc4492a03604608cd9fece16331a4eecbd4a36398e2459cd858"
+    },
+    "status": "ok"
+  },
+  "input": {
+    "status": "absent"
+  },
+  "meaning_env": {
+    "fault": {
+      "anchor": {
+        "col": 1,
+        "line": 1
+      },
+      "kind": "intrinsic-domain",
+      "message": "intrinsic domain mismatch",
+      "node": 3
+    },
+    "hash": {
+      "algo": "sha-256",
+      "domain": "csk/meaning-env-transcript-hash/v0",
+      "hex": "c7ab13aece364a8f8c340a9ecd321e09239fdc2774ac46d87ee2decc19fbb62b"
+    },
+    "status": "fault",
+    "steps": {
+      "limit": 1000000,
+      "used": 5
+    },
+    "transcript": [],
+    "transcript_byte_len": 0
+  },
+  "reference": {
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/runtime-hash/v0",
+      "hex": "b602e3c61c83b10f1fb224811021db24f0c4fde4afb2596cbc87c23bfcdba00d"
+    },
+    "status": "ok",
+    "transcript": [
+      "3.0"
+    ],
+    "transcript_byte_len": 4
+  },
+  "source": {
+    "byte_len": 10,
+    "hash": {
+      "algo": "sha-256",
+      "domain": "lispex/source-hash/v0",
+      "hex": "df4349bf3f3df8b00575312e2a5f75e3150c59561979f70c291874894e41a0b9"
+    },
+    "path": "differential/cases/profile-inexact-domain.lspx"
+  }
+}

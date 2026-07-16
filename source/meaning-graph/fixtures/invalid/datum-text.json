@@ -1,0 +1,15 @@
+{
+  "expected_error": "datum-text",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "lit",
+        "datum": "#<procedure>"
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

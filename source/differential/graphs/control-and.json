@@ -1,0 +1,167 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "#t",
+      "anchor": {
+        "line": 1,
+        "col": 6
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "<"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 10
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "1",
+      "anchor": {
+        "line": 1,
+        "col": 12
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 1,
+        "col": 14
+      }
+    },
+    {
+      "kind": "call",
+      "op": 1,
+      "args": [
+        2,
+        3
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "="
+      },
+      "anchor": {
+        "line": 1,
+        "col": 18
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "/"
+      },
+      "anchor": {
+        "line": 1,
+        "col": 21
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "6",
+      "anchor": {
+        "line": 1,
+        "col": 23
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "3",
+      "anchor": {
+        "line": 1,
+        "col": 25
+      }
+    },
+    {
+      "kind": "call",
+      "op": 6,
+      "args": [
+        7,
+        8
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 20
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "2",
+      "anchor": {
+        "line": 1,
+        "col": 28
+      }
+    },
+    {
+      "kind": "call",
+      "op": 5,
+      "args": [
+        9,
+        10
+      ],
+      "anchor": {
+        "line": 1,
+        "col": 17
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#f",
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "if",
+      "test": 4,
+      "then": 11,
+      "else": 12,
+      "anchor": {
+        "line": 1,
+        "col": 9
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "#f",
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "if",
+      "test": 0,
+      "then": 13,
+      "else": 14,
+      "anchor": {
+        "line": 1,
+        "col": 6
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        15
+      ]
+    }
+  ],
+  "roots": [
+    16
+  ]
+}

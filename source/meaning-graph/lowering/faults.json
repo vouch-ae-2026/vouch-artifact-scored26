@@ -1,0 +1,52 @@
+{
+  "faults": [
+    {
+      "case": "empty.lspx",
+      "kind": "empty-program",
+      "line": 1,
+      "col": 1
+    },
+    {
+      "case": "lambda.lspx",
+      "kind": "profile-escape",
+      "line": 1,
+      "col": 1
+    },
+    {
+      "case": "function-define.lspx",
+      "kind": "profile-escape",
+      "line": 1,
+      "col": 1
+    },
+    {
+      "case": "set.lspx",
+      "kind": "unsupported-core",
+      "line": 2,
+      "col": 1
+    },
+    {
+      "case": "letrec.lspx",
+      "kind": "unsupported-core",
+      "line": 1,
+      "col": 1
+    },
+    {
+      "case": "guard.lspx",
+      "kind": "unsupported-core",
+      "line": 1,
+      "col": 1
+    },
+    {
+      "case": "profile-escape-builtin.lspx",
+      "kind": "profile-escape",
+      "line": 1,
+      "col": 1
+    },
+    {
+      "case": "profile-escape-input.lspx",
+      "kind": "profile-escape",
+      "line": 1,
+      "col": 1
+    }
+  ]
+}

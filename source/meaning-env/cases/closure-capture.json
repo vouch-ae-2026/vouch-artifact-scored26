@@ -1,0 +1,141 @@
+{
+  "meaning_graph": "csk.meaning-graph/v0",
+  "nodes": [
+    {
+      "kind": "lit",
+      "datum": "10",
+      "anchor": {
+        "line": 2,
+        "col": 12
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "intrinsic",
+        "name": "+"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 18
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "x"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 20
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "y"
+      },
+      "anchor": {
+        "line": 3,
+        "col": 22
+      }
+    },
+    {
+      "kind": "call",
+      "op": 1,
+      "args": [
+        2,
+        3
+      ],
+      "anchor": {
+        "line": 3,
+        "col": 17
+      }
+    },
+    {
+      "kind": "lambda",
+      "formals": [
+        {
+          "space": "user",
+          "text": "y"
+        }
+      ],
+      "body": 4,
+      "anchor": {
+        "line": 3,
+        "col": 5
+      }
+    },
+    {
+      "kind": "let",
+      "bindings": [
+        {
+          "name": {
+            "space": "user",
+            "text": "x"
+          },
+          "value": 0
+        }
+      ],
+      "body": 5,
+      "anchor": {
+        "line": 2,
+        "col": 3
+      }
+    },
+    {
+      "kind": "bind",
+      "name": {
+        "space": "user",
+        "text": "add10"
+      },
+      "value": 6,
+      "anchor": {
+        "line": 1,
+        "col": 1
+      }
+    },
+    {
+      "kind": "ref",
+      "name": {
+        "space": "user",
+        "text": "add10"
+      },
+      "anchor": {
+        "line": 5,
+        "col": 2
+      }
+    },
+    {
+      "kind": "lit",
+      "datum": "5",
+      "anchor": {
+        "line": 5,
+        "col": 8
+      }
+    },
+    {
+      "kind": "call",
+      "op": 8,
+      "args": [
+        9
+      ],
+      "anchor": {
+        "line": 5,
+        "col": 1
+      }
+    },
+    {
+      "kind": "block",
+      "body": [
+        7,
+        10
+      ]
+    }
+  ],
+  "roots": [
+    11
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "expected_error": "child-order",
+  "graph": {
+    "meaning_graph": "csk.meaning-graph/v0",
+    "nodes": [
+      {
+        "kind": "call",
+        "op": 1,
+        "args": []
+      },
+      {
+        "kind": "ref",
+        "name": {
+          "space": "user",
+          "text": "f"
+        }
+      }
+    ],
+    "roots": [
+      0
+    ]
+  }
+}

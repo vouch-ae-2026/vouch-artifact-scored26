@@ -1,0 +1,149 @@
+{
+  "activation_suite": "vouch.scored26-mutation-activation/v0",
+  "cases": [
+    {
+      "case_id": "W-M01",
+      "expected_witness_class": "disagreement",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M01",
+      "source": "(and #f #t)\n"
+    },
+    {
+      "case_id": "W-M02",
+      "expected_witness_class": "disagreement",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M02",
+      "source": "(- 9 4)\n"
+    },
+    {
+      "case_id": "W-M03",
+      "expected_witness_class": "disagreement",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M03",
+      "source": "(if #t 1 2)\n"
+    },
+    {
+      "case_id": "W-M04",
+      "expected_witness_class": "disagreement",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M04",
+      "source": "(<= 1 1)\n"
+    },
+    {
+      "case_id": "W-M05",
+      "expected_witness_class": "disagreement",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M05",
+      "source": "(if #t 1 2)\n"
+    },
+    {
+      "case_id": "W-M06",
+      "expected_witness_class": "disagreement",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M06",
+      "source": "(- 9 4)\n"
+    },
+    {
+      "case_id": "W-M07",
+      "expected_witness_class": "common-mode",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M07",
+      "source": "(<= 1 1)\n"
+    },
+    {
+      "case_id": "W-M08",
+      "expected_witness_class": "common-mode",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M08",
+      "source": "-1/2\n"
+    },
+    {
+      "case_id": "W-M09",
+      "expected_witness_class": "disagreement",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M09",
+      "source": "(+ 1 2)\n"
+    },
+    {
+      "case_id": "W-M10",
+      "expected_witness_class": "disagreement",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M10",
+      "source": "\"line\nbreak\"\n"
+    },
+    {
+      "case_id": "W-M11",
+      "expected_witness_class": "common-mode",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M11",
+      "source": "(- 9 4)\n"
+    },
+    {
+      "case_id": "W-M12",
+      "expected_witness_class": "common-mode",
+      "input": {
+        "input": "csk.checked-input/v1",
+        "value": [
+          0
+        ]
+      },
+      "mutant_id": "M12",
+      "source": "#f\n"
+    }
+  ]
+}

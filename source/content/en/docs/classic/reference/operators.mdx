@@ -1,0 +1,222 @@
+---
+title: 'Operators'
+description: 'Arithmetic, comparison, and logical operators available in Lispex.'
+---
+
+This page provides a quick reference for built‑in operators. Note: only `#f` is false; the empty list `()` is truthy. Boolean results are written as `#t` and `#f`.
+
+## Arithmetic Operators
+
+These operators perform standard mathematical calculations.
+
+### `+` (Add)
+Sums two or more numbers.
+- With no arguments, returns `0`.
+- With one argument, returns the argument itself.
+
+```lispex
+(+ 10 20 5)         ;; Result: 35
+(+ 10)              ;; Result: 10
+(+)                 ;; Result: 0
+```
+
+### `-` (Subtract)
+With one argument, negates the number. With two or more, subtracts the subsequent numbers from the first.
+
+```lispex
+(- 100 20 10)       ;; Result: 70
+(- 10)              ;; Result: -10
+```
+
+### `*` (Multiply)
+Multiplies two or more numbers.
+- With no arguments, returns `1`.
+- With one argument, returns the argument itself.
+
+```lispex
+(* 5 10 2)          ;; Result: 100
+(* 7)               ;; Result: 7
+(*)                 ;; Result: 1
+```
+
+### `/` (Divide)
+Divides the first number by the subsequent numbers. Throws an error on division by zero.
+
+```lispex
+(/ 100 5 2)         ;; Result: 10
+```
+
+### `modulo` (Floored Remainder)
+Returns the remainder of the division of the first number by the second. The result takes the sign of the divisor; for a result with the sign of the dividend, see `remainder`. Requires exactly two arguments.
+Alias: `%` (discouraged; prefer `modulo`, warn W330).
+
+```lispex
+(modulo 10 3)       ;; Result: 1
+```
+
+### `quotient` (Truncated Division)
+Divides the first integer by the second, truncating toward zero. Requires exactly two integer arguments. Errors on a zero divisor.
+
+```lispex
+(quotient 7 2)      ;; Result: 3
+(quotient -7 2)     ;; Result: -3
+```
+
+### `remainder` (Sign of Dividend)
+Returns the remainder of truncated division. The result takes the sign of the dividend (contrast `modulo`, which takes the sign of the divisor). They satisfy `n = d * (quotient n d) + (remainder n d)`.
+
+```lispex
+(remainder 7 3)     ;; Result: 1
+(remainder -7 3)    ;; Result: -1
+```
+
+## Comparison Operators
+
+These operators compare values and return `#t` or `#f`.
+
+### `=`, `==` (Equal)
+Checks if two values are equal. For lists, it performs a deep, recursive comparison of their elements. `==` is an alias for `=`.
+
+```lispex
+(= 10 10)           ;; Result: #t
+(= "hello" "world") ;; Result: #f
+(= (list 1 2) (list 1 2)) ;; Result: #t
+```
+
+### `!=` (Not Equal)
+Checks if two values are not equal. It's the opposite of `=`.
+
+```lispex
+(!= 10 5)           ;; Result: #t
+(!= (list 1 2) (list 1 2)) ;; Result: #f
+```
+
+### `>` (Greater Than)
+Checks if the first number is greater than the second.
+
+```lispex
+(> 10 5)            ;; Result: #t
+```
+
+### `<` (Less Than)
+Checks if the first number is less than the second.
+
+```lispex
+(< 10 5)            ;; Result: #f
+```
+
+### `>=` (Greater Than or Equal To)
+Checks if the first number is greater than or equal to the second.
+
+```lispex
+(>= 10 10)          ;; Result: #t
+```
+
+### `<=` (Less Than or Equal To)
+Checks if the first number is less than or equal to the second.
+
+```lispex
+(<= 10 5)           ;; Result: #f
+```
+
+## Logical Operators
+
+These operators work with boolean logic and feature short-circuit evaluation.
+
+### `and`
+Returns `#f` as soon as it encounters `#f`. If all values are truthy (anything other than `#f`), returns the value of the last expression.
+
+```lispex
+(and #t #t)         ;; Result: #t
+(and #t #f 10)      ;; Result: #f (stops at #f)
+```
+
+### `or`
+Returns the first truthy value it encounters. If all values are `#f`, it returns `#f`.
+
+```lispex
+(or #f 10 #t)       ;; Result: 10 (stops at 10)
+(or #f #f)          ;; Result: #f
+```
+
+### `not`
+Returns the opposite boolean. It returns `#t` for `#f` and `#f` for any other value.
+
+```lispex
+(not #t)            ;; Result: #f
+(not #f)            ;; Result: #t
+(not 0)             ;; Result: #f (0 is truthy)
+```
+
+## Character Comparison
+
+These compare characters by their Unicode scalar value (code point) and form variadic chains, just like the numeric comparisons. They require at least two arguments. The numeric operators `=` `<` `>` `<=` `>=` work only on numbers, so characters must use the `char`-prefixed names: `char=?` `char<?` `char>?` `char<=?` `char>=?`.
+
+```lispex
+(char=? #\a #\a)        ;; Result: #t
+(char<? #\a #\b #\c)    ;; Result: #t
+(char>? #\c #\a)        ;; Result: #t
+(char<=? #\a #\a #\b)   ;; Result: #t
+```
+
+## Case-Insensitive Character Comparison
+
+The `char-ci`-prefixed names (`char-ci=?` `char-ci<?` `char-ci>?` `char-ci<=?` `char-ci>=?`) compare characters case-insensitively, folding each operand before comparing. Folding is exact for ASCII (so `#\a` and `#\A` are equal); a few non-ASCII characters whose Unicode case folding differs from lowercasing are not yet folded.
+
+```lispex
+(char-ci=? #\a #\A)   ;; Result: #t
+(char-ci<? #\a #\B)   ;; Result: #t
+```
+
+## String Comparison
+
+These compare strings lexicographically by Unicode scalar value and form variadic chains, like the character comparisons. They require at least two arguments. Use the `string`-prefixed names: `string=?` `string<?` `string>?` `string<=?` `string>=?`.
+
+```lispex
+(string=? "a" "a")       ;; Result: #t
+(string<? "a" "b" "c")   ;; Result: #t
+(string>? "b" "a")       ;; Result: #t
+(string<=? "a" "a" "b")  ;; Result: #t
+```
+
+## Case-Insensitive String Comparison
+
+The `string-ci`-prefixed names (`string-ci=?` `string-ci<?` `string-ci>?` `string-ci<=?` `string-ci>=?`) compare strings case-insensitively, folding each operand before comparing. Folding is exact for ASCII (so `"abc"` and `"ABC"` are equal); a few non-ASCII characters whose Unicode case folding differs from lowercasing are not yet folded.
+
+```lispex
+(string-ci=? "abc" "ABC")   ;; Result: #t
+(string-ci<? "abc" "ABD")   ;; Result: #t
+```
+
+## Rounding
+
+These round a number to an integer while preserving exactness (an exact number gives an exact integer, an inexact number gives an inexact integer). `round` uses banker's rounding (round-half-to-even), so `(round 5/2)` is `2` and `(round 2.5)` is `2.0`, not `3`. `floor` rounds toward negative infinity, `ceiling` toward positive infinity, and `truncate` toward zero.
+
+```lispex
+(floor 7/2)      ;; Result: 3
+(ceiling 7/2)    ;; Result: 4
+(truncate -7/2)  ;; Result: -3
+(round 5/2)      ;; Result: 2
+(round 2.5)      ;; Result: 2.0
+```
+
+## GCD and LCM
+
+`gcd` returns the greatest common divisor and `lcm` the least common multiple of zero or more integers. Both are variadic and always return a non-negative integer; `(gcd)` is `0` and `(lcm)` is `1`.
+
+```lispex
+(gcd 12 8)    ;; Result: 4
+(gcd 12 -8)   ;; Result: 4
+(lcm 4 6)     ;; Result: 12
+(lcm 4 0)     ;; Result: 0
+```
+
+## Exponentiation
+
+`expt` raises a base to an integer power. The exponent must be an exact integer; a negative exponent gives the exact reciprocal, and an inexact base yields an inexact result. (Raising to a non-integer power, which would need transcendental math, is not supported.)
+
+```lispex
+(expt 2 10)   ;; Result: 1024
+(expt 2 -2)   ;; Result: 1/4
+(expt 2.0 3)  ;; Result: 8.0
+```

@@ -1,0 +1,49 @@
+{
+  "dependencies": [
+    {
+      "ecosystem": "cargo",
+      "name": "base64",
+      "version": "0.22.1"
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "ed25519-dalek",
+      "version": "2.1.1"
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "serde",
+      "version": "1.0.219"
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "serde_json",
+      "version": "1.0.140"
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "sha2",
+      "version": "0.10.8"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "ajv",
+      "version": "8.17.1"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "typescript",
+      "version": "5.8.2"
+    }
+  ],
+  "runtime_versions": "vouch.scored26-runtime-versions/v0",
+  "target_triple": "x86_64-unknown-linux-gnu",
+  "toolchains": {
+    "cargo": "cargo 1.85.1 (d73d2caf9 2024-12-31)",
+    "glibc": "glibc 2.39",
+    "node": "v22.14.0",
+    "npm": "10.9.2",
+    "rustc": "rustc 1.85.1 (4eb161250 2025-03-15)",
+    "typescript": "5.8.2"
+  }
+}
