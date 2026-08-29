@@ -32,6 +32,15 @@ const BASE = 'ef7ef9bb4b56382ef5d413408a5f93a6898498c2';
 const FREEZE = 'c90f97ddd6b1d662791a76fe4663b90e79c443ec';
 const C0_TREE = 'c686334b180b3a9581b91c70f08da15528f93d9a';
 const C0_FILE_COUNT = 2367;
+const SOURCE_SANITIZED_OVERLAYS = Object.freeze([
+  Object.freeze({
+    path: 'artifact/scripts/check-release-supply.mjs',
+    projected_sha256:
+      'dc87e763133f6591f8a8718ba025f73a70aaafe6ef8f6c8f8fa8f72e13530715',
+    source_sha256:
+      '43f2b6c4094720e6449b5a6ab6ec353c7bb2979e2c0713ed4a323276dd2594ff',
+  }),
+]);
 const SYNTHETIC_BUNDLE_PATH =
   'source/synthetic-history/vouch-scored26.bundle';
 const ARCHIVE_CHUNK_MANIFEST_PATH =
@@ -51,11 +60,11 @@ const BUILD_IMAGE_ID =
 const MACHINE_RECORD_SHA256 =
   'cabff13cf9c34a3d96dfda4944d30ac681960eab007ee11267f09ca90200d556';
 const SOURCE_MANIFEST_SHA256 =
-  'f917b5e9623e4b3547882b2d8f12c2ad0c88d2be5309d9ce3ff8302f49b0f473';
+  'd45e0c994cb4a124568f05edcb32385240bdfd4172b4293c380578e76b8687ed';
 const SOURCE_RIGHTS_SHA256 =
   '9e13cc2f139da73df3c8e566127e0a0ca7708f464f50cfa11efbc497ea301540';
 const SOURCE_FILE_COUNT = 3155;
-const SOURCE_BYTE_COUNT = 80329742;
+const SOURCE_BYTE_COUNT = 80332869;
 const EXPECTED_RELEASE_FILE_SHA256 = Object.freeze({
   'machine-record/vouch-scored26-release-record.pdf': MACHINE_RECORD_SHA256,
   'release/chain/clean-run-report.json':
@@ -415,6 +424,7 @@ export async function verifySourceProjection(root, manifestState) {
     [
       'commit',
       'repository_locator',
+      'sanitized_overlays',
       'working_tree_git_metadata_included',
     ],
     'source snapshot identity'
@@ -425,6 +435,14 @@ export async function verifySourceProjection(root, manifestState) {
     null,
     'source repository locator'
   );
+  if (
+    !isDeepStrictEqual(
+      sourceManifest.source_snapshot.sanitized_overlays,
+      SOURCE_SANITIZED_OVERLAYS
+    )
+  ) {
+    throw new Error('source sanitized overlay pins changed');
+  }
   expectEqual(
     sourceManifest.source_snapshot.working_tree_git_metadata_included,
     false,
@@ -572,6 +590,7 @@ export async function verifySourceProjection(root, manifestState) {
       ![
         'projection-authored',
         'source-snapshot-byte-exact',
+        'source-snapshot-sanitized-negative-fixture',
         'synthetic-history-bundle',
       ].includes(entry.origin) &&
       !/^npm-package-(?:@types\/node|ajv|fast-deep-equal|fast-uri|json-schema-traverse|require-from-string|typescript|undici-types)-[0-9]+(?:\.[0-9]+){2}-byte-exact$/u.test(
@@ -928,8 +947,13 @@ function verifySourceManifestSummary(sourceManifest) {
   expectEqual(sourceManifest.summary.bytes, SOURCE_BYTE_COUNT, 'reviewed source byte count');
   expectEqual(
     byOrigin['source-snapshot-byte-exact'],
-    C0_FILE_COUNT,
+    C0_FILE_COUNT - SOURCE_SANITIZED_OVERLAYS.length,
     'byte-exact C0 source population'
+  );
+  expectEqual(
+    byOrigin['source-snapshot-sanitized-negative-fixture'],
+    SOURCE_SANITIZED_OVERLAYS.length,
+    'sanitized C0 fixture overlay population'
   );
   expectEqual(
     byOrigin['synthetic-history-bundle'],

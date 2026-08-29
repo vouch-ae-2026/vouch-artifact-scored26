@@ -19,8 +19,9 @@ node tools/check-source-negative.mjs
 node tools/check-synthetic-checkout.mjs
 ```
 
-The projection check verifies the exact manifest, all 2,367 C0 files against
-the bundled C0 tree, F→B→C0 topology and generic commit metadata, the pinned
+The projection check verifies the exact manifest, 2,366 byte-exact C0 files
+plus the one dual-digest-pinned synthetic fixture overlay against the bundled
+C0 tree, F→B→C0 topology and generic commit metadata, the pinned
 review-toolchain package trees, the canonical TypeScript chunk manifest and
 ordered reconstruction hash, the per-file size limit, file modes, absence of
 `.git` metadata and remotes, and first-party identity/secret/path boundaries.
@@ -76,6 +77,8 @@ From the repository root:
 ```sh
 npm run check:source-full
 ```
+
+On Rust 1.85.1, this command currently exits on the pre-existing `clippy::format_collect` warning at `vouch/src/io_boundary/mod.rs:703`; the synthetic fixture projection and its checks are unaffected.
 
 The wrapper uses the exact bundled C0 in a detached checkout, links only the
 verified temporary review toolchain, and runs the Vouch generate/verify/replay

@@ -3,9 +3,12 @@
 This directory publishes the complete tracked tree of the sanitized synthetic
 Vouch source commit
 `3e910c9ff87cc01d3bc241d63297218b44e75ede` (C0). All 2,367 C0 files are
-present byte-for-byte with their executable modes preserved. The directory has
-no `.git` metadata, repository remote, private key, credential, or local
-developer path.
+present with their executable modes preserved. Of those, 2,366 are
+byte-for-byte; `artifact/scripts/check-release-supply.mjs` is a narrowly
+declared overlay that replaces identity-shaped scanner fixture values with
+RFC-reserved synthetic values. The manifest pins both its original C0 digest and
+its projected digest. The directory has no `.git` metadata, repository remote,
+private key, credential, or local developer path.
 
 The adjacent projection layer adds only review documentation, manifest and
 checking tools, the integrity-pinned JavaScript/TypeScript review toolchain, and
@@ -33,6 +36,9 @@ assembled release archive bound by descriptor D. The repository-level checker
 verifies that identity against the archive's release manifest and D's archive
 digest. This authenticates the exact bundle as an archive member; it does not
 turn the projection-only files around it into signed release objects.
+The detached bundle retains the exact C0 bytes; the public projection verifies
+the one declared synthetic fixture overlay separately against both pinned
+digests.
 
 ## Published implementation
 
@@ -84,9 +90,10 @@ release lifecycle builds C0 and issues its release receipts at C0. Those two
 identities serve different roles and must not be conflated.
 
 `SOURCE-MANIFEST.json` inventories every distributed source-layer file,
-distinguishes the 2,367 byte-exact C0 paths from projection additions and
-third-party packages, and records the bundle and chunk-transport boundaries.
-It is a review manifest, not a D/Q/R/P/S object.
+distinguishes 2,366 byte-exact C0 paths, the one hash-pinned synthetic fixture
+overlay, projection additions, and third-party packages, and records the
+bundle and chunk-transport boundaries. It is a review manifest, not a
+D/Q/R/P/S object.
 
 The normative contract is
 `artifact/contract/NATIVE-IMPLEMENTATION-CONDITIONS-v8.6.0.md`, SHA-256
@@ -95,4 +102,4 @@ All 213 conditions are built and fixture-backed; the committed fixture report
 contains 165/165 matches with zero skips.
 
 See `RUN.md` for the offline checks and `RIGHTS.md` for the evaluation
-permission.
+permission. On Rust 1.85.1, `npm run check:source-full` currently exits on the pre-existing `clippy::format_collect` warning at `vouch/src/io_boundary/mod.rs:703`; the synthetic fixture projection and its checks are unaffected.

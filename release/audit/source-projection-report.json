@@ -5,7 +5,7 @@
   "release_chain_authenticated": false,
   "rights_sha256": "sha256:9e13cc2f139da73df3c8e566127e0a0ca7708f464f50cfa11efbc497ea301540",
   "source_file_count": 3155,
-  "source_manifest_sha256": "sha256:f917b5e9623e4b3547882b2d8f12c2ad0c88d2be5309d9ce3ff8302f49b0f473",
+  "source_manifest_sha256": "sha256:d45e0c994cb4a124568f05edcb32385240bdfd4172b4293c380578e76b8687ed",
   "source_projection_report": "vouch.scored26-source-projection-report/v1",
   "status": "pass"
 }

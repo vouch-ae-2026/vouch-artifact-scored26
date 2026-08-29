@@ -16,7 +16,9 @@ import {
   canonicalJson,
   FREEZE_COMMIT,
   scanProjection,
+  sha256,
   SOURCE_COMMIT,
+  SOURCE_SANITIZED_OVERLAYS,
   SOURCE_TRACKED_FILE_COUNT,
   SOURCE_TREE,
   SYNTHETIC_BUNDLE_PATH,
@@ -44,6 +46,9 @@ const EXPECTED_HISTORY = [
 ];
 const SYNTHETIC_AUTHOR_NAME = 'Artifact Maintainer';
 const SYNTHETIC_AUTHOR_EMAIL = 'artifact@example.invalid';
+const SANITIZED_OVERLAYS_BY_PATH = new Map(
+  SOURCE_SANITIZED_OVERLAYS.map((overlay) => [overlay.path, overlay])
+);
 
 export function assertProjectionReady(root) {
   const manifestPath = join(root, 'SOURCE-MANIFEST.json');
@@ -164,10 +169,24 @@ export function verifySyntheticHistoryBundle(
       if ((stat.mode & 0o777) !== expectedMode) {
         throw new Error(`${row.path}: projected mode differs from C0`);
       }
-      if (!readFileSync(projected).equals(batch[index])) {
+      const projectedBytes = readFileSync(projected);
+      const overlay = SANITIZED_OVERLAYS_BY_PATH.get(row.path);
+      if (overlay !== undefined) {
+        if (sha256(batch[index]) !== overlay.source_sha256) {
+          throw new Error(`${row.path}: sanitized overlay source bytes differ from C0 pin`);
+        }
+        if (sha256(projectedBytes) !== overlay.projected_sha256) {
+          throw new Error(`${row.path}: sanitized overlay projected bytes differ from pin`);
+        }
+      } else if (!projectedBytes.equals(batch[index])) {
         throw new Error(`${row.path}: projected bytes differ from C0`);
       }
     });
+    for (const overlay of SOURCE_SANITIZED_OVERLAYS) {
+      if (!rows.some((row) => row.path === overlay.path)) {
+        throw new Error(`${overlay.path}: sanitized overlay path is absent from C0`);
+      }
+    }
     const verified = {
       bundle,
       checkout,

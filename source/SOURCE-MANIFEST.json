@@ -3,6 +3,13 @@
   "source_snapshot": {
     "commit": "3e910c9ff87cc01d3bc241d63297218b44e75ede",
     "repository_locator": null,
+    "sanitized_overlays": [
+      {
+        "path": "artifact/scripts/check-release-supply.mjs",
+        "projected_sha256": "dc87e763133f6591f8a8718ba025f73a70aaafe6ef8f6c8f8fa8f72e13530715",
+        "source_sha256": "43f2b6c4094720e6449b5a6ab6ec353c7bb2979e2c0713ed4a323276dd2594ff"
+      }
+    ],
     "working_tree_git_metadata_included": false
   },
   "synthetic_history": {
@@ -176,6 +183,12 @@
   "transformations": [
     {
       "paths": [
+        "artifact/scripts/check-release-supply.mjs"
+      ],
+      "reason": "replace identity-shaped scanner fixture values with RFC-reserved synthetic values while pinning both the original C0 and projected bytes"
+    },
+    {
+      "paths": [
         "README.md",
         "RIGHTS.md",
         "RUN.md",
@@ -214,7 +227,7 @@
   ],
   "summary": {
     "file_count": 3155,
-    "bytes": 80329742,
+    "bytes": 80332869,
     "files_by_class": {
       "artifact-fixture-evidence-and-tooling": 103,
       "bridge-example": 5,
@@ -252,7 +265,8 @@
       "npm-package-typescript-5.8.2-byte-exact": 129,
       "npm-package-undici-types-6.21.0-byte-exact": 41,
       "projection-authored": 21,
-      "source-snapshot-byte-exact": 2367,
+      "source-snapshot-byte-exact": 2366,
+      "source-snapshot-sanitized-negative-fixture": 1,
       "synthetic-history-bundle": 1
     },
     "files_by_rights": {
@@ -407,8 +421,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4870,
-      "sha256": "16e6624487baa653832a4ff2eaeac76470fa823392f61d6260d29a0f7253d747",
+      "bytes": 5545,
+      "sha256": "0a998af81bf6c13176f7e00ae7ed67cac7f82955d4ffae28debd7794f4f2f977",
       "class": "semantic-documentation",
       "origin": "projection-authored",
       "rights": "limited first-party evaluation permission (RIGHTS.md)"
@@ -423,8 +437,8 @@
     },
     {
       "path": "RUN.md",
-      "bytes": 3747,
-      "sha256": "43d43a9094d7665f4d3ffff8b45708b174b5b4ef2f25c5cef7b7689131d4b1ad",
+      "bytes": 4014,
+      "sha256": "adca6487546759981efff7e0d8bf59cbec6dc45c9c58649e4227d0a3ff77b970",
       "class": "semantic-documentation",
       "origin": "projection-authored",
       "rights": "limited first-party evaluation permission (RIGHTS.md)"
@@ -895,10 +909,10 @@
     },
     {
       "path": "artifact/scripts/check-release-supply.mjs",
-      "bytes": 19641,
-      "sha256": "43f2b6c4094720e6449b5a6ab6ec353c7bb2979e2c0713ed4a323276dd2594ff",
+      "bytes": 19642,
+      "sha256": "dc87e763133f6591f8a8718ba025f73a70aaafe6ef8f6c8f8fa8f72e13530715",
       "class": "artifact-fixture-evidence-and-tooling",
-      "origin": "source-snapshot-byte-exact",
+      "origin": "source-snapshot-sanitized-negative-fixture",
       "rights": "limited first-party evaluation permission (RIGHTS.md)"
     },
     {
@@ -10391,16 +10405,16 @@
     },
     {
       "path": "tools/check-source-negative.mjs",
-      "bytes": 7966,
-      "sha256": "3898c536b34a6e833869c27c608a0200c4d79a0fdd4e25004a3b3cbe554a31e8",
+      "bytes": 7964,
+      "sha256": "0dab30b5014a40056913bb9607642ea0ba04a3a752bacc5a4de2d3a29f8c5e25",
       "class": "projection-tooling",
       "origin": "projection-authored",
       "rights": "limited first-party evaluation permission (RIGHTS.md)"
     },
     {
       "path": "tools/check-source-projection.mjs",
-      "bytes": 1494,
-      "sha256": "f41b12fb45561f31a4103a0f8a5d8f5daf266827f89788782283b7d5006a8773",
+      "bytes": 2048,
+      "sha256": "507daeb9737c14f7223d4254092a710635fe0f6a2dd4f01a5d85ecc61b306204",
       "class": "projection-tooling",
       "origin": "projection-authored",
       "rights": "limited first-party evaluation permission (RIGHTS.md)"
@@ -10463,16 +10477,16 @@
     },
     {
       "path": "tools/source-projection-lib.mjs",
-      "bytes": 36278,
-      "sha256": "e9ea1f6a16989d6185321649ddb5c868c5a8e54787e259a567f7c3efd1d16d78",
+      "bytes": 37053,
+      "sha256": "bec1cc2c7ff74537d5213595176d47da5899dafe1e2259467b52406d8e60aa4b",
       "class": "projection-tooling",
       "origin": "projection-authored",
       "rights": "limited first-party evaluation permission (RIGHTS.md)"
     },
     {
       "path": "tools/synthetic-checkout-lib.mjs",
-      "bytes": 10557,
-      "sha256": "585ebe32a2f6520c56403c9519babad88f5fb5c5ab9d9f19d5bf54b68e84e691",
+      "bytes": 11414,
+      "sha256": "aa022c2387949d86cd80bfbf4d1f5b0da2bd4e515b6440791fc137e4d6637d12",
       "class": "projection-tooling",
       "origin": "projection-authored",
       "rights": "limited first-party evaluation permission (RIGHTS.md)"

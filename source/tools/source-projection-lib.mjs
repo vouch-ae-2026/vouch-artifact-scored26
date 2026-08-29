@@ -15,6 +15,15 @@ export const BASE_COMMIT = 'ef7ef9bb4b56382ef5d413408a5f93a6898498c2';
 export const SOURCE_COMMIT = '3e910c9ff87cc01d3bc241d63297218b44e75ede';
 export const SOURCE_TREE = 'c686334b180b3a9581b91c70f08da15528f93d9a';
 export const SOURCE_TRACKED_FILE_COUNT = 2_367;
+export const SOURCE_SANITIZED_OVERLAYS = Object.freeze([
+  Object.freeze({
+    path: 'artifact/scripts/check-release-supply.mjs',
+    projected_sha256:
+      'dc87e763133f6591f8a8718ba025f73a70aaafe6ef8f6c8f8fa8f72e13530715',
+    source_sha256:
+      '43f2b6c4094720e6449b5a6ab6ec353c7bb2979e2c0713ed4a323276dd2594ff',
+  }),
+]);
 export const SYNTHETIC_BUNDLE_PATH =
   'synthetic-history/vouch-scored26.bundle';
 export const DISTRIBUTED_FILE_LIMIT_BYTES = 8_000_000;
@@ -330,6 +339,7 @@ export function buildManifest(root) {
     source_snapshot: {
       commit: SOURCE_COMMIT,
       repository_locator: null,
+      sanitized_overlays: SOURCE_SANITIZED_OVERLAYS,
       working_tree_git_metadata_included: false,
     },
     synthetic_history: {
@@ -439,6 +449,11 @@ export function buildManifest(root) {
       'release private keys, credentials, and local paths',
     ],
     transformations: [
+      {
+        paths: SOURCE_SANITIZED_OVERLAYS.map((overlay) => overlay.path),
+        reason:
+          'replace identity-shaped scanner fixture values with RFC-reserved synthetic values while pinning both the original C0 and projected bytes',
+      },
       {
         paths: [
           'README.md',
@@ -1008,6 +1023,9 @@ function originFor(path) {
     return `npm-package-${toolchain.name}-${toolchain.version}-byte-exact`;
   }
   if (path === SYNTHETIC_BUNDLE_PATH) return 'synthetic-history-bundle';
+  if (SOURCE_SANITIZED_OVERLAYS.some((overlay) => overlay.path === path)) {
+    return 'source-snapshot-sanitized-negative-fixture';
+  }
   if (authored.has(path)) return 'projection-authored';
   return 'source-snapshot-byte-exact';
 }

@@ -66,6 +66,7 @@ const requiredPaths = Object.freeze([
 ]);
 
 try {
+  await refreshSourceProjectionReport(root);
   const inventory = await inventoryTree(root);
   const present = new Set(inventory.files.map((entry) => entry.path));
   const missing = requiredPaths.filter((entry) => !present.has(entry));
@@ -87,6 +88,41 @@ try {
 } catch (error) {
   console.error(`artifact manifest build failed: ${error.message}`);
   process.exitCode = 1;
+}
+
+async function refreshSourceProjectionReport(base) {
+  const sourceManifestBytes = await readFile(
+    path.join(base, 'source', 'SOURCE-MANIFEST.json')
+  );
+  const sourceManifest = JSON.parse(sourceManifestBytes.toString('utf8'));
+  if (
+    sourceManifest.source_projection !==
+      'vouch.scored26-source-projection/v2' ||
+    !Array.isArray(sourceManifest.files)
+  ) {
+    throw new Error('source manifest cannot produce the projection report');
+  }
+  const rightsBytes = await readFile(path.join(base, 'source', 'RIGHTS.md'));
+  const report = {
+    boundary_status: 'pass',
+    derived_from_commit: sourceManifest.source_snapshot.commit,
+    release_archive_equivalent: false,
+    release_chain_authenticated: false,
+    rights_sha256: sha256Id(rightsBytes),
+    source_file_count: sourceManifest.files.length,
+    source_manifest_sha256: sha256Id(sourceManifestBytes),
+    source_projection_report: 'vouch.scored26-source-projection-report/v1',
+    status: 'pass',
+  };
+  const reportPath = path.join(
+    base,
+    'release',
+    'audit',
+    'source-projection-report.json'
+  );
+  await writeFile(reportPath, writeCanonicalJson(report), { mode: 0o644 });
+  await chmod(reportPath, 0o644);
+  console.log('wrote release/audit/source-projection-report.json');
 }
 
 async function inventoryTree(base) {

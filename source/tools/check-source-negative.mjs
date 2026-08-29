@@ -85,7 +85,7 @@ try {
   }
 
   const scannerControl = join(root, 'scanner-control');
-  const scannerFixturePath = ['', 'Users', 'cskernel2', 'project'].join('/');
+  const scannerFixturePath = ['', 'Users', 'example', 'project'].join('/');
   const releaseSupplyScanner = join(
     scannerControl,
     'artifact',

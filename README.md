@@ -21,13 +21,16 @@ npm run check
 No install is required. See [RUN.md](RUN.md) for the full source lane, archive
 reassembly, and a pinned Linux phase-1 rerun.
 
+On Rust 1.85.1, `npm run check:source-full` currently exits on the pre-existing `clippy::format_collect` warning at `vouch/src/io_boundary/mod.rs:703`; the synthetic fixture projection and its checks are unaffected.
+
 ## What is included
 
-- `source/` publishes all 2,367 tracked files from sanitized synthetic source
-  commit C0 `3e910c9ff87cc01d3bc241d63297218b44e75ede`, byte-for-byte and with
-  executable modes preserved. The source manifest inventories 3,155 files
-  totaling 80,329,742 bytes after review-only support files and pinned
-  toolchain packages are added.
+- `source/` publishes the 2,367 tracked paths from sanitized synthetic source
+  commit C0 `3e910c9ff87cc01d3bc241d63297218b44e75ede`: 2,366 are byte-for-byte,
+  and one scanner negative-fixture path is a hash-pinned synthetic-value
+  overlay. Executable modes are preserved. The source manifest inventories
+  3,155 files after review-only support files and pinned toolchain packages
+  are added.
 - `release/chain/` contains the public key and trust policy, signed descriptor
   D, phase-1 report Q, signed observation R, publication index P, and terminal
   report S.

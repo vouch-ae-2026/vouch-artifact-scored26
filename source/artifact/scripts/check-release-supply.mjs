@@ -397,7 +397,7 @@ try {
   const benign = join(archive, 'benign-identity-lookalikes.txt');
   writeFileSync(
     benign,
-    'filename\nhttps://lispex.community\n/Users/cskernel2/project\n'
+    'filename\nhttps://example.org/project\n/Users/example/project\n'
   );
   checkedCommand(publicScan, [...publicArgs, '--phase1-checkout', checkout]);
   rmSync(benign);
